@@ -1,0 +1,6 @@
+{
+  "name": "landing-simulador-de-desfoque",
+  "private": true,
+  "scripts": { "build": "esbuild js/main.js --bundle --minify --format=iife --target=es2019 --outfile=js/app.js" },
+  "devDependencies": { "esbuild": "^0.24.0", "three": "0.160.0", "animejs": "3.2.2" }
+}
