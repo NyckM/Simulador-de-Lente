@@ -4,6 +4,7 @@
 
 **Português · English · 中文**
 
+<img width="939" height="537" alt="image" src="https://github.com/user-attachments/assets/645d708d-5396-4017-bfad-f818dd2926d3" />
 ---
 
 ## 🇧🇷 Português
@@ -104,5 +105,5 @@ The desktop application and plugins share the same optical engine and lens libra
 
 **Bruxosdovfx**  
 *Optical defocus, not just blur.*
-<img width="939" height="537" alt="image" src="https://github.com/user-attachments/assets/645d708d-5396-4017-bfad-f818dd2926d3" />
+
 <img width="944" height="409" alt="image" src="https://github.com/user-attachments/assets/10602a2b-e511-4724-b5db-8721c9d13f6f" />
