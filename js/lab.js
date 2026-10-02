@@ -1,4 +1,5 @@
 import * as O from './optics.js';
+import { t as tr, num, presetText } from './i18n.js';
 
 // ---------------------------------------------------------------------------
 // Laboratório interativo de lentes
@@ -23,7 +24,7 @@ let lastSpot = null;
 const lerp = (a, b, t) => a + (b - a) * t;
 const logMap = (t, a, b) => Math.exp(lerp(Math.log(a), Math.log(b), t));
 const invLog = (v, a, b) => (Math.log(v) - Math.log(a)) / (Math.log(b) - Math.log(a));
-const fmtDist = (mm) => !isFinite(mm) || mm >= 5e8 ? '∞' : mm >= 10000 ? (mm / 1000).toFixed(0) + ' m' : (mm / 1000).toFixed(2).replace('.', ',') + ' m';
+const fmtDist = (mm) => !isFinite(mm) || mm >= 5e8 ? '∞' : mm >= 10000 ? (mm / 1000).toFixed(0) + ' m' : num(mm / 1000, 2) + ' m';
 
 function stopRfromF(f) {
   const s = state.info.stop;
@@ -48,7 +49,7 @@ function loadPreset(key) {
   state.sel = 0;
   state.e = O.solveExtension(state.lens, state.zS, state.focus) ?? 0;
   view = null;
-  $('lens-note').textContent = O.PRESETS[key].note;
+  $('lens-note').textContent = presetText(key, O.PRESETS[key]).note;
   syncControls(); fillSurfaceSelect(); fillEditor();
   update(true);
 }
@@ -69,7 +70,7 @@ function syncControls() {
   $('c-bg').value = invLog(state.bg, 1500, 100000);
   $('o-bg').textContent = fmtDist(state.bg);
   $('c-field').value = state.field; $('o-field').textContent = state.field.toFixed(1) + ' mm';
-  $('c-blades').value = state.blades; $('o-blades').textContent = state.blades < 3 ? 'circular' : state.blades;
+  $('c-blades').value = state.blades; $('o-blades').textContent = state.blades < 3 ? tr('circular') : state.blades;
   $('c-round').value = state.round; $('o-round').textContent = Math.round(state.round * 100) + '%';
   $('c-disp').value = state.disp; $('o-disp').textContent = state.disp.toFixed(1) + '×';
   document.querySelectorAll('.controls input[type=range]').forEach(setRangeFill);
@@ -97,7 +98,7 @@ function bindControls() {
   const pre = $('lab-presets');
   for (const k of Object.keys(O.PRESETS)) {
     const b = document.createElement('button');
-    b.textContent = O.PRESETS[k].name; b.dataset.k = k;
+    b.textContent = presetText(k, O.PRESETS[k]).name; b.dataset.k = k;
     b.onclick = () => { pre.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b)); loadPreset(k); };
     if (k === state.key) b.classList.add('on');
     pre.appendChild(b);
@@ -120,7 +121,7 @@ function fillSurfaceSelect() {
   state.lens.S.forEach((s, i) => {
     const o = document.createElement('option');
     o.value = i;
-    o.textContent = s.stop ? `${i + 1} · diafragma` : `${i + 1} · R ${s.R ? s.R.toFixed(2) : '∞'} mm`;
+    o.textContent = s.stop ? `${i + 1} · ${tr('stop')}` : `${i + 1} · R ${s.R ? s.R.toFixed(2) : '∞'} mm`;
     sel.appendChild(o);
   });
   sel.value = state.sel;
@@ -152,7 +153,7 @@ function applyEditor() {
     const dz = t - (S[i + 1].z - s.z);
     for (let k = i + 1; k < S.length; k++) S[k].z += dz;
   }
-  if (!valid(state.lens)) { state.lens.S = backup; flash('Geometria inválida: superfícies se cruzariam.'); }
+  if (!valid(state.lens)) { state.lens.S = backup; flash(tr('invalid')); }
   recompute(); fillSurfaceSelect(); fillEditor(); update(true);
 }
 
@@ -360,7 +361,7 @@ function drawXsec() {
   const zs = sx(state.zS);
   c.strokeStyle = '#ff8a3d'; c.lineWidth = 2;
   c.beginPath(); c.moveTo(zs, sy(view.ymax * 0.85)); c.lineTo(zs, sy(-view.ymax * 0.85)); c.stroke();
-  c.fillStyle = '#ff8a3d'; c.font = '10px JetBrains Mono, monospace'; c.fillText('SENSOR', zs - 18, sy(-view.ymax * 0.85) + 14);
+  c.fillStyle = '#ff8a3d'; c.font = '10px JetBrains Mono, monospace'; c.fillText(tr('sensor'), zs - 18, sy(-view.ymax * 0.85) + 14);
   // foco paraxial
   const D = state.src === 'focus' ? state.focus : state.src === 'bg' ? state.bg : 1e9;
   const pz = paraxialImageZ(D);
@@ -375,7 +376,7 @@ function drawXsec() {
   c.fillStyle = 'rgba(159,240,200,.1)'; c.strokeStyle = 'rgba(159,240,200,.5)'; c.lineWidth = 1;
   roundRect(c, sx(zfirst), by - 11, sx(zlast) - sx(zfirst), 22, 6); c.fill(); c.stroke();
   c.fillStyle = '#9ff0c8'; c.font = '11px Inter Tight, sans-serif'; c.textAlign = 'center';
-  c.fillText('↔ arraste para focar', (sx(zfirst) + sx(zlast)) / 2, by + 4); c.textAlign = 'left';
+  c.fillText(tr('dragFocus'), (sx(zfirst) + sx(zlast)) / 2, by + 4); c.textAlign = 'left';
   // escala
   c.fillStyle = 'rgba(220,255,235,.35)'; c.font = '10px JetBrains Mono, monospace';
   c.fillRect(W - 80, H - 12, 10 * view.k, 1.5); c.fillText('10 mm', W - 80, H - 16);
@@ -429,7 +430,7 @@ function drawLoupe(fans) {
     c.beginPath(); c.moveTo(LX(pz), y0 + 8); c.lineTo(LX(pz), y0 + h - 8); c.stroke(); c.setLineDash([]);
   }
   c.fillStyle = 'rgba(220,255,235,.45)'; c.font = '9px JetBrains Mono, monospace';
-  c.fillText('PERTO DO SENSOR · ±3 mm', x0 + 8, y0 + 12);
+  c.fillText(tr('nearSensor'), x0 + 8, y0 + 12);
   c.restore();
 }
 
@@ -447,9 +448,9 @@ function updateMsg() {
   const pz = paraxialImageZ(D);
   const d = pz - state.zS;
   let txt = '';
-  if (!isFinite(pz)) txt = 'Sem imagem real: a lente não converge esse ponto.';
-  else if (Math.abs(d) < 0.02) txt = 'Foco paraxial no sensor.';
-  else txt = `Foco paraxial ${Math.abs(d).toFixed(2).replace('.', ',')} mm ${d < 0 ? 'antes' : 'depois'} do sensor · extensão ${state.e.toFixed(2).replace('.', ',')} mm`;
+  if (!isFinite(pz)) txt = tr('noImage');
+  else if (Math.abs(d) < 0.02) txt = tr('onSensor');
+  else txt = tr('focusMsg')(num(Math.abs(d), 2), d < 0, num(state.e, 2));
   $('xsec-msg').textContent = txt;
 }
 
@@ -608,7 +609,7 @@ function drawPSF(canvas, k, label) {
   const c = canvas.getContext('2d');
   const W = canvas.width;
   c.fillStyle = '#000'; c.fillRect(0, 0, W, W);
-  if (!k || !k.K) { c.fillStyle = '#5d6a63'; c.font = '11px JetBrains Mono'; c.fillText('sem luz', 10, 20); return; }
+  if (!k || !k.K) { c.fillStyle = '#5d6a63'; c.font = '11px JetBrains Mono'; c.fillText(tr('noLight'), 10, 20); return; }
   const K = k.K;
   let m = 0;
   for (let ch = 0; ch < 3; ch++) for (const v of K.A[ch]) if (v > m) m = v;
@@ -627,7 +628,7 @@ function drawPSF(canvas, k, label) {
   // tamanho real
   const mm = (K.size / K.scale);
   c.fillStyle = 'rgba(255,255,255,.55)'; c.font = `${Math.round(W / 16)}px JetBrains Mono, monospace`;
-  c.fillText(`${mm.toFixed(2).replace('.', ',')} mm`, 8, W - 8);
+  c.fillText(`${num(mm, 2)} mm`, 8, W - 8);
   void label;
 }
 
@@ -684,7 +685,7 @@ function renderScene() {
   const sp = O.spot(state.lens, s, state.info, state.focus, 0, quality === 'hi' ? 2400 : 900);
   lastSpot = sp;
   const rms = drawSpot($('spot'), sp);
-  $('st-rms').textContent = rms ? (rms * 1000).toFixed(1).replace('.', ',') + ' µm' : '—';
+  $('st-rms').textContent = rms ? num(rms * 1000, 1) + ' µm' : '—';
   const vig = far[far.length - 1].e;
   $('st-vig').textContent = Math.round(Math.min(1, vig) * 100) + '%';
 }
@@ -694,7 +695,7 @@ function update(force) {
   pending = requestAnimationFrame(() => {
     pending = 0;
     const efl = state.info.efl;
-    $('st-efl').textContent = efl.toFixed(1).replace('.', ',') + ' mm';
+    $('st-efl').textContent = num(efl, 1) + ' mm';
     $('st-f').textContent = 'f/' + state.fstop.toFixed(1);
     $('st-focus').textContent = fmtDist(state.focus);
     drawXsec();

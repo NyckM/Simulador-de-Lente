@@ -1,6 +1,8 @@
 import { initLab } from './lab.js';
 import { initMainWipe, initImageWipes } from './wipe.js';
-import { LENSES } from './lenses.js';
+import { LENSES as LENSES_PT } from './lenses.js';
+import { t as tr, num, lensRow } from './i18n.js';
+const LENSES = LENSES_PT.map(lensRow);
 import anime from 'animejs/lib/anime.es.js';
 
 const A = anime;
@@ -23,7 +25,7 @@ mq.innerHTML = [...names, ...names].map((n) => `<span>${n}</span>`).join('');
 const roFocus = document.getElementById('ro-focus');
 import('./hero.js').then(({ initHero }) => {
   try {
-    const hero = initHero(document.getElementById('hero-canvas'), (f) => { roFocus.textContent = (f * 0.38).toFixed(2).replace('.', ',') + ' m'; });
+    const hero = initHero(document.getElementById('hero-canvas'), (f) => { roFocus.textContent = num(f * 0.38, 2) + ' m'; });
     if (A && !reduce) {
       A.timeline({ easing: 'easeOutExpo' })
         .add({ targets: hero.anim, particles: [0, 1], duration: 2200 }, 0)
@@ -72,7 +74,7 @@ if (A && !reduce) {
 onView(document.querySelectorAll('.count'), (el) => {
   const to = +el.dataset.to, dec = +(el.dataset.dec || 0);
   const o = { v: 0 };
-  const fmt = (v) => v.toFixed(dec).replace('.', ',');
+  const fmt = (v) => num(v, dec);
   if (!A || reduce) { el.textContent = fmt(to); return; }
   A({ targets: o, v: to, duration: 2000, easing: 'easeOutExpo', update: () => (el.textContent = fmt(o.v)) });
 });
@@ -124,8 +126,9 @@ if (A && !reduce) {
 const tbody = document.querySelector('#lens-table tbody');
 const search = document.getElementById('lens-search');
 const chips = document.getElementById('lens-chips');
-const fams = ['Todas', ...new Set(LENSES.map((l) => l[3]))].slice(0, 12);
-let fam = 'Todas', sortK = 'name', asc = true;
+const ALL = tr('all');
+const fams = [ALL, ...new Set(LENSES.map((l) => l[3]))].slice(0, 12);
+let fam = ALL, sortK = 'name', asc = true;
 fams.forEach((f) => {
   const b = document.createElement('button'); b.textContent = f; if (f === fam) b.classList.add('on');
   b.onclick = () => { fam = f; chips.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b)); render(); };
@@ -137,12 +140,12 @@ document.querySelectorAll('#lens-table th').forEach((th) => th.addEventListener(
 }));
 function render() {
   const q = search.value.trim().toLowerCase();
-  const rows = LENSES.filter((l) => (fam === 'Todas' || l[3] === fam) && (!q || l.join(' ').toLowerCase().includes(q)));
+  const rows = LENSES.filter((l) => (fam === ALL || l[3] === fam) && (!q || l.join(' ').toLowerCase().includes(q)));
   const k = KEYS[sortK];
-  rows.sort((a, b) => (typeof a[k] === 'number' ? a[k] - b[k] : String(a[k]).localeCompare(String(b[k]), 'pt')) * (asc ? 1 : -1));
+  rows.sort((a, b) => (typeof a[k] === 'number' ? a[k] - b[k] : String(a[k]).localeCompare(String(b[k]), document.documentElement.lang)) * (asc ? 1 : -1));
   tbody.innerHTML = rows.map((l) => `<tr><td>${l[0]}</td><td class="m">${l[1]} mm</td><td class="m">f/${l[2]}</td><td><span class="fam">${l[3]}</span></td><td class="m">${l[4] || '—'}</td><td class="look">${l[5]}</td></tr>`).join('');
   document.querySelectorAll('#lens-table th').forEach((th) => { th.classList.toggle('sort', th.dataset.k === sortK); th.classList.toggle('asc', th.dataset.k === sortK && asc); });
-  document.getElementById('lens-count').textContent = `${rows.length} de ${LENSES.length} perfis listados nesta página.`;
+  document.getElementById('lens-count').textContent = tr('count')(rows.length, LENSES.length);
   if (A && !reduce) A({ targets: tbody.querySelectorAll('tr'), opacity: [0, 1], translateX: [-8, 0], delay: (el, i) => Math.min(i * 12, 300), duration: 500, easing: 'easeOutQuad' });
 }
 search.addEventListener('input', render);
@@ -150,3 +153,8 @@ render();
 
 // ---------- links de download (preencha em data-href) ----------
 // Troque href="#" no HTML pelos links reais dos releases do GitHub.
+
+// ---------- seletor de idioma: lembra a escolha ----------
+document.querySelectorAll('.lang a').forEach((a) => a.addEventListener('click', () => {
+  try { localStorage.setItem('lang', a.dataset.lang); } catch (e) { /* sem storage */ }
+}));

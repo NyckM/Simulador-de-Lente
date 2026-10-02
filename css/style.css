@@ -307,3 +307,32 @@ select, .editor input { background: var(--bg3); color: var(--text); border: 1px 
   .marquee-track, .pulse, .scroll-hint span { animation: none; }
 }
 .dl .tag { margin-top: auto; } .dl > span:not(.dl-ic) { margin-bottom: 14px; }
+
+/* ---------- seletor de idioma ---------- */
+.lang { display: inline-flex; border: 1px solid var(--line2); border-radius: 999px; padding: 3px; gap: 2px; }
+.nav nav .lang a { font: 500 11px var(--mono); letter-spacing: .06em; padding: 5px 9px; border-radius: 999px; color: var(--muted); }
+.nav nav .lang a.on { background: var(--bg3); color: var(--mint); }
+@media (max-width: 720px) { .nav nav .lang a { display: inline-block; } }
+
+/* ---------- chinês ---------- */
+html[lang="zh-CN"] body { font-family: "Inter Tight", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; }
+html[lang="zh-CN"] em { font-family: "Noto Serif SC", "Songti SC", serif; font-style: normal; font-weight: 700; }
+html[lang="zh-CN"] h2, html[lang="zh-CN"] .hero-title { letter-spacing: 0; line-height: 1.12; }
+html[lang="zh-CN"] .hero-title { font-size: clamp(42px, 6.6vw, 104px); }
+
+/* ---------- em breve ---------- */
+.soon { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--r); background: linear-gradient(90deg, rgba(243,167,92,.06), transparent 60%); }
+.soon-label { font: 500 11px var(--mono); text-transform: uppercase; letter-spacing: .12em; color: var(--amber); border: 1px solid rgba(243,167,92,.5); border-radius: 999px; padding: 5px 10px; }
+.soon-text { margin: 0; color: var(--muted); font-size: 15px; }
+.soon-list { list-style: none; margin: 0 0 0 auto; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.soon-list li { display: inline-flex; align-items: center; gap: 8px; font: 500 14px var(--sans); color: var(--text); padding: 8px 14px; border: 1px dashed var(--line2); border-radius: 999px; }
+.soon-list svg { width: 16px; height: 16px; fill: none; stroke: var(--amber); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 720px) { .soon-list { margin-left: 0; } }
+.lang a { white-space: nowrap; }
+@media (max-width: 720px) {
+  .nav nav { gap: 10px; }
+  .nav nav .lang a { padding: 4px 6px; }
+  .brand span { font-size: 14px; }
+  .brand small { font-size: 11px; }
+}
+@media (max-width: 420px) { .nav nav a.btn { display: none; } }

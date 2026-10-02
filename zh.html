@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>镜头虚化模拟器 · Bruxosdovfx</title>
+  <meta name="description" content="逐个镜面光线追踪的光学镜头模拟器。桌面应用及 After Effects、DaVinci Resolve、Nuke、Photoshop 插件，内置 200 多款镜头。">
+  <meta property="og:title" content="镜头虚化模拟器 · Bruxosdovfx">
+  <meta property="og:description" content="穿过镜头的虚化：光学光线追踪、200+ 镜头、应用与插件。">
+  <meta property="og:image" content="assets/app-preview.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%239ff0c8' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23f3a75c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="pt-BR" href="index.html">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <link rel="alternate" hreflang="zh-CN" href="zh.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="5" class="dot"/></svg>
+    <span>镜头虚化模拟器<small>Bruxosdovfx 出品</small></span>
+  </a>
+  <nav>
+    <a href="#diferenca">光学 × 模糊</a>
+    <a href="#comparacoes">前后对比</a>
+    <a href="#laboratorio">实验室</a>
+    <a href="#lentes">镜头库</a>
+    <a href="#download" class="btn btn-small">下载</a>
+    <div class="lang" aria-label="语言">
+      <a href="index.html" hreflang="pt-BR" data-lang="pt">PT</a><a href="en.html" hreflang="en" data-lang="en">EN</a><a href="zh.html" hreflang="zh-CN" data-lang="zh" class="on">中文</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-content wrap">
+    <p class="kicker reveal-hero"><span class="pulse"></span> 光学模拟器 · 逐面光线追踪</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="w">穿过镜头的</span></span>
+      <span class="line"><em class="w">真实</em><span class="w">虚化。</span></span>
+    </h1>
+    <p class="hero-sub reveal-hero">光线从第一片镜片进入，在每个镜面折射，被光圈裁切，最后抵达传感器。画面中的焦外正是由这条路径产生的——而不是模糊滤镜。</p>
+    <div class="hero-cta reveal-hero">
+      <a class="btn" href="#laboratorio">立即调整镜片</a>
+      <a class="btn btn-ghost" href="#download">下载应用</a>
+    </div>
+    <ul class="platforms reveal-hero">
+      <li><b>应用</b> Windows x64</li>
+      <li><b>插件</b> After Effects</li>
+      <li><b>插件</b> DaVinci Resolve</li>
+      <li><b>插件</b> Nuke</li>
+      <li><b>插件</b> Photoshop</li>
+    </ul>
+  </div>
+  <div class="hero-readout reveal-hero" aria-hidden="true">
+    <div><span>镜头</span><b id="ro-lens">双高斯 50 mm</b></div>
+    <div><span>光圈</span><b id="ro-f">f/2.0</b></div>
+    <div><span>镜面</span><b>11</b></div>
+    <div><span>对焦</span><b id="ro-focus">—</b></div>
+  </div>
+  <a class="scroll-hint" href="#diferenca" aria-label="滚动"><span></span></a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ============ ÓPTICO × BLUR ============ -->
+<section class="section" id="diferenca">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">01 — 前后对比</p>
+      <h2 class="reveal">模糊不等于<em>虚化</em>。</h2>
+      <p class="lead reveal">高斯模糊只是把已经记录的像素摊开，镜头扩散的是<b>光</b>。拖动分隔线对比同一场景——光学一侧是在本页面实时计算的，光线穿过一支双高斯 50 mm 镜头。</p>
+    </div>
+
+    <div class="wipe-tabs reveal" role="tablist">
+      <button class="tab active" data-mode="gauss" role="tab">高斯模糊 × 光学</button>
+      <button class="tab" data-mode="input" role="tab">清晰原图 × 光学</button>
+    </div>
+
+    <div class="wipe big reveal" id="wipe-main">
+      <canvas class="wipe-a" id="wipe-left"></canvas>
+      <canvas class="wipe-b" id="wipe-right"></canvas>
+      <div class="wipe-handle"><span>↔</span></div>
+      <span class="wipe-tag left" id="wipe-tag-left">高斯模糊</span>
+      <span class="wipe-tag right">光学 · Double-Gauss f/2</span>
+      <div class="pins" id="pins"></div>
+      <div class="wipe-loading" id="wipe-loading">正在追踪光线…</div>
+    </div>
+
+    <div class="diff-grid">
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><path d="M5 60 C30 60 35 10 60 10 C85 10 90 60 115 60"/><path d="M5 60 L40 60 L40 12 L80 12 L80 60 L115 60" class="alt"/></svg>
+        <h3>是能量，不是平均</h3>
+        <p>强光虚化后依然明亮。镜头把能量重新分布成光斑；高斯模糊则对已经溢出的像素取平均，亮度随之消失。</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><polygon points="60,6 87,19 94,47 75,66 45,66 26,47 33,19"/></svg>
+        <h3>光圈形状</h3>
+        <p>光圈叶片决定焦外的形状。收小光圈，圆形变成七边形；叶片做成圆弧，它又会变回圆形。</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><circle cx="45" cy="35" r="26"/><circle cx="72" cy="35" r="26"/></svg>
+        <h3>边缘的猫眼</h3>
+        <p>离轴时，光束会被前后镜片裁切，光斑变成指向画面中心的猫眼。</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><circle cx="35" cy="35" r="24"/><circle cx="35" cy="35" r="10"/><circle cx="88" cy="35" r="24" class="alt"/></svg>
+        <h3>前景 ≠ 背景</h3>
+        <p>存在球差时，焦平面前后的虚化不同：一侧是明亮的光环，另一侧是柔和的中心。</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><circle cx="56" cy="35" r="24" class="r"/><circle cx="60" cy="35" r="24" class="g"/><circle cx="64" cy="35" r="24" class="b"/></svg>
+        <h3>按波长分色</h3>
+        <p>每种玻璃都有自己的折射率和色散。红、绿、蓝在不同位置对焦，在光斑边缘形成色边。</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><rect x="10" y="12" width="44" height="46"/><path d="M66 58 L66 12 L110 12" class="alt"/></svg>
+        <h3>深度与遮挡</h3>
+        <p>使用 RGB + 深度时，每个平面按自身距离虚化，前景遮住后面的光斑——不会出现主体颜色的光晕。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARAÇÕES REAIS ============ -->
+<section class="section alt-bg" id="comparacoes">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">02 — 应用渲染</p>
+      <h2 class="reveal">虚化<em>内部</em>的变化。</h2>
+      <p class="lead reveal">模拟器的真实输出。拖动每条分隔线。</p>
+    </div>
+
+    <div class="compare-grid">
+      <figure class="compare reveal">
+        <div class="wipe img" data-src="assets/esferica.png" data-tiles="3" data-a="0" data-b="2" data-crop="50"></div>
+        <figcaption><b>正负球差。</b>负球差：边缘出现硬光环；正球差：中心密实、边缘渐隐。同样的虚化半径，两种不同的质感——模糊滤镜无从得知。</figcaption>
+      </figure>
+      <figure class="compare reveal">
+        <div class="wipe img" data-src="assets/eclipse.png" data-tiles="2" data-a="0" data-b="1" data-crop="40"></div>
+        <figcaption><b>按光瞳采样的遮挡。</b>光源与镜头之间的物体只挡住部分光线，光斑变成边缘柔和的月牙——而不是被蒙版切掉的圆。</figcaption>
+      </figure>
+      <figure class="compare reveal wide">
+        <div class="wipe img" data-src="assets/gotas.png" data-tiles="3" data-a="1" data-b="2" data-crop="40"></div>
+        <figcaption><b>前镜片上的水滴。</b>同一支镜头、同一张图：对焦 0.6 m 时水滴像一个个小透镜；对焦 5 m 时它们化开，和真实相机一样。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LABORATÓRIO ============ -->
+<section class="section" id="laboratorio">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">03 — 实时实验室</p>
+      <h2 class="reveal">动手调整<em>镜片</em>。</h2>
+      <p class="lead reveal">这是在浏览器中运行的轻量版引擎。拖动镜片可以移动它，蓝色手柄改变曲率，橙色手柄开大或收小光圈，镜头下方的横条用于对焦。右侧的焦外会随每次操作重新计算。</p>
+    </div>
+
+    <div class="lab reveal" id="lab">
+      <div class="lab-top">
+        <div class="lab-presets" id="lab-presets"></div>
+        <div class="lab-stats">
+          <div><span>焦距</span><b id="st-efl">—</b></div>
+          <div><span>光圈</span><b id="st-f">—</b></div>
+          <div><span>对焦距离</span><b id="st-focus">—</b></div>
+          <div><span>RMS 弥散斑</span><b id="st-rms">—</b></div>
+          <div><span>边缘光量</span><b id="st-vig">—</b></div>
+        </div>
+      </div>
+
+      <div class="lab-main">
+        <div class="lab-left">
+          <div class="xsec-wrap">
+            <canvas id="xsec"></canvas>
+            <div class="xsec-legend">
+              <span><i class="c-mint"></i>轴上光线</span>
+              <span><i class="c-amber"></i>视场光线</span>
+              <span><i class="c-blue"></i>曲率</span>
+              <span><i class="c-orange"></i>光圈</span>
+            </div>
+            <p class="xsec-msg" id="xsec-msg"></p>
+          </div>
+          <div class="controls">
+            <label>光圈 <output id="o-fstop"></output><input type="range" id="c-fstop" min="0" max="1" step="0.001"></label>
+            <label>对焦距离 <output id="o-focus"></output><input type="range" id="c-focus" min="0" max="1" step="0.001"></label>
+            <label>背景光源距离 <output id="o-bg"></output><input type="range" id="c-bg" min="0" max="1" step="0.001"></label>
+            <label>光线视场高度 <output id="o-field"></output><input type="range" id="c-field" min="0" max="21" step="0.1" value="14"></label>
+            <label>光圈叶片 <output id="o-blades"></output><input type="range" id="c-blades" min="0" max="16" step="1"></label>
+            <label>叶片圆度 <output id="o-round"></output><input type="range" id="c-round" min="0" max="1" step="0.01" value="0"></label>
+            <label>玻璃色散 <output id="o-disp"></output><input type="range" id="c-disp" min="0" max="8" step="0.1" value="1"></label>
+            <label class="seg">光线起点
+              <span class="segbtns" id="c-src">
+                <button data-v="focus" class="on">焦点</button><button data-v="bg">背景</button><button data-v="inf">∞</button>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="lab-right">
+          <div class="scene-wrap">
+            <canvas id="scene"></canvas>
+            <span class="scene-tag">传感器 36 × 24 mm · 背景 + 前景光源</span>
+          </div>
+          <div class="psf-row">
+            <figure><canvas id="psf-c"></canvas><figcaption>焦外 · 中心</figcaption></figure>
+            <figure><canvas id="psf-e"></canvas><figcaption>焦外 · 边缘</figcaption></figure>
+            <figure><canvas id="psf-f"></canvas><figcaption>焦外 · 前景</figcaption></figure>
+            <figure><canvas id="spot"></canvas><figcaption id="spot-cap">焦点弥散斑</figcaption></figure>
+          </div>
+          <div class="editor">
+            <div class="editor-head">
+              <span>镜面</span>
+              <select id="e-surf"></select>
+            </div>
+            <div class="editor-grid">
+              <label>曲率半径 · mm<input id="e-R" type="number" step="0.1"></label>
+              <label>到下一面厚度 · mm<input id="e-t" type="number" step="0.05"></label>
+              <label>直径 · mm<input id="e-d" type="number" step="0.1"></label>
+              <label><span>折射率 n<sub>d</sub></span><input id="e-n" type="number" step="0.001"></label>
+              <label><span>阿贝数 V<sub>d</sub></span><input id="e-V" type="number" step="0.1"></label>
+              <div class="editor-btns">
+                <button class="btn btn-small btn-ghost" id="e-autofocus">对焦</button>
+                <button class="btn btn-small btn-ghost" id="e-reset">还原</button>
+              </div>
+            </div>
+            <p class="editor-note" id="lens-note"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="fineprint reveal">真实的三维光线追踪（矢量斯涅尔定律、球面、直径裁切和多边形光圈），并按阿贝数在三个波长上计算色散。为网页做了简化：没有菲涅尔、镀膜、鬼影、衍射和深度。完整应用在 Vulkan/CUDA 上追踪，每像素最多 1024 个采样。</p>
+  </div>
+</section>
+
+<!-- ============ O APP ============ -->
+<section class="section alt-bg" id="app">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">04 — 应用</p>
+      <h2 class="reveal">从镜片到<em>像素</em>。</h2>
+      <p class="lead reveal">选择镜头，打开图片、视频或深度图，在 GPU 上实时预览。编辑镜头处方，查看光路以及画面中心和边缘的虚化形状。</p>
+    </div>
+    <div class="app-show reveal">
+      <img src="assets/app-preview.png" alt="镜头虚化模拟器界面：左侧为清晰原图，右侧为光学焦外输出" class="app-shot" loading="lazy">
+      <img src="assets/caminho-da-luz.png" alt="“光路”面板，显示穿过镜头的光线" class="app-float f1" loading="lazy">
+      <img src="assets/psf.png" alt="“虚化形状”面板，显示中心和视场的 PSF" class="app-float f2" loading="lazy">
+    </div>
+    <div class="feature-list">
+      <div class="feat reveal"><b>图片、视频与深度</b><span>RGB + 深度，按颜色通道计算覆盖；导出 PNG 和逐帧 MP4。</span></div>
+      <div class="feat reveal"><b>预览 × 渲染</b><span>质量从 Draft（24）到 Extreme（1024 采样），预览与渲染可分别设置。</span></div>
+      <div class="feat reveal"><b>镀膜、鬼影与衍射</b><span>逐界面增透镀膜、镜面间反射，以及随叶片方向的衍射星芒。</span></div>
+      <div class="feat reveal"><b>可编辑处方</b><span>每个镜面的曲率、厚度、直径和折射率，图示同步更新。</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LENTES ============ -->
+<section class="section" id="lentes">
+  <div class="wrap">
+    <div class="lenses-hero">
+      <div>
+        <p class="label reveal">05 — 镜头库</p>
+        <h2 class="reveal"><span class="count" data-to="200">0</span>+ 款镜头<br><em>任你选择</em>。</h2>
+        <p class="lead reveal">双高斯、松纳、天塞、佩兹伐、三片式、变形宽银幕和反远摄。每个配置都会改变光学模型、焦距、镜片尺寸、最大光圈和光圈结构。</p>
+      </div>
+      <div class="dot-grid" id="dot-grid" aria-hidden="true"></div>
+    </div>
+
+    <div class="table-tools reveal">
+      <input type="search" id="lens-search" placeholder="搜索镜头、厂商、结构…" aria-label="搜索镜头">
+      <div class="chips" id="lens-chips"></div>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="lens-table" id="lens-table">
+        <thead><tr>
+          <th data-k="name">镜头</th><th data-k="focal">焦距</th><th data-k="f">光圈</th>
+          <th data-k="family">结构</th><th data-k="blades">叶片</th><th data-k="look">风格</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="fineprint" id="lens-count"></p>
+  </div>
+</section>
+
+<!-- ============ MOTOR ============ -->
+<section class="section alt-bg" id="motor">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">06 — 引擎</p>
+      <h2 class="reveal">真实光线，<em>GPU 计算</em>。</h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b><span class="count" data-to="1024">0</span></b><span>Extreme 模式下每像素每通道的光学采样数</span></div>
+      <div class="stat reveal"><b><span class="count" data-to="5.09" data-dec="2">0</span>×</b><span>Vulkan 构建光线图集相比 CPU 的加速倍数（RTX 4090）</span></div>
+      <div class="stat reveal"><b><span class="count" data-to="98.6" data-dec="1">0</span>%</b><span>带深度的色彩合成中边缘跳变的降幅（v0.8.8）</span></div>
+      <div class="stat reveal"><b><span class="count" data-to="70">0</span>+</b><span>针对能量、对焦、深度和 GPU 的自动化测试</span></div>
+    </div>
+    <div class="pipeline reveal">
+      <div class="step"><i>1</i><b>镜头处方</b><span>镜面、玻璃、光圈</span></div>
+      <div class="step"><i>2</i><b>光线追踪</b><span>Vulkan 计算着色器中的斯涅尔 + 菲涅尔</span></div>
+      <div class="step"><i>3</i><b>PSF 图集</b><span>按视场、通道和光圈</span></div>
+      <div class="step"><i>4</i><b>合成</b><span>线性光下的 RGB + 深度</span></div>
+      <div class="step"><i>5</i><b>输出</b><span>预览、PNG、MP4、插件</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section class="section" id="download">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="label reveal">07 — 平台</p>
+      <h2 class="reveal">一支镜头，<em>五个</em>平台。</h2>
+      <p class="lead reveal">应用与插件共享同一个光学引擎和同一套镜头库。</p>
+    </div>
+    <div class="dl-grid">
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Simulador-de-Desfoque-Bruxosdovfx-0.9.6.18-Setup-Windows-x64.exe" data-href="EXECUTAVEL" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="24" rx="2"/><path d="M18 39h12M24 33v6"/><circle cx="24" cy="21" r="6"/></svg>
+        </span>
+        <b>桌面应用</b><span>Windows x64 · GPU NVIDIA CUDA / Vulkan</span><em class="tag ok">安装 · v0.9.6.18</em>
+      </a>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-AE-0.2.1-Setup-Windows-x64.exe" data-href="AFTER_EFFECTS" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M14 33l6-18 6 18M16 27h8M30 23h6M30 23v10"/></svg>
+        </span>
+        <b>After Effects</b><span>原生特效 · 16/32 bpc</span><em class="tag ok">安装 · v0.2.1</em>
+      </a>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-Resolve-0.2.1-Setup-Windows-x64.exe" data-href="RESOLVE" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="7"/><circle cx="15" cy="31" r="7"/><circle cx="33" cy="31" r="7"/></svg>
+        </span>
+        <b>DaVinci Resolve</b><span>OpenFX 插件 · 支持深度输入</span><em class="tag ok">安装 · v0.2.1</em>
+      </a>
+      <a class="dl reveal is-new" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-Nuke-0.2.1-Setup-Windows-x64.exe" data-href="NUKE" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="6" y="8" width="14" height="10" rx="2"/><rect x="28" y="19" width="14" height="10" rx="2"/><rect x="6" y="30" width="14" height="10" rx="2"/><path d="M20 13h4v11h4M20 35h4V24"/></svg>
+        </span>
+        <b>Nuke <i class="new">新</i></b><span>节点式合成插件</span><em class="tag ok">安装 · v0.2.1</em>
+      </a>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/v0.9_plugins/Bruxosdovfx-Desfoque-Photoshop-0.1.1-Windows.zip" data-href="PHOTOSHOP" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M15 33V15h6a5 5 0 010 10h-6M37 21c-1-2-6-2-6 1s6 2 6 6-6 3-7 1"/></svg>
+        </span>
+        <b>Photoshop</b><span>照片与图层滤镜</span><em class="tag ok">下载 .zip · v0.1.1</em>
+      </a>
+    </div>
+    <a class="dl-fix reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Atualizacao-Astigmatismo-Bruxosdovfx-0.9.6.18.exe" rel="noopener" download>
+      <span class="dl-fix-ic">↻</span>
+      <span><b>已经装了旧版本？</b>运行 0.9.6.18 更新（像散修正），无需重新安装即可修复旧版本。</span>
+      <em class="tag ok">下载修复</em>
+    </a>
+    <div class="soon reveal">
+      <span class="soon-label">即将推出</span>
+      <p class="soon-text">同一光学引擎即将支持：</p>
+      <ul class="soon-list">
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h3a2 2 0 012 2v5"/></svg>ComfyUI</li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.5 5 10a5 5 0 01-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3 0-5.5 1-8.5z"/></svg>Flame</li>
+        <li><svg viewBox="0 0 24 24"><circle cx="14" cy="13" r="6"/><circle cx="14" cy="13" r="2.2"/><path d="M8 13L3 9M10 8L6 4"/></svg>Blender</li>
+        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 16V9l3 2 3-3v8"/></svg>Unreal Engine</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="5" class="dot"/></svg><span>镜头虚化模拟器<small>Bruxosdovfx 出品</small></span></div>
+    <p>除特别说明外，镜头配置均为真实设计的近似光学模型或结构研究。厂商名称归各自所有者所有。参考双高斯处方：LensSim（MIT）。</p>
+    <p class="mono">© <span id="year"></span> Bruxosdovfx</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

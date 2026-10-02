@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lens Blur Simulator · Bruxosdovfx</title>
+  <meta name="description" content="Optical lens simulator with ray tracing through every glass surface. Desktop app and plugins for After Effects, DaVinci Resolve, Nuke and Photoshop, with 200+ lenses.">
+  <meta property="og:title" content="Lens Blur Simulator · Bruxosdovfx">
+  <meta property="og:description" content="Blur that travels through the lens: optical ray tracing, 200+ lenses, app and plugins.">
+  <meta property="og:image" content="assets/app-preview.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%239ff0c8' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23f3a75c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="pt-BR" href="index.html">
+  <link rel="alternate" hreflang="en" href="en.html">
+  <link rel="alternate" hreflang="zh-CN" href="zh.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="5" class="dot"/></svg>
+    <span>Lens Blur Simulator<small>by Bruxosdovfx</small></span>
+  </a>
+  <nav>
+    <a href="#diferenca">Optical × blur</a>
+    <a href="#comparacoes">Before & after</a>
+    <a href="#laboratorio">Lab</a>
+    <a href="#lentes">Lenses</a>
+    <a href="#download" class="btn btn-small">Download</a>
+    <div class="lang" aria-label="Language">
+      <a href="index.html" hreflang="pt-BR" data-lang="pt">PT</a><a href="en.html" hreflang="en" data-lang="en" class="on">EN</a><a href="zh.html" hreflang="zh-CN" data-lang="zh">中文</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-content wrap">
+    <p class="kicker reveal-hero"><span class="pulse"></span> Optical simulator · per-surface ray tracing</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="w">Blur</span> <span class="w">that</span> <em class="w">travels</em></span>
+      <span class="line"><span class="w">through</span> <span class="w">the</span> <span class="w">lens.</span></span>
+    </h1>
+    <p class="hero-sub reveal-hero">Light enters through the first glass, refracts at every surface, gets clipped by the aperture and reaches the sensor. The bokeh in your image is born from that path — not from a blur filter.</p>
+    <div class="hero-cta reveal-hero">
+      <a class="btn" href="#laboratorio">Play with the glass now</a>
+      <a class="btn btn-ghost" href="#download">Download the app</a>
+    </div>
+    <ul class="platforms reveal-hero">
+      <li><b>App</b> Windows x64</li>
+      <li><b>Plugin</b> After Effects</li>
+      <li><b>Plugin</b> DaVinci Resolve</li>
+      <li><b>Plugin</b> Nuke</li>
+      <li><b>Plugin</b> Photoshop</li>
+    </ul>
+  </div>
+  <div class="hero-readout reveal-hero" aria-hidden="true">
+    <div><span>lens</span><b id="ro-lens">Double-Gauss 50 mm</b></div>
+    <div><span>aperture</span><b id="ro-f">f/2.0</b></div>
+    <div><span>surfaces</span><b>11</b></div>
+    <div><span>focus</span><b id="ro-focus">—</b></div>
+  </div>
+  <a class="scroll-hint" href="#diferenca" aria-label="Scroll"><span></span></a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<!-- ============ ÓPTICO × BLUR ============ -->
+<section class="section" id="diferenca">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">01 — Before & after</p>
+      <h2 class="reveal">Blur is not <em>defocus</em>.</h2>
+      <p class="lead reveal">A Gaussian blur spreads pixels that are already recorded. A lens spreads <b>light</b>. Drag the divider and compare the same scene — the optical side was computed live, on this page, by tracing rays through a Double-Gauss 50 mm.</p>
+    </div>
+
+    <div class="wipe-tabs reveal" role="tablist">
+      <button class="tab active" data-mode="gauss" role="tab">Gaussian blur × Optical</button>
+      <button class="tab" data-mode="input" role="tab">Sharp input × Optical</button>
+    </div>
+
+    <div class="wipe big reveal" id="wipe-main">
+      <canvas class="wipe-a" id="wipe-left"></canvas>
+      <canvas class="wipe-b" id="wipe-right"></canvas>
+      <div class="wipe-handle"><span>↔</span></div>
+      <span class="wipe-tag left" id="wipe-tag-left">Gaussian blur</span>
+      <span class="wipe-tag right">Optical · Double-Gauss f/2</span>
+      <div class="pins" id="pins"></div>
+      <div class="wipe-loading" id="wipe-loading">tracing rays…</div>
+    </div>
+
+    <div class="diff-grid">
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><path d="M5 60 C30 60 35 10 60 10 C85 10 90 60 115 60"/><path d="M5 60 L40 60 L40 12 L80 12 L80 60 L115 60" class="alt"/></svg>
+        <h3>Energy, not averaging</h3>
+        <p>A bright light stays bright after defocus. The lens redistributes its energy into a disc; a Gaussian averages already-clipped pixels and kills the glow.</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><polygon points="60,6 87,19 94,47 75,66 45,66 26,47 33,19"/></svg>
+        <h3>Iris shape</h3>
+        <p>The aperture blades draw the bokeh. Stop down and the circle becomes a heptagon; round the blades and it turns circular again.</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><circle cx="45" cy="35" r="26"/><circle cx="72" cy="35" r="26"/></svg>
+        <h3>Cat-eye at the edges</h3>
+        <p>Off-axis, the beam is clipped by the front and rear glass. The disc becomes a cat's eye pointing to the center of the frame.</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><circle cx="35" cy="35" r="24"/><circle cx="35" cy="35" r="10"/><circle cx="88" cy="35" r="24" class="alt"/></svg>
+        <h3>Front ≠ back</h3>
+        <p>With spherical aberration, blur in front of and behind the focus plane differs: a bright ring on one side, a soft center on the other.</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><circle cx="56" cy="35" r="24" class="r"/><circle cx="60" cy="35" r="24" class="g"/><circle cx="64" cy="35" r="24" class="b"/></svg>
+        <h3>Color by wavelength</h3>
+        <p>Each glass has its own index and dispersion. Red, green and blue focus at different places and create fringes on the disc edges.</p>
+      </article>
+      <article class="diff reveal">
+        <svg viewBox="0 0 120 70" class="draw"><rect x="10" y="12" width="44" height="46"/><path d="M66 58 L66 12 L110 12" class="alt"/></svg>
+        <h3>Depth and occlusion</h3>
+        <p>With RGB + depth, each plane gets the blur of its own distance and the foreground covers the discs behind it — with no halo of the subject's color.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMPARAÇÕES REAIS ============ -->
+<section class="section alt-bg" id="comparacoes">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">02 — App renders</p>
+      <h2 class="reveal">What changes <em>inside</em> the blur.</h2>
+      <p class="lead reveal">Real output from the simulator. Drag each divider.</p>
+    </div>
+
+    <div class="compare-grid">
+      <figure class="compare reveal">
+        <div class="wipe img" data-src="assets/esferica.png" data-tiles="3" data-a="0" data-b="2" data-crop="50"></div>
+        <figcaption><b>Signed spherical aberration.</b> Negative: a hard ring at the edge. Positive: a dense center and a fading edge. Same blur radius, two different textures — a blur filter has no way to know this.</figcaption>
+      </figure>
+      <figure class="compare reveal">
+        <div class="wipe img" data-src="assets/eclipse.png" data-tiles="2" data-a="0" data-b="1" data-crop="40"></div>
+        <figcaption><b>Per-pupil-sample eclipse.</b> An object between the light and the lens blocks only some of the rays. The disc becomes a soft-edged crescent — not a circle cut by a mask.</figcaption>
+      </figure>
+      <figure class="compare reveal wide">
+        <div class="wipe img" data-src="assets/gotas.png" data-tiles="3" data-a="1" data-b="2" data-crop="40"></div>
+        <figcaption><b>Drops on the front glass.</b> Same lens, same image: focused at 0.6 m the drops show up as tiny lenses; focused at 5 m they dissolve, just like in a real camera.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LABORATÓRIO ============ -->
+<section class="section" id="laboratorio">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">03 — Live lab</p>
+      <h2 class="reveal">Move the <em>glass</em>.</h2>
+      <p class="lead reveal">This is a lightweight version of the engine running in your browser. Drag a glass element to move it, the blue handles to change curvature and the orange ones to open or close the aperture. The bar under the lens focuses. The bokeh on the right is recomputed on every move.</p>
+    </div>
+
+    <div class="lab reveal" id="lab">
+      <div class="lab-top">
+        <div class="lab-presets" id="lab-presets"></div>
+        <div class="lab-stats">
+          <div><span>Focal length</span><b id="st-efl">—</b></div>
+          <div><span>Aperture</span><b id="st-f">—</b></div>
+          <div><span>Focus at</span><b id="st-focus">—</b></div>
+          <div><span>RMS spot</span><b id="st-rms">—</b></div>
+          <div><span>Edge light</span><b id="st-vig">—</b></div>
+        </div>
+      </div>
+
+      <div class="lab-main">
+        <div class="lab-left">
+          <div class="xsec-wrap">
+            <canvas id="xsec"></canvas>
+            <div class="xsec-legend">
+              <span><i class="c-mint"></i>axial rays</span>
+              <span><i class="c-amber"></i>field rays</span>
+              <span><i class="c-blue"></i>curvature</span>
+              <span><i class="c-orange"></i>iris</span>
+            </div>
+            <p class="xsec-msg" id="xsec-msg"></p>
+          </div>
+          <div class="controls">
+            <label>Aperture <output id="o-fstop"></output><input type="range" id="c-fstop" min="0" max="1" step="0.001"></label>
+            <label>Focus distance <output id="o-focus"></output><input type="range" id="c-focus" min="0" max="1" step="0.001"></label>
+            <label>Background lights <output id="o-bg"></output><input type="range" id="c-bg" min="0" max="1" step="0.001"></label>
+            <label>Ray field height <output id="o-field"></output><input type="range" id="c-field" min="0" max="21" step="0.1" value="14"></label>
+            <label>Blades <output id="o-blades"></output><input type="range" id="c-blades" min="0" max="16" step="1"></label>
+            <label>Blade curvature <output id="o-round"></output><input type="range" id="c-round" min="0" max="1" step="0.01" value="0"></label>
+            <label>Glass dispersion <output id="o-disp"></output><input type="range" id="c-disp" min="0" max="8" step="0.1" value="1"></label>
+            <label class="seg">Rays from
+              <span class="segbtns" id="c-src">
+                <button data-v="focus" class="on">Focus</button><button data-v="bg">Background</button><button data-v="inf">∞</button>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="lab-right">
+          <div class="scene-wrap">
+            <canvas id="scene"></canvas>
+            <span class="scene-tag">Sensor 36 × 24 mm · background + foreground lights</span>
+          </div>
+          <div class="psf-row">
+            <figure><canvas id="psf-c"></canvas><figcaption>Bokeh · center</figcaption></figure>
+            <figure><canvas id="psf-e"></canvas><figcaption>Bokeh · edge</figcaption></figure>
+            <figure><canvas id="psf-f"></canvas><figcaption>Bokeh · front</figcaption></figure>
+            <figure><canvas id="spot"></canvas><figcaption id="spot-cap">Spot at focus</figcaption></figure>
+          </div>
+          <div class="editor">
+            <div class="editor-head">
+              <span>Surface</span>
+              <select id="e-surf"></select>
+            </div>
+            <div class="editor-grid">
+              <label>Radius of curvature · mm<input id="e-R" type="number" step="0.1"></label>
+              <label>Next thickness · mm<input id="e-t" type="number" step="0.05"></label>
+              <label>Diameter · mm<input id="e-d" type="number" step="0.1"></label>
+              <label><span>Index n<sub>d</sub></span><input id="e-n" type="number" step="0.001"></label>
+              <label><span>Abbe V<sub>d</sub></span><input id="e-V" type="number" step="0.1"></label>
+              <div class="editor-btns">
+                <button class="btn btn-small btn-ghost" id="e-autofocus">Focus</button>
+                <button class="btn btn-small btn-ghost" id="e-reset">Reset</button>
+              </div>
+            </div>
+            <p class="editor-note" id="lens-note"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="fineprint reveal">Real 3D ray tracing (vector Snell, spherical surfaces, diameter clipping and polygonal iris) with Abbe-based dispersion at three wavelengths. Simplified for the web: no Fresnel, coatings, ghosts, diffraction or depth. The full app traces on Vulkan/CUDA with up to 1024 samples per pixel.</p>
+  </div>
+</section>
+
+<!-- ============ O APP ============ -->
+<section class="section alt-bg" id="app">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">04 — The app</p>
+      <h2 class="reveal">From glass to <em>pixel</em>.</h2>
+      <p class="lead reveal">Pick a lens, open an image, video or depth map and see the preview on the GPU. Edit the prescription, follow the light path and the blur shape at the center and across the field.</p>
+    </div>
+    <div class="app-show reveal">
+      <img src="assets/app-preview.png" alt="Lens Blur Simulator interface: sharp input on the left and optical bokeh output on the right" class="app-shot" loading="lazy">
+      <img src="assets/caminho-da-luz.png" alt="'Light path' panel with rays traced through the lens" class="app-float f1" loading="lazy">
+      <img src="assets/psf.png" alt="'Blur shape' panel with the PSF at the center and in the field" class="app-float f2" loading="lazy">
+    </div>
+    <div class="feature-list">
+      <div class="feat reveal"><b>Image, video and depth</b><span>RGB + depth with per-channel coverage; exports PNG and frame-by-frame MP4.</span></div>
+      <div class="feat reveal"><b>Preview × render</b><span>Quality from Draft (24) to Extreme (1024 samples), with independent preview and render settings.</span></div>
+      <div class="feat reveal"><b>Coatings, ghosts and diffraction</b><span>Per-interface AR coating, reflections between surfaces and diffraction stars oriented by the blades.</span></div>
+      <div class="feat reveal"><b>Editable prescription</b><span>Curvature, thickness, diameter and index of every surface, with the drawing kept in sync.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LENTES ============ -->
+<section class="section" id="lentes">
+  <div class="wrap">
+    <div class="lenses-hero">
+      <div>
+        <p class="label reveal">05 — Library</p>
+        <h2 class="reveal"><span class="count" data-to="200">0</span>+ lenses<br>to <em>choose</em> from.</h2>
+        <p class="lead reveal">Double-Gauss, Sonnar, Tessar, Petzval, triplets, anamorphics and retrofocus. Each profile changes the optical model, focal length, glass size, maximum aperture and iris.</p>
+      </div>
+      <div class="dot-grid" id="dot-grid" aria-hidden="true"></div>
+    </div>
+
+    <div class="table-tools reveal">
+      <input type="search" id="lens-search" placeholder="Search lens, maker, family…" aria-label="Search lens">
+      <div class="chips" id="lens-chips"></div>
+    </div>
+    <div class="table-wrap reveal">
+      <table class="lens-table" id="lens-table">
+        <thead><tr>
+          <th data-k="name">Lens</th><th data-k="focal">Focal</th><th data-k="f">Aperture</th>
+          <th data-k="family">Family</th><th data-k="blades">Blades</th><th data-k="look">Character</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="fineprint" id="lens-count"></p>
+  </div>
+</section>
+
+<!-- ============ MOTOR ============ -->
+<section class="section alt-bg" id="motor">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="label reveal">06 — Engine</p>
+      <h2 class="reveal">Real rays, <em>on the GPU</em>.</h2>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b><span class="count" data-to="1024">0</span></b><span>optical samples per pixel and channel in Extreme mode</span></div>
+      <div class="stat reveal"><b><span class="count" data-to="5.09" data-dec="2">0</span>×</b><span>faster than CPU when building the ray atlas in Vulkan (RTX 4090)</span></div>
+      <div class="stat reveal"><b><span class="count" data-to="98.6" data-dec="1">0</span>%</b><span>less edge jump in chromatic compositing with depth (v0.8.8)</span></div>
+      <div class="stat reveal"><b><span class="count" data-to="70">0</span>+</b><span>automated tests for energy, focus, depth and GPU</span></div>
+    </div>
+    <div class="pipeline reveal">
+      <div class="step"><i>1</i><b>Prescription</b><span>surfaces, glass, aperture stop</span></div>
+      <div class="step"><i>2</i><b>Tracing</b><span>Snell + Fresnel in Vulkan compute</span></div>
+      <div class="step"><i>3</i><b>PSF atlas</b><span>per field, channel and aperture</span></div>
+      <div class="step"><i>4</i><b>Compositing</b><span>RGB + depth in linear light</span></div>
+      <div class="step"><i>5</i><b>Output</b><span>preview, PNG, MP4, plugins</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ============ -->
+<section class="section" id="download">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="label reveal">07 — Platforms</p>
+      <h2 class="reveal">One lens, <em>five</em> places.</h2>
+      <p class="lead reveal">The same optical engine and the same library in the app and the plugins.</p>
+    </div>
+    <div class="dl-grid">
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Simulador-de-Desfoque-Bruxosdovfx-0.9.6.18-Setup-Windows-x64.exe" data-href="EXECUTAVEL" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="24" rx="2"/><path d="M18 39h12M24 33v6"/><circle cx="24" cy="21" r="6"/></svg>
+        </span>
+        <b>Desktop app</b><span>Windows x64 · GPU NVIDIA CUDA / Vulkan</span><em class="tag ok">Install · v0.9.6.18</em>
+      </a>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-AE-0.2.1-Setup-Windows-x64.exe" data-href="AFTER_EFFECTS" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M14 33l6-18 6 18M16 27h8M30 23h6M30 23v10"/></svg>
+        </span>
+        <b>After Effects</b><span>Native effect · 16/32 bpc</span><em class="tag ok">Install · v0.2.1</em>
+      </a>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-Resolve-0.2.1-Setup-Windows-x64.exe" data-href="RESOLVE" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="7"/><circle cx="15" cy="31" r="7"/><circle cx="33" cy="31" r="7"/></svg>
+        </span>
+        <b>DaVinci Resolve</b><span>OpenFX plugin · depth input</span><em class="tag ok">Install · v0.2.1</em>
+      </a>
+      <a class="dl reveal is-new" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-Nuke-0.2.1-Setup-Windows-x64.exe" data-href="NUKE" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="6" y="8" width="14" height="10" rx="2"/><rect x="28" y="19" width="14" height="10" rx="2"/><rect x="6" y="30" width="14" height="10" rx="2"/><path d="M20 13h4v11h4M20 35h4V24"/></svg>
+        </span>
+        <b>Nuke <i class="new">new</i></b><span>Plugin for node-based compositing</span><em class="tag ok">Install · v0.2.1</em>
+      </a>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/v0.9_plugins/Bruxosdovfx-Desfoque-Photoshop-0.1.1-Windows.zip" data-href="PHOTOSHOP" rel="noopener" download>
+        <span class="dl-ic">
+          <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M15 33V15h6a5 5 0 010 10h-6M37 21c-1-2-6-2-6 1s6 2 6 6-6 3-7 1"/></svg>
+        </span>
+        <b>Photoshop</b><span>Filter for photos and layers</span><em class="tag ok">Download .zip · v0.1.1</em>
+      </a>
+    </div>
+    <a class="dl-fix reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Atualizacao-Astigmatismo-Bruxosdovfx-0.9.6.18.exe" rel="noopener" download>
+      <span class="dl-fix-ic">↻</span>
+      <span><b>Already have an older version installed?</b> Run the 0.9.6.18 update (astigmatism) to fix previous versions without reinstalling.</span>
+      <em class="tag ok">Download fix</em>
+    </a>
+    <div class="soon reveal">
+      <span class="soon-label">Coming soon</span>
+      <p class="soon-text">Upcoming integrations of the same optical engine:</p>
+      <ul class="soon-list">
+        <li><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h3a2 2 0 012 2v5"/></svg>ComfyUI</li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.5 5 10a5 5 0 01-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3 0-5.5 1-8.5z"/></svg>Flame</li>
+        <li><svg viewBox="0 0 24 24"><circle cx="14" cy="13" r="6"/><circle cx="14" cy="13" r="2.2"/><path d="M8 13L3 9M10 8L6 4"/></svg>Blender</li>
+        <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 16V9l3 2 3-3v8"/></svg>Unreal Engine</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13"/><circle cx="16" cy="16" r="5" class="dot"/></svg><span>Lens Blur Simulator<small>by Bruxosdovfx</small></span></div>
+    <p>Lens profiles are approximate optical models of real designs or family studies unless stated otherwise. Manufacturer names belong to their respective owners. Reference Double-Gauss prescription: LensSim (MIT).</p>
+    <p class="mono">© <span id="year"></span> Bruxosdovfx</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

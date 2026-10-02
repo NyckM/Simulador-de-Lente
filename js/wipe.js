@@ -1,4 +1,5 @@
 import * as O from './optics.js';
+import { t as tr } from './i18n.js';
 
 // ---------------------------------------------------------------------------
 // Componente de divisória (wipe) genérico
@@ -268,14 +269,14 @@ export function initMainWipe() {
     drawBase(i, 0); drawDots(i, lights); drawBranch(i);
     setMode('gauss');
     document.getElementById('wipe-loading').classList.add('done');
-    el.querySelector('.wipe-tag.right').textContent = `Óptico · Double-Gauss f/${kern.fstop}`;
+    el.querySelector('.wipe-tag.right').textContent = `${tr('optical')} · Double-Gauss f/${kern.fstop}`;
 
     // pinos explicativos
     const defs = [
-      ['hdr', 'Highlight HDR mantém a energia'],
-      ['cat', 'Cat-eye: o vidro recorta o disco'],
-      ['blade', '7 lâminas desenham a forma'],
-      ['cat2', 'Franja cromática na borda'],
+      ['hdr', tr('pinHdr')],
+      ['cat', tr('pinCat')],
+      ['blade', tr('pinBlade')],
+      ['cat2', tr('pinCA')],
     ];
     pins = defs.map(([id, txt]) => {
       const l = lights.find((q) => q.hero === id);
@@ -289,7 +290,7 @@ export function initMainWipe() {
     });
     const fp = document.createElement('div');
     fp.className = 'pin'; fp.style.left = '62%'; fp.style.top = '78%';
-    fp.innerHTML = '<i></i><span>Plano de foco: nítido nos dois</span>';
+    fp.innerHTML = `<i></i><span>${tr('pinFocus')}</span>`;
     pinsEl.appendChild(fp); pins.push({ el: fp, x: 62 });
     el._setX(el._x);
     el.dispatchEvent(new CustomEvent('ready'));
@@ -298,7 +299,7 @@ export function initMainWipe() {
   function setMode(m) {
     const ctx = cl.getContext('2d');
     ctx.drawImage(m === 'gauss' ? offGauss : offInput, 0, 0);
-    tagL.textContent = m === 'gauss' ? 'Blur gaussiano' : 'Entrada nítida';
+    tagL.textContent = m === 'gauss' ? tr('gauss') : tr('input');
   }
   document.querySelectorAll('.wipe-tabs .tab').forEach((b) => b.addEventListener('click', () => {
     document.querySelectorAll('.wipe-tabs .tab').forEach((x) => x.classList.toggle('active', x === b));
