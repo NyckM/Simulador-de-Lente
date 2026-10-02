@@ -250,15 +250,22 @@ select, .editor input { background: var(--bg3); color: var(--text); border: 1px 
 .step span { color: var(--muted); font-size: 13px; }
 
 /* ---------- download ---------- */
-.dl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-.dl { position: relative; display: grid; gap: 6px; align-content: start; text-decoration: none; padding: 26px 22px 24px; border: 1px solid var(--line2); border-radius: var(--r); background: var(--bg2); transition: transform .3s, border-color .3s, background .3s; overflow: hidden; }
+.dl-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.dl b .new { font: 500 10px var(--mono); font-style: normal; text-transform: uppercase; letter-spacing: .1em; color: var(--amber); border: 1px solid var(--amber); border-radius: 999px; padding: 2px 7px; vertical-align: 3px; margin-left: 4px; }
+.dl.is-new { border-color: rgba(243,167,92,.45); }
+.dl-fix { display: flex; align-items: center; gap: 16px; margin-top: 16px; padding: 18px 22px; border: 1px dashed var(--line2); border-radius: var(--r); text-decoration: none; color: var(--muted); font-size: 15px; transition: border-color .3s, background .3s; }
+.dl-fix:hover { border-color: var(--mint-d); background: var(--bg2); }
+.dl-fix b { color: var(--text); }
+.dl-fix .tag { margin: 0 0 0 auto; white-space: nowrap; }
+.dl-fix-ic { font-size: 22px; color: var(--mint); }
+.dl { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-decoration: none; padding: 26px 22px 24px; border: 1px solid var(--line2); border-radius: var(--r); background: var(--bg2); transition: transform .3s, border-color .3s, background .3s; overflow: hidden; }
 .dl::before { content: ""; position: absolute; inset: auto -40% -60% auto; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(159, 240, 200, .18), transparent 70%); transition: transform .5s; }
 .dl:hover { transform: translateY(-4px); border-color: var(--mint-d); }
 .dl:hover::before { transform: scale(1.6); }
 .dl-ic svg { width: 44px; height: 44px; fill: none; stroke: var(--mint); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; margin-bottom: 14px; }
 .dl b { font-size: 20px; letter-spacing: -.02em; }
 .dl span { color: var(--muted); font-size: 14px; }
-.tag { justify-self: start; margin-top: 14px; font: 500 11px var(--mono); font-style: normal; text-transform: uppercase; letter-spacing: .1em; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line2); color: var(--muted); }
+.tag { justify-self: start; margin-top: auto; font: 500 11px var(--mono); font-style: normal; text-transform: uppercase; letter-spacing: .1em; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line2); color: var(--muted); }
 .tag.ok { background: var(--mint); color: #06120c; border-color: var(--mint); }
 
 /* ---------- footer ---------- */
@@ -274,13 +281,16 @@ select, .editor input { background: var(--bg3); color: var(--text); border: 1px 
 @media (max-width: 1080px) {
   .lab-main { grid-template-columns: 1fr; }
   .diff-grid { grid-template-columns: 1fr 1fr; }
-  .feature-list, .stats, .dl-grid { grid-template-columns: 1fr 1fr; }
+  .feature-list, .stats { grid-template-columns: 1fr 1fr; }
+  .dl-grid { grid-template-columns: repeat(3, 1fr); }
   .pipeline { grid-template-columns: 1fr 1fr 1fr; }
   .hero-readout { display: none; }
 }
 @media (max-width: 720px) {
   .nav nav a:not(.btn) { display: none; }
   .diff-grid, .compare-grid, .feature-list, .dl-grid, .lenses-hero { grid-template-columns: 1fr; }
+  .dl-fix { flex-wrap: wrap; }
+  .dl-fix .tag { margin-left: 0; }
   .stats { grid-template-columns: 1fr 1fr; gap: 28px 16px; }
   .pipeline { grid-template-columns: 1fr; }
   .controls { grid-template-columns: 1fr; }
@@ -296,3 +306,4 @@ select, .editor input { background: var(--bg3); color: var(--text); border: 1px 
 @media (prefers-reduced-motion: reduce) {
   .marquee-track, .pulse, .scroll-hint span { animation: none; }
 }
+.dl .tag { margin-top: auto; } .dl > span:not(.dl-ic) { margin-bottom: 14px; }
