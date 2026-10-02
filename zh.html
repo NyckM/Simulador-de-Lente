@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>镜头虚化模拟器 · Bruxosdovfx</title>
-  <meta name="description" content="逐个镜面光线追踪的光学镜头模拟器。桌面应用及 After Effects、DaVinci Resolve、Nuke、Photoshop 插件，内置 200 多款镜头。">
+  <meta name="description" content="逐个镜面光线追踪的光学镜头模拟器。桌面应用及 After Effects、DaVinci Resolve、Nuke、Photoshop、Blender、ComfyUI 插件，内置 200 多款镜头。">
   <meta property="og:title" content="镜头虚化模拟器 · Bruxosdovfx">
   <meta property="og:description" content="穿过镜头的虚化：光学光线追踪、200+ 镜头、应用与插件。">
   <meta property="og:image" content="assets/app-preview.png">
@@ -58,6 +58,8 @@
       <li><b>插件</b> DaVinci Resolve</li>
       <li><b>插件</b> Nuke</li>
       <li><b>插件</b> Photoshop</li>
+      <li><b>插件</b> Blender</li>
+      <li><b>节点</b> ComfyUI</li>
     </ul>
   </div>
   <div class="hero-readout reveal-hero" aria-hidden="true">
@@ -321,53 +323,53 @@
   <div class="wrap">
     <div class="section-head center">
       <p class="label reveal">07 — 平台</p>
-      <h2 class="reveal">一支镜头，<em>五个</em>平台。</h2>
+      <h2 class="reveal">一支镜头，<em>七个</em>平台。</h2>
       <p class="lead reveal">应用与插件共享同一个光学引擎和同一套镜头库。</p>
     </div>
     <div class="dl-grid">
-      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Simulador-de-Desfoque-Bruxosdovfx-0.9.6.18-Setup-Windows-x64.exe" data-href="EXECUTAVEL" rel="noopener" download>
-        <span class="dl-ic">
-          <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="24" rx="2"/><path d="M18 39h12M24 33v6"/><circle cx="24" cy="21" r="6"/></svg>
-        </span>
-        <b>桌面应用</b><span>Windows x64 · GPU NVIDIA CUDA / Vulkan</span><em class="tag ok">安装 · v0.9.6.18</em>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Simulador-de-Desfoque-Bruxosdovfx-0.9.6.20-Setup-Windows-x64.exe" data-href="EXECUTAVEL" rel="noopener" download>
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="24" rx="2"/><path d="M18 39h12M24 33v6"/><circle cx="24" cy="21" r="6"/></svg></span>
+        <b>桌面应用</b><span>Windows x64 · GPU NVIDIA CUDA / Vulkan</span><em class="tag ok">安装 · v0.9.6.20</em>
       </a>
-      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-AE-0.2.1-Setup-Windows-x64.exe" data-href="AFTER_EFFECTS" rel="noopener" download>
-        <span class="dl-ic">
-          <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M14 33l6-18 6 18M16 27h8M30 23h6M30 23v10"/></svg>
-        </span>
-        <b>After Effects</b><span>原生特效 · 16/32 bpc</span><em class="tag ok">安装 · v0.2.1</em>
-      </a>
-      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-Resolve-0.2.1-Setup-Windows-x64.exe" data-href="RESOLVE" rel="noopener" download>
-        <span class="dl-ic">
-          <svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="7"/><circle cx="15" cy="31" r="7"/><circle cx="33" cy="31" r="7"/></svg>
-        </span>
-        <b>DaVinci Resolve</b><span>OpenFX 插件 · 支持深度输入</span><em class="tag ok">安装 · v0.2.1</em>
-      </a>
-      <a class="dl reveal is-new" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Bruxosdovfx-Desfoque-Nuke-0.2.1-Setup-Windows-x64.exe" data-href="NUKE" rel="noopener" download>
-        <span class="dl-ic">
-          <svg viewBox="0 0 48 48"><rect x="6" y="8" width="14" height="10" rx="2"/><rect x="28" y="19" width="14" height="10" rx="2"/><rect x="6" y="30" width="14" height="10" rx="2"/><path d="M20 13h4v11h4M20 35h4V24"/></svg>
-        </span>
-        <b>Nuke <i class="new">新</i></b><span>节点式合成插件</span><em class="tag ok">安装 · v0.2.1</em>
-      </a>
+      <div class="dl reveal" data-href="AFTER_EFFECTS">
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M14 33l6-18 6 18M16 27h8M30 23h6M30 23v10"/></svg></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-ZH-CN-Setup-Windows-x64.exe" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-PT-BR-Setup-Windows-x64.exe" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-EN-Setup-Windows-x64.exe" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-ZH-CN-Setup-Windows-x64.exe" rel="noopener" download>After Effects</a></b><span>原生特效 · 16/32 bpc</span><em class="tag ok">安装 · v0.2.2</em>
+        <span class="dl-langs"><span>语言：</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-PT-BR-Setup-Windows-x64.exe" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-EN-Setup-Windows-x64.exe" download>EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-AE-0.2.2-ZH-CN-Setup-Windows-x64.exe" download class="on">中文</a></span>
+      </div>
+      <div class="dl reveal" data-href="RESOLVE">
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="7"/><circle cx="15" cy="31" r="7"/><circle cx="33" cy="31" r="7"/></svg></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-ZH-CN-Setup-Windows-x64.exe" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-PT-BR-Setup-Windows-x64.exe" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-EN-Setup-Windows-x64.exe" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-ZH-CN-Setup-Windows-x64.exe" rel="noopener" download>DaVinci Resolve</a></b><span>OpenFX 插件 · 支持深度输入</span><em class="tag ok">安装 · v0.2.2</em>
+        <span class="dl-langs"><span>语言：</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-PT-BR-Setup-Windows-x64.exe" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-EN-Setup-Windows-x64.exe" download>EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Resolve-0.2.2-ZH-CN-Setup-Windows-x64.exe" download class="on">中文</a></span>
+      </div>
+      <div class="dl reveal" data-href="NUKE">
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="6" y="8" width="14" height="10" rx="2"/><rect x="28" y="19" width="14" height="10" rx="2"/><rect x="6" y="30" width="14" height="10" rx="2"/><path d="M20 13h4v11h4M20 35h4V24"/></svg></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-ZH-CN-Setup-Windows-x64.exe" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-PT-BR-Setup-Windows-x64.exe" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-EN-Setup-Windows-x64.exe" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-ZH-CN-Setup-Windows-x64.exe" rel="noopener" download>Nuke</a></b><span>节点式合成插件</span><em class="tag ok">安装 · v0.2.2</em>
+        <span class="dl-langs"><span>语言：</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-PT-BR-Setup-Windows-x64.exe" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-EN-Setup-Windows-x64.exe" download>EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxosdovfx-Desfoque-Nuke-0.2.2-ZH-CN-Setup-Windows-x64.exe" download class="on">中文</a></span>
+      </div>
       <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/v0.9_plugins/Bruxosdovfx-Desfoque-Photoshop-0.1.1-Windows.zip" data-href="PHOTOSHOP" rel="noopener" download>
-        <span class="dl-ic">
-          <svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M15 33V15h6a5 5 0 010 10h-6M37 21c-1-2-6-2-6 1s6 2 6 6-6 3-7 1"/></svg>
-        </span>
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M15 33V15h6a5 5 0 010 10h-6M37 21c-1-2-6-2-6 1s6 2 6 6-6 3-7 1"/></svg></span>
         <b>Photoshop</b><span>照片与图层滤镜</span><em class="tag ok">下载 .zip · v0.1.1</em>
       </a>
+      <div class="dl reveal is-new" data-href="BLENDER">
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><circle cx="28" cy="26" r="12"/><circle cx="28" cy="26" r="4.5"/><path d="M16 26L6 18M20 16l-8-8"/></svg></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxos-Physical-Lens-0.1.1-Blender-Addon.zip" rel="noopener" download>Blender</a> <i class="new">新</i></b><span>Bruxos Physical Lens 插件</span><em class="tag ok">下载插件 · v0.1.1</em>
+        <span class="dl-langs"><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxos-Physical-Lens-0.1.1-Pacote.zip" download>完整包（.zip）</a></span>
+      </div>
+      <a class="dl reveal is-new" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/ComfyUI-Bruxos-WebGL-0.1.0.zip" data-href="COMFYUI" rel="noopener" download>
+        <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="5" y="8" width="15" height="12" rx="3"/><rect x="28" y="28" width="15" height="12" rx="3"/><path d="M20 14h6a4 4 0 014 4v10"/></svg></span>
+        <b>ComfyUI <i class="new">新</i></b><span>ComfyUI 的 Bruxos WebGL 节点</span><em class="tag ok">下载 .zip · v0.1.0</em>
+      </a>
     </div>
-    <a class="dl-fix reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.6.18/Atualizacao-Astigmatismo-Bruxosdovfx-0.9.6.18.exe" rel="noopener" download>
+    <a class="dl-fix reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Atualizacao-Idiomas-Bruxosdovfx-0.9.6.20.exe" rel="noopener" download>
       <span class="dl-fix-ic">↻</span>
-      <span><b>已经装了旧版本？</b>运行 0.9.6.18 更新（像散修正），无需重新安装即可修复旧版本。</span>
-      <em class="tag ok">下载修复</em>
+      <span><b>已经装了旧版本？</b>运行 0.9.6.20 更新（多语言），无需重新安装即可升级旧版本。</span>
+      <em class="tag ok">下载更新</em>
     </a>
     <div class="soon reveal">
       <span class="soon-label">即将推出</span>
       <p class="soon-text">同一光学引擎即将支持：</p>
       <ul class="soon-list">
-        <li><svg viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M10 7h3a2 2 0 012 2v5"/></svg>ComfyUI</li>
         <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.5 5 10a5 5 0 01-10 0c0-2 1-3.5 2-4.5 0 2 1 3 2 3 0-3 0-5.5 1-8.5z"/></svg>Flame</li>
-        <li><svg viewBox="0 0 24 24"><circle cx="14" cy="13" r="6"/><circle cx="14" cy="13" r="2.2"/><path d="M8 13L3 9M10 8L6 4"/></svg>Blender</li>
         <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 16V9l3 2 3-3v8"/></svg>Unreal Engine</li>
       </ul>
     </div>

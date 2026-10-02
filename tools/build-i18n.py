@@ -6,7 +6,7 @@ Edite o index.html normalmente; depois rode este script. Cada trecho em PT abaix
 precisa existir exatamente no index.html — se você mudar um texto em PT, atualize
 o trecho correspondente aqui (o script avisa qual não encontrou).
 """
-import pathlib, sys
+import pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = (ROOT / 'index.html').read_text(encoding='utf-8')
@@ -16,9 +16,9 @@ T = [
   # ---- head ----
   ('<html lang="pt-BR">', '<html lang="en">', '<html lang="zh-CN">'),
   ('<title>Simulador de Desfoque · Bruxosdovfx</title>', '<title>Lens Blur Simulator · Bruxosdovfx</title>', '<title>镜头虚化模拟器 · Bruxosdovfx</title>'),
-  ('content="Simulador de lentes ópticas com ray tracing por superfície de vidro. App desktop e plugins para After Effects, DaVinci Resolve, Nuke e Photoshop, com mais de 200 lentes."',
-   'content="Optical lens simulator with ray tracing through every glass surface. Desktop app and plugins for After Effects, DaVinci Resolve, Nuke and Photoshop, with 200+ lenses."',
-   'content="逐个镜面光线追踪的光学镜头模拟器。桌面应用及 After Effects、DaVinci Resolve、Nuke、Photoshop 插件，内置 200 多款镜头。"'),
+  ('content="Simulador de lentes ópticas com ray tracing por superfície de vidro. App desktop e plugins para After Effects, DaVinci Resolve, Nuke, Photoshop, Blender e ComfyUI, com mais de 200 lentes."',
+   'content="Optical lens simulator with ray tracing through every glass surface. Desktop app and plugins for After Effects, DaVinci Resolve, Nuke, Photoshop, Blender and ComfyUI, with 200+ lenses."',
+   'content="逐个镜面光线追踪的光学镜头模拟器。桌面应用及 After Effects、DaVinci Resolve、Nuke、Photoshop、Blender、ComfyUI 插件，内置 200 多款镜头。"'),
   ('<meta property="og:title" content="Simulador de Desfoque · Bruxosdovfx">', '<meta property="og:title" content="Lens Blur Simulator · Bruxosdovfx">', '<meta property="og:title" content="镜头虚化模拟器 · Bruxosdovfx">'),
   ('content="Desfoque que atravessa a lente: ray tracing óptico, 200+ lentes, app e plugins."', 'content="Blur that travels through the lens: optical ray tracing, 200+ lenses, app and plugins."', 'content="穿过镜头的虚化：光学光线追踪、200+ 镜头、应用与插件。"'),
   ('family=JetBrains+Mono:wght@400;500&display=swap', 'family=JetBrains+Mono:wght@400;500&display=swap', 'family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700&display=swap'),
@@ -197,7 +197,15 @@ T = [
   ('<b>Saída</b><span>prévia, PNG, MP4, plugins</span>', '<b>Output</b><span>preview, PNG, MP4, plugins</span>', '<b>输出</b><span>预览、PNG、MP4、插件</span>'),
   # ---- 07 ----
   ('<p class="label reveal">07 — Plataformas</p>', '<p class="label reveal">07 — Platforms</p>', '<p class="label reveal">07 — 平台</p>'),
-  ('<h2 class="reveal">Uma lente, <em>cinco</em> lugares.</h2>', '<h2 class="reveal">One lens, <em>five</em> places.</h2>', '<h2 class="reveal">一支镜头，<em>五个</em>平台。</h2>'),
+  ('<h2 class="reveal">Uma lente, <em>sete</em> lugares.</h2>', '<h2 class="reveal">One lens, <em>seven</em> places.</h2>', '<h2 class="reveal">一支镜头，<em>七个</em>平台。</h2>'),
+  ('<li><b>Add-on</b> Blender</li>', '<li><b>Add-on</b> Blender</li>', '<li><b>插件</b> Blender</li>'),
+  ('<li><b>Nós</b> ComfyUI</li>', '<li><b>Nodes</b> ComfyUI</li>', '<li><b>节点</b> ComfyUI</li>'),
+  ('<span>Idioma:</span>', '<span>Language:</span>', '<span>语言：</span>'),
+  ('<span>Add-on Bruxos Physical Lens</span>', '<span>Bruxos Physical Lens add-on</span>', '<span>Bruxos Physical Lens 插件</span>'),
+  ('>Baixar add-on · v', '>Download add-on · v', '>下载插件 · v'),
+  ('>Pacote completo (.zip)</a>', '>Full package (.zip)</a>', '>完整包（.zip）</a>'),
+  ('<span>Nós Bruxos WebGL para ComfyUI</span>', '<span>Bruxos WebGL nodes for ComfyUI</span>', '<span>ComfyUI 的 Bruxos WebGL 节点</span>'),
+  ('<em class="tag ok">Baixar atualização</em>', '<em class="tag ok">Download update</em>', '<em class="tag ok">下载更新</em>'),
   ('<p class="lead reveal">O mesmo motor óptico e a mesma biblioteca no app e nos plugins.</p>', '<p class="lead reveal">The same optical engine and the same library in the app and the plugins.</p>', '<p class="lead reveal">应用与插件共享同一个光学引擎和同一套镜头库。</p>'),
   ('<b>App desktop</b>', '<b>Desktop app</b>', '<b>桌面应用</b>'),
   ('<span>Efeito nativo · 16/32 bpc</span>', '<span>Native effect · 16/32 bpc</span>', '<span>原生特效 · 16/32 bpc</span>'),
@@ -207,10 +215,9 @@ T = [
   ('<span>Filtro para fotos e camadas</span>', '<span>Filter for photos and layers</span>', '<span>照片与图层滤镜</span>'),
   ('>Instalar · v', '>Install · v', '>安装 · v'),
   ('>Baixar .zip · v', '>Download .zip · v', '>下载 .zip · v'),
-  ('<span><b>Já tem uma versão antiga instalada?</b> Rode a atualização 0.9.6.18 (astigmatismo) para corrigir versões anteriores sem reinstalar.</span>',
-   '<span><b>Already have an older version installed?</b> Run the 0.9.6.18 update (astigmatism) to fix previous versions without reinstalling.</span>',
-   '<span><b>已经装了旧版本？</b>运行 0.9.6.18 更新（像散修正），无需重新安装即可修复旧版本。</span>'),
-  ('<em class="tag ok">Baixar correção</em>', '<em class="tag ok">Download fix</em>', '<em class="tag ok">下载修复</em>'),
+  ('<span><b>Já tem uma versão antiga instalada?</b> Rode a atualização 0.9.6.20 (idiomas) para atualizar versões anteriores sem reinstalar.</span>',
+   '<span><b>Already have an older version installed?</b> Run the 0.9.6.20 update (languages) to update previous versions without reinstalling.</span>',
+   '<span><b>已经装了旧版本？</b>运行 0.9.6.20 更新（多语言），无需重新安装即可升级旧版本。</span>'),
   ('<span class="soon-label">Em breve</span>', '<span class="soon-label">Coming soon</span>', '<span class="soon-label">即将推出</span>'),
   ('<p class="soon-text">Próximas integrações do mesmo motor óptico:</p>', '<p class="soon-text">Upcoming integrations of the same optical engine:</p>', '<p class="soon-text">同一光学引擎即将支持：</p>'),
   # ---- footer ----
@@ -227,6 +234,10 @@ def build(col, out, lang_code):
         if pt not in html:
             missing.append(pt[:70]); continue
         html = html.replace(pt, tr)
+    html = re.sub(r'(<a class="dl-main") href="[^"]*"( data-pt="[^"]*" data-en="([^"]*)" data-zh="([^"]*)")',
+                  lambda m: f'{m.group(1)} href="{m.group(3) if lang_code == "en" else m.group(4)}"{m.group(2)}', html)
+    html = re.sub(r'(<a href="[^"]*-PT-BR-Setup[^"]*" download) class="on">', r'\1>', html)
+    html = re.sub(r'(<a href="[^"]*-' + {'en': 'EN', 'zh': 'ZH-CN'}[lang_code] + r'-Setup[^"]*" download)>', r'\1 class="on">', html)
     html = html.replace('data-lang="pt" class="on"', 'data-lang="pt"').replace(f'data-lang="{lang_code}"', f'data-lang="{lang_code}" class="on"')
     (ROOT / out).write_text(html, encoding='utf-8')
     return missing

@@ -250,7 +250,7 @@ select, .editor input { background: var(--bg3); color: var(--text); border: 1px 
 .step span { color: var(--muted); font-size: 13px; }
 
 /* ---------- download ---------- */
-.dl-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.dl-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .dl b .new { font: 500 10px var(--mono); font-style: normal; text-transform: uppercase; letter-spacing: .1em; color: var(--amber); border: 1px solid var(--amber); border-radius: 999px; padding: 2px 7px; vertical-align: 3px; margin-left: 4px; }
 .dl.is-new { border-color: rgba(243,167,92,.45); }
 .dl-fix { display: flex; align-items: center; gap: 16px; margin-top: 16px; padding: 18px 22px; border: 1px dashed var(--line2); border-radius: var(--r); text-decoration: none; color: var(--muted); font-size: 15px; transition: border-color .3s, background .3s; }
@@ -336,3 +336,15 @@ html[lang="zh-CN"] .hero-title { font-size: clamp(42px, 6.6vw, 104px); }
   .brand small { font-size: 11px; }
 }
 @media (max-width: 420px) { .nav nav a.btn { display: none; } }
+
+/* cards com link principal + variantes de idioma */
+.dl b a.dl-main { color: inherit; text-decoration: none; }
+.dl b a.dl-main::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.dl-langs { position: relative; z-index: 2; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font: 11px var(--mono); color: var(--dim); }
+.dl-langs a { color: var(--muted); text-decoration: none; border: 1px solid var(--line2); border-radius: 6px; padding: 3px 7px; transition: color .2s, border-color .2s; }
+.dl-langs a:hover { color: var(--mint); border-color: var(--mint-d); }
+.dl-langs a.on { color: var(--mint); border-color: var(--mint-d); }
+.dl .tag { margin-top: auto; }
+.dl-langs { order: 5; flex-wrap: nowrap; white-space: nowrap; margin: 4px 0 14px; }
+.dl .tag { order: 6; }
+html[lang="zh-CN"] h2 { font-size: clamp(36px, 5.2vw, 72px); }
