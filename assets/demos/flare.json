@@ -1,0 +1,98 @@
+{
+  "grid": 5,
+  "width": 512,
+  "height": 320,
+  "field_mm": [
+    -14,
+    -7,
+    0,
+    7,
+    14
+  ],
+  "iris_mm": [
+    3,
+    6,
+    10
+  ],
+  "coatings": [
+    0,
+    1
+  ],
+  "lens": "dgauss50",
+  "samples": [
+    1024,
+    4096
+  ],
+  "pairs": 16,
+  "frames": [
+    {
+      "iris": 3,
+      "coating": 0,
+      "samples": 4096,
+      "reconstructed_from_previous_display": false,
+      "file": "flare-hdr-3-0.png"
+    },
+    {
+      "iris": 3,
+      "coating": 1,
+      "samples": 1024,
+      "reconstructed_from_previous_display": true,
+      "file": "flare-hdr-3-1.png"
+    },
+    {
+      "iris": 6,
+      "coating": 0,
+      "samples": 4096,
+      "reconstructed_from_previous_display": false,
+      "file": "flare-hdr-6-0.png"
+    },
+    {
+      "iris": 6,
+      "coating": 1,
+      "samples": 1024,
+      "reconstructed_from_previous_display": true,
+      "file": "flare-hdr-6-1.png"
+    },
+    {
+      "iris": 10,
+      "coating": 0,
+      "samples": 4096,
+      "reconstructed_from_previous_display": false,
+      "file": "flare-hdr-10-0.png"
+    },
+    {
+      "iris": 10,
+      "coating": 1,
+      "samples": 1024,
+      "reconstructed_from_previous_display": true,
+      "file": "flare-hdr-10-1.png"
+    }
+  ],
+  "limits": "Two geometric reflections and a separate scalar Fraunhofer pupil FFT. Idealized coatings; assumed microstructure, halo and display magnification. Not full wave propagation through the lens or measured lens calibration.",
+  "gain": 1800,
+  "presentation": "Spatial reconstruction smoothing (~2 pixels) and visual gain; not diffraction",
+  "encoding": "sqrt-linear-radiance-1",
+  "diffraction": {
+    "file": "flare-pupil-fft.png",
+    "fft_size": 2048,
+    "blades": 7,
+    "wavelengths_nm": [
+      440.0,
+      460.0,
+      480.0,
+      500.0,
+      520.0,
+      540.0,
+      560.0,
+      580.0,
+      600.0,
+      620.0,
+      640.0,
+      660.0,
+      680.0
+    ],
+    "phase_microstructure": "24 assumed phase streaks; deterministic seed 8401; no measured pupil",
+    "finite_source_blur_pixels": 1.2,
+    "display_magnification": "illustrative rather than calibrated sensor irradiance"
+  }
+}

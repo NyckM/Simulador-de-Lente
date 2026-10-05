@@ -16,6 +16,7 @@
   <link rel="alternate" hreflang="en" href="en.html">
   <link rel="alternate" hreflang="zh-CN" href="zh.html">
   <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/demos.css?v=121-photo-gallery">
 </head>
 <body>
 
@@ -29,6 +30,7 @@
     <a href="#diferenca">Optical × blur</a>
     <a href="#comparacoes">Before & after</a>
     <a href="#laboratorio">Lab</a>
+    <a href="#novidades">Depth</a>
     <a href="#lentes">Lenses</a>
     <a href="#download" class="btn btn-small">Download</a>
     <div class="lang" aria-label="Language">
@@ -260,12 +262,14 @@
     <div class="feature-list">
       <div class="feat reveal"><b>Image, video and depth</b><span>RGB + depth with per-channel coverage; exports PNG and frame-by-frame MP4.</span></div>
       <div class="feat reveal"><b>Preview × render</b><span>Quality from Draft (24) to Extreme (1024 samples), with independent preview and render settings.</span></div>
-      <div class="feat reveal"><b>Coatings, ghosts and diffraction</b><span>Per-interface AR coating, reflections between surfaces and diffraction stars oriented by the blades.</span></div>
+      <div class="feat reveal"><b>Coatings and optical reflections</b><span>Idealized per-interface AR coating and traced reflections; creative glow and stars are separate from a wave model.</span></div>
       <div class="feat reveal"><b>Editable prescription</b><span>Curvature, thickness, diameter and index of every surface, with the drawing kept in sync.</span></div>
     </div>
   </div>
 </section>
 
+
+<section class="section" id="novidades"><div class="wrap"><div class="section-head"><p class="label">New · application 1.2.1 and v1 ports</p><h2>Filters, depth and <em>optical light</em>.</h2><p class="lead">Control image effects and optical response separately. Artistic filters operate on the image; Lens Flare travels through lens surfaces.</p></div><div id="optical-demos"></div><div class="release-features"><div class="feat"><b>15 filters on desktop and Blender · 13 in other ports</b><span>Black Mist, White Mist, Detail, Streak, Star, Veil, Window, Replicate, Halo, Kaleidoscope, Split, Fringing, Halation, Chromatic Prism and Directional Blur. Original profiles with adjustable intensity.</span></div><div class="feat"><b>Position, scale and rotation</b><span>Move the center, resize the region and rotate directional effects. Desktop: fields, sliders and preview handles. Ports: numeric controls. Position changes uniform global mist only when a region is enabled.</span></div><div class="feat"><b>Optical Lens Flare</b><span>Two-interface reflection paths traverse glass, idealized coatings and the bokeh iris. Light comes from image sources or the 3D scene in Blender. This is not a full wave diffraction simulation.</span></div><div class="feat"><b>Brighten edges</b><span>Compensate pupil throughput independently of creative vignette. Compensation changes exposure without opening the pupil or changing the blur shape.</span></div><div class="feat"><b>MoGe 3 in the application</b><span>Generate estimated metric Z, mask, 3D points, normals and intrinsics. Configure the model runtime and weights. Blur uses the Z map; reconstructed-mesh ray tracing is not yet implemented.</span></div><div class="feat"><b>Focus and depth</b><span>In the application and ComfyUI, focus is anchored to the selected distance with gradual blur transitions. Import relative or metric depth. Near/Far and map direction must match the input depth.</span></div></div><h3 class="release-title">Features by integration</h3><div class="release-table-scroll" tabindex="0"><table class="release-table"><thead><tr><th scope="col">Platform</th><th scope="col">Artistic filters</th><th scope="col">Lens Flare / coatings</th><th scope="col">Depth</th></tr></thead><tbody><tr><th scope="row">Desktop 1.2.1</th><td>Stack of up to 16 modules</td><td>Surface reflections and shared iris</td><td>MoGe 3 and other models with configured runtimes</td></tr><tr><th scope="row">After Effects / Resolve / Nuke 0.3.0</th><td>1 filter per instance; numeric position, scale and rotation</td><td>Surface reflections and shared iris</td><td>External map; no built-in MoGe 3 inference</td></tr><tr><th scope="row">Photoshop 0.2.0</th><td>1 filter per instance; numeric position, scale and rotation</td><td>Surface reflections and shared iris</td><td>External map; no built-in MoGe 3 inference</td></tr><tr><th scope="row">Blender 0.3.0</th><td>15 native compositor filters; focal mm, f-stop and swirl</td><td>Surface reflections and shared iris</td><td>3D scene geometry and focus</td></tr><tr><th scope="row">ComfyUI 0.2.0</th><td>Stack of up to 16 modules</td><td>Surface reflections and shared iris</td><td>Map from another node or desktop; metric tensor supported</td></tr></tbody></table></div><p class="release-note">AE, Resolve and Nuke binaries and the Photoshop engine were validated through integration harnesses, not inside the real hosts. Blender 4.5.14 rendered on CPU/OptiX; ComfyUI was tested using torch and hardware WebGL. Native ports are Windows x64. Feature availability varies by integration.</p><div class="release-roadmap"><b>Version 1.2.1 · available on desktop</b><p>Keyframes for numeric parameters on the main image and layers A/B/C: focus, iris, intensity and filter transforms. Chromatic prism and directional blur can also be animated. The plugins below remain at the listed versions; they do not include the 1.2 timeline.</p></div></div></section>
 <!-- ============ LENTES ============ -->
 <section class="section" id="lentes">
   <div class="wrap">
@@ -324,47 +328,46 @@
     <div class="section-head center">
       <p class="label reveal">07 — Platforms</p>
       <h2 class="reveal">One lens, <em>seven</em> places.</h2>
-      <p class="lead reveal">The same optical engine and the same library in the app and the plugins.</p>
+      <p class="lead reveal">Application and integrations have separate versions. Check the feature table before choosing a package.</p>
     </div>
     <div class="dl-grid">
-      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Simulador-de-Desfoque-Bruxosdovfx-0.9.6.20-Setup-Windows-x64.exe" data-href="EXECUTAVEL" rel="noopener" download>
+      <a class="dl reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Simulador-de-Desfoque-Bruxosdovfx-1.2.1-Setup-Escuro-Windows-x64.exe" data-href="EXECUTAVEL" rel="noopener" download>
         <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="24" rx="2"/><path d="M18 39h12M24 33v6"/><circle cx="24" cy="21" r="6"/></svg></span>
-        <b>Desktop app</b><span>Windows x64 · GPU NVIDIA CUDA / Vulkan</span><em class="tag ok">Install · v0.9.6.20</em>
+        <b>Desktop app</b><span>Windows x64 · GPU NVIDIA CUDA / Vulkan</span><em class="tag ok">Install · v1.2.1</em>
       </a>
       <div class="dl reveal" data-href="AFTER_EFFECTS">
         <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M14 33l6-18 6 18M16 27h8M30 23h6M30 23v10"/></svg></span>
-        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-EN-Lente-Luz-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-PT-BR-Lente-Luz-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-EN-Lente-Luz-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-ZH-CN-Lente-Luz-Windows.zip" rel="noopener" download>After Effects</a></b><span>Native effect · 16/32 bpc</span><em class="tag ok">Download .zip · v0.2.6</em>
-        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-PT-BR-Lente-Luz-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-EN-Lente-Luz-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-AE-0.2.6-ZH-CN-Lente-Luz-Windows.zip" download>中文</a></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-EN-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-PT-BR-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-EN-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-ZH-CN-Windows.zip" rel="noopener" download>After Effects</a></b><span>Native effect · 16/32 bpc</span><em class="tag ok">Download .zip · v0.3.0</em>
+        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-PT-BR-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-EN-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-AE-0.3.0-ZH-CN-Windows.zip" download>中文</a></span>
       </div>
       <div class="dl reveal" data-href="RESOLVE">
         <span class="dl-ic"><svg viewBox="0 0 48 48"><circle cx="24" cy="16" r="7"/><circle cx="15" cy="31" r="7"/><circle cx="33" cy="31" r="7"/></svg></span>
-        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-EN-Test-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-PT-BR-Test-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-EN-Test-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-ZH-CN-Test-Windows.zip" rel="noopener" download>DaVinci Resolve</a></b><span>OpenFX plugin · depth input</span><em class="tag ok">Download .zip · v0.2.5</em>
-        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-PT-BR-Test-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-EN-Test-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Resolve-0.2.5-ZH-CN-Test-Windows.zip" download>中文</a></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-EN-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-PT-BR-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-EN-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-ZH-CN-Windows.zip" rel="noopener" download>DaVinci Resolve</a></b><span>OpenFX plugin · depth input</span><em class="tag ok">Download .zip · v0.3.0</em>
+        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-PT-BR-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-EN-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Resolve-0.3.0-ZH-CN-Windows.zip" download>中文</a></span>
       </div>
       <div class="dl reveal" data-href="NUKE">
         <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="6" y="8" width="14" height="10" rx="2"/><rect x="28" y="19" width="14" height="10" rx="2"/><rect x="6" y="30" width="14" height="10" rx="2"/><path d="M20 13h4v11h4M20 35h4V24"/></svg></span>
-        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-EN-Lente-Luz-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-PT-BR-Lente-Luz-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-EN-Lente-Luz-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-ZH-CN-Lente-Luz-Windows.zip" rel="noopener" download>Nuke</a></b><span>Plugin for node-based compositing</span><em class="tag ok">Download .zip · v0.2.6</em>
-        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-PT-BR-Lente-Luz-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-EN-Lente-Luz-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Nuke-0.2.6-ZH-CN-Lente-Luz-Windows.zip" download>中文</a></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-EN-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-PT-BR-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-EN-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-ZH-CN-Windows.zip" rel="noopener" download>Nuke</a></b><span>Plugin for node-based compositing</span><em class="tag ok">Download .zip · v0.3.0</em>
+        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-PT-BR-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-EN-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Nuke-0.3.0-ZH-CN-Windows.zip" download>中文</a></span>
       </div>
       <div class="dl reveal" data-href="PHOTOSHOP">
         <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="7" y="7" width="34" height="34" rx="4"/><path d="M15 33V15h6a5 5 0 010 10h-6M37 21c-1-2-6-2-6 1s6 2 6 6-6 3-7 1"/></svg></span>
-        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-EN-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-PT-BR-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-EN-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-ZH-CN-Windows.zip" rel="noopener" download>Photoshop</a></b><span>Filter for photos and layers</span><em class="tag ok">Download .zip · v0.1.3</em>
-        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-PT-BR-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-EN-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.26/Bruxosdovfx-Desfoque-Photoshop-0.1.3-ZH-CN-Windows.zip" download>中文</a></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-EN-Windows.zip" data-pt="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-PT-BR-Windows.zip" data-en="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-EN-Windows.zip" data-zh="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-ZH-CN-Windows.zip" rel="noopener" download>Photoshop</a></b><span>Filter for photos and layers</span><em class="tag ok">Download .zip · v0.2.0</em>
+        <span class="dl-langs"><span>Language:</span><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-PT-BR-Windows.zip" download>PT</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-EN-Windows.zip" download class="on">EN</a><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/Bruxosdovfx-Desfoque-Photoshop-0.2.0-ZH-CN-Windows.zip" download>中文</a></span>
       </div>
       <div class="dl reveal is-new" data-href="BLENDER">
         <span class="dl-ic"><svg viewBox="0 0 48 48"><circle cx="28" cy="26" r="12"/><circle cx="28" cy="26" r="4.5"/><path d="M16 26L6 18M20 16l-8-8"/></svg></span>
-        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxos-Physical-Lens-0.1.1-Blender-Addon.zip" rel="noopener" download>Blender</a> <i class="new">new</i></b><span>Bruxos Physical Lens add-on</span><em class="tag ok">Download add-on · v0.1.1</em>
-        <span class="dl-langs"><a href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/Bruxos-Physical-Lens-0.1.1-Pacote.zip" download>Full package (.zip)</a></span>
+        <b><a class="dl-main" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/OpticaLab-1.2.1-Fonte-Atual-Blender-0.3.0.zip" rel="noopener" download>Blender</a> <i class="new">new</i></b><span>Bruxos Physical Lens add-on</span><em class="tag ok">Download add-on · v0.3.0</em>
       </div>
-      <a class="dl reveal is-new" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V0.9.20/ComfyUI-Bruxos-WebGL-0.1.0.zip" data-href="COMFYUI" rel="noopener" download>
+      <a class="dl reveal is-new" href="https://github.com/NyckM/Simulador-de-Lente/releases/download/V1.2.1/ComfyUI-Bruxos-WebGL-0.2.0.zip" data-href="COMFYUI" rel="noopener" download>
         <span class="dl-ic"><svg viewBox="0 0 48 48"><rect x="5" y="8" width="15" height="12" rx="3"/><rect x="28" y="28" width="15" height="12" rx="3"/><path d="M20 14h6a4 4 0 014 4v10"/></svg></span>
-        <b>ComfyUI <i class="new">new</i></b><span>Bruxos WebGL nodes for ComfyUI</span><em class="tag ok">Download .zip · v0.1.0</em>
+        <b>ComfyUI <i class="new">new</i></b><span>Bruxos WebGL nodes for ComfyUI</span><em class="tag ok">Download .zip · v0.3.0</em>
       </a>
     </div>
-    <a class="dl-fix reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/tag/V0.9.26" rel="noopener" target="_blank">
+    <a class="dl-fix reveal" href="https://github.com/NyckM/Simulador-de-Lente/releases/tag/V1.2.1" rel="noopener" target="_blank">
       <span class="dl-fix-ic">↻</span>
-      <span><b>Plugin updates</b> Depth fixes, lens panel and Photoshop interface updates. Download the package for your plugin and language from release V0.9.26.</span>
-      <em class="tag ok">View updates</em>
+      <span><b>All files for version 1.2.1</b> App, After Effects, Resolve, Nuke and Photoshop plugins, Blender and ComfyUI on the GitHub release page.</span>
+      <em class="tag ok">View release</em>
     </a>
     <div class="soon reveal">
       <span class="soon-label">Coming soon</span>
@@ -386,5 +389,6 @@
 </footer>
 
 <script src="js/app.js"></script>
+<script src="js/demos.js?v=121-sem-filtros"></script>
 </body>
 </html>

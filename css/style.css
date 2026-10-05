@@ -348,3 +348,12 @@ html[lang="zh-CN"] .hero-title { font-size: clamp(42px, 6.6vw, 104px); }
 .dl-langs { order: 5; flex-wrap: nowrap; white-space: nowrap; margin: 4px 0 14px; }
 .dl .tag { order: 6; }
 html[lang="zh-CN"] h2 { font-size: clamp(36px, 5.2vw, 72px); }
+
+/* Validated v1 capabilities; follows the established dark mint palette. */
+.release-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:32px 0 48px}
+.release-features .feat{display:flex;flex-direction:column;gap:12px;padding:24px;border:1px solid #26372f;border-radius:12px;background:#111915}
+.release-features .feat b{color:#b6efcc;font-size:18px}.release-features .feat span{color:#aab9b0;line-height:1.7;font-size:14px}
+.release-title{font-size:24px;margin:30px 0 20px;color:#e0efe5}.release-table-scroll{overflow-x:auto;border:1px solid #26372f;border-radius:12px}
+.release-table{width:100%;border-collapse:collapse;min-width:700px;font-size:14px;text-align:left}.release-table th,.release-table td{padding:18px;line-height:1.55;border-bottom:1px solid #26372f;vertical-align:top}.release-table thead{background:#19261f;color:#b6efcc}.release-table tbody{color:#aab9b0}.release-table tbody th{color:#e0efe5;width:23%}.release-table tbody tr:last-child>*{border-bottom:0}
+.release-note{color:#93a69a;font-size:13px;line-height:1.7;margin:18px 0 30px}.release-roadmap{background:#19261f;border-left:3px solid #9ff0c8;padding:24px;border-radius:8px}.release-roadmap b{color:#b6efcc}.release-roadmap p{color:#aab9b0;line-height:1.7;margin:10px 0 0}
+@media(max-width:900px){.release-features{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.release-features{grid-template-columns:1fr;gap:16px}.release-features .feat{padding:20px}}
