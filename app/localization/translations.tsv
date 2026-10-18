@@ -1,0 +1,652 @@
+0	 (outside map range)	（超出深度图范围）
+1	 Creative enlargement active.	创意放大已启用。
+2	 Depth Cut: two planes; hidden background is not recovered.	深度分割：两个平面，不恢复被遮挡的背景。
+3	 Depth Slicing: ${settings.depth_slices} planes; hidden background is not reconstructed.	深度切片：${settings.depth_slices} 个平面，不重建被遮挡的背景。
+4	 Automatic depth: composite in distance order.	自动深度：按距离顺序合成。
+5	 Static depth in video; no tracking or exact occlusion.	视频使用静态深度，无跟踪或精确遮挡。
+6	 Generated depth: 	已生成深度：
+7	 This is a Soft Focus prescription: some softness remains at focus. Stopping down reduces it.	此处方为柔焦设计，合焦时仍保留柔化；缩小光圈可减弱此效果。
+8	 Invalid distance range reset to 0.8–10 m.	无效距离范围已重置为 0.8–10 米。
+9	 Source 	源图像 
+10	 Source enlarged; no captured detail is added.	源图像已放大，不会增加拍摄细节。
+11	 Ghosts and diffraction rays: image proxies, without photometric validation.	鬼影和衍射光芒为图像近似，未经光度验证。
+12	 MP4: frame-by-frame export. WebM: playback capture. No audio.	MP4：逐帧导出。WebM：播放录制。无音频。
+13	 Uncalibrated modifiers active.	未校准的调整已启用。
+14	 Approximate depth occlusion.	近似深度遮挡。
+15	 Highlight gain cannot recover lost HDR.	高光增强无法恢复丢失的 HDR。
+16	 Glass tracing: 	镜片光线追踪：
+17	 adjustment(s).	项调整。
+18	 mm. Switching mode preserves intensity.	毫米。切换模式保留强度。
+19	 · ${(performance.now()-started).toFixed(0)} ms per frame	· 每帧 ${(performance.now()-started).toFixed(0)} 毫秒
+20	 · adjusting	· 调整中
+21	 · active	· 已启用
+22	 · up to 512 × 512 px	· 最大 512 × 512 像素
+23	 · white = dirt	· 白色 = 污渍
+24	 · ray-based compensation ${(data.focus_shift_mm||0).toFixed(3)} mm	· 光线补偿 ${(data.focus_shift_mm||0).toFixed(3)} 毫米
+25	 · lens assembly ${offset>=0?'+':''}${offset.toFixed(2)} mm	· 镜片组 ${offset>=0?'+':''}${offset.toFixed(2)} 毫米
+27	 · disabled	· 已关闭
+28	 · custom profile based on 	· 自定义配置基于 
+29	 · high quality across the full frame	· 全画面高质量
+30	 · refining	· 精化中
+31	 · requested 	· 请求 
+32	 · synchronized depth video	· 已同步深度视频
+33	${(fpsCount*1000/(now-fpsStart)).toFixed(1)} processed frames/s	每秒处理 ${(fpsCount*1000/(now-fpsStart)).toFixed(1)} 帧
+34	${Math.round(wipePercent)}% original image	${Math.round(wipePercent)}% 原始图像
+37	${inspected.label} ${inspected.distance.toFixed(2)} m · 	${inspected.label} ${inspected.distance.toFixed(2)} 米 · 
+40	${settings.focus_m.toFixed(2)} meters	${settings.focus_m.toFixed(2)} 米
+41	${state.count} map(s), ${state.width} × ${state.height} · global relative scale	${state.count} 张深度图，${state.width} × ${state.height} · 全局相对尺度
+42	+ Depth imports PNG or MP4/WebM video. Depth videos must match the main video's start time and dimensions.	＋深度可导入 PNG 或 MP4/WebM 视频。深度视频须与主视频的起始时间和尺寸一致。
+43	. Preview switched to WebGL.	。预览已切换为 WebGL。
+44	. Reset restores the saved settings.	。重置恢复已保存的设置。
+46	01 / LENS	01 / 镜头
+47	02 / CAPTURE	02 / 拍摄
+49	1024 samples	1024 个采样
+52	128 samples	128 个采样
+55	2 planes	2 个平面
+56	256 samples	256 个采样
+57	293 constructions available · 9 awaiting prescriptions. Experimental reconstructions, without specimen calibration. Appearance profiles are separate.	293 种结构可用，9 种等待处方。实验性重建，未经实物校准。外观配置单独列出。
+60	3 × 3 · fast	3 × 3 · 快速
+65	5 × 5 · standard	5 × 5 · 标准
+66	50.36 mm calculated · 10 refracting surfaces + iris. No commercial lens calibration.	计算焦距 50.36 毫米，10 个折射面加光圈。未经商业镜头校准。
+67	512 samples	512 个采样
+69	64 samples	64 个采样
+75	9 × 9 · detailed	9 × 9 · 精细
+77	: enter a value between 	：请输入数值，范围为 
+78	; limited by atlas/GPU	；受光线图集或 GPU 限制
+79	Near distance must be less than far distance.	近端距离必须小于远端距离。
+80	The shape of defocus	散焦形状
+81	The save dialog is unavailable. Reopen the app.	保存对话框不可用。请重新打开应用。
+82	Light has	光线拥有
+83	The media changed during generation	生成过程中媒体已改变
+84	RAY ATLAS / AUTOMATIC PREVIEW / LOCAL VIDEO	光线图集 / 自动预览 / 本地视频
+85	Spherical aberration 3	三阶球差
+86	Spherical aberration 5	五阶球差
+87	Aperture calculated from the lens entrance pupil.	根据镜头入瞳计算光圈。
+88	Quick aperture	快速光圈
+89	Aperture · f/	光圈 · f/
+90	Open the main video before importing a depth video.	请先打开主视频，再导入深度视频。
+91	Open an image in Photoshop.	请在 Photoshop 中打开图像。
+92	Open an image first.	请先打开图像。
+93	Open or close aperture	扩大或缩小光圈
+95	Wait for the lens update.	请等待镜头更新。
+96	Wait for add-on installation.	请等待扩展组件安装完成。
+97	Wait for the lens atlas to finish updating.	请等待镜头光线图集更新完成。
+98	Wait for the selected quality atlas to finish updating.	请等待所选质量的光线图集更新完成。
+99	Wait for rendering to finish.	请等待渲染完成。
+100	Alpha	透明度
+101	Change rejected; the last valid geometry was preserved.	修改被拒绝，已保留上次有效的几何结构。
+102	Sampling and highlights	采样与高光
+103	Sampling stays fixed throughout rendering; not animatable.	渲染过程中采样保持固定，不可制作动画。
+104	Bokeh enlargement · creative	散景放大 · 创意
+105	Anamorphic	变形宽银幕
+106	Bokeh rim	散景边环
+107	Apply to tracing	应用到光线追踪
+108	Apply swirling bokeh	应用旋转散景
+109	Apply light deformation	应用光线变形
+110	Apply to a new layer	应用到新图层
+111	Apodization	切趾
+112	Profile file is too large.	配置文件过大。
+113	File saved to: 	文件已保存至：
+114	Drag to change curvature	拖动修改曲率
+115	Drag to change diameter	拖动修改直径
+116	Drag to change preceding spacing	拖动修改前方间距
+117	Drag the orange iris handles to open or close the aperture. Drag the bar below the glass to focus, or adjust Focus distance. Controls follow the drawing. Fixed sensor in orange; paraxial focus plane dashed in blue.	拖动橙色光圈控制柄调整光圈。拖动镜片下方的条形控件合焦，或调整对焦距离。控件与图示同步。固定传感器为橙色，近轴焦平面为蓝色虚线。
+118	Drag in the drawing: curves and values update immediately; rays and bokeh recalculate next. Centered spherical surfaces, without tilt or calibrated dispersive glass.	在图示中拖动，曲线和数值即时改变，随后重新计算光线与散景。使用居中球面，不含倾斜或已校准的色散玻璃。
+119	Drag to open / close the iris	拖动扩大或缩小光圈
+120	Video durations differ. After the depth video ends, its last map will be held.	视频时长不同。深度视频结束后将保持最后一张深度图。
+121	Additional astigmatism shifts radial and tangential focus planes in opposite directions, growing toward the edges while preserving the center. Negative and Positive change the sign without changing intensity. Sign and side of focus affect orientation; zero disables it. Values in mm approximate the response without recalibrating the prescription.	附加像散使径向和切向焦平面向相反方向移动，边缘效果增强，中心保持不变。正负按钮只切换符号，保留强度。方向取决于符号及散焦侧，零值关闭。毫米值为响应近似，不重新校准处方。
+122	Astigmatism · intensity ± mm	像散 · 强度 ± 毫米
+123	Updating lens response…	正在更新镜头响应…
+124	Updating lens atlas… video continues	正在更新光线图集…视频继续播放
+125	Updating glass, rays and image…	正在更新镜片、光线和图像…
+126	Refresh layers	刷新图层
+127	Update lens	更新镜头
+128	Update preview	更新预览
+129	Update saved profile	更新已保存配置
+130	Zoom in	放大
+131	Increase intensity to enable. Fixed glitter points sit on a layer at its own depth, so each disc responds to focus changes. Prismatic color adds small color variations; zero keeps glitter neutral. Normalization compensates average added energy. Approximate procedural model, without animated noise.	提高强度以启用。固定闪粉位于独立深度图层，每个散景光斑随焦点变化响应。棱镜色控制微小色彩变化，零值保持中性。归一化补偿平均新增能量。程序化近似模型，无动态噪声。
+132	Increase blend to enable. Focus at the drop distance to reveal distortion. Fixed procedural drops sampled through the pupil; approximate image-space refraction. With depth, surfaces in front of the layer are preserved.	提高混合量以启用。对焦到水滴距离以显示畸变。固定程序化水滴通过瞳孔采样，折射为图像空间近似。启用深度时保留图层前方的表面。
+133	Automatic (CUDA / CPU)	自动（CUDA / CPU）
+134	Automatic · compatibility	自动 · 兼容模式
+135	Automatic · depth occlusion	自动 · 深度遮挡
+136	Automatic	自动
+137	LIGHT BENCH / SYNTHETIC HDR	光源测试台 / 合成 HDR
+138	Base only	仅基础图像
+139	Bias	偏移
+140	Bias · map offset	偏移 · 深度图偏移
+141	Lens library	镜头库
+142	Invalid profile library.	配置库无效。
+143	Blue	蓝色
+144	Anamorphic bokeh	变形宽银幕散景
+145	Swirling bokeh applied. Adjust Swirl, Vignette and Bokeh enlargement; focus and depth were preserved.	已应用旋转散景。可调整旋转、暗角和散景放大；焦点及深度保持不变。
+146	Bokeh · edge	散景 · 边缘
+147	Bokeh · center	散景 · 中心
+148	Bokeh · foreground	散景 · 前景
+149	White = more dirt; black and transparency = clean glass. Texture resized to a maximum of 512 × 512 px and saved in projects and profiles. For subtle dirt, start at 0.15–0.30 intensity.	白色表示更多污渍，黑色与透明表示干净玻璃。纹理最大为 512 × 512 像素，随项目和配置保存。轻微污渍建议从 0.15–0.30 强度开始。
+150	White transmits light; black and transparency block it. PNG, JPG or WebP: resized to a maximum of 512 × 512 px. The design replaces the blades and is clipped to the aperture circle. Use Iris rotation to rotate it. Saved in projects and profiles.	白色透光，黑色与透明遮光。支持 PNG、JPG 或 WebP，最大调整为 512 × 512 像素。图案替代光圈叶片，并裁切到光圈圆内。用光圈旋转调整方向。随项目和配置保存。
+151	White: 2 m · black: 5 m	白色：2 米 · 黑色：5 米
+152	White: near (m)	白色：近端（米）
+154	Bruxosdovfx Defocus	Bruxosdovfx 散焦
+157	Search lenses	搜索镜头
+158	Search model or focal length	搜索型号或焦距
+159	Axial CA (mm)	轴向色差（毫米）
+160	Lateral CA · red	横向色差 · 红
+161	Lateral CA · blue	横向色差 · 蓝
+162	Lateral CA · blue/yellow %	横向色差 · 蓝/黄 %
+163	Lateral CA · red/cyan %	横向色差 · 红/青 %
+164	Longitudinal CA · RGB focus mm	纵向色差 · RGB 焦点毫米
+166	CPU · Vulkan unavailable	CPU · Vulkan 不可用
+167	CPU · fallback after Vulkan failure	CPU · Vulkan 失败后回退
+168	CPU · reference	CPU · 参考
+169	CUDA unavailable	CUDA 不可用
+170	CUDA unavailable · WebGL active	CUDA 不可用 · WebGL 已启用
+171	CUDA · ${result.device} · ${result.gpuMs.toFixed(1)} ms GPU · ${result.samples} samples	CUDA · ${result.device} · GPU ${result.gpuMs.toFixed(1)} 毫秒 · ${result.samples} 个采样
+173	Each point traces the glass; intermediate pixels interpolate the result. More points preserve edge variations better and take longer to recalculate the lens.	每个点追踪镜片，中间像素插值结果。更多点能更好地保留边缘变化，但镜头重新计算耗时更长。
+174	Calculating defocus…	正在计算散焦…
+175	Depth layer	深度图层
+176	Layers A / B / C	图层 A / B / C
+177	Field 84%	视场 84%
+178	Optical field	光学视场
+179	Channel	通道
+180	Cancel depth	取消深度生成
+181	Cancel installation	取消安装
+182	Cancel processing	取消处理
+186	Load JSON	加载 JSON
+187	Creative character	创意风格
+188	Test scene	测试场景
+189	Center	中心
+190	Channel	通道
+191	Cinema and low light	电影与弱光
+192	Circular	圆形
+193	Click a person or object to focus using the depth map.	点击人物或物体，通过深度图对焦。
+194	Click the image · cancel	点击图像 · 取消
+195	AR coating · idealized coverage	增透膜 · 理想覆盖率
+196	Coating · design wavelength nm	镀膜 · 设计波长纳米
+197	Coating: idealized AR layer applied to traced transmission. Ghost intensity uses surface pairs with approximate positions. Reflections and diffraction follow highlight focus and depth. Diffraction rays use aperture and physical scale as a basis, with creative gain and visual scale. Not yet production-calibrated.	镀膜为追踪透射中的理想增透层。鬼影强度基于表面对，位置为近似。反射和衍射随高光焦点及深度变化。衍射光芒以光圈和物理尺度为基础，增益与视觉尺度可创意调整。尚未进行生产校准。
+198	Depth video codec unsupported. Use MP4 H.264 or WebM.	不支持此深度视频编码。请使用 MP4 H.264 或 WebM。
+199	Video codec unsupported by this browser. Try MP4 H.264 or WebM.	浏览器不支持此视频编码。请尝试 MP4 H.264 或 WebM。
+200	Place depth on a layer in this document. It may be hidden.	将深度图放在此文档的一个图层中，可保持隐藏。
+201	Coma	彗差
+202	Additional coma	附加彗差
+203	Depth Cut compatibility	深度分割兼容
+204	Compensate focus using lens rays	根据镜头光线补偿焦点
+205	AI add-ons on demand · up to 3000 frames / 500 MB, maps up to 640 px. First use downloads model weights; internet and disk space required. DA2 Large weights: CC-BY-NC-4.0.	按需安装 AI 组件，最多 3000 帧 / 500 MB，深度图最大 640 像素。首次使用下载模型权重，需要网络和磁盘空间。DA2 Large 权重许可：CC-BY-NC-4.0。
+206	Add-ons installed	扩展组件已安装
+207	Depth compositing	深度合成
+208	Depth compositing	深度合成
+209	Invalid profile settings.	配置设置无效。
+210	Saved profile settings restored.	已恢复保存的配置设置。
+211	Invalid depth controls.	深度控件无效。
+212	GPU convolution ${result.gpuMs.toFixed(1)} ms · field ${atlas.grid} × ${atlas.grid} · ${result.samples} samples	GPU 卷积 ${result.gpuMs.toFixed(1)} 毫秒 · 视场 ${atlas.grid} × ${atlas.grid} · ${result.samples} 个采样
+213	Glitter prismatic color	闪粉棱镜色
+214	Corrects the offset between paraxial focus and the strongest central concentration of transmitted rays. Preserves aberrations and Soft Focus character.	校正近轴焦点与透射光线最大中心聚集位置之间的偏移。保留像差和柔焦风格。
+215	Coverage	覆盖范围
+216	Curvature multiplier	曲率倍率
+217	Curvature · mm	曲率 · 毫米
+218	INSIDE THE LENS	镜头内部
+219	ESTIMATED DIAMETER / CENTER	估算直径 / 中心
+220	DVD 1.1 · temporal video	DVD 1.1 · 时序视频
+221	Deakinizer · creative approximation on Double-Gauss. Center preserved; edges stretched by Swirl and Coma. No reconstructed-lens calibration.	Deakinizer · 基于双高斯的创意近似。保留中心，旋转和彗差拉伸边缘。未经重建镜头校准。
+222	Light deformation enabled in defocus. Adjust folds and dispersion; focus and depth preserved.	散焦光线变形已启用。调整折叠与色散；焦点和深度保持不变。
+223	Light deformation · folds	光线变形 · 折叠
+224	Deformation · color dispersion	变形 · 色散
+225	Demo: white / object ${near.toFixed(2)} m · black / lights ${far.toFixed(2)} m	演示：白色物体 ${near.toFixed(2)} 米 · 黑色光源 ${far.toFixed(2)} 米
+226	Demo: object ${near.toFixed(2)} m; lights ${far.toFixed(2)} m. Adjust the limits below focus.	演示：物体 ${near.toFixed(2)} 米，光源 ${far.toFixed(2)} 米。可在对焦控件下调整范围。
+227	Demo: object at 2 m; lights at 5 m.	演示：物体 2 米，光源 5 米。
+228	Density	密度
+231	Depth Cut	深度分割
+232	Depth Cut + Eclipsed bokeh	深度分割与散景遮挡
+233	Depth Cut · position	深度分割 · 位置
+234	Depth Cut · softness	深度分割 · 柔度
+235	Depth Cut · subject / background	深度分割 · 主体/背景
+236	Layer A depth	图层 A 深度
+237	Layer B depth	图层 B 深度
+238	Layer C depth	图层 C 深度
+239	Depth Slicing	深度切片
+240	Depth Slicing · ramps / multiple planes	深度切片 · 渐变/多平面
+241	Use Source depth if pin is empty	空输入时使用源深度
+242	Use image depth if layer is empty	空图层时使用图像深度
+243	Depth in meters (map / Cut)	深度单位米（图/切割）
+244	External depth follows main video time · starts at 0 s	外部深度跟随主视频时间，从 0 秒开始
+245	Incomplete depth	深度不完整
+246	Depth per frame · 	逐帧深度 · 
+247	Decentering p₁	偏心 p₁
+248	Decentering p₂	偏心 p₂
+249	Drawing, rays and image updated · 	图示、光线和图像已更新 · 
+250	Defocus applied to a new layer. Toggle layer visibility to compare.	散焦已应用到新图层。切换图层可见性以比较。
+251	Bruxosdovfx Defocus	Bruxosdovfx 散焦
+252	Off. Choosing a mode enables 1 mm; zero intensity disables it.	已关闭。选择模式会启用 1 毫米；零强度关闭。
+253	Unchecked: higher values = nearer. Gain/Bias do not automatically convert relative maps to meters. The built-in demo uses white = near.	未选中时，数值越大越近。增益和偏移不会自动将相对深度转换为米。内置演示使用白色表示近端。
+254	Aperture (f/)	光圈（f/）
+255	Aperture and shape	光圈与形状
+256	Diameter multiplier	直径倍率
+257	Diffraction and ghosts in GPU preview are controllable, approximate models.	GPU 预览中的衍射和鬼影为可调近似模型。
+258	Diffraction · visual scale	衍射 · 视觉尺度
+259	Diffraction · ray gain	衍射 · 光芒增益
+260	Diffraction, reflections and coatings	衍射、反射与镀膜
+261	Approximate diffusion	近似扩散
+262	Discs stretch around the center with edge vignetting. Use depth and focus on the subject. Lens, distances and loaded map are preserved. Swirl and vignette are adjustable; creative Petzval-inspired appearance, without specimen calibration.	光斑绕中心拉伸，边缘产生暗角。启用深度并对焦主体。保留镜头、距离和已加载深度图。旋转与暗角可调，是受 Petzval 启发的创意外观，未经实物校准。
+263	Chromatic dispersion	色散
+264	Dispersion / fringe · proxy	色散/彩边 · 近似
+265	Highlight dispersion	高光色散
+266	Distance without depth (m)	无深度距离（米）
+267	Distortion K1	畸变 K1
+268	Distortion K2	畸变 K2
+269	Glass distortion (px)	玻璃畸变（像素）
+270	Geometric distortion	几何畸变
+271	Dirt distribution · seed	污渍分布 · 随机种子
+272	Distribution · seed	分布 · 随机种子
+273	Layer distance · m	图层距离 · 米
+274	Drop distance · m	水滴距离 · 米
+275	Focus distance · m	对焦距离 · 米
+276	Plane distance · m	平面距离 · 米
+277	Dither amount	抖动量
+278	Fixed dither	固定抖动
+279	Bokeh dither	散景抖动
+280	Before / after divider	前后对比滑块
+281	Clear diameter	有效直径
+282	Diameter · mm	直径 · 毫米
+283	Folds and colored edges inside bokeh vary with depth and frame position. Zero disables it. Acts in defocus without extra deformation at focus. Creative caustic approximation; highlights add in linear light.	散景中的折叠和彩边随深度及画面位置变化。零值关闭。仅作用于散焦，合焦处不额外变形。为焦散的创意近似；高光在线性光空间相加。
+284	Double-Gauss 50.36 mm · public prescription.	双高斯 50.36 毫米 · 公开处方。
+285	Draft	草稿
+286	Draft for playback; Fast or Medium for editing; High or Very High for review; Extreme for still images.	播放用草稿，编辑用快速或中等，检查用高或极高，静态图像用极限质量。
+287	Draft · 24 samples	草稿 · 24 个采样
+288	Invalid video duration.	视频时长无效。
+289	Give your profile a name.	请为配置命名。
+290	INPUT	输入
+291	Eclipse bokeh · pupil occlusion	散景遮挡 · 瞳孔遮挡
+292	Eclipsed bokeh	散景遮挡
+293	Enter a valid value: drawing, rays and image update automatically.	输入有效数值，图示、光线和图像会自动更新。
+294	Visual lens editor: select a curve and drag its handles	镜头可视编辑器：选择曲线并拖动控制柄
+295	Creative effects	创意效果
+296	Stop engine	停止引擎
+297	WebM encoder unavailable.	WebM 编码器不可用。
+299	Sending media to local engine…	正在将媒体发送到本地引擎…
+300	Recording error: 	录制错误：
+301	Procedural dirt scale	程序化污渍尺度
+302	Bokeh scale	散景尺度
+303	Scale · px at 1080 width	尺度 · 1080 宽度下的像素
+304	Choose the image layer.	请选择图像图层。
+305	Choose a depth layer or disable Use depth.	请选择深度图层，或关闭使用深度。
+306	Choose an image and a depth map.	请选择图像和深度图。
+307	Primary spherical · signed ±	初级球差 · 正负 ±
+308	Secondary spherical · signed ±	次级球差 · 正负 ±
+309	Spacing multiplier	间距倍率
+310	Thickness or gap to the next surface	厚度或到下一表面的间距
+311	Next thickness · mm	下一厚度 · 毫米
+312	This GPU does not support the chosen export quality. Select a lower level.	此 GPU 不支持所选导出质量。请选择较低等级。
+313	This version supports up to 8 megapixels and 8192 pixels per side.	此版本最大支持 800 万像素，每边最多 8192 像素。
+314	This browser cannot record the canvas.	此浏览器不支持画布录制。
+315	Creative study based on Double-Gauss.	基于双高斯的创意研究。
+316	E.g. Biotar, 135	例如：Biotar、135
+317	E.g. My Helios · portrait	例如：我的 Helios · 人像
+318	Delete saved profile	删除已保存配置
+319	Explore what happens when light travels through a real lens.	探索光线穿过真实镜头时的变化。
+320	Exporting MP4: ${i+1}/${total} · ${Math.round((i+1)/total*100)}%	正在导出 MP4：${i+1}/${total} · ${Math.round((i+1)/total*100)}%
+321	Export PNG	导出 PNG
+322	Export PNG frame ↓	导出 PNG 帧 ↓
+323	Export profile	导出配置
+324	Export MP4 video	导出 MP4 视频
+325	Export · 1920 px	导出 · 1920 像素
+326	Export · 4096 px	导出 · 4096 像素
+327	Export · 4K / 3840 px	导出 · 4K / 3840 像素
+328	Export · original	导出 · 原始尺寸
+329	Export	导出
+330	Export cancelled.	导出已取消。
+331	Export cancelled. No file was saved.	导出已取消。未保存文件。
+332	Export sent to browser. Check browser downloads.	导出已发送到浏览器。请查看浏览器下载列表。
+333	Exposure (stops)	曝光（档）
+334	Exposure · EV	曝光 · EV
+335	Extreme	极限
+336	Extreme · 1024 samples	极限 · 1024 个采样
+337	FOCUS FORMATION AT THE SENSOR	传感器上的成焦
+339	Failed to capture frame	帧捕获失败
+340	Failed to load depth frame	深度帧加载失败
+341	Failed to check add-ons	扩展组件查询失败
+342	Failed to export frame.	帧导出失败。
+343	Failed to prepare rendering.	渲染准备失败。
+344	Failure at frame 	失败帧：
+345	Processing failed	处理失败
+346	Server failure.	服务器错误。
+347	Fast	快速
+348	Fast · 48 samples	快速 · 48 个采样
+349	Slices	切片数
+350	Depth slices	深度切片数
+351	Feather (px)	羽化（像素）
+352	Cut feather	分割羽化
+353	Stop down in stops	按档缩小光圈
+354	Close optical inspection	关闭光学检查
+355	Filmback · mm	像面偏移 · 毫米
+356	Character filter · negative / positive	风格滤镜 · 负/正
+357	Character filter: negative concentrates background bokeh in a ring; positive emphasizes the center. Behavior reverses in front of focus. Creative approximation, without commercial filter calibration.	风格滤镜：负值使背景散景集中于边环，正值强调中心。焦点前方表现相反。创意近似，未经商业滤镜校准。
+358	Final	最终图像
+359	Focus on Shimmer layer	对焦到闪烁图层
+360	Focus on drops	对焦到水滴
+361	Focus (m)	焦距距离（米）
+362	Focus / Aperture	对焦/光圈
+363	Compensated focus	补偿焦点
+364	Compensated focus at sensor	传感器补偿焦点
+365	Focus background	对焦背景
+366	Depth focus · near → background	深度对焦 · 近端 → 背景
+367	Paraxial focus	近轴焦点
+368	Paraxial focus at sensor	传感器近轴焦点
+369	Focus near	对焦近端
+370	Depth focus selected: 	已选择深度焦点：
+371	Focus is in meters. Gain and Bias transform the channel before mapping between near and far limits. Black and white correspond to these meter limits according to map direction; black does not mean infinity. The limits also set demo distances. AI maps are relative; RGB + Z alone cannot reconstruct hidden background.	对焦单位为米。增益和偏移先变换通道，再映射到近远距离。黑白按深度图方向对应米制范围，黑色不表示无穷远。范围也改变演示距离。AI 深度图为相对值，仅 RGB + Z 无法重建被遮挡的背景。
+372	Unsupported image format.	不支持的图像格式。
+373	Aperture shape and size	光圈形状与大小
+374	Incomplete CUDA frame.	CUDA 帧不完整。
+376	Full-frame checkout required	需要完整帧图像
+377	GPU · LOCAL	GPU · 本地
+378	Gain	增益
+379	Gain · map scale	增益 · 深度图尺度
+380	Glitter gain	闪粉增益
+381	Highlight gain	高光增益
+382	Derived Double-Gauss geometry, not the original prescription. Appearance values are not measured.	派生双高斯结构，并非原始处方。外观数值未经测量。
+383	Geometry applied · updating GPU image.	结构已应用，正在更新 GPU 图像。
+384	Independent geometry; drawing and atlas use this prescription.	独立几何结构，图示和光线图集使用此处方。
+385	Generate AI depth	生成 AI 深度
+386	Generate media depth	生成媒体深度
+387	Generation cancelled.	生成已取消。
+388	Ghosts · creative gain	鬼影 · 创意增益
+389	Glitter matte	闪粉遮罩
+390	Drops / refractive plane	水滴/折射平面
+391	Wide-angle and telephoto	广角与长焦
+392	Record silent WebM	录制无声 WebM
+393	Recording finished. Silent WebM at export resolution; timing depends on processed frames.	录制已结束。无声 WebM 使用导出分辨率，节奏取决于处理帧速率。
+394	Green	绿色
+395	Grow (px)	扩展（像素）
+397	High	高
+398	High · 256 samples	高 · 256 个采样
+399	Highlight detail	高光细节
+400	Highlight quality	高光质量
+401	Highlight threshold · linear	高光阈值 · 线性
+402	Highlight view	高光视图
+403	Highlights only	仅高光
+404	Invalid profile identifier.	配置标识无效。
+405	Image	图像
+406	Mask image is too large.	遮罩图像过大。
+407	Image and depth must be different layers.	图像与深度必须使用不同图层。
+408	Import mask	导入遮罩
+409	Import profile	导入配置
+410	Import texture	导入纹理
+411	Import or generate this image's depth map to select focus.	请导入或生成此图像的深度图，以选择焦点。
+412	Import or generate a depth map to focus by depth.	请导入或生成深度图，以进行深度对焦。
+413	Import a map with matching dimensions.	请导入尺寸一致的深度图。
+414	Import a depth map first.	请先导入深度图。
+415	Import synchronized depth video or a static map.	请导入同步深度视频或静态深度图。
+416	Impression (+ / -)	风格滤镜（正/负）
+417	Refractive index offset	折射率偏移
+418	Start engine	启动引擎
+419	Optical inspection	光学检查
+420	Install add-ons	安装扩展组件
+421	Intensity	强度
+422	Dirt intensity	污渍强度
+423	Shimmer intensity	闪烁强度
+424	Invert black and white	反转黑白
+425	Invert map	反转深度图
+426	JSON is too large.	JSON 过大。
+429	LENS	镜头
+430	LENS / PRESET	镜头/预设
+431	LENSES AND DEPTH	镜头与深度
+432	Blades	叶片数
+434	Sensor width · mm	传感器宽度 · 毫米
+435	Layer A	图层 A
+436	Layer A is Glitter	图层 A 用作闪粉
+437	Layer B	图层 B
+438	Layer C	图层 C
+439	Layer C is Distortion	图层 C 用作畸变
+441	Reading layers…	正在读取图层…
+442	Lens Dirt / lens imperfections	镜头污渍
+443	LensSim prescription · MIT	LensSim 处方 · MIT
+444	Lens / Presets	镜头/预设
+445	Lens, focus and depth	镜头、对焦与深度
+446	Highlight threshold · linear	高光阈值 · 线性
+447	Limit of 100 profiles reached.	已达到 100 个配置上限。
+448	Limit of 100 custom profiles.	最多 100 个自定义配置。
+449	500 MB limit reached; saving recorded segment.	已达到 500 MB 上限，正在保存录制片段。
+450	Far limit · m	远端范围 · 米
+451	Near limit · m	近端范围 · 米
+452	Luminance	亮度
+453	Luminance	亮度
+454	Lights in front of and behind focus, rendered through the selected lens	焦点前后光源，通过所选镜头渲染
+455	Lights rendered on GPU; ray-atlas bokeh enlarged individually by creative adjustments. Spot: on-axis prescription rays, enlarged; scale in µm.	GPU 渲染光源，光线图集散景按创意参数逐个放大。光斑显示放大的处方轴上光线，尺度以微米表示。
+456	Blades · 0 = circular	叶片数 · 0 = 圆形
+457	MP4 ready: ${size.width} × ${size.height}, ${fps} fps. No audio.	MP4 已完成：${size.width} × ${size.height}，${fps} 帧/秒。无音频。
+458	Longest side; aspect preserved. Smaller sources are enlarged.	最长边，保持比例。较小源图像会放大。
+460	Fixed camera-space dirt attenuates light and scatters highlights into halos. Approximate visual model, independent of scene depth. Zero intensity disables the effect.	固定在相机空间的污渍减弱光线，并将高光散射为光晕。为视觉近似模型，与场景深度无关。零强度关闭效果。
+461	Procedural dirt · fixed distribution	程序化污渍 · 固定分布
+462	Procedural dirt.	程序化污渍。
+463	Depth map	深度图
+464	Static map: does not follow motion	静态深度图：不跟随运动
+465	Maximum frame: 8192px / 17 megapixels	最大帧：8192 像素/1700 万像素
+466	Medium	中等
+467	Medium · 96 samples	中等 · 96 个采样
+468	My profile · 	我的配置 · 
+469	My profiles	我的配置
+473	Blend	混合
+474	Drop blend	水滴混合
+475	Effect blend	效果混合
+477	Unknown lens model.	未知镜头型号。
+478	Astigmatism mode	像散模式
+479	Negative mode	负模式
+480	Positive mode	正模式
+481	Engine	引擎
+482	Engine connected.	引擎已连接。
+483	Engine stopped.	引擎已停止。
+484	Moving glass · updating rays and preview…	正在移动镜片并更新光线和预览…
+485	Move lens assembly to focus	移动镜片组对焦
+486	Imported mask	已导入遮罩
+488	No map imported.	未导入深度图。
+489	No model found.	未找到型号。
+490	No lens matches this search.	未找到匹配镜头。
+491	No mask imported.	未导入遮罩。
+493	My profile name	我的配置名称
+494	Normalize glitter energy	归一化闪粉能量
+495	Normalize glitter	归一化闪粉
+496	Could not update inspection: 	无法更新检查：
+497	Could not update lens	无法更新镜头
+498	Could not confirm saving.	无法确认保存。
+499	Could not decode depth video. Use MP4 H.264 or WebM.	无法解码深度视频。请使用 MP4 H.264 或 WebM。
+500	Could not start engine. Open engine/BruxosPhotoshopEngine.exe in the plugin folder and retry.	无法启动引擎。请打开插件文件夹中的 engine/BruxosPhotoshopEngine.exe 后重试。
+501	Could not read your profiles: 	无法读取配置：
+502	Could not render output.	无法渲染输出。
+503	Could not render frame.	无法渲染帧。
+504	Could not play: 	无法播放：
+505	Paraxial alignment corresponds to the distance below. Aberrations and creative adjustments may reduce sharpness even at that plane.	近轴对齐对应下方显示的距离。像差与创意调整可能降低该平面的清晰度。
+506	The path of light	光线的路径
+507	The demo already has depth. Open your image or video first.	演示已有深度。请先打开您的图像或视频。
+508	Document changed during calculation. Apply again.	计算过程中，文档已改变。请重新应用。
+509	The depth map is not yet available at this frame.	此帧的深度图尚不可用。
+510	The map must match image/video dimensions.	深度图尺寸必须与图像或视频一致。
+511	The optical engine did not respond.	光学引擎未响应。
+512	Foreground objects cut discs behind them per pupil sample. Works with Depth Cut, continuous maps and Depth Slicing. Precision follows depth planes; hidden lights are not reconstructed.	前景物体按瞳孔采样裁切后方光斑。适用于深度分割、连续深度图和深度切片。精度取决于深度平面，不重建隐藏光源。
+513	Map direction and scale are set in depth controls.	深度图方向和尺度由深度控件设置。
+514	Depth video must match main video dimensions.	深度视频尺寸必须与主视频一致。
+515	Main video changed during import.	导入过程中主视频已改变。
+516	Obstruction / blocking	遮挡/阻光
+518	Another application is using the engine port.	其他应用正在占用引擎端口。
+520	PNG exported: ${result.width} × ${result.height}.	PNG 已导出：${result.width} × ${result.height}。
+521	POINT LIGHTS / SYNTHETIC HDR	点光源 / 合成 HDR
+523	Reference prescription PSF, without enlargement, extra spherical aberration or preview warp.	处方参考 PSF，无放大、附加球差或预览扭曲。
+524	Reference PSF.	参考 PSF。
+525	Standard and definition	标准与清晰度
+526	Fixed pattern per pixel; grows with defocus. Values above 1 soften the shape more.	每像素固定图案，随散焦增强。大于 1 时形状更柔和。
+527	Adjustment panels	调整面板
+528	Invalid parameter: 	无效参数：
+529	Lens parameters restored. Focus and depth preserved.	镜头参数已恢复。焦点和深度保持不变。
+530	Pending: complete surface, glass or aperture data are missing for this model. No substitute lens is applied.	待完善：此型号缺少完整的表面、玻璃或光圈数据。不会使用其他镜头替代。
+532	Profile	配置
+533	Profile created and saved.	配置已创建并保存。
+534	Lens profile	镜头配置
+535	Invalid lens profile.	镜头配置无效。
+536	Profile imported and saved in library.	配置已导入并保存到库中。
+537	Custom profile loaded.	自定义配置已加载。
+538	Custom profile deleted.	自定义配置已删除。
+539	Saved profile updated.	已更新保存的配置。
+540	Profile saved in this Photoshop.	配置已保存于此 Photoshop。
+541	Appearance profiles · approximations	外观配置 · 近似
+542	Custom	自定义
+543	Near ${near.toFixed(2)} m → background ${far.toFixed(2)} m · focus ${settings.focus_m.toFixed(2)} m	近端 ${near.toFixed(2)} 米 → 背景 ${far.toFixed(2)} 米 · 焦点 ${settings.focus_m.toFixed(2)} 米
+544	Photoshop returned reduced-resolution pixels.	Photoshop 返回了降低分辨率的像素。
+545	Reference plane: ${data.settings.source_m.toFixed(2)} m · sensor window ±${span.toFixed(2)} mm · ${rays.length} transmitted rays · fixed vertical scale	参考平面：${data.settings.source_m.toFixed(2)} 米 · 传感器范围 ±${span.toFixed(2)} 毫米 · ${rays.length} 条透射光线 · 固定垂直尺度
+546	Far plane / background	远平面/背景
+547	Far depth plane	深度远平面
+548	Aperture plane	光圈平面
+549	Sensor plane (mm)	传感器平面（毫米）
+550	Inspected depth plane	检查的深度平面
+551	Near plane	近平面
+552	Near depth plane	深度近平面
+553	Plane without depth	无深度平面
+554	Selected point	已选点
+555	Selected image point	已选图像点
+556	Video position	视频位置
+557	Fill in all surface values.	请填写所有表面数值。
+558	Preparing image; subsequent adjustments are automatic	正在准备图像，后续调整自动进行
+559	Preparing light bench…	正在准备光源测试台…
+560	Prescription pending	处方待完善
+561	Black: far (m)	黑色：远端（米）
+562	Processing	处理方式
+563	Depth	深度
+564	Depth (m)	深度（米）
+565	Depth A	深度 A
+566	Depth B	深度 B
+567	Depth C	深度 C
+568	Depth in meters	深度单位：米
+569	Project	项目
+570	Incompatible project.	项目不兼容。
+571	GPU preview active · field ${atlas.grid} × ${atlas.grid} · ${result.samples} samples	GPU 预览已启用 · 视场 ${atlas.grid} × ${atlas.grid} · ${result.samples} 个采样
+572	Sparse GPU preview: spatial lens approximation in linear light.	稀疏 GPU 预览：线性光空间中的镜头近似。
+573	GPU preview unavailable	GPU 预览不可用
+574	Sparse lens preview · separate artistic controls	稀疏镜头预览 · 独立艺术控件
+575	Progressive preview	渐进预览
+576	Preview · 1080 px	预览 · 1080 像素
+577	Preview · 360 px	预览 · 360 像素
+578	Preview · 540 px	预览 · 540 像素
+579	Preview · 720 px	预览 · 720 像素
+580	Preview · by quality	预览 · 根据质量
+581	Pupil · soft center	瞳孔 · 柔化中心
+582	Pupil · rim emphasis	瞳孔 · 边缘增强
+583	Quality	质量
+584	Quality / Render	质量/渲染
+585	Preview quality	预览质量
+586	Export quality	导出质量
+587	Extra quality applies only above main quality and within GPU limits. Base + Highlights reconstruct Final in linear light. Coverage shows the conservative extra-sampling bokeh region.	仅在超过主质量且未超 GPU 限制时使用额外质量。基础图像与高光在线性光中重组最终图像。覆盖视图显示额外散景采样的保守区域。
+588	POINT RESPONSE	点光响应
+589	Radial k₁	径向 k₁
+590	Radial k₂	径向 k₂
+591	Iris radius · mm	光圈半径 · 毫米
+592	Curvature radius	曲率半径
+593	Halo radius · px at 1080 width	光晕半径 · 1080 宽度下的像素
+594	Radius · px at 1080 width	半径 · 1080 宽度下的像素
+595	Magnified rays before and after sensor	传感器前后的放大光线
+596	Refracted rays	折射光线
+597	Highlight gain · creative	高光增强 · 创意
+598	Red	红色
+599	Red / scalar map	红色/标量深度图
+600	Zoom out	缩小
+601	Refraction intensity	折射强度
+602	Remove	移除
+603	Render	渲染
+604	Reset profile	重置配置
+605	Reset all	全部重置
+606	Preview resolution	预览分辨率
+607	Export resolution	导出分辨率
+608	Optical field resolution	光学视场分辨率
+609	Viewer resolution; does not change export	查看器分辨率，不影响导出
+610	Shows a fast preview during adjustments and refines to selected quality when you stop.	调整时显示快速预览，停止后精化到所选质量。
+611	Incomplete engine response.	引擎响应不完整。
+612	Restoring lens prescription.	正在恢复镜头处方。
+613	Restore lens	恢复镜头
+614	Restore profile	恢复配置
+615	Restore prescription	恢复处方
+616	GPU lens result	GPU 镜头结果
+617	Portrait and character	人像与风格
+618	Mouse wheel to zoom; drag to pan; drag the divider or use Shift to compare	滚轮缩放，拖动平移，拖动分隔线或按 Shift 比较
+620	Iris rotation	光圈旋转
+621	Dirt rotation · °	污渍旋转 · °
+622	Iris rotation · °	光圈旋转 · °
+623	SENSOR ${s.sensor_mm.toFixed(0)} × ${(s.sensor_mm/1.5).toFixed(0)} MM · FRONT ${near.toFixed(2)} M / BACK ${far.toFixed(2)} M	传感器 ${s.sensor_mm.toFixed(0)} × ${(s.sensor_mm/1.5).toFixed(0)} 毫米 · 前方 ${near.toFixed(2)} 米/后方 ${far.toFixed(2)} 米
+624	Saves glass, optical controls, depth settings, quality and output settings. Images, videos and maps are not included.	保存镜片、光学控件、深度设置、质量和输出设置。不包含图像、视频或深度图。
+625	Save my profile	保存我的配置
+626	Save new	保存新配置
+627	Save parameters	保存参数
+629	Output	输出
+632	Seed	随机种子
+633	Select focus	选择焦点
+634	Select surface 	选择表面 
+635	Select one of your profiles to update.	请选择一个自定义配置进行更新。
+636	Select a custom profile to delete.	请选择要删除的自定义配置。
+637	Select glass in the drawing or a surface in the table.	请在图示中选择镜片，或在表格中选择表面。
+638	No depth	无深度
+639	Horizontal sensor (mm)	传感器宽度（毫米）
+640	Shimmer · optical layer	闪烁 · 光学图层
+641	Shimmer / glitter layer	闪烁/闪粉图层
+642	Defocus Simulator	散焦模拟器
+643	Bruxosdovfx Defocus Simulator	Bruxosdovfx 散焦模拟器
+645	Soften internal cutoff	柔化内部裁切
+647	Spot at focus	合焦光斑
+648	Iris softness · radius fraction	光圈柔度 · 半径比例
+649	Iris softness	光圈柔度
+650	Softens edges clipped by glass and cat's-eye. Use Iris softness for the edge drawn by the aperture.	柔化镜片及猫眼效应裁切的边缘。光圈形成的边缘请使用光圈柔度。
+651	Soften internal cutoff	柔化内部裁切
+652	Soften internal clipping	柔化内部裁切
+653	Surface to edit (0 = original)	编辑表面（0 = 原始）
+654	Surface ${surface.index+1}: ${label}	表面 ${surface.index+1}：${label}
+655	Glass surface · select in drawing	镜片表面 · 在图示中选择
+656	Surfaces	表面
+657	Lens surfaces · mm	镜头表面 · 毫米
+658	Swirl	旋转散景
+659	Tangential swirl	切向旋转
+660	Size	大小
+661	Timed out opening depth video.	打开深度视频超时。
+662	Timed out seeking video frame	查找视频帧超时
+663	Timed out seeking depth video frame.	查找深度视频帧超时。
+664	Imported texture	已导入纹理
+665	Texture is too large.	纹理过大。
+666	Threshold	阈值
+667	Wide open	全开光圈
+668	Cut transition (map)	切割过渡（深度图）
+669	Glass ray tracing	镜片光线追踪
+670	Geometric tracing + single-layer coating.	几何光线追踪与单层镀膜。
+671	Tracing light…	正在追踪光线…
+672	Use custom aperture	使用自定义光圈
+673	Use depth	使用深度
+674	Use depth map	使用深度图
+675	Use procedural	使用程序化纹理
+676	Use a mask image up to 8 MB.	遮罩图像最大为 8 MB。
+677	Use a texture up to 8 MB.	纹理最大为 8 MB。
+678	Value outside this surface's limits. Correct the highlighted field.	数值超出此表面限制。请修正高亮字段。
+679	Higher values = farther	数值越大越远
+680	Very high	极高
+681	Very high · 512 samples	极高 · 512 个采样
+683	Creative vignette	创意暗角
+686	Fit full frame	适配完整画面
+687	Vulkan accelerates ray tracing. Image compositing uses CUDA or WebGL.	Vulkan 加速光线追踪。图像合成使用 CUDA 或 WebGL。
+688	Automatic Vulkan · CPU if unavailable	自动 Vulkan · 不可用时使用 CPU
+690	Vulkan · CPU fallback	Vulkan · 可回退 CPU
+691	Video without depth map.	视频没有深度图。
+692	Artistic polynomial warp, uncalibrated. Independent of bokeh PSF.	未校准的艺术多项式扭曲，与散景 PSF 独立。
+696	Viewer zoom	查看器缩放
+697	curvature	曲率
+699	by Bruxosdovfx	由 Bruxosdovfx 制作
+701	diameter	直径
+702	encoder unavailable	编码器不可用
+703	spacing	间距
+704	spacing · drag handles	间距 · 拖动控制柄
+705	f/${a.fNumber.toFixed(2)} · entrance pupil Ø ${a.diameter.toFixed(2)} mm · widest aperture f/${a.minF.toFixed(2)}. Paraxial estimate; exposure preserved.	f/${a.fNumber.toFixed(2)} · 入瞳直径 ${a.diameter.toFixed(2)} 毫米 · 最大光圈 f/${a.minF.toFixed(2)}。近轴估算，保留曝光。
+723	size	大小
+725	a signature.	独特的印记。
+727	Refractive index after surface	表面后的折射率
+728	Index n	折射率 n
+729	Iris	光圈
+730	Iris / sensor	光圈/传感器
+731	Invalid iris or depth.	光圈或深度无效。
+732	index	折射率
+734	Ⅱ Pause	Ⅱ 暂停
+735	↔ Drag to focus	↔ 拖动对焦
+737	■ Stop and save segment	■ 停止并保存片段
+738	▶ Play	▶ 播放
+739	＋ Open image	＋ 打开图像
+740	＋ Depth	＋ 深度
+741	＋ Video	＋ 视频

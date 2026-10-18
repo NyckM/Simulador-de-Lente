@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 22.9194,
+    "thickness": 0.777,
+    "nd": 1.5038,
+    "aperture_diameter": 23.8
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 11.0523,
+    "thickness": 2.772,
+    "nd": 1.0,
+    "aperture_diameter": 17.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 23.1525,
+    "thickness": 0.777,
+    "nd": 1.48697,
+    "aperture_diameter": 21.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 10.6512,
+    "thickness": 7.35,
+    "nd": 1.0,
+    "aperture_diameter": 14.7
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 11.8104,
+    "thickness": 6.153,
+    "nd": 1.7205,
+    "aperture_diameter": 12.0
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 5.3277,
+    "thickness": 2.793,
+    "nd": 1.60739,
+    "aperture_diameter": 8.82
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": -40.9332,
+    "thickness": 0.4935,
+    "nd": 1.0,
+    "aperture_diameter": 8.2
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": 0.0,
+    "thickness": 0.4935,
+    "nd": 1.0,
+    "aperture_diameter": 5.9,
+    "is_stop": true
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": -53.067,
+    "thickness": 0.588,
+    "nd": 1.56993,
+    "aperture_diameter": 8.2
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": 6.4239,
+    "thickness": 4.977,
+    "nd": 1.625,
+    "aperture_diameter": 7.56
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": -5.3571,
+    "thickness": 3.822,
+    "nd": 1.71966,
+    "aperture_diameter": 9.24
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -12.0498,
+    "thickness": 8.19,
+    "nd": 1.0,
+    "aperture_diameter": 12.8
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": -8.4315,
+    "thickness": 2.058,
+    "nd": 1.642,
+    "aperture_diameter": 15.0
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": -21.5544,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 22.0
+  }
+}

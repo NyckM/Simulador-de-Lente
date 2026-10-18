@@ -1,0 +1,6 @@
+const D=require('../web/depth-utils.js'),assert=require('assert'),fs=require('fs'),path=require('path');
+const fixtures=JSON.parse(fs.readFileSync(path.join(__dirname,'fixtures/depth-stage13.json'),'utf8'));let worst=0;
+for(const f of fixtures){const raw=new Float32Array(f.raw.map(v=>v===null?NaN:v)),p=D.prepare(raw,f.settings);for(const key of ['nearness','normalized','distance_m'])for(let i=0;i<raw.length;i++){const e=Math.abs(p[key][i]-f.expected[key][i]);worst=Math.max(worst,e);assert(e<1e-6,f.name+':'+key)}assert.deepEqual(p.statistics,f.expected.statistics);assert.deepEqual(p.warnings,f.expected.warnings);assert.deepEqual([...p.valid],f.expected.valid.map(v=>v?1:0));}
+const values=new Float32Array(131073);values[1]=9;values[2]=-7;const p=D.prepare(values,{...fixtures[0].settings,depth_normalize:'minmax'});assert.equal(p.statistics.low,-7);assert.equal(p.statistics.high,9);
+const s={...fixtures[0].settings,depth_normalize:'manual',depth_low:.2,depth_high:.8};assert.equal(D.prepare([.5],s).nearness[0],D.prepare([.5,1000],s).nearness[0]);
+const report={cpu_js_cases:fixtures.length,max_float32_error:worst,fixed_bounds_video_stable:true,full_map_extrema:true};fs.writeFileSync(path.join(__dirname,'../research/depth-stage13-contract-validation.json'),JSON.stringify(report,null,2));console.log(report);

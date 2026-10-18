@@ -1,0 +1,25 @@
+(async()=>{try{
+ const wait=async()=>{for(let i=0;i<300;i++){if(!kernelBusy&&!kernelTimer&&!layoutBusy&&!layoutTimer){await draw({limit:640,samples:512,aa:1});return;}await new Promise(r=>setTimeout(r,50));}throw Error('Render timed out');};
+ const w=640,h=400,scene=document.createElement('canvas');scene.width=w;scene.height=h;const ctx=scene.getContext('2d');ctx.fillStyle='#000';ctx.fillRect(0,0,w,h);ctx.fillStyle='#729781';ctx.fillRect(275,170,90,130);
+ const raw=new Float32Array(w*h*4),pixel=ctx.getImageData(0,0,w,h).data;for(let i=0;i<raw.length;i+=4){for(let c=0;c<3;c++){const v=pixel[i+c]/255;raw[i+c]=v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}raw[i+3]=1;}
+ for(const x of [135,320,505])for(const y of [100,330])for(let yy=y-1;yy<=y+1;yy++)for(let xx=x-1;xx<=x+1;xx++){const i=(yy*w+xx)*4;raw[i]=18;raw[i+1]=18;raw[i+2]=18;}
+ const map=document.createElement('canvas');map.width=w;map.height=h;const mc=map.getContext('2d');mc.fillStyle='black';mc.fillRect(0,0,w,h);mc.fillStyle='white';mc.fillRect(275,170,90,130);
+ const file=async(c,name)=>new File([await new Promise(r=>c.toBlob(r,'image/png'))],name,{type:'image/png'});
+ settings={...defaults,focus_m:1,source_m:5,near_m:1,far_m:5,invert_depth:false,blades:0,bokeh_gain:4,render_backend:'webgl',depth_mode:'auto',shimmer_depth:1,shimmer_size:12,shimmer_density:.65,shimmer_seed:4,shimmer_threshold:.8,shimmer_normalize:true,shimmer_prism:.25};quality='extreme';exportQuality='extreme';
+ await openImage(await file(scene,'Luzes.png'));await openDepth(await file(map,'Depth.png'));gpu.uploadSource(scene,w,h,raw);await updateKernel();sync();await wait();
+ const baseline=canvas.toDataURL(),depthBefore=depth,focusBefore=settings.focus_m;
+ const legacyCanvas=document.createElement('canvas'),legacy=new LegacyLensGPU(legacyCanvas);legacy.uploadSource(scene,w,h,raw);legacy.uploadDepth(map);legacy.setKernel(atlas);
+ $('shimmer_amount').value=6;$('shimmer_amount').onchange();await wait();legacy.draw(settings,{limit:640,samples:512,aa:1,depth:true,invert:false,near:1,far:5});
+ const images={'Antes · ruído na pupila':legacyCanvas.toDataURL(),'Depois · camada de glitter':canvas.toDataURL()},frame=canvas.toDataURL();await wait();const stable=frame===canvas.toDataURL();
+ const read=()=>{const g=gpu.gl,a=new Float32Array(w*h*4);g.bindFramebuffer(g.FRAMEBUFFER,settings.render_backend==='webgl'&&(settings.ghost_gain>0||settings.diffraction_gain>0)?gpu.waveMergedFbo:gpu.renderFbo);g.readPixels(0,0,w,h,g.RGBA,g.FLOAT,a);g.bindFramebuffer(g.FRAMEBUFFER,null);if(g.getError()!==g.NO_ERROR)throw Error('Read failed');return a;};
+ const difference=(a,b)=>{let total=0;for(let i=0;i<a.length;i++)total+=Math.abs(a[i]-b[i]);return total/a.length;};const gl=read();settings.render_backend='cuda';await wait();const native=read();const cudaDifference=difference(gl,native);
+ const settingsPreserved=depthBefore===depth&&settings.focus_m===focusBefore&&settings.near_m===1&&settings.far_m===5&&$('use-depth').checked;
+ settings.render_backend='webgl';$('shimmer_prism').value=0;$('shimmer_prism').onchange();await wait();const neutral=read();$('shimmer_prism').value=1;$('shimmer_prism').onchange();await wait();const prism=read();const prismDifference=difference(neutral,prism);let prismPeak=0;for(let i=0;i<prism.length;i++)if(i%4!==3)prismPeak=Math.max(prismPeak,Math.abs(prism[i]-neutral[i]));const prismControlWorks=prismPeak>.003;
+ $('normalize-shimmer').checked=false;$('normalize-shimmer').onchange();await wait();const additive=read();const normalizationWorks=difference(additive,prism)>.0001;
+ $('normalize-shimmer').checked=true;$('normalize-shimmer').onchange();$('shimmer_prism').value=.25;$('shimmer_prism').onchange();await wait();const profile=ProfileStore.create('Glitter no bokeh',snapshot());settings.shimmer_prism=0;settings.shimmer_normalize=false;await restoreProfile(profile);await wait();const profileRestored=settings.shimmer_normalize===true&&settings.shimmer_prism===.25;
+ settings.ghost_gain=39.6;settings.diffraction_gain=1.1;settings.diffraction_scale=4.5;await wait();const glWave=read();settings.render_backend='cuda';await wait();const waveDifference=difference(glWave,read());settings.render_backend='webgl';settings.ghost_gain=0;settings.diffraction_gain=0;await wait();
+ $('shimmer_depth').value=2;$('shimmer_depth').onchange();await wait();const ownDepthWorks=difference(gl,read())>.0001&&settings.focus_m===focusBefore;settings.shimmer_depth=1;
+ settings.focus_m=1.3;await wait();images['Depois · foco 1,3 m']=canvas.toDataURL();const focusChanges=frame!==canvas.toDataURL();
+ settings.focus_m=1;$('shimmer_amount').value=0;$('shimmer_amount').onchange();await wait();const zeroRestores=canvas.toDataURL()===baseline;
+ window.shimmerTestResult={stable,cudaDifference,settingsPreserved,prismControlWorks,prismDifference,prismPeak,normalizationWorks,waveDifference,profileRestored,ownDepthWorks,focusChanges,zeroRestores,cudaActive:!cudaFailed,images};
+}catch(e){window.shimmerTestResult={error:e.message,stack:e.stack};}})()

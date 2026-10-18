@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Optica Lab — estudo de lentes</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><a class="brand" href="/" aria-label="Optica Lab"><span class="brand-icon">◉</span> optica<span>lab</span></a><div class="project">ESTUDO 001 <span>/</span> Double-Gauss</div><div class="version"><i></i> PRÉVIA GPU <span>α 0.2</span></div></header>
+<main>
+<aside class="controls">
+  <div class="section-heading"><span>01 / LENTE</span><span class="tiny">GPU · LOCAL</span></div>
+  <h1>A luz tem<br>uma assinatura.</h1><p class="intro">Explore o que acontece quando a luz atravessa uma lente de verdade.</p>
+  <label class="select-label" for="preset">PONTO DE PARTIDA</label>
+  <select id="preset"><option value="physical">Double-Gauss · prescrição pública</option><option value="swirl">Estudo de swirl · inspirado em Helios</option><option value="petzval">Estudo de campo · inspirado em Petzval</option><option value="anamorphic">Estudo anamórfico · aproximação</option></select>
+  <p id="preset-note" class="note">50,36 mm calculados · 10 superfícies refrativas + íris. Sem calibração de uma lente comercial.</p>
+  <div class="divider"></div>
+  <div class="section-heading"><span>02 / CAPTURA</span><button id="reset" class="text-button">Restaurar</button></div>
+  <div id="capture-controls"></div><div class="bokeh-meter"><span>DIÂMETRO ESTIMADO / CENTRO</span><strong id="bokeh-size">— px</strong><small>Prévia esparsa da lente · controles artísticos separados</small></div>
+  <details open><summary>Íris e formato <span>+</span></summary><div id="iris-controls"></div></details>
+  <details><summary>Caráter criativo <span>+</span></summary><p class="note">Modificações aproximadas sobre a PSF. Não equivalem a prescrições ópticas calibradas.</p><div id="creative-controls"></div></details>
+  <details><summary>Distorção geométrica <span>+</span></summary><p class="note">Warp polinomial artístico, não calibrado. Independente da PSF de bokeh.</p><div id="distortion-controls"></div></details><details><summary>Profundidade <span>+</span></summary><p class="note">Branco = próximo. IA: mapas float sincronizados por frame, em escala relativa. PNG importado: mapa estático em 8 bits. Oclusão aproximada.</p><label class="check"><input id="use-depth" type="checkbox"> Usar mapa de profundidade</label><div id="depth-controls"></div><label for="depth-model">Gerar depth com IA</label><select id="depth-model"><option value="da2">Depth Anything V2 Large</option><option value="da3">Depth Anything 3 Base</option><option value="moge">MoGe 2</option><option value="dvd">DVD 1.1 · vídeo temporal</option></select><button id="generate-depth">Gerar depth da mídia</button><button id="cancel-depth" hidden>Cancelar depth</button><p id="depth-progress" role="status">IA local · primeiro uso pode baixar pesos. Mapas em cache no disco.</p><label class="check"><input id="invert-depth" type="checkbox"> Inverter preto / branco</label><p id="depth-file-name" class="note">Demo: objeto a 2 m; luzes a 5 m.</p></details>
+  <details><summary>Projeto <span>+</span></summary><div class="row"><button id="save-settings">Salvar parâmetros</button><button id="load-settings">Carregar JSON</button></div></details>
+  <p class="footer-note">Óptica geométrica experimental.<br>Sem difração, ghosts ou coatings nesta versão.</p>
+</aside>
+<section class="workspace">
+  <div class="workspace-toolbar"><div class="tabs"><button id="view-result" class="active">Imagem</button><button id="view-depth">Profundidade</button></div><div class="row"><button id="demo">Cena de teste</button><button id="import-image" class="outline">＋ Abrir imagem</button><button id="import-video" class="outline">＋ Vídeo</button><button id="import-depth">＋ Depth</button></div></div>
+  <div class="viewport">
+    <div class="viewport-top"><span id="asset-name">BANCO DE LUZES / HDR SINTÉTICO</span><span id="resolution">768 × 480</span></div>
+    <div id="image-stage" class="image-stage"><canvas id="gpu-canvas" aria-label="Resultado da lente na GPU"></canvas><div id="before-layer"><img id="source-image" alt="Imagem de entrada"><video id="source-video" muted playsinline preload="metadata" hidden></video></div><div id="split-line" role="slider" tabindex="0" aria-label="Divisor antes e depois" aria-valuemin="0" aria-valuemax="100" aria-valuenow="28"><span aria-hidden="true">↔</span></div><span class="image-label before">ENTRADA</span><span class="image-label after">LENTE</span></div>
+    <div id="depth-stage" class="depth-stage" hidden><img id="depth-image" alt="Mapa de profundidade"><p id="depth-caption">Branco: 2 m · preto: 5 m</p></div>
+    <div id="busy-overlay" hidden><div class="spinner"></div><strong>Traçando a luz…</strong><span>Preparando a imagem; ajustes seguintes são automáticos</span></div>
+  </div>
+  <div id="video-transport" hidden><button id="play">▶ Reproduzir</button><input id="seek" type="range" min="0" max="1" step="0.01" value="0" aria-label="Posição do vídeo"><span id="video-time">0:00 / 0:00</span><button id="export-video">Exportar vídeo MP4</button><button id="cancel-job" hidden>Cancelar processamento</button><label>FPS <select id="export-fps"><option>24</option><option>25</option><option selected>30</option><option>60</option></select></label><button id="record">Gravar WebM sem áudio</button><span id="video-fps"></span></div>
+  <div class="render-bar"><div><span class="status-dot"></span><span id="status" role="status">Preparando bancada…</span></div><div class="row"><select id="quality" aria-label="Qualidade"><option value="fast">Rápida · 512 px / 24 raios</option><option value="balanced" selected>Equilibrada · 768 px / 48 raios</option><option value="detail">Detalhada · 1280 px / 64 raios / AA 2×</option></select><button id="render" class="primary">Atualizar lente <span>↗</span></button><select id="export-size" aria-label="Resolução de exportação" title="Maior lado; mantém proporção. Fontes menores serão ampliadas."><option value="1920">Exportar · 1920 px</option><option value="3840" selected>Exportar · 4K / 3840 px</option><option value="4096">Exportar · 4096 px</option><option value="source">Exportar · original</option></select><button id="export" disabled>Exportar frame PNG ↓</button></div></div>
+  <div id="messages" role="alert" hidden></div>
+  <div class="analysis-grid">
+    <article class="diagram-card"><div class="card-heading"><div><span class="eyebrow">DENTRO DA LENTE</span><h2>O caminho da luz</h2></div><span id="efl" class="metric">50,36 <small>mm</small></span></div><svg id="lens-diagram" viewBox="0 0 650 190" role="img" aria-label="Diagrama de raios e superfícies da lente"></svg><div class="legend"><span><i class="green"></i>Raios refratados</span><span><i class="blue"></i>Superfícies</span><span><i class="orange"></i>Íris / sensor</span></div></article>
+    <article class="psf-card"><div class="card-heading"><div><span class="eyebrow">RESPOSTA A UM PONTO</span><h2>A forma do desfoque</h2></div><span class="pill">PSF</span></div><div class="psf-pair"><div><img id="psf-center" alt="PSF no centro"><span>Centro</span></div><div><img id="psf-edge" alt="PSF na borda"><span>Campo 84%</span></div></div><p class="note">Ampliação individual · intensidade em escala não linear para inspeção.</p></article>
+  </div>
+  <div class="bottom-line"><span>ATLAS DE RAIOS / PRÉVIA AUTOMÁTICA / VÍDEO LOCAL</span><span>LensSim prescription · MIT</span></div>
+</section>
+</main>
+<input id="image-input" type="file" accept="image/png,image/jpeg,image/webp" hidden><input id="depth-input" type="file" accept="image/png" hidden><input id="video-input" type="file" accept="video/mp4,video/webm,video/quicktime,video/x-matroska" hidden><input id="settings-input" type="file" accept="application/json,.json" hidden>
+<script src="/gpu.js"></script><script src="/app.js"></script><pre id="test-result">TEST RUNNING</pre><script>
+(async()=>{try{
+while(!gpu?.ready)await new Promise(r=>setTimeout(r,100));
+await openVideo(new File([await(await fetch('/test-video.mp4')).blob()],'test.mp4',{type:'video/mp4'}));
+while(kernelBusy||kernelTimer)await new Promise(r=>setTimeout(r,100));
+$('export-size').value='source';$('export-fps').value='24';
+let output=null;download=(url,name)=>{output={url,name};};
+await $('export-video').onclick();
+if(!output)throw Error($('messages').textContent);
+$('depth-model').value='da2';await $('generate-depth').onclick();
+if(!depthInfo)throw Error($('depth-progress').textContent);
+await seekFrame(.25);await ensureDepth(depthIndex());const info=draw();
+const g=gpu.gl;const error=g.getError();if(error)throw Error('GL error '+error);
+const chart=document.createElement('canvas');chart.width=320;chart.height=180;const cx=chart.getContext('2d');cx.fillStyle='black';cx.fillRect(0,0,320,180);cx.fillStyle='white';for(let x=16;x<320;x+=32)cx.fillRect(x,0,8,180);
+const check=new LensGPU(document.createElement('canvas'));check.setKernel(atlas);check.uploadSource(chart,320,180);
+const cs={...settings,dispersion:0,focus_m:settings.source_m,ca_red:0,ca_blue:0,ca_axial:0};
+const pixels=()=>{const p=new Uint8Array(320*180*4);check.gl.readPixels(0,0,320,180,check.gl.RGBA,check.gl.UNSIGNED_BYTE,p);return p;};
+check.draw(cs,{limit:320,samples:64});const neutral=pixels();check.draw({...cs,ca_red:1,ca_blue:-1,ca_axial:.5},{limit:320,samples:64});const chromatic=pixels();check.draw(cs,{limit:320,samples:64});const restored=pixels();
+let change=0,restore=0;for(let i=0;i<neutral.length;i++){change+=Math.abs(neutral[i]-chromatic[i]);restore+=Math.abs(neutral[i]-restored[i]);}if(change===0||restore!==0||check.gl.getError())throw Error('CA regression');
+$('test-result').textContent=JSON.stringify({passed:true,output,depth:depthInfo,depthFrame,resolution:info,chromatic:{change,restore}},null,2);
+}catch(e){$('test-result').textContent='FAILED: '+e.stack;}})();
+</script></body></html>
+
+

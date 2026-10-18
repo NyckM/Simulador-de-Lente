@@ -1,0 +1,27 @@
+#version 450
+layout(local_size_x=128) in;
+struct Surface {vec4 shape;vec4 extra;};
+struct Ray {vec4 p;vec4 d;};
+struct Result {vec4 p;vec4 d;vec4 state;};
+layout(std430,binding=0) readonly buffer Surfaces {Surface surfaces[];};
+layout(std430,binding=1) readonly buffer Input {Ray rays[];};
+layout(std430,binding=2) writeonly buffer Output {Result results[];};
+layout(push_constant) uniform Params {uint count;uint surfaceCount;float iris;float rotation;uint blades;uint soften;float softness;float dispersion;float coating;float coatingNm;} cfg;
+float coverage(float margin,float width){float t=clamp(margin/max(width,1e-20),0.,1.);return width>0.?t*t*(3.-2.*t):float(margin>=0.);}
+float indexOf(float nd,float wl){if(nd==1.||cfg.dispersion==0.)return nd;float b=(nd-1.)/45./(1./(.4861*.4861)-1./(.6563*.6563));return nd+cfg.dispersion*b*(1./(wl*wl)-1./(.5876*.5876));}
+float filmReflect(float y0,float yf,float y2,float cosine){float a=(y0-yf)/max(y0+yf,1e-12),b=(yf-y2)/max(yf+y2,1e-12);return (a*a+b*b+2.*a*b*cosine)/max(1.+a*a*b*b+2.*a*b*cosine,1e-12);}
+float coated(float ci,float n1,float n2,float wl){float nf=sqrt(n1*n2),si2=max(0.,1.-ci*ci);float cf=sqrt(max(0.,1.-n1*n1/(nf*nf)*si2)),ct=sqrt(max(0.,1.-n1*n1/(n2*n2)*si2));float cs=cos(3.14159265359*cfg.coatingNm*.001/wl*cf);return 1.-.5*(filmReflect(n1*ci,nf*cf,n2*ct,cs)+filmReflect(n1/max(ci,1e-12),nf/max(cf,1e-12),n2/max(ct,1e-12),cs));}
+void main(){uint id=gl_GlobalInvocationID.x;if(id>=cfg.count)return;vec3 p=rays[id].p.xyz,d=normalize(rays[id].d.xyz);float wl=rays[id].p.w,n1=1.,energy=1.;bool valid=true;vec2 irisXY=vec2(0);
+ for(uint i=0;i<cfg.surfaceCount;++i){Surface s=surfaces[i];float radius=s.shape.x,z=s.shape.y,aperture=s.shape.z;vec3 hit,normal;float t;
+  if(radius==0.){t=(z-p.z)/max(d.z,1e-12);hit=p+t*d;normal=vec3(0,0,-1);valid=t>=-1e-7;}
+  else{vec3 center=vec3(0,0,z+radius),q=p-center;float b=dot(q,d),disc=b*b-(dot(q,q)-radius*radius);t=-b-sign(radius)*sqrt(max(disc,0.));hit=p+t*d;normal=normalize(hit-center);valid=disc>=0.&&t>=-1e-7;}
+  float r=length(hit.xy);valid=valid&&r<=aperture+1e-9;if(!valid)break;
+  if(cfg.soften!=0)energy*=coverage(aperture-r,aperture*.025);
+  if(s.extra.x>0.){irisXY=hit.xy;aperture=min(aperture,cfg.iris);if(cfg.blades>=3){float pi=3.14159265359,ang=atan(hit.y,hit.x)-cfg.rotation,sector=mod(ang+pi/float(cfg.blades),2.*pi/float(cfg.blades))-pi/float(cfg.blades);aperture*=cos(pi/float(cfg.blades))/cos(sector);}
+   valid=r<=aperture+1e-9;if(!valid)break;energy*=coverage(aperture-r,aperture*cfg.softness);}
+  float n2=indexOf(s.shape.w,wl);if(dot(d,normal)>0.)normal=-normal;float ci=-dot(d,normal),eta=n1/n2,k=1.-eta*eta*(1.-ci*ci);if(k<0.){valid=false;break;}
+  float ct=sqrt(max(k,0.)),rs=(n1*ci-n2*ct)/max(n1*ci+n2*ct,1e-20),rp=(n2*ci-n1*ct)/max(n2*ci+n1*ct,1e-20);float transmission=1.-.5*(rs*rs+rp*rp);if(cfg.coating>0.)transmission=mix(transmission,coated(abs(ci),n1,n2,wl),cfg.coating);
+  energy*=transmission;d=normalize(eta*d+(eta*ci-ct)*normal);p=hit;n1=n2;
+ }
+ results[id].p=vec4(p,0);results[id].d=vec4(d,0);results[id].state=vec4(energy,valid?1.:0.,irisXY);
+}

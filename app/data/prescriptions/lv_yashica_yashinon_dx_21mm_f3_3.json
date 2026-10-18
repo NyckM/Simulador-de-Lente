@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 34.3665,
+    "thickness": 1.3776,
+    "nd": 1.67,
+    "aperture_diameter": 22.2
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 10.61046,
+    "thickness": 10.2249,
+    "nd": 1.0,
+    "aperture_diameter": 17.2
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 13.00362,
+    "thickness": 5.796,
+    "nd": 1.717,
+    "aperture_diameter": 15.4
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": -15.6303,
+    "thickness": 0.819,
+    "nd": 1.64328,
+    "aperture_diameter": 13.8
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 8.26707,
+    "thickness": 0.5166,
+    "nd": 1.0,
+    "aperture_diameter": 10.7
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 10.10268,
+    "thickness": 4.0005,
+    "nd": 1.64085,
+    "aperture_diameter": 10.7
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": -53.214,
+    "thickness": 0.735,
+    "nd": 1.0,
+    "aperture_diameter": 9.6
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": 0.0,
+    "thickness": 0.3927,
+    "nd": 1.0,
+    "aperture_diameter": 7.746394826,
+    "is_stop": true
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": -62.5821,
+    "thickness": 0.819,
+    "nd": 1.589,
+    "aperture_diameter": 8.6
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": 9.07221,
+    "thickness": 6.3945,
+    "nd": 1.6223,
+    "aperture_diameter": 9.4
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": -6.52428,
+    "thickness": 4.1391,
+    "nd": 1.71736,
+    "aperture_diameter": 10.6
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -14.83125,
+    "thickness": 8.6289,
+    "nd": 1.0,
+    "aperture_diameter": 12.8
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": -9.40737,
+    "thickness": 2.3646,
+    "nd": 1.57099,
+    "aperture_diameter": 15.8
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": -30.1791,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 22.4
+  }
+}

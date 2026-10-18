@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css"></head><body>
+<div id="panelRoot"><header><h3>Desfoque da Bruxosdovfx</h3><p>Lente, foco e profundidade</p></header>
+<nav id="tabs" role="tablist" aria-label="Controles"></nav>
+<div id="tabViewport">
+<section id="panel-SOURCES" class="tabPanel" role="tabpanel">
+<div id="sources"><label>Imagem</label><sp-dropdown id="source"></sp-dropdown><label>Mapa de profundidade</label><sp-dropdown id="depth"></sp-dropdown><p>Coloque o depth em uma camada deste documento. Ela pode ficar oculta.</p><sp-button id="refresh" variant="secondary">Atualizar camadas</sp-button></div>
+</section>
+<section id="panel-LENS_GROUP" class="tabPanel" role="tabpanel" hidden><div id="profileBar"><label>Buscar lente</label><sp-textfield id="search" placeholder="Zeiss, Helios, Canon…"></sp-textfield><label>Perfil</label><sp-dropdown id="profile"></sp-dropdown><div class="buttons"><sp-button id="reset" variant="secondary">Restaurar lente</sp-button><sp-button id="saveProfile" variant="secondary">Salvar meu perfil</sp-button></div><sp-textfield id="profileName" placeholder="Nome do meu perfil"></sp-textfield><sp-button id="removeProfile" variant="secondary">Excluir perfil salvo</sp-button></div>
+</section>
+<div id="controls"></div>
+</div>
+<footer><div class="buttons"><sp-button id="start" variant="secondary">Iniciar motor</sp-button><sp-button id="apply" variant="cta">Aplicar em nova camada</sp-button></div><sp-button id="quit" variant="secondary">Encerrar motor</sp-button><p id="status">Escolha uma imagem e um mapa de profundidade.</p></footer></div>
+<script src="main.js"></script></body></html>

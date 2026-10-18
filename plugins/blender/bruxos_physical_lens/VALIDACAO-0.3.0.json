@@ -1,0 +1,466 @@
+{
+  "controls4": {
+    "passed": true,
+    "version": "0.3.0",
+    "blender": "4.5.14 LTS",
+    "focals": [
+      {
+        "requested_mm": 24,
+        "actual_mm": 24.0,
+        "fstop": 2.8929686546325684
+      },
+      {
+        "requested_mm": 35,
+        "actual_mm": 35.0,
+        "fstop": 2.892968654632568
+      },
+      {
+        "requested_mm": 50,
+        "actual_mm": 50.0,
+        "fstop": 2.8929686546325684
+      },
+      {
+        "requested_mm": 85,
+        "actual_mm": 85.0,
+        "fstop": 2.8929686546325684
+      }
+    ],
+    "fstop": true,
+    "aperture_limit": true,
+    "bokeh_types": 7,
+    "pupil_modifiers": true,
+    "filters": [
+      {
+        "kind": "black_mist",
+        "nodes": 7
+      },
+      {
+        "kind": "white_mist",
+        "nodes": 8
+      },
+      {
+        "kind": "detail",
+        "nodes": 6
+      },
+      {
+        "kind": "streak",
+        "nodes": 7
+      },
+      {
+        "kind": "star",
+        "nodes": 7
+      },
+      {
+        "kind": "veil",
+        "nodes": 10
+      },
+      {
+        "kind": "window",
+        "nodes": 10
+      },
+      {
+        "kind": "replicate",
+        "nodes": 12
+      },
+      {
+        "kind": "halo",
+        "nodes": 11
+      },
+      {
+        "kind": "kaleidoscope",
+        "nodes": 30
+      },
+      {
+        "kind": "split",
+        "nodes": 10
+      },
+      {
+        "kind": "fringing",
+        "nodes": 9
+      },
+      {
+        "kind": "halation",
+        "nodes": 7
+      },
+      {
+        "kind": "prism",
+        "nodes": 9
+      },
+      {
+        "kind": "directional",
+        "nodes": 6
+      }
+    ],
+    "compositor_restore": true,
+    "reset_transform_only": true,
+    "unchanged_filter_graph_reused": true
+  },
+  "controls5": {
+    "passed": true,
+    "version": "0.3.0",
+    "blender": "5.3.0 Alpha",
+    "focals": [
+      {
+        "requested_mm": 24,
+        "actual_mm": 24.0,
+        "fstop": 2.8929686546325684
+      },
+      {
+        "requested_mm": 35,
+        "actual_mm": 35.0,
+        "fstop": 2.892968654632568
+      },
+      {
+        "requested_mm": 50,
+        "actual_mm": 50.0,
+        "fstop": 2.8929686546325684
+      },
+      {
+        "requested_mm": 85,
+        "actual_mm": 85.0,
+        "fstop": 2.8929686546325684
+      }
+    ],
+    "fstop": true,
+    "aperture_limit": true,
+    "bokeh_types": 7,
+    "pupil_modifiers": true,
+    "filters": [
+      {
+        "kind": "black_mist",
+        "nodes": 7
+      },
+      {
+        "kind": "white_mist",
+        "nodes": 8
+      },
+      {
+        "kind": "detail",
+        "nodes": 6
+      },
+      {
+        "kind": "streak",
+        "nodes": 7
+      },
+      {
+        "kind": "star",
+        "nodes": 7
+      },
+      {
+        "kind": "veil",
+        "nodes": 10
+      },
+      {
+        "kind": "window",
+        "nodes": 10
+      },
+      {
+        "kind": "replicate",
+        "nodes": 12
+      },
+      {
+        "kind": "halo",
+        "nodes": 11
+      },
+      {
+        "kind": "kaleidoscope",
+        "nodes": 30
+      },
+      {
+        "kind": "split",
+        "nodes": 10
+      },
+      {
+        "kind": "fringing",
+        "nodes": 9
+      },
+      {
+        "kind": "halation",
+        "nodes": 7
+      },
+      {
+        "kind": "prism",
+        "nodes": 9
+      },
+      {
+        "kind": "directional",
+        "nodes": 6
+      }
+    ],
+    "compositor_restore": true,
+    "reset_transform_only": true,
+    "unchanged_filter_graph_reused": true
+  },
+  "filters4": {
+    "passed": true,
+    "blender": "4.5.14 LTS",
+    "filters": [
+      {
+        "kind": "black_mist",
+        "mean_rgb_difference": 0.016027167439460754,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "white_mist",
+        "mean_rgb_difference": 0.03154778480529785,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "detail",
+        "mean_rgb_difference": 0.00024481769651174545,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "streak",
+        "mean_rgb_difference": 0.005412275902926922,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "star",
+        "mean_rgb_difference": 0.021515609696507454,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "veil",
+        "mean_rgb_difference": 0.02608727663755417,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "window",
+        "mean_rgb_difference": 0.009706241078674793,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "replicate",
+        "mean_rgb_difference": 0.0651140809059143,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "halo",
+        "mean_rgb_difference": 0.014168967492878437,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "kaleidoscope",
+        "mean_rgb_difference": 0.19010671973228455,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "split",
+        "mean_rgb_difference": 0.02608727663755417,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "fringing",
+        "mean_rgb_difference": 0.010711871087551117,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "halation",
+        "mean_rgb_difference": 0.007787460461258888,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "prism",
+        "mean_rgb_difference": 0.06135069578886032,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "directional",
+        "mean_rgb_difference": 0.04728686809539795,
+        "alpha_max_error": 0.0
+      }
+    ],
+    "region_position": true,
+    "directional_rotation": true,
+    "zero_exact": true,
+    "alpha_preserved": true,
+    "implementation": "native compositor approximations, HDR fixture, 192x128"
+  },
+  "filters5": {
+    "passed": true,
+    "blender": "5.3.0 Alpha",
+    "filters": [
+      {
+        "kind": "black_mist",
+        "mean_rgb_difference": 0.016033628955483437,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "white_mist",
+        "mean_rgb_difference": 0.03154778853058815,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "detail",
+        "mean_rgb_difference": 0.0002448188897687942,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "streak",
+        "mean_rgb_difference": 0.005412273108959198,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "star",
+        "mean_rgb_difference": 0.021515600383281708,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "veil",
+        "mean_rgb_difference": 0.02647426351904869,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "window",
+        "mean_rgb_difference": 0.009706241078674793,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "replicate",
+        "mean_rgb_difference": 0.06454440206289291,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "halo",
+        "mean_rgb_difference": 0.014168922789394855,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "kaleidoscope",
+        "mean_rgb_difference": 0.19072553515434265,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "split",
+        "mean_rgb_difference": 0.02647426351904869,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "fringing",
+        "mean_rgb_difference": 0.010030480101704597,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "halation",
+        "mean_rgb_difference": 0.007791982032358646,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "prism",
+        "mean_rgb_difference": 0.061355192214250565,
+        "alpha_max_error": 0.0
+      },
+      {
+        "kind": "directional",
+        "mean_rgb_difference": 0.04728691279888153,
+        "alpha_max_error": 0.0
+      }
+    ],
+    "region_position": true,
+    "directional_rotation": true,
+    "zero_exact": true,
+    "alpha_preserved": true,
+    "implementation": "native compositor approximations, HDR fixture, 192x128"
+  },
+  "animation": {
+    "passed": true,
+    "blender": "4.5.14 LTS",
+    "values": [
+      {
+        "frame": 1,
+        "mm": 35.0,
+        "fstop": 4.0,
+        "swirl": 0.20000000298023224,
+        "filter_rotation": 0.0
+      },
+      {
+        "frame": 10,
+        "mm": 85.0,
+        "fstop": 8.0,
+        "swirl": 0.800000011920929,
+        "filter_rotation": 90.0
+      },
+      {
+        "frame": 1,
+        "mm": 35.0,
+        "fstop": 4.0,
+        "swirl": 0.20000000298023224,
+        "filter_rotation": 0.0
+      }
+    ],
+    "frame_correct": true
+  },
+  "bokehCPU": {
+    "passed": true,
+    "device": "CPU",
+    "blender": "4.5.14 LTS",
+    "cases": [
+      {
+        "type": "CIRCULAR",
+        "mean_rgb_difference": 0.00183204747736454
+      },
+      {
+        "type": "POLYGON",
+        "mean_rgb_difference": 0.0027536151465028524
+      },
+      {
+        "type": "CAT_EYE",
+        "mean_rgb_difference": 0.0035343701019883156
+      },
+      {
+        "type": "CROPPED",
+        "mean_rgb_difference": 0.0010979525977745652
+      },
+      {
+        "type": "ANAMORPHIC",
+        "mean_rgb_difference": 0.0031293686479330063
+      },
+      {
+        "type": "SWIRL",
+        "mean_rgb_difference": 0.0026081204414367676
+      }
+    ],
+    "zero_exact": true,
+    "focus_plane_max_error": 0.0,
+    "focus_plane_mean_error": 0.0,
+    "focus_contrast_ratio": 1.0,
+    "fixture": "128x96, 128 samples, near-focus checker and distant emissive points"
+  },
+  "bokehOptix": {
+    "passed": true,
+    "device": "OPTIX",
+    "blender": "4.5.14 LTS",
+    "cases": [
+      {
+        "type": "CIRCULAR",
+        "mean_rgb_difference": 0.0018320477101951838
+      },
+      {
+        "type": "POLYGON",
+        "mean_rgb_difference": 0.0027491366490721703
+      },
+      {
+        "type": "CAT_EYE",
+        "mean_rgb_difference": 0.0035343701019883156
+      },
+      {
+        "type": "CROPPED",
+        "mean_rgb_difference": 0.0010979530634358525
+      },
+      {
+        "type": "ANAMORPHIC",
+        "mean_rgb_difference": 0.003133846679702401
+      },
+      {
+        "type": "SWIRL",
+        "mean_rgb_difference": 0.0026036419440060854
+      }
+    ],
+    "zero_exact": true,
+    "focus_plane_max_error": 0.004606366157531738,
+    "focus_plane_mean_error": 2.864880173092388e-07,
+    "focus_contrast_ratio": 1.0,
+    "fixture": "128x96, 128 samples, near-focus checker and distant emissive points"
+  }
+}

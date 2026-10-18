@@ -1,0 +1,94 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 91.73,
+    "thickness": 6.65,
+    "nd": 1.4645,
+    "aperture_diameter": 50.4
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 22.96,
+    "thickness": 11.9,
+    "nd": 1.0,
+    "aperture_diameter": 40.4
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 36.52,
+    "thickness": 15.25,
+    "nd": 1.6727,
+    "aperture_diameter": 35.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 20.83,
+    "thickness": 13.8,
+    "nd": 1.62229,
+    "aperture_diameter": 26.0
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": -20.24,
+    "thickness": 1.0,
+    "nd": 1.56091,
+    "aperture_diameter": 26.0
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 164.89,
+    "thickness": 2.1,
+    "nd": 1.0,
+    "aperture_diameter": 24.4
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 0.0,
+    "thickness": 0.65,
+    "nd": 1.0,
+    "aperture_diameter": 21.26,
+    "is_stop": true
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": 405.33,
+    "thickness": 1.0,
+    "nd": 1.58313,
+    "aperture_diameter": 24.4
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": 18.17,
+    "thickness": 13.3,
+    "nd": 1.60881,
+    "aperture_diameter": 26.0
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -15.23,
+    "thickness": 11.25,
+    "nd": 1.66672,
+    "aperture_diameter": 26.0
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": -31.97,
+    "thickness": 11.15,
+    "nd": 1.0,
+    "aperture_diameter": 35.0
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -23.37,
+    "thickness": 3.85,
+    "nd": 1.48749,
+    "aperture_diameter": 40.4
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": -116.31,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 50.4
+  }
+}

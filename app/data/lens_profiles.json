@@ -1,0 +1,4716 @@
+{
+  "dgauss50": {
+    "name": "Double-Gauss · prescrição pública",
+    "focal_mm": null,
+    "status": "prescrição pública de referência"
+  },
+  "zeiss_planar_50": {
+    "name": "ZEISS Planar T* 2/50 ZM",
+    "focal_mm": 50,
+    "max_f": 22,
+    "min_focus_m": 0.7,
+    "status": "perfil aproximado; sem prescrição comercial ou calibração medida",
+    "sources": [
+      "https://www.cosina.co.jp/zeiss/zm/planar-t2-50-zm/"
+    ],
+    "look": {
+      "swirl": 0,
+      "coma": 0,
+      "spherical3": 0,
+      "dispersion": 0,
+      "coating_strength": 0.9,
+      "ghost_gain": 0.1,
+      "blades": 10
+    }
+  },
+  "helios_44_2": {
+    "name": "Helios-44-2 58 mm f/2",
+    "focal_mm": 58,
+    "max_f": 16,
+    "min_focus_m": 0.5,
+    "status": "perfil aproximado; sem prescrição comercial ou calibração medida",
+    "sources": [
+      "https://www.zenitcamera.com/mans/zenit-e/zenit-e-eng.html",
+      "https://www.zenitcamera.com/archive/lenses/helios-44.html"
+    ],
+    "look": {
+      "swirl": 0.85,
+      "coma": 0.08,
+      "spherical3": 0.35,
+      "dispersion": 0.2,
+      "coating_strength": 0.25,
+      "ghost_gain": 0.8,
+      "blades": 8
+    }
+  },
+  "tessar_50": {
+    "name": "Tessar · 50 mm",
+    "group": "Padrão e definição",
+    "focal_mm": 50,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/tessar_50.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/CarlZeissJenaTessar50mmf28.data.ts"
+    ],
+    "source_sha256": "0a1e626b897f7c0f78061f0f74085a672aacf61cdd72e3ae6c3e15ca488ec771",
+    "patent": "FR 1.066.698",
+    "look": {
+      "blades": 0
+    }
+  },
+  "biotar_50": {
+    "name": "Biotar · 50 mm",
+    "group": "Retrato e caráter",
+    "focal_mm": 50,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/biotar_50.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissBiotar50mmf14.data.ts"
+    ],
+    "source_sha256": "83a1c3e077c61b7724fbe331136cb56b1bf6eb1bb2ce14e1a37bbc264d51fd06",
+    "patent": "US 1,786,916",
+    "look": {
+      "blades": 0
+    }
+  },
+  "sonnar_50": {
+    "name": "Sonnar · 50 mm",
+    "group": "Padrão e definição",
+    "focal_mm": 50,
+    "nominal_f": 1.5,
+    "prescription": "prescriptions/sonnar_50.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissSonnar50f15.data.ts"
+    ],
+    "source_sha256": "b50b07c516815b6a1236799a65d96712c45b77ba3cc293eedb9604f18ad71408",
+    "patent": "US 1,975,678",
+    "look": {
+      "blades": 0
+    }
+  },
+  "canon_1956_50": {
+    "name": "Canon 1956 · 50 mm",
+    "group": "Cinema e luz baixa",
+    "focal_mm": 50,
+    "nominal_f": 1.2,
+    "prescription": "prescriptions/canon_1956_50.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/Canon50mmf12.data.ts"
+    ],
+    "source_sha256": "13c4a245f2940a537988db3baa917cd8cce946f30acc183fd66d55c5edde9047",
+    "patent": "US 2,836,102",
+    "look": {
+      "blades": 0
+    }
+  },
+  "kino_100": {
+    "name": "Kino-Plasmat · 100 mm",
+    "group": "Cinema e luz baixa",
+    "focal_mm": 100,
+    "nominal_f": 2,
+    "prescription": "prescriptions/kino_100.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/meyer-optik-goerlitz/MeyerOptikGorlitz100mmf2KinoPlasmat.data.ts"
+    ],
+    "source_sha256": "0f3ec224f8c3e4522a1a949e690cc16e193db8bc94837ac6ab169d55db1d9c23",
+    "patent": "DE 401630",
+    "look": {
+      "blades": 0
+    }
+  },
+  "orestor_135": {
+    "name": "Orestor · 135 mm",
+    "group": "Retrato e caráter",
+    "focal_mm": 135,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/orestor_135.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/meyer-optik-goerlitz/MeyerOptikGorlitz135mmf28Orestor.data.ts"
+    ],
+    "source_sha256": "65f2b2f905f57e062bd5dff85f0021350ac7956440a7dd6e5c50de963594b82e",
+    "patent": "DE 1 282 311",
+    "look": {
+      "blades": 15
+    }
+  },
+  "heliar_100": {
+    "name": "Heliar · 100 mm",
+    "group": "Retrato e caráter",
+    "focal_mm": 100,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/heliar_100.json",
+    "status": "reconstrução de tabela pública; escala normalizada; diâmetros e íris modelados, sem calibração de exemplar",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderHeliar.data.ts"
+    ],
+    "source_sha256": "f8411a462d0378e43972395be0b98f312edc4f0a8e8824d323dd554e1d217232",
+    "patent": "US 716,035",
+    "look": {
+      "blades": 0
+    }
+  },
+  "wide_22": {
+    "name": "Nakamura · 22 mm",
+    "group": "Grande-angular e tele",
+    "focal_mm": 22,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/wide_22.json",
+    "status": "prescrição numérica PBRT; escala normalizada; sem calibração comercial",
+    "sources": [
+      "https://github.com/mmp/pbrt-v4-scenes/blob/master/lenses/wide.22mm.dat"
+    ],
+    "source_sha256": "b453825d9dd26c76831aa034a4f0893d9023b3bdae023a051b39f335957ae3bf",
+    "look": {
+      "blades": 0
+    }
+  },
+  "tele_250": {
+    "name": "Sigler · 250 mm",
+    "group": "Grande-angular e tele",
+    "focal_mm": 250,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/tele_250.json",
+    "status": "prescrição numérica PBRT; escala normalizada; sem calibração comercial",
+    "sources": [
+      "https://github.com/mmp/pbrt-v4-scenes/blob/master/lenses/telephoto.250mm.dat"
+    ],
+    "source_sha256": "a2699b1c3956e6892cea3b85d105ac25eb418bde9a3cb54cdaf66da89b91be7e",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_agfa_color_magnolar_ii_100f45": {
+    "name": "AGFA COLOR-MAGNOLAR II 100mm f/4.5",
+    "group": "Agfa",
+    "focal_mm": 100.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_agfa_color_magnolar_ii_100f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/agfa/AgfaColorMagnolarII100mmf45.data.ts"
+    ],
+    "source_sha256": "7c5622f2bda9cd618652c21c7e3102a7c9619a85be504fb6b1c04540d23abd07",
+    "patent": "GB 775,944",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_agfa_color_telinear_90mm_f4": {
+    "name": "AGFA COLOR-TELINEAR 90mm f/4",
+    "group": "Agfa",
+    "focal_mm": 90.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_agfa_color_telinear_90mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/agfa/AgfaColorTelinear90mmf4.data.ts"
+    ],
+    "source_sha256": "485119259b270305ecf01f2497f519a59e6b1d095e359d0bdaadc82d1bc73e44",
+    "patent": "US 2,819,651",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_agfa_solagon_50mm_f2": {
+    "name": "AGFA SOLAGON 50mm f/2",
+    "group": "Agfa",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_agfa_solagon_50mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/agfa/AgfaSolagon50mmf2.data.ts"
+    ],
+    "source_sha256": "7553b2bcf9903acc63f14cbea917a54c8c929f35bb6caf2df0cbc45eb7e3ef26",
+    "patent": "US 2,745,315",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_s_50mm_f2_8": {
+    "name": "CANON 50mm f/2.8",
+    "group": "Canon",
+    "focal_mm": 50.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_canon_s_50mm_f2_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/Canon50mmf28.data.ts"
+    ],
+    "source_sha256": "83a16fce8a7b6e2547fb19115674525eb46ebc234d68ca3f48f9b382a8910d37",
+    "patent": "US 2,838,978",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_100mm_f28_macro": {
+    "name": "CANON EF 100mm f/2.8 Macro",
+    "group": "Canon",
+    "focal_mm": 100.0,
+    "nominal_f": 2.89,
+    "prescription": "prescriptions/lv_canon_ef_100mm_f28_macro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF100mmf28Macro.data.ts"
+    ],
+    "source_sha256": "e5b4674643b44a920eec758fa39e385d41e0ad25d91433d62a78c5962a528673",
+    "patent": "JP 1991-141313 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_135_f2l_usm": {
+    "name": "CANON EF 135mm f/2 L USM",
+    "group": "Canon",
+    "focal_mm": 135.0,
+    "nominal_f": 2.059788166,
+    "prescription": "prescriptions/lv_canon_ef_135_f2l_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF135mmf2LUSM.data.ts"
+    ],
+    "source_sha256": "48c71cad243ff1a4bb93b7ea96b4afb98e57aa39f136ee933b25a051675b0d40",
+    "patent": "JP 2018-049102 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_15mm_f28_fisheye": {
+    "name": "CANON EF 15mm f/2.8 Fisheye",
+    "group": "Canon",
+    "focal_mm": 15.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_canon_ef_15mm_f28_fisheye.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF15mmf28.data.ts"
+    ],
+    "source_sha256": "9d0fb6eb9c096b69b531359bb98dec78b7c4a802c708aca6811f6bcc8716de19",
+    "patent": "JP S63-17421 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_180mm_f35l_macro_usm": {
+    "name": "CANON EF 180mm f/3.5 L Macro USM",
+    "group": "Canon",
+    "focal_mm": 180.0,
+    "nominal_f": 3.6,
+    "prescription": "prescriptions/lv_canon_ef_180mm_f35l_macro_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF180mmf35LMacroUSM.data.ts"
+    ],
+    "source_sha256": "95647acddfcb4d5df79755068e8c21ea5f3dfaf0d08ad888737e4714b6d93ae4",
+    "patent": "JP 1997-211319 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_20mm_f28_usm": {
+    "name": "CANON EF 20mm f/2.8 USM",
+    "group": "Canon",
+    "focal_mm": 20.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_canon_ef_20mm_f28_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF20mmf28.data.ts"
+    ],
+    "source_sha256": "25b5fbc81e0313b9ddf0a0036a350dde9194f97a4319dd9cc036888afc549287",
+    "patent": "JP H08-110467 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_300mm_f28l_is_usm": {
+    "name": "CANON EF 300mm f/2.8 L IS USM",
+    "group": "Canon",
+    "focal_mm": 300.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_canon_ef_300mm_f28l_is_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF300mmf28LISUSM.data.ts"
+    ],
+    "source_sha256": "b25ba9ab326fc3836d1b3ad14100264e8f64c8f60a717e965cd42f4de588e5f8",
+    "patent": "US 6,115,188 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_400mm_f28l_is_iii_usm": {
+    "name": "CANON EF 400mm f/2.8 L IS III USM",
+    "group": "Canon",
+    "focal_mm": 400.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_canon_ef_400mm_f28l_is_iii_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF400mmf28LISIIIUSM.data.ts"
+    ],
+    "source_sha256": "8278eb3a56e7dc9d85d14ed277016ff712a9926a9a932151449236481fc4e852",
+    "patent": "US 2019/0041605 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_400mm_f28_l_is_ii_usm": {
+    "name": "CANON EF 400mm f/2.8 L IS II USM",
+    "group": "Canon",
+    "focal_mm": 400.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_canon_ef_400mm_f28_l_is_ii_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF400mmf28LISIIUSM.data.ts"
+    ],
+    "source_sha256": "8b38d66b8cd48df83cbcebb4b6c2382357ab34d0ab6f1f45b29c9f595aa70768",
+    "patent": "US 2011/0090576 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_400mm_f28l_is_usm": {
+    "name": "CANON EF 400mm f/2.8 L IS USM",
+    "group": "Canon",
+    "focal_mm": 400.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_canon_ef_400mm_f28l_is_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF400mmf28LISUSM.data.ts"
+    ],
+    "source_sha256": "a67efcc03b635213688b4cec3f946fe7c315e36de6912afca3a2f15620982818",
+    "patent": "US 6,115,188 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_ef_500mm_f4l_is_usm": {
+    "name": "CANON EF 500mm f/4 L IS USM",
+    "group": "Canon",
+    "focal_mm": 500.0,
+    "nominal_f": 4.1,
+    "prescription": "prescriptions/lv_canon_ef_500mm_f4l_is_usm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonEF500mmf4LISUSM.data.ts"
+    ],
+    "source_sha256": "82e57c2503414cc9a7ade2b3864e862044f579e2cd09f6d4a121935ee6f5ed34",
+    "patent": "US 6,115,188 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_fd_24mm_f28_ssc": {
+    "name": "Canon FD 24mm f/2.8 S.S.C.",
+    "group": "Canon",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_canon_fd_24mm_f28_ssc.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonFD24mmf28SSC.data.ts"
+    ],
+    "source_sha256": "45940e199ce6a2f1f7655a7f99465c8c42fb0410e37e1b6aee4f71fb47743c5f",
+    "patent": "US 3,748,021",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_fd_28mm_f28": {
+    "name": "Canon FD 28mm f/2.8 S.C.",
+    "group": "Canon",
+    "focal_mm": 28.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_canon_fd_28mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonFD28mmf28.data.ts"
+    ],
+    "source_sha256": "ac7c35c3029ff10e0e43b59d206dbf255eaba0f6d6b8fd515defdc6dc243f992",
+    "patent": "US 4,046,459",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_fd_300mm_f4_ssc": {
+    "name": "Canon FD 300mm f/4 S.S.C.",
+    "group": "Canon",
+    "focal_mm": 300.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_canon_fd_300mm_f4_ssc.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonFD300mmf4SSC.data.ts"
+    ],
+    "source_sha256": "905ba6ba033bd0789115114bfe71482dd3f83a793a314ee5cb1ba7f0eb9bc06f",
+    "patent": "US 4,251,133",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_fd_35_f2": {
+    "name": "CANON FD 35mm f/2 S.S.C. (I)",
+    "group": "Canon",
+    "focal_mm": 35.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_canon_fd_35_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonFD35mmf2.data.ts"
+    ],
+    "source_sha256": "fff4dd9836a49488b71c0d316b7bb7951bfd4b2a68bdf703e2935f85ef306a77",
+    "patent": "US 3,748,022",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_fdn_50f12": {
+    "name": "CANON New FD 50mm f/1.2",
+    "group": "Canon",
+    "focal_mm": 50.0,
+    "nominal_f": 1.2,
+    "prescription": "prescriptions/lv_canon_fdn_50f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonFDn50f12.data.ts"
+    ],
+    "source_sha256": "cbbae059f16012facd6089aab9dfe8afd245a3e25b0cc078e1a926c3bb09915f",
+    "patent": "US 4,364,643",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_new_fd_100mm_f2": {
+    "name": "CANON NEW FD 100mm f/2",
+    "group": "Canon",
+    "focal_mm": 100.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_canon_new_fd_100mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonNewFD100mmf2.data.ts"
+    ],
+    "source_sha256": "47783e9fd8477f1a52d62126b81d6330fa6c8884bb912fcb685a5e76625272a7",
+    "patent": "JP S53-133028 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_rf100f28_macro": {
+    "name": "CANON RF 100mm f/2.8 L MACRO IS USM",
+    "group": "Canon",
+    "focal_mm": 100.0,
+    "nominal_f": 2.92,
+    "prescription": "prescriptions/lv_canon_rf100f28_macro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonRF100f28.data.ts"
+    ],
+    "source_sha256": "77bd13cd5e068270bb096b801925dccbc8d826e413b525c6be1717bf76568501",
+    "patent": "JP 2021-047297 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_rf_135f18": {
+    "name": "CANON RF 135mm f/1.8 L IS USM",
+    "group": "Canon",
+    "focal_mm": 135.0,
+    "nominal_f": 1.86,
+    "prescription": "prescriptions/lv_canon_rf_135f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonRF135f18.data.ts"
+    ],
+    "source_sha256": "ea0bccf2297579e60d1b14bff74dda6151d4b02b0a024db2eb6305bc9a2887d9",
+    "patent": "US 2023/0213745 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_rf_85f2_macro": {
+    "name": "CANON RF 85mm f/2 Macro IS STM",
+    "group": "Canon",
+    "focal_mm": 85.0,
+    "nominal_f": 2.06,
+    "prescription": "prescriptions/lv_canon_rf_85f2_macro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonRF85mmf2Macro.data.ts"
+    ],
+    "source_sha256": "056a0f57e2334745fcec1ef721b1259f015cc474d4d4b7d68106c83e0e9645dd",
+    "patent": "US 2021/0072505 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_serenar_100mm_f35": {
+    "name": "CANON SERENAR 100mm f/3.5 I",
+    "group": "Canon",
+    "focal_mm": 100.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_canon_serenar_100mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonSerenar100mmf35.data.ts"
+    ],
+    "source_sha256": "3f063ac24b11b54e1ee051449e65fb7bd909d7df6189a21166a1c782d42216fa",
+    "patent": "DE 1,022,027 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_serenar_28f35": {
+    "name": "CANON SERENAR 28mm f/3.5",
+    "group": "Canon",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_canon_serenar_28f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonSerenar28mmf35.data.ts"
+    ],
+    "source_sha256": "f554f566f50cf2106dd5b8c444d1d13d93c6a00703ca46257bc4ecf11e0a28e8",
+    "patent": "US 2,645,974",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_serenar_35f32": {
+    "name": "CANON SERENAR 35mm f/3.2",
+    "group": "Canon",
+    "focal_mm": 35.0,
+    "nominal_f": 3.0,
+    "prescription": "prescriptions/lv_canon_serenar_35f32.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonSerenar35mmf32.data.ts"
+    ],
+    "source_sha256": "ca8acad3b308a5f21c98875477d619a7bf782c094359010a9edc1ebf064513a4",
+    "patent": "US 2,645,975",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_serenar_50f18": {
+    "name": "CANON SERENAR 50mm f/1.8",
+    "group": "Canon",
+    "focal_mm": 50.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_canon_serenar_50f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonSerenar50mmf18.data.ts"
+    ],
+    "source_sha256": "08a26febf3734cd082c259891bc4a81e5af962daca341bbe7e29588c8b8a13f8",
+    "patent": "US 2,681,594",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_canon_serenar_85f15": {
+    "name": "CANON SERENAR 85mm f/1.5",
+    "group": "Canon",
+    "focal_mm": 85.0,
+    "nominal_f": 1.5,
+    "prescription": "prescriptions/lv_canon_serenar_85f15.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/canon/CanonSerenar85mmf15.data.ts"
+    ],
+    "source_sha256": "c9fdc8652e225df50072d00c78ac179ef87475eeea638e2ace73659cc76cf061",
+    "patent": "US 2,645,973",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_jena_pancolar_50f2": {
+    "name": "CARL ZEISS JENA PANCOLAR 50mm f/2",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_carl_zeiss_jena_pancolar_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/CarlZeissJenaPancolar50mmf2.data.ts"
+    ],
+    "source_sha256": "5ba6b7f37326315707275b35bb46418f409b933a7e04c1e6f2958d36186f1967",
+    "patent": "GB 850,117",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_biogon_35mm_f28_prewar": {
+    "name": "CARL ZEISS JENA BIOGON 35mm f/2.8 (pre-war)",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_zeiss_biogon_35mm_f28_prewar.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissBiogon35mmf28Prewar.data.ts"
+    ],
+    "source_sha256": "7364069369329467e98b47686b2b4aaa895f1ff5f2f5d97efab76f39f57eba53",
+    "patent": "US 2,084,309",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_jena_biometar_120f28": {
+    "name": "CARL ZEISS JENA BIOMETAR 120mm f/2.8",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 120.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_carl_zeiss_jena_biometar_120f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissBiometar120mmf28.data.ts"
+    ],
+    "source_sha256": "3b092cb129341f6a2224c25493cdf4dbf46958de0c25775cd152341a990b682b",
+    "patent": "US 2,968,221",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_jena_biometar_80f28": {
+    "name": "CARL ZEISS JENA BIOMETAR 80mm f/2.8",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 80.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_carl_zeiss_jena_biometar_80f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissBiometar80mmf28.data.ts"
+    ],
+    "source_sha256": "79f99e361cbd271359c266d5114d113fde6de4b4a9fe37d85b275fad83a18d58",
+    "patent": "US 2,968,221",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_flektogon_50mm_f4": {
+    "name": "CARL ZEISS JENA FLEKTOGON 50mm f/4",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 50.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_zeiss_flektogon_50mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissFlektogon50mmf4.data.ts"
+    ],
+    "source_sha256": "57dca809709cb1e6ff3a005a50f70132de92489be27e63a849767609cf70cc4b",
+    "patent": "DE 1 157 000",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_bertele_sonnar_50f2_scaled": {
+    "name": "CARL ZEISS JENA SONNAR 50mm f/2",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_bertele_sonnar_50f2_scaled.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissJenaSonnar50f2.data.ts"
+    ],
+    "source_sha256": "e1c964818abf181f675f2cf0a2873be321e2c6540fb2c42eb9f7993354b86ecc",
+    "patent": "US 1,998,704",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_planar_50f14_praktica": {
+    "name": "CARL ZEISS JENA PRAKTICAR 50mm f/1.4",
+    "group": "Carl Zeiss Jena",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_zeiss_planar_50f14_praktica.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-jena/ZeissPlanar50mmf14Praktica.data.ts"
+    ],
+    "source_sha256": "805e61230f01a35e3998086b5afde8a3d53c5eadb740a3ccc2b80402da2be0a2",
+    "patent": "GB 2 066 504 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_contarex_planar_55f14": {
+    "name": "CARL ZEISS CONTAREX PLANAR 55mm f/1.4",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 55.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_carl_zeiss_contarex_planar_55f14.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/CarlZeissContarexPlanar55mmf14.data.ts"
+    ],
+    "source_sha256": "92a34a7b174bb7aa5b67263c2ba789451c87d9e48930cc426cdc8fc4d4617417",
+    "patent": "DE 1,170,157 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_olympia_sonnar_180f28_contarex": {
+    "name": "CARL ZEISS OLYMPIA-SONNAR 180mm f/2.8",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 180.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_zeiss_olympia_sonnar_180f28_contarex.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/CarlZeissOlympiaSonnar180mmf28.data.ts"
+    ],
+    "source_sha256": "9adcf8e08aa3460b67350f887ab663c95d1def0df7684b8ab465d0492d9cfb2f",
+    "patent": "DE 1,268,404",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_planar_t_50f14": {
+    "name": "CARL ZEISS PLANAR T* 50mm f/1.4",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_zeiss_planar_t_50f14.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/CarlZeissPlanarT50mmf14.data.ts"
+    ],
+    "source_sha256": "6a02f990046969bba856accaab3639cc61e91cc5e4cef0107252610ba107d2ba",
+    "patent": "US 3,874,771",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_pro_tessar_35f32": {
+    "name": "CARL ZEISS PRO-TESSAR 35mm f/3.2",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 35.0,
+    "nominal_f": 3.2,
+    "prescription": "prescriptions/lv_zeiss_pro_tessar_35f32.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/CarlZeissProTessar35mmf32.data.ts"
+    ],
+    "source_sha256": "c621d9586665ae45bbb6e4c1af92680d2a5212ba5fae0255eb777f55e644e2f8",
+    "patent": "DE 1,089,183",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_tessar_50f35": {
+    "name": "CARL ZEISS TESSAR 50mm f/3.5",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 50.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_carl_zeiss_tessar_50f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/CarlZeissTessar50mmf35.data.ts"
+    ],
+    "source_sha256": "bcb2b32e70401e986180d4b42453f21c3b9562299c8f29fe815f18d007dc5e0f",
+    "patent": "CH 314381",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_batis_85f18": {
+    "name": "ZEISS BATIS 85mm f/1.8",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 85.0,
+    "nominal_f": 1.85,
+    "prescription": "prescriptions/lv_zeiss_batis_85f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissBatis1885.data.ts"
+    ],
+    "source_sha256": "93a86a23d50ad888a80c80b9c8f5853b40f028a35bce69d09e19791793853545",
+    "patent": "JP 2015-096915 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_biogon_21_f45": {
+    "name": "CARL ZEISS BIOGON 21mm f/4.5",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 21.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_zeiss_biogon_21_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissBiogon21mmf45.data.ts"
+    ],
+    "source_sha256": "ffb82790c5298eb98fc242bc1552d793823c0ab49a9e15f501c038144879bd26",
+    "patent": "US 2,721,499",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_distagon_35mm_f4_contarex": {
+    "name": "CARL ZEISS B-DISTAGON 35mm f/4 (Contarex)",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 35.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_zeiss_distagon_35mm_f4_contarex.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissDistagon35mmf4.data.ts"
+    ],
+    "source_sha256": "fce55141fcd49adc8166af04c4549ec43fc440dfbc2e983eecc4a67f862b1636",
+    "patent": "US 3,038,380",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_distagon_t_25f28_contax": {
+    "name": "CARL ZEISS DISTAGON T* 25mm f/2.8 (C/Y)",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 25.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_carl_zeiss_distagon_t_25f28_contax.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissDistagonTf2825mmContax.data.ts"
+    ],
+    "source_sha256": "b2ac10a668a595e02831c78bad06aa95385921c8a4929447d412c971a7ac6bfd",
+    "patent": "DE 1 250 153",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_planar_80f28": {
+    "name": "CARL ZEISS PLANAR 80mm f/2.8 (6×6)",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 80.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_zeiss_planar_80f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissPlanar2880.data.ts"
+    ],
+    "source_sha256": "519fd3f084014b9f9084cf5558b794d2af52a07e1a17045f5412eccabc43dc9a",
+    "patent": "US 2,724,994",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_carl_zeiss_planar_80mm_f28_graflex_xl": {
+    "name": "CARL ZEISS PLANAR 80mm f/2.8 (Graflex XL)",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 80.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_carl_zeiss_planar_80mm_f28_graflex_xl.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissPlanar80mmf28GraflexXL.data.ts"
+    ],
+    "source_sha256": "52cd24b1b6ae67e4ba29049886a35d00f6878fce49d5caf2898ad8b94268faa2",
+    "patent": "US 2,799,207",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_zeiss_ultra_prime_135_t19": {
+    "name": "CARL ZEISS ULTRA PRIME SONNAR T* 135mm T1.9",
+    "group": "Carl Zeiss Oberkochen",
+    "focal_mm": 135.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_zeiss_ultra_prime_135_t19.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/carl-zeiss-oberkochen/ZeissUltraPrimeSonnarT135mmT19.data.ts"
+    ],
+    "source_sha256": "2baa95e240cfcc4c5ec5263ac511d8e8bd634c71c100e991928829cbeddec4ba",
+    "patent": "US 2017/0307860 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_enna_munchen_lithagon_24mm_f4": {
+    "name": "ENNA MÜNCHEN LITHAGON 24mm f/4",
+    "group": "Enna München",
+    "focal_mm": 24.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_enna_munchen_lithagon_24mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/enna-munchen/EnnaMunchenLithagon24mmf4.data.ts"
+    ],
+    "source_sha256": "dcb7fe3ea7c9d56dccdbbb7bea5aa67acfc31f644219f7b71f58993936a03d37",
+    "patent": "DE 1 228 820 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_enna_munchen_lithagon_35mm_f35": {
+    "name": "ENNA MÜNCHEN LITHAGON 35mm f/3.5",
+    "group": "Enna München",
+    "focal_mm": 35.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_enna_munchen_lithagon_35mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/enna-munchen/EnnaMunchenLithagon35mmf35.data.ts"
+    ],
+    "source_sha256": "ef9a5623439f75024a694476afeba4f74d575405c35a924b9991ef1de5ed196e",
+    "patent": "US 2,821,112",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_enna_munchen_ultra_lithagon_28mm_f35": {
+    "name": "ENNA MÜNCHEN ULTRA-LITHAGON 28mm f/3.5",
+    "group": "Enna München",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_enna_munchen_ultra_lithagon_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/enna-munchen/EnnaMunchenUltraLithagon28mmf35.data.ts"
+    ],
+    "source_sha256": "06a9dfddb7516c4e003ec5eb73c2f649f4f139ceb01f42f7af25465dcb7784e2",
+    "patent": "US 2,959,100",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_fujinon_85mm_f4_sf_ebc": {
+    "name": "FUJIFILM EBC FUJINON 85mm f/4 SOFT-FOCUS",
+    "group": "Fujifilm",
+    "focal_mm": 85.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_fujifilm_fujinon_85mm_f4_sf_ebc.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmFujinon85mmf40SFEBC.data.ts"
+    ],
+    "source_sha256": "7bb1f5babd07fcf8476de61d389b6cb68ab3b3c4b015c56500b5671d8a72f057",
+    "patent": "JP S55-560 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_fujinon_gf_500mm_f56_r_lm_ois_wr": {
+    "name": "FUJIFILM FUJINON GF 500mm f/5.6 R LM OIS WR",
+    "group": "Fujifilm",
+    "focal_mm": 500.0,
+    "nominal_f": 5.7,
+    "prescription": "prescriptions/lv_fujifilm_fujinon_gf_500mm_f56_r_lm_ois_wr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmFujinonGf500mmf56RLMOISWR.data.ts"
+    ],
+    "source_sha256": "6a72bb53ba3252328118933467915762d6044260716e0a04df46db44cba0bc20",
+    "patent": "WO 2025/013477 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_fujinon_gf_63mm_f28_r_wr": {
+    "name": "FUJIFILM FUJINON GF 63mm f/2.8 R WR",
+    "group": "Fujifilm",
+    "focal_mm": 63.0,
+    "nominal_f": 2.87,
+    "prescription": "prescriptions/lv_fujifilm_fujinon_gf_63mm_f28_r_wr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmFujinonGf63mmf28RWR.data.ts"
+    ],
+    "source_sha256": "70fe50297c85b003a3af1d73b1f28788242d57d7a07c3c08d305bdcc7ae299bf",
+    "patent": "US 2017/0242219 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_fujinon_sw_65f56": {
+    "name": "FUJIFILM EBC FUJINON SW 65mm f/5.6 (Fujica GSW690 Professional)",
+    "group": "Fujifilm",
+    "focal_mm": 65.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_fujifilm_fujinon_sw_65f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmFujinonSW65mmf56.data.ts"
+    ],
+    "source_sha256": "64984e948d32bd68d055afe9c5dafabe24a4a0735eb7b29da3682a912b1cb231",
+    "patent": "JP S56-140311 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_fujinon_w_35mm_f19": {
+    "name": "FUJIFILM EBC FUJINON-W 35mm f/1.9",
+    "group": "Fujifilm",
+    "focal_mm": 35.0,
+    "nominal_f": 1.9,
+    "prescription": "prescriptions/lv_fujifilm_fujinon_w_35mm_f19.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmFujinonW35mmf19.data.ts"
+    ],
+    "source_sha256": "402141e59ac9ee10042405a75d96383145157dac28c7a386920acb3734ad92b9",
+    "patent": "US 4,018,512",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_ga645_pro_60mm_f4": {
+    "name": "FUJIFILM SUPER EBC FUJINON 60mm f/4 (Fujifilm GA645 Professional)",
+    "group": "Fujifilm",
+    "focal_mm": 60.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_fujifilm_ga645_pro_60mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmGA645Pro60mmf4.data.ts"
+    ],
+    "source_sha256": "77910d0271266a2a3e22ebb1b509322d05d40f54ccb0483805c25dd94a704a2b",
+    "patent": "US 5,548,447",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_gf_110mm_f2": {
+    "name": "FUJIFILM FUJINON GF 110mm f/2 R LM WR",
+    "group": "Fujifilm",
+    "focal_mm": 110.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_fujifilm_gf_110mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmGF110mmf2RLM.data.ts"
+    ],
+    "source_sha256": "8d00bd5e5b3703d14c0158441bc0e76e19d67fbab2375c3e0788242b50a54769",
+    "patent": "US 2018/0100988 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_gf250mm_f4_r_lm_ois_wr": {
+    "name": "FUJIFILM FUJINON GF 250mm f/4 R LM OIS WR",
+    "group": "Fujifilm",
+    "focal_mm": 250.0,
+    "nominal_f": 4.12,
+    "prescription": "prescriptions/lv_fujifilm_gf250mm_f4_r_lm_ois_wr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmGF250mmf4RLM.data.ts"
+    ],
+    "source_sha256": "56504a917ef33f35714092bc56a1f68104fec48d865587d42b11778be05d1e7f",
+    "patent": "US 2019/0094496 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_xf_200_f2": {
+    "name": "FUJIFILM FUJINON XF 200mm f/2 R LM OIS WR",
+    "group": "Fujifilm",
+    "focal_mm": 200.0,
+    "nominal_f": 2.06,
+    "prescription": "prescriptions/lv_fujifilm_xf_200_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmXF200mmf2R.data.ts"
+    ],
+    "source_sha256": "50e2a2cfe4c9c571d93881c1701ae10daf17cec641f41280af1f8f3ac1ce858c",
+    "patent": "US 2019/0265504 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_xf90f2": {
+    "name": "FUJIFILM FUJINON XF 90mm f/2 R LM WR",
+    "group": "Fujifilm",
+    "focal_mm": 90.0,
+    "nominal_f": 2.06,
+    "prescription": "prescriptions/lv_fujifilm_xf90f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmXF90mmf2.data.ts"
+    ],
+    "source_sha256": "0641ce416a28a1e3a957bbfcef73931b10d898ee104933457d96e3551f13d9ad",
+    "patent": "US 2016/0274335 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_fujifilm_x_fujinon_w_24mm_f28_dm_ebc": {
+    "name": "FUJIFILM EBC X-FUJINON W 24mm f/2.8 DM",
+    "group": "Fujifilm",
+    "focal_mm": 24.0,
+    "nominal_f": 2.800000054,
+    "prescription": "prescriptions/lv_fujifilm_x_fujinon_w_24mm_f28_dm_ebc.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/fujifilm/FujifilmXFujinonSW24mmf28DMEBC.data.ts"
+    ],
+    "source_sha256": "38151aab8973c196401ed8f92058eb8725d30c56a133f05b83b10a1dbce85229",
+    "patent": "US 4,158,482",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_hc_150_f32": {
+    "name": "HASSELBLAD HC 150mm f/3.2",
+    "group": "Hasselblad",
+    "focal_mm": 150.0,
+    "nominal_f": 3.2,
+    "prescription": "prescriptions/lv_hasselblad_hc_150_f32.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladHC150mmf32.data.ts"
+    ],
+    "source_sha256": "52c214c708ec1f421c5d9eb7abbfeea8d130667d8aa27f24a5c368a0142fa0ce",
+    "patent": "US 2002/0075570 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_hc_210_f4": {
+    "name": "HASSELBLAD HC 210mm f/4",
+    "group": "Hasselblad",
+    "focal_mm": 210.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_hasselblad_hc_210_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladHC210mmf4.data.ts"
+    ],
+    "source_sha256": "3a52c879093abef209cee0c186d209edf1c627579d7860419bedf03db0aca2b9",
+    "patent": "US 6,445,511 B1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_hc_50f35_ii": {
+    "name": "HASSELBLAD HC 50mm f/3.5 II",
+    "group": "Hasselblad",
+    "focal_mm": 50.0,
+    "nominal_f": 3.6,
+    "prescription": "prescriptions/lv_hasselblad_hc_50f35_ii.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladHC3550II.data.ts"
+    ],
+    "source_sha256": "25cacfa3f380d34805d82f74f440237e41624f4a68465007e5f5ea718552c263",
+    "patent": "US 2012/0063011 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_hc_80_f28": {
+    "name": "HASSELBLAD HC 80mm f/2.8",
+    "group": "Hasselblad",
+    "focal_mm": 80.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_hasselblad_hc_80_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladHC80mmf28.data.ts"
+    ],
+    "source_sha256": "1307821136f159b471d1e39e79c1736dbd327300e08e1820c782ba2f8d03adf8",
+    "patent": "US 2001/0050819 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_xcd_120_f35_macro": {
+    "name": "HASSELBLAD XCD 120mm f/3.5 Macro",
+    "group": "Hasselblad",
+    "focal_mm": 120.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_hasselblad_xcd_120_f35_macro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladXCD120mmf35Macro.data.ts"
+    ],
+    "source_sha256": "f9ae83174829a3235560af941838edb2786bd403d207ea6226031d014f231982",
+    "patent": "US 2020/0192060 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_xcd_45f35": {
+    "name": "HASSELBLAD XCD 45mm f/3.5",
+    "group": "Hasselblad",
+    "focal_mm": 45.0,
+    "nominal_f": 3.4160659989790303,
+    "prescription": "prescriptions/lv_hasselblad_xcd_45f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladXCD3545.data.ts"
+    ],
+    "source_sha256": "dc1a8e1b720c3e5f28fe3a1f166dd62b2a7b43337a4cb60783428b58e2de1421",
+    "patent": "WO 2017/221949 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_hasselblad_xcd_65_f28": {
+    "name": "HASSELBLAD XCD 65mm f/2.8",
+    "group": "Hasselblad",
+    "focal_mm": 65.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_hasselblad_xcd_65_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/hasselblad/HasselbladXCD65mmf28.data.ts"
+    ],
+    "source_sha256": "432052cf63589d2605dac7e31206b8ea2ccf6a35dd3dedfdbf68cd11fd5bfd01",
+    "patent": "US 2020/0319427 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_kodak_aero_ektar_6in_f35": {
+    "name": "KODAK AERO EKTAR 6 in f/3.5",
+    "group": "Kodak",
+    "focal_mm": 152.4,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_kodak_aero_ektar_6in_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/kodak/KodakAeroEktar6inf35.data.ts"
+    ],
+    "source_sha256": "c755814a3f14691fa9f021d10a6357a140422b67abbb6856048805f117b9be44",
+    "patent": "US 2,983,193",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_kodak_ektar_50f35": {
+    "name": "KODAK EKTAR 50mm f/3.5",
+    "group": "Kodak",
+    "focal_mm": 50.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_kodak_ektar_50f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/kodak/KodakEktar50mmf35.data.ts"
+    ],
+    "source_sha256": "8bde04c1fc12f5de32898730e56c32bbaaaa239ae1acc6d90c94123032ed5e88",
+    "patent": "US 2,165,328",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_kodak_enlarging_ektar_100mm_f45": {
+    "name": "KODAK ENLARGING EKTAR 100mm f/4.5",
+    "group": "Kodak",
+    "focal_mm": 100.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_kodak_enlarging_ektar_100mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/kodak/KodakEnlargingEktar100mmf45.data.ts"
+    ],
+    "source_sha256": "0ed7bded461c9bf78cf3e02fabfe1e8c438def9adc4f6dc976f6cf31f28c66c7",
+    "patent": "US 2,279,384",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_kodak_wide_field_ektar_100f63": {
+    "name": "KODAK WIDE-FIELD EKTAR 100mm f/6.3",
+    "group": "Kodak",
+    "focal_mm": 100.0,
+    "nominal_f": 6.3,
+    "prescription": "prescriptions/lv_kodak_wide_field_ektar_100f63.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/kodak/KodakWideFieldEktar100mmf63.data.ts"
+    ],
+    "source_sha256": "1a71fd7ac873cd7d1f5b1862f5fa0bb07ccbdfc40397ff13001d1d3f350eaf26",
+    "patent": "US 2,518,719",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_fl_hexanon_ar_300mm_f63": {
+    "name": "KONICA FL-HEXANON AR 300mm f/6.3",
+    "group": "Konica",
+    "focal_mm": 300.0,
+    "nominal_f": 6.3,
+    "prescription": "prescriptions/lv_konica_fl_hexanon_ar_300mm_f63.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaFLHexanonAR300mmf63.data.ts"
+    ],
+    "source_sha256": "331ad3986dd7c3567b5e6e9cef79c57fa5aa6880f8dd03a4adb3dd1e5552e5e2",
+    "patent": "JP 1974-023892 B1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_135mm_f35": {
+    "name": "KONICA HEXANON 135mm f/3.5",
+    "group": "Konica",
+    "focal_mm": 135.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_konica_hexanon_135mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanon135mmf35.data.ts"
+    ],
+    "source_sha256": "5aa4bd64112bec2b681de1eac465a70825bca112d9fc597f7cd14ae9929d2643",
+    "patent": "JP 1955-009472 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_38mm_f28": {
+    "name": "KONICA HEXANON 38mm f/2.8 (Konica C35)",
+    "group": "Konica",
+    "focal_mm": 38.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_konica_hexanon_38mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanon38mmf28.data.ts"
+    ],
+    "source_sha256": "d31a3e39b73fa242e04525d4a48ea81007da2b7aac61f32d88f4ba753ae22ab0",
+    "patent": "US 3,615,126",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_60f12": {
+    "name": "KONICA HEXANON 60mm f/1.2 L",
+    "group": "Konica",
+    "focal_mm": 60.0,
+    "nominal_f": 1.24,
+    "prescription": "prescriptions/lv_konica_hexanon_60f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanon60mmf12.data.ts"
+    ],
+    "source_sha256": "90ab4e34284087b1e30b05c4963eaccb431bff72e71761338654724620d8df5b",
+    "patent": "JP H11-160615 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_ar_135mm_f3_5": {
+    "name": "KONICA HEXANON AR 135mm f/3.5",
+    "group": "Konica",
+    "focal_mm": 135.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_konica_hexanon_ar_135mm_f3_5.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanonAR135mmf35.data.ts"
+    ],
+    "source_sha256": "47db0d04f9feaff6a7c8e7591b3483fd9c30cdbb874a2ff372669c4e82c943e1",
+    "patent": "JP 1979-055423 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_ar_21mm_f2_8": {
+    "name": "KONICA HEXANON AR 21mm f/2.8",
+    "group": "Konica",
+    "focal_mm": 21.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_konica_hexanon_ar_21mm_f2_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanonAR21mmf28.data.ts"
+    ],
+    "source_sha256": "f8ce582e1a012225f5bccf89d5983bc4493bc1c1f1a62a777cc5ba2a69f947ac",
+    "patent": "JP 1980-017129 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_ar_24mm_f2_8": {
+    "name": "KONICA HEXANON AR 24mm f/2.8",
+    "group": "Konica",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_konica_hexanon_ar_24mm_f2_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanonAR24mmf28.data.ts"
+    ],
+    "source_sha256": "328d036f1d32863033f07d9b379ffad926fc0579a3d96837e69a306c200b99b1",
+    "patent": "JP 1980-087117 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_ar_35mm_f28": {
+    "name": "KONICA HEXANON AR 35mm f/2.8",
+    "group": "Konica",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_konica_hexanon_ar_35mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanonAR35mmf28.data.ts"
+    ],
+    "source_sha256": "0f046f1af823e9bcfc2a0bf9b28a88d04bdc9768a89d7f72af21598ff8878e8a",
+    "patent": "US 4,170,403",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_ar_40mm_f18": {
+    "name": "KONICA HEXANON AR 40mm f/1.8",
+    "group": "Konica",
+    "focal_mm": 40.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_konica_hexanon_ar_40mm_f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanonAR40mmf18.data.ts"
+    ],
+    "source_sha256": "7f5002044f11495bc5f3bda520f9c7523da19aeabe7d87bffa4b001f040b2d3a",
+    "patent": "JP 1979-030821 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexanon_ar_50mm_f1_8": {
+    "name": "KONICA HEXANON AR 50mm f/1.8",
+    "group": "Konica",
+    "focal_mm": 50.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_konica_hexanon_ar_50mm_f1_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexanonAR50mmf18.data.ts"
+    ],
+    "source_sha256": "c6638cf7076e74de062d58f2d84b2f3fb25fcbd7aa61609338e7c09befaaaca4",
+    "patent": "JP 1982-108817 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_hexar_35f2": {
+    "name": "KONICA HEXAR 35mm f/2 (Konica Hexar AF)",
+    "group": "Konica",
+    "focal_mm": 35.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_konica_hexar_35f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaHexar35mmf2.data.ts"
+    ],
+    "source_sha256": "b7993e061d8d730a0d291abed261df9a4e01d09af6f3be97dd811cebb146ade8",
+    "patent": "JP H05-164961 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_konica_uc_hexanon_ar_28mm_f1_8": {
+    "name": "KONICA UC HEXANON AR 28mm f/1.8",
+    "group": "Konica",
+    "focal_mm": 28.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_konica_uc_hexanon_ar_28mm_f1_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/konica/KonicaUCHexanonAR28mmf18.data.ts"
+    ],
+    "source_sha256": "cb379582d6f23c40953e0784b80f02ca74efd96149d08afb99f8bac1b46f6302",
+    "patent": "JP 1976-026535 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_laowa_24f14_probe": {
+    "name": "LAOWA 24mm f/14 2× Macro Probe",
+    "group": "Laowa",
+    "focal_mm": 24.0,
+    "nominal_f": 14.0,
+    "prescription": "prescriptions/lv_laowa_24f14_probe.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/laowa/Laowa24mmf14Probe.data.ts"
+    ],
+    "source_sha256": "949dcd6c2d70143278d78874bee366470cc4f18c1e1d1415c05a0abd4c8f04b2",
+    "patent": "CN 210573001 U",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_laowa_58mm_f28_2x_macro_apo": {
+    "name": "LAOWA 58mm f/2.8 2× Ultra-Macro APO",
+    "group": "Laowa",
+    "focal_mm": 58.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_laowa_58mm_f28_2x_macro_apo.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/laowa/Laowa58mmf28MacroAPO.data.ts"
+    ],
+    "source_sha256": "3407497115925a5b2e0d3bba4aff318a4a6839d62c62b13444d1b7e8e0f334ff",
+    "patent": "CN 116520542 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_laowa_65mm_f28_macro_apo": {
+    "name": "LAOWA 65mm f/2.8 2× Ultra Macro APO",
+    "group": "Laowa",
+    "focal_mm": 65.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_laowa_65mm_f28_macro_apo.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/laowa/Laowa65mmf28MacroAPO.data.ts"
+    ],
+    "source_sha256": "0403e5902c389a18b330f1729c65c456f21e4dc5f05c5fa8f6fc139b355c0cbd",
+    "patent": "CN 110161666 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_elcan_50f2": {
+    "name": "LEICA ELCAN 50mm f/2",
+    "group": "Leica",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_leica_elcan_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaElcan50mmf2.data.ts"
+    ],
+    "source_sha256": "65f18f3320f6749305fbaae9d944272357977443ee988a0c70df971433f8ea0b",
+    "patent": "US 3,649,104",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_elmarit_r_28f28": {
+    "name": "LEICA ELMARIT-R 28mm f/2.8",
+    "group": "Leica",
+    "focal_mm": 28.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_elmarit_r_28f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaElmarit28mmf28.data.ts"
+    ],
+    "source_sha256": "0f618704badb3f0a7d073ceb0df6cbca8697342eeb0177adb444cebf02ea952f",
+    "patent": "US 3,591,257",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_elmarit_90f28": {
+    "name": "LEICA ELMARIT 90mm f/2.8",
+    "group": "Leica",
+    "focal_mm": 90.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_leica_elmarit_90f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaElmarit90mmf28.data.ts"
+    ],
+    "source_sha256": "9607622e0fffebbfc03f8225bc0078ddd3cf63fe17cf990288bd7ef991e54169",
+    "patent": "US 2,995,980",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_elmarit_m_135mm_f28": {
+    "name": "LEICA ELMARIT-M 135mm f/2.8",
+    "group": "Leica",
+    "focal_mm": 135.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_leica_elmarit_m_135mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaElmaritM135mmf28.data.ts"
+    ],
+    "source_sha256": "25f629a9af7db85c66e13e092b798e927c5d8bf428bbe2a7ca0ec7e56e5c49fe",
+    "patent": "US 3,108,152",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_elmarit_r_35mm_f28": {
+    "name": "LEICA ELMARIT-R 35mm f/2.8",
+    "group": "Leica",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_leica_elmarit_r_35mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaElmaritR35mmf28.data.ts"
+    ],
+    "source_sha256": "d9d0d6b1c227811f68584438357bdbc176c6e170332364fe555db5b0a659a133",
+    "patent": "FR 1,471,493",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_elmar_m_135mm_f4": {
+    "name": "LEICA ELMAR-M 135mm f/4",
+    "group": "Leica",
+    "focal_mm": 135.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_leica_elmar_m_135mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaElmarM135mmf4.data.ts"
+    ],
+    "source_sha256": "4288b8f8c355aa96fec62991e14a386fb7ca5e1ec9dff17bb52308ba718f28ef",
+    "patent": "DE 1,183,707 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_macro_elmarit_r_60mm_f28": {
+    "name": "LEICA MACRO-ELMARIT-R 60mm f/2.8",
+    "group": "Leica",
+    "focal_mm": 60.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_leica_macro_elmarit_r_60mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaMacroElmaritR60mmf28.data.ts"
+    ],
+    "source_sha256": "6ea0757c36ae97dfe447502c85c4177ff0fe5511b846123e3d0a1ed0d643389f",
+    "patent": "US 3,552,833",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_macro_elmar_m_90mm_f4": {
+    "name": "LEICA MACRO-ELMAR-M 90mm f/4",
+    "group": "Leica",
+    "focal_mm": 90.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_leica_macro_elmar_m_90mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaMacroElmarM90mmf4.data.ts"
+    ],
+    "source_sha256": "8630fa5c12f0395526558f4ce54358b9c6dcf6c19dc2846daf80346418d0cb44",
+    "patent": "DE 2 246 966 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summicron_35mm_f2_i": {
+    "name": "LEICA SUMMICRON 35mm f/2 I",
+    "group": "Leica",
+    "focal_mm": 35.0,
+    "nominal_f": 2.000000026,
+    "prescription": "prescriptions/lv_leica_summicron_35mm_f2_i.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummicron35mmf2I.data.ts"
+    ],
+    "source_sha256": "3aa5e52013e5b1eea4f15afbd67362ecde56721668e77902bebd583037b89a43",
+    "patent": "US 3,006,249",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summicron_c_40mm_f2": {
+    "name": "LEICA SUMMICRON-C 40mm f/2",
+    "group": "Leica",
+    "focal_mm": 40.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_leica_summicron_c_40mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummicronC40mmf2.data.ts"
+    ],
+    "source_sha256": "82f1ac2ffda5a11fdbfebae602537460132378b5491f6eabf3fa458e446abff2",
+    "patent": "DE 2 222 892 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summicron_r_50mm_f2": {
+    "name": "LEICA SUMMICRON-R 50mm f/2",
+    "group": "Leica",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_leica_summicron_r_50mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummicronR50mmf2.data.ts"
+    ],
+    "source_sha256": "3132597176608e22c1104b72bc0b02debcd97eea04f53e42e9a221139e0191e8",
+    "patent": "US 4,123,144",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summicron_m_50f2_v5": {
+    "name": "LEICA SUMMICRON-M 50mm f/2",
+    "group": "Leica",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_leica_summicron_m_50f2_v5.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummicronV550mmf2.data.ts"
+    ],
+    "source_sha256": "35cc9144bcbe881eb40c5e521b80f1a21e2ee29012cd2d47a9648370325e8535",
+    "patent": "US 4,123,144",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summilux_m_35f14": {
+    "name": "LEICA SUMMILUX-M 35mm f/1.4",
+    "group": "Leica",
+    "focal_mm": 35.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_leica_summilux_m_35f14.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummilux35mmf14.data.ts"
+    ],
+    "source_sha256": "31cee92a3d0fc1ed2beb28e6900e33ad1e9128b269180a662c5c7d9d212b788f",
+    "patent": "FR 1.233.449",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summilux_m_50mm_f14_i": {
+    "name": "LEICA SUMMILUX-M 50mm f/1.4 I",
+    "group": "Leica",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_leica_summilux_m_50mm_f14_i.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummiluxM50mmf14I.data.ts"
+    ],
+    "source_sha256": "b6d215b51f14b3842ec985e66d1a395141202add101c560f0f203d2a25b7800e",
+    "patent": "DE 1 045 120 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_leica_summilux_m_50mm_f14_ii": {
+    "name": "LEICA SUMMILUX-M 50mm f/1.4 II",
+    "group": "Leica",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_leica_summilux_m_50mm_f14_ii.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/leica/LeicaSummiluxM50mmf14II.data.ts"
+    ],
+    "source_sha256": "e43fe57fe7875a1805aa39d522569fd2fcd3f27f2490b176d39d16eb24126e78",
+    "patent": "US 3,291,553",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_n_210mm_f8_l": {
+    "name": "MAMIYA N 210mm f/8 L",
+    "group": "Mamiya",
+    "focal_mm": 210.0,
+    "nominal_f": 8.15,
+    "prescription": "prescriptions/lv_mamiya_n_210mm_f8_l.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/Mamiya7210mmf8NL.data.ts"
+    ],
+    "source_sha256": "744ef60395b58a9a13d251cfab041e7d51089b5997249fb192b5c1104a247668",
+    "patent": "JP 2000-028919 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_af_apo_300_f45_if": {
+    "name": "MAMIYA AF APO 300mm f/4.5 IF",
+    "group": "Mamiya",
+    "focal_mm": 300.0,
+    "nominal_f": 4.63,
+    "prescription": "prescriptions/lv_mamiya_af_apo_300_f45_if.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaAFAPO300mmf45IF.data.ts"
+    ],
+    "source_sha256": "5e31f45a244aa5811723e129669a5bc3d625c07f963f18e1282f532b436d1164",
+    "patent": "JP H10-206729 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_sekor_af_55mm_f28": {
+    "name": "MAMIYA SEKOR AF 55mm f/2.8",
+    "group": "Mamiya",
+    "focal_mm": 55.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_mamiya_sekor_af_55mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaSekorAF55mmf28.data.ts"
+    ],
+    "source_sha256": "0da0b6099b6c0637b623edd2dce0528b44889b3f0f475ca1cfed87d96afdbc0f",
+    "patent": "JP 1997-297263 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_sekor_c_55mm_f2_8_n": {
+    "name": "MAMIYA-SEKOR C 55mm f/2.8 N",
+    "group": "Mamiya",
+    "focal_mm": 55.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_mamiya_sekor_c_55mm_f2_8_n.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaSekorC55mmf28N.data.ts"
+    ],
+    "source_sha256": "6fca844d4ebbb0089401c7aed5460aaa18bfe2fe0bb6017e9d286b6e00f36ff3",
+    "patent": "JP S55-45883 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_sekor_cs_35mm_f2_8": {
+    "name": "MAMIYA-SEKOR CS 35mm f/2.8",
+    "group": "Mamiya",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_mamiya_sekor_cs_35mm_f2_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaSekorCS35mmf28.data.ts"
+    ],
+    "source_sha256": "af63812ebbba6bc1f3c9cfb304ca8acf9b88f7de4fd425dcbbeb7c3a6050495b",
+    "patent": "JP 1978-066222 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_sekor_af_150mm_f28_if_d": {
+    "name": "MAMIYA SEKOR AF 150mm f/2.8 IF D",
+    "group": "Mamiya",
+    "focal_mm": 150.0,
+    "nominal_f": 2.88,
+    "prescription": "prescriptions/lv_mamiya_sekor_af_150mm_f28_if_d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaSekorDAF150mmf28IF.data.ts"
+    ],
+    "source_sha256": "11b106e4ec03c13816094598876e47477af73dbe49fa929b1aac3a904d041f5c",
+    "patent": "JP 2001-183581 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_sekor_macro_c_80f4": {
+    "name": "MAMIYA-SEKOR MACRO C 80mm f/4",
+    "group": "Mamiya",
+    "focal_mm": 80.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_mamiya_sekor_macro_c_80f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaSekorMacroC80mmf4.data.ts"
+    ],
+    "source_sha256": "0cfe205c7e063bca12d586c5c6f4b302ea78c9f5e1ead4e9b517e30f669926c2",
+    "patent": "JP S55-24081 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_mamiya_sekor_sfc_150f4_soft_focus": {
+    "name": "MAMIYA-SEKOR SFC 150mm f/4 SOFT FOCUS",
+    "group": "Mamiya",
+    "focal_mm": 150.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_mamiya_sekor_sfc_150f4_soft_focus.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/mamiya/MamiyaSekorSFC150mmf4SoftFocus.data.ts"
+    ],
+    "source_sha256": "ffbce6b5694ef22398c3474642a3efcf65d118cb04c42ca16a6ccdefb46f0b92",
+    "patent": "JP S52-141223 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_meyer_optik_gorlitz_lydith_30f35": {
+    "name": "MEYER-OPTIK GÖRLITZ LYDITH 30mm f/3.5",
+    "group": "Meyer Optik Görlitz",
+    "focal_mm": 30.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_meyer_optik_gorlitz_lydith_30f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/meyer-optik-goerlitz/MeyerOptikGorlitz30mmf35Lydith.data.ts"
+    ],
+    "source_sha256": "64096e4be41958bc4d8d22084f54a7ae968b853b35b0082995d8be50341ed715",
+    "patent": "DE 1 794 971",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_meyer_optik_gorlitz_primagon_35f45": {
+    "name": "MEYER-OPTIK GÖRLITZ PRIMAGON 35mm f/4.5",
+    "group": "Meyer Optik Görlitz",
+    "focal_mm": 35.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_meyer_optik_gorlitz_primagon_35f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/meyer-optik-goerlitz/MeyerOptikGorlitz35mmf45Primagon.data.ts"
+    ],
+    "source_sha256": "3e3dd1fb6e8a574abc654d2dcf96983f280aab8d32317157d1575c1b37b5afdf",
+    "patent": "DE 1 749 770 U",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_meyer_optik_gorlitz_orestegor_500mm_f56": {
+    "name": "MEYER-OPTIK GÖRLITZ ORESTEGOR 500mm f/5.6",
+    "group": "Meyer Optik Görlitz",
+    "focal_mm": 500.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_meyer_optik_gorlitz_orestegor_500mm_f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/meyer-optik-goerlitz/MeyerOptikGorlitz500mmf56Orestegor.data.ts"
+    ],
+    "source_sha256": "8d9b6834d447352925b0b3507c9f3fc45452171795977baf957669616bdaea5e",
+    "patent": "DE 1 980 417",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_auto_tele_rokkor_100f2": {
+    "name": "Minolta Auto Tele Rokkor-PF 100mm f/2",
+    "group": "Minolta",
+    "focal_mm": 100.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_minolta_auto_tele_rokkor_100f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/Minolta100mmf2AutoTeleRokkor.data.ts"
+    ],
+    "source_sha256": "d8f3c568ecb1039a2630c94e35e53bc0508cd47ae602454b8b96d071db550a18",
+    "patent": "JP1963-011590",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_md_135f28": {
+    "name": "Minolta MD 135mm f/2.8",
+    "group": "Minolta",
+    "focal_mm": 135.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_minolta_md_135f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/Minolta135mmf28MD.data.ts"
+    ],
+    "source_sha256": "5b95d8940ffa3f54ef693241e5ec3832a4cd340bd6fcbf4cb2836c1f723d5161",
+    "patent": "US 4,214,816",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_md_28mm_f28_7_7": {
+    "name": "MINOLTA MD 28mm f/2.8 (7 elements / 7 groups)",
+    "group": "Minolta",
+    "focal_mm": 28.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_minolta_md_28mm_f28_7_7.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/Minolta28mmf28MD.data.ts"
+    ],
+    "source_sha256": "d45ed4086546f8fbd935889cfb687d577ae6ca6e32833b8e13e13b3b2ba41b1c",
+    "patent": "US 3,973,832",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_md_28mm_f28_v2": {
+    "name": "MINOLTA MD 28mm f/2.8 (5 elements / 5 groups)",
+    "group": "Minolta",
+    "focal_mm": 28.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_minolta_md_28mm_f28_v2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/Minolta28mmf28MDv2.data.ts"
+    ],
+    "source_sha256": "d8f7a850126197dd05e198be2ff72c8c7790b3c0e6c0c5746bb7e490713caab0",
+    "patent": "US 4,493,536",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_mc_w_rokkor_sg_28f35_v2": {
+    "name": "MINOLTA MC W.ROKKOR-SG 28mm f/3.5",
+    "group": "Minolta",
+    "focal_mm": 28.0,
+    "nominal_f": 3.499999895,
+    "prescription": "prescriptions/lv_minolta_mc_w_rokkor_sg_28f35_v2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/Minolta28mmf35MCWRokkorv2.data.ts"
+    ],
+    "source_sha256": "a89d0c6bfb729457e1326cf6beabb7411e74c41f047fc170e62fc1a9ab428ce0",
+    "patent": "JP1969-025743",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_md_50f2": {
+    "name": "Minolta MD 50mm f/2",
+    "group": "Minolta",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_minolta_md_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/Minolta50mmf20MD.data.ts"
+    ],
+    "source_sha256": "ba28958c218a0302fb5816bb3859382ca61d2d8bb66b9140a1c86250789a4ccd",
+    "patent": "US 4,444,473",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_100mm_f2": {
+    "name": "MINOLTA AF 100mm f/2",
+    "group": "Minolta",
+    "focal_mm": 100.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_minolta_af_100mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF100mmf2.data.ts"
+    ],
+    "source_sha256": "74b07314108f87b62fc234c9f8705bf407bb1141c8c0d7cfa97b2ae7f70e746b",
+    "patent": "JP 1987-244010 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_200mm_f28": {
+    "name": "MINOLTA AF APO Tele 200mm f/2.8",
+    "group": "Minolta",
+    "focal_mm": 200.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_minolta_af_200mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF200mmf28.data.ts"
+    ],
+    "source_sha256": "e70b29c889cbe76e86969469eaa43128a52c244bf49bf4665b4aa9fbe7b5bf2f",
+    "patent": "US 4,786,152",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_20mm_f28": {
+    "name": "MINOLTA AF 20mm f/2.8",
+    "group": "Minolta",
+    "focal_mm": 20.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_minolta_af_20mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF20mmf28.data.ts"
+    ],
+    "source_sha256": "24df9ad42b6e02fbe75ac78d6c8000c9c600a095f4b7c573479252c52ec8949c",
+    "patent": "JP 1987-249119 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_28mm_f2": {
+    "name": "MINOLTA AF 28mm f/2",
+    "group": "Minolta",
+    "focal_mm": 28.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_minolta_af_28mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF28mmf2.data.ts"
+    ],
+    "source_sha256": "d5e1825bb959107f168e3082de87528167a7c3bc60cb6d3924708b2a871b5ef7",
+    "patent": "US 4,258,985",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_300mm_f28": {
+    "name": "MINOLTA AF APO TELE 300mm f/2.8",
+    "group": "Minolta",
+    "focal_mm": 300.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_minolta_af_300mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF300mmf28.data.ts"
+    ],
+    "source_sha256": "d380026ead24fa7c3e3b357f28168f6c809241ff1e8e3427f2e836775e2f89a0",
+    "patent": "US 4,518,229",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_35mm_f2": {
+    "name": "MINOLTA AF 35mm f/2",
+    "group": "Minolta",
+    "focal_mm": 35.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_minolta_af_35mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF35mmf2.data.ts"
+    ],
+    "source_sha256": "16f95d0a3e3cd9eac708290d837d749d5e0723698d4fcc037110aec901897fb6",
+    "patent": "JP 1988-201614 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_af_400mm_f45_apo_g": {
+    "name": "MINOLTA AF 400mm f/4.5 APO G",
+    "group": "Minolta",
+    "focal_mm": 400.0,
+    "nominal_f": 4.59,
+    "prescription": "prescriptions/lv_minolta_af_400mm_f45_apo_g.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaAF400mmf45APOG.data.ts"
+    ],
+    "source_sha256": "8b92e92c4b61034e1d3de6ecf9b5bc718e6cc71763af54998c4f6e3a9bf64748",
+    "patent": "JP 1996-327896 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_md_rokkor_45f2": {
+    "name": "MINOLTA MD ROKKOR 45mm f/2",
+    "group": "Minolta",
+    "focal_mm": 45.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_minolta_md_rokkor_45f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaRokkor45mmf2MD.data.ts"
+    ],
+    "source_sha256": "41a8b7263699778491f38acb5972cf74663a8832a0974e61a5b7fb95bdce9583",
+    "patent": "US 4,277,149",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_md_rokkor_50f14": {
+    "name": "MINOLTA MD ROKKOR 50mm f/1.4",
+    "group": "Minolta",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_minolta_md_rokkor_50f14.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaRokkor50mmf14MD.data.ts"
+    ],
+    "source_sha256": "ce6cc444fc996460a9bcbfe1271764d5379d985a97774075c9e5a4b65b6f3c55",
+    "patent": "US 4,182,550",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_minolta_stf_135f28_t45": {
+    "name": "MINOLTA AF 135mm f/2.8 [T4.5] STF",
+    "group": "Minolta",
+    "focal_mm": 135.0,
+    "nominal_f": 2.83,
+    "prescription": "prescriptions/lv_minolta_stf_135f28_t45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaSTF135mmf28T45.data.ts"
+    ],
+    "source_sha256": "ea0c6435be0e596ca8f273e5c775350e1e0dd70b221fea90b3b541b89539979b",
+    "patent": "JP 1999-231209 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_varisoft_rokkor_85f28": {
+    "name": "MINOLTA VARISOFT ROKKOR 85mm f/2.8",
+    "group": "Minolta",
+    "focal_mm": 85.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_varisoft_rokkor_85f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/minolta/MinoltaVarisoft85mmf28.data.ts"
+    ],
+    "source_sha256": "06ff129cf4024f2c7a118f07aad7bf71a763ca225607d11044f807a4ef977073",
+    "patent": "US 4,124,276",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_miranda_auto_ec_135mm_f28": {
+    "name": "MIRANDA AUTO EC 135mm f/2.8",
+    "group": "Miranda",
+    "focal_mm": 135.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_miranda_auto_ec_135mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/miranda/MirandaAutoEC135mmf28.data.ts"
+    ],
+    "source_sha256": "6325131a277c9d762105906133eff8afa89e3ef7fe98cf29f2948ba20aabf3ee",
+    "patent": "JP S51-074627 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_miranda_auto_ec_200mm_f35": {
+    "name": "MIRANDA AUTO EC 200mm f/3.5",
+    "group": "Miranda",
+    "focal_mm": 200.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_miranda_auto_ec_200mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/miranda/MirandaAutoEC200mmf35.data.ts"
+    ],
+    "source_sha256": "840489358414350edddb2e71f570814bf9499891cb185fc85af219d2445c52c9",
+    "patent": "JP S51-114926 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_miranda_auto_ec_35mm_f28": {
+    "name": "MIRANDA AUTO EC 35mm f/2.8",
+    "group": "Miranda",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_miranda_auto_ec_35mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/miranda/MirandaAutoEC35mmf28.data.ts"
+    ],
+    "source_sha256": "8de98de3de97e7eea58aa959f7f859e94e46af86637e9b1cec841577597d002a",
+    "patent": "JP S51-053823 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af600_28mm_f35": {
+    "name": "NIKON 28mm f/3.5 (Nikon AF600 / AF600 QD)",
+    "group": "Nikon",
+    "focal_mm": 28.0,
+    "nominal_f": 3.54,
+    "prescription": "prescriptions/lv_nikon_af600_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/Nikon28mmf35MacroAf600QD.data.ts"
+    ],
+    "source_sha256": "f4344e896f3eac8964d5ba27f55238ff883f810b450ae0d60b18dad1381374e7",
+    "patent": "JP H06-235857 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_28ti_28f28": {
+    "name": "NIKON NIKKOR 28mm f/2.8 (Nikon 28Ti)",
+    "group": "Nikon",
+    "focal_mm": 28.0,
+    "nominal_f": 2.87,
+    "prescription": "prescriptions/lv_nikon_28ti_28f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/Nikon28Ti28mmf28.data.ts"
+    ],
+    "source_sha256": "73e963bc5ff072c84dd4f5a5a3518a0527adfdad02e9852fa7fc2905163b5250",
+    "patent": "US 5,528,428",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_85f14_ais": {
+    "name": "NIKON AI NIKKOR 85mm f/1.4 S",
+    "group": "Nikon",
+    "focal_mm": 85.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_nikkor_85f14_ais.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/Nikon85f14AIS.data.ts"
+    ],
+    "source_sha256": "7d912690fb7823630609bb1557f4ec58afb157fb83736eacadef835ce6afb9a7",
+    "patent": "US 4,396,256 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_85f14d": {
+    "name": "NIKON AF NIKKOR 85mm f/1.4 D IF",
+    "group": "Nikon",
+    "focal_mm": 85.0,
+    "nominal_f": 1.43,
+    "prescription": "prescriptions/lv_nikkor_85f14d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/Nikon85f14D.data.ts"
+    ],
+    "source_sha256": "c9252afdda329b238fe0d2cde6b477e1ca319e0224ff2d74c58338a5a5a7761c",
+    "patent": "US 5,640,277 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_dc_nikkor_135mm_f2": {
+    "name": "NIKON AF DC-NIKKOR 135mm f/2D",
+    "group": "Nikon",
+    "focal_mm": 135.0,
+    "nominal_f": 2.00000003,
+    "prescription": "prescriptions/lv_nikon_af_dc_nikkor_135mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFDCNikkor135mmf2.data.ts"
+    ],
+    "source_sha256": "5ae75bbb99fd2a3c262ae6325c3a87f5c9cc12633de94cadd28674ce3a9e9afc",
+    "patent": "US 4,908,639 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_i_nikkor_300mm_f2_8d_if_ed": {
+    "name": "NIKON AF-I NIKKOR 300mm f/2.8D IF-ED",
+    "group": "Nikon",
+    "focal_mm": 300.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_nikon_af_i_nikkor_300mm_f2_8d_if_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFINikkor300mmf28DIFED.data.ts"
+    ],
+    "source_sha256": "f700ac1082a9066f5502eff360ad11533125cb1689875a7d773414f2fd4d8d42",
+    "patent": "JP H04-294310 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_i_nikkor_400mm_f28d_if_ed": {
+    "name": "NIKON AF-I NIKKOR 400mm f/2.8D IF-ED",
+    "group": "Nikon",
+    "focal_mm": 400.0,
+    "nominal_f": 2.88,
+    "prescription": "prescriptions/lv_nikon_af_i_nikkor_400mm_f28d_if_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFINikkorED400mmf28DIF.data.ts"
+    ],
+    "source_sha256": "dce4c4252237574d26408b9986491ea6658fb9dd7e0c7e5238bfdbbe9ac509f3",
+    "patent": "US 5,438,455 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_micro_nikkor_200mm_f4d": {
+    "name": "NIKON AF MICRO-NIKKOR 200mm f/4D IF-ED",
+    "group": "Nikon",
+    "focal_mm": 200.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_nikon_af_micro_nikkor_200mm_f4d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFMicroNikkor200mmf4D.data.ts"
+    ],
+    "source_sha256": "d1d5c07933770be36944ffb33f3e9f349bfdd53bf41ddf00f1497b62df558265",
+    "patent": "US 5,402,268",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_micro_nikkor_60mm_f28d": {
+    "name": "NIKON AF MICRO-NIKKOR 60mm f/2.8 D",
+    "group": "Nikon",
+    "focal_mm": 60.0,
+    "nominal_f": 2.82,
+    "prescription": "prescriptions/lv_nikon_af_micro_nikkor_60mm_f28d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFMicroNikkor60mmf28D.data.ts"
+    ],
+    "source_sha256": "3139ddbce0a33d1a9e52704dde1ef2c3d832201ba35b3f8848af01aea5baa122",
+    "patent": "US 5,751,485",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_nikkor_20mm_f28d": {
+    "name": "Nikon AF Nikkor 20mm f/2.8D",
+    "group": "Nikon",
+    "focal_mm": 20.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_af_nikkor_20mm_f28d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFNikkor20mmf28D.data.ts"
+    ],
+    "source_sha256": "509af38b1aa6e64017e8455a87ddbec7e554cbdee6f2dafa7b975761ac900bb6",
+    "patent": "US 4,690,517",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_nikkor_35mm_f2d": {
+    "name": "NIKON AF NIKKOR 35mm f/2 D",
+    "group": "Nikon",
+    "focal_mm": 35.0,
+    "nominal_f": 2.006,
+    "prescription": "prescriptions/lv_nikon_af_nikkor_35mm_f2d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFNikkor35mmf2D.data.ts"
+    ],
+    "source_sha256": "15a1fd11e2c8e3b082a51ab8c953efc76d3cc5fd81a3a6ce6b4dd2c5771f58ae",
+    "patent": "JP 2021-36283 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_afs_105f28_vr_micro": {
+    "name": "NIKON AF-S VR MICRO-NIKKOR 105mm f/2.8 G IF-ED",
+    "group": "Nikon",
+    "focal_mm": 105.0,
+    "nominal_f": 2.88,
+    "prescription": "prescriptions/lv_nikon_afs_105f28_vr_micro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFS105f28G.data.ts"
+    ],
+    "source_sha256": "1e4f4bf0c0d42326ca965bcc3fffb1ddc4b1553bcaea6a3c3e1f6de7bded7398",
+    "patent": "US 7,218,457 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_s_dx_micro_nikkor_85mm_f35g_ed_vr": {
+    "name": "NIKON AF-S DX MICRO-NIKKOR 85mm f/3.5G ED VR",
+    "group": "Nikon",
+    "focal_mm": 85.0,
+    "nominal_f": 3.6,
+    "prescription": "prescriptions/lv_nikon_af_s_dx_micro_nikkor_85mm_f35g_ed_vr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSDXMicroNikkor85mmf35GEDVR.data.ts"
+    ],
+    "source_sha256": "173046d1d22e1ab6f25016b345cd254087d52946e7d12c8b54819da85ee0030f",
+    "patent": "US 2009/0190220 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_af_s_nikkor_300mm_f28d_if_ed": {
+    "name": "NIKON AI AF-S NIKKOR ED 300mm f/2.8D IF",
+    "group": "Nikon",
+    "focal_mm": 300.0,
+    "nominal_f": 2.88,
+    "prescription": "prescriptions/lv_nikon_ai_af_s_nikkor_300mm_f28d_if_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSNikkor300mmf28DIFED.data.ts"
+    ],
+    "source_sha256": "1473651d7735daffc2d835df8d1b5489b6c41cc6fe2dae0e54b46b3f13597feb",
+    "patent": "US 5,745,306 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_af_s_nikkor_400mm_f28d_if_ed_ii": {
+    "name": "NIKON AI AF-S NIKKOR ED 400mm f/2.8D II IF",
+    "group": "Nikon",
+    "focal_mm": 400.0,
+    "nominal_f": 2.88,
+    "prescription": "prescriptions/lv_nikon_ai_af_s_nikkor_400mm_f28d_if_ed_ii.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSNikkor400mmf28DIFEDII.data.ts"
+    ],
+    "source_sha256": "f76127de3474fbc8da247aa2562f2dad7b8f0d32ad0468d5baccae373a822bf9",
+    "patent": "US 6,239,919 B1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_s_nikkor_400mm_f28e_fl_ed_vr": {
+    "name": "NIKON AF-S NIKKOR 400mm f/2.8E FL ED VR",
+    "group": "Nikon",
+    "focal_mm": 400.0,
+    "nominal_f": 2.8815155201942533,
+    "prescription": "prescriptions/lv_nikon_af_s_nikkor_400mm_f28e_fl_ed_vr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSNIKKOR400mmf28EFLEDVR.data.ts"
+    ],
+    "source_sha256": "48ff7948e2029bae5e4c482eb8ff6d9d3d3b0f8fa7da33f4bec0f309439182e8",
+    "patent": "JP 2015-215559 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_af_s_nikkor_500mm_f4d_if_ed": {
+    "name": "NIKON AI AF-S NIKKOR ED 500mm f/4D IF",
+    "group": "Nikon",
+    "focal_mm": 500.0,
+    "nominal_f": 4.08,
+    "prescription": "prescriptions/lv_nikon_ai_af_s_nikkor_500mm_f4d_if_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSNikkor500mmf4DIFED.data.ts"
+    ],
+    "source_sha256": "00b3630a15755c2bb0fcd8b93e731bbefd3d587cdcf89e50dee02d8a66458539",
+    "patent": "US 5,745,306 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_s_nikkor_500mm_f4e_fl_ed_vr": {
+    "name": "NIKON AF-S NIKKOR 500mm f/4E FL ED VR",
+    "group": "Nikon",
+    "focal_mm": 500.0,
+    "nominal_f": 4.122,
+    "prescription": "prescriptions/lv_nikon_af_s_nikkor_500mm_f4e_fl_ed_vr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSNIKKOR500mmf4EFLEDVR.data.ts"
+    ],
+    "source_sha256": "ce64d4f8a9ac00751a81391de3a346df6afbc5158984397b7efdb9c5b7d31f60",
+    "patent": "JP 2015-215560 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_af_s_nikkor_500mm_f4g_ed_vr": {
+    "name": "NIKON AF-S NIKKOR 500mm f/4G ED VR",
+    "group": "Nikon",
+    "focal_mm": 500.0,
+    "nominal_f": 4.08,
+    "prescription": "prescriptions/lv_nikon_af_s_nikkor_500mm_f4g_ed_vr.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAFSNikkor500mmf4GEDVR.data.ts"
+    ],
+    "source_sha256": "34ab2eb0e363ee16824c0a209107725da5d0f7767867d4512da763e1fd8a554b",
+    "patent": "US 2009/0190239 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_135f2": {
+    "name": "NIKON AI NIKKOR 135mm f/2",
+    "group": "Nikon",
+    "focal_mm": 135.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_135f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAI135mmf2.data.ts"
+    ],
+    "source_sha256": "c7c0d02f4ff3d83f37c0b6d852b5f12feb349681b044933a86876bc8ebfce669",
+    "patent": "US 4,062,630",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_135f28": {
+    "name": "NIKON AI NIKKOR 135mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 135.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_135f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAI135mmf28.data.ts"
+    ],
+    "source_sha256": "99a517dd7f4bd50f2822130e0343a0f1a6e1b732891db95e501f6e516149b2b6",
+    "patent": "US 4,057,330",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_28mm_f35": {
+    "name": "NIKON AI NIKKOR 28mm f/3.5",
+    "group": "Nikon",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_nikon_ai_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAI28mmf35.data.ts"
+    ],
+    "source_sha256": "495ef6b49882297fcc426f89124ac503654e08e58bc6c255bff61375a4553fa6",
+    "patent": "US 4,099,850",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_af_dc_nikkor_105mm_f2d": {
+    "name": "NIKON AI AF DC-NIKKOR 105mm f/2 D",
+    "group": "Nikon",
+    "focal_mm": 105.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikon_ai_af_dc_nikkor_105mm_f2d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAiAFDCNikkor105mmf2D.data.ts"
+    ],
+    "source_sha256": "60ed601ebaf66e9b8941f7a46b093cf364a20224b02ae95090edfdd808a7b4d7",
+    "patent": "US 4,908,639 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_af_micro_nikkor_105mm_f28s": {
+    "name": "NIKON AI AF MICRO-NIKKOR 105mm f/2.8 S",
+    "group": "Nikon",
+    "focal_mm": 105.0,
+    "nominal_f": 2.86,
+    "prescription": "prescriptions/lv_nikon_ai_af_micro_nikkor_105mm_f28s.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAiAFMicroNikkor105mmf28S.data.ts"
+    ],
+    "source_sha256": "c40a686dc799c1080f63398e3370d95e2dfb219d5f3be8073dfe2725e61170e4",
+    "patent": "JP H02-19814 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_af_nikkor_85f18s": {
+    "name": "NIKON AI AF NIKKOR 85mm f/1.8 S",
+    "group": "Nikon",
+    "focal_mm": 85.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_nikon_ai_af_nikkor_85f18s.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAiAFNikkor85mmf18S.data.ts"
+    ],
+    "source_sha256": "5ca56a21d93a433da39d25de9810c42797e8a509d5866ad4897ac944b6247d05",
+    "patent": "US 4,812,027 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_micro_nikkor_105mm_f28s": {
+    "name": "Nikon AI Micro-Nikkor 105mm f/2.8S",
+    "group": "Nikon",
+    "focal_mm": 105.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_ai_micro_nikkor_105mm_f28s.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAIMicroNikkor105mmf28S.data.ts"
+    ],
+    "source_sha256": "60903626d628699d2dabd732ce50ecee9490e92551d59f0d2e69e46d850e6f44",
+    "patent": "US 4,392,724",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_micro_nikkor_55f28": {
+    "name": "NIKON AI MICRO-NIKKOR 55mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 55.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_ai_micro_nikkor_55f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAiMicroNikkor55mmf28.data.ts"
+    ],
+    "source_sha256": "22379b0e4574b05b4d56f04f4dd032eda4551cf71ecb3ff52ea39f9da2fa7e55",
+    "patent": "US 4,260,223 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_180mm_f28_ed": {
+    "name": "NIKON AI NIKKOR 180mm f/2.8 ED",
+    "group": "Nikon",
+    "focal_mm": 180.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_180mm_f28_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAINikkor180mmf28.data.ts"
+    ],
+    "source_sha256": "6c7bbe3d6e7a029bc4f44a82162caada85d7040d8937953e9054b46b108886d2",
+    "patent": "US 4,338,001",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_200mm_f2_if_ed": {
+    "name": "NIKON AI NIKKOR ED 200mm f/2S IF",
+    "group": "Nikon",
+    "focal_mm": 200.0,
+    "nominal_f": 2.000005314861276,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_200mm_f2_if_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAiNikkor200mmf2IFED.data.ts"
+    ],
+    "source_sha256": "19a6e27c7ae598cf23478756e140259da5330be43969dc025e244a1d13eff64f",
+    "patent": "US 4,176,913 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_24mm_f2": {
+    "name": "NIKON AI NIKKOR 24mm f/2",
+    "group": "Nikon",
+    "focal_mm": 24.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_24mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAINikkor24mmf2.data.ts"
+    ],
+    "source_sha256": "bfb53540d1f2a5fee306b1537b781b0f0c0e3966626e0fdf52ff4f1bd7acd105",
+    "patent": "US 4,163,603",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_35mm_f14_s": {
+    "name": "NIKON AI NIKKOR 35mm f/1.4S",
+    "group": "Nikon",
+    "focal_mm": 35.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_35mm_f14_s.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAINikkor35mmf14S.data.ts"
+    ],
+    "source_sha256": "e6acb797fec1c2b684b24542ea8b36335cce3769f3e0b29f475d0596a216cf94",
+    "patent": "US 3,576,360",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_35mm_f2": {
+    "name": "NIKON AI NIKKOR 35mm f/2",
+    "group": "Nikon",
+    "focal_mm": 35.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_35mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAINikkor35mmf2.data.ts"
+    ],
+    "source_sha256": "49c597b9d53f14a0f681a3b5d9654932c1c4a0600f0723317f63c16ee81a02ee",
+    "patent": "US 3,507,558",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ai_nikkor_50f18s": {
+    "name": "NIKON AI NIKKOR 50mm f/1.8 S",
+    "group": "Nikon",
+    "focal_mm": 50.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_nikon_ai_nikkor_50f18s.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAINikkor50mmf18S.data.ts"
+    ],
+    "source_sha256": "d9b45709e2308f179a65fa8a9cea126d863300c26d90dc33fe4b7cafd20ec882",
+    "patent": "US 4,234,242 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ais_nikkor_300mm_f2_if_ed": {
+    "name": "NIKON NIKKOR 300mm f/2S IF-ED",
+    "group": "Nikon",
+    "focal_mm": 300.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikon_ais_nikkor_300mm_f2_if_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAiSNikkor300mmf2IFED.data.ts"
+    ],
+    "source_sha256": "1f8479c9dd7e0b7b68dbaec1d8810a182a2b533367683074d1703c59292e4e55",
+    "patent": "US 4,732,459 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ais_nikkor_50mm_f12": {
+    "name": "NIKON AI-S NIKKOR 50mm f/1.2",
+    "group": "Nikon",
+    "focal_mm": 50.0,
+    "nominal_f": 1.2,
+    "prescription": "prescriptions/lv_nikon_ais_nikkor_50mm_f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonAISNikkor50mmf12.data.ts"
+    ],
+    "source_sha256": "9ed8e2b05924e10f39226fd3a2e7fdc3e2c27c0996a4dec878c02af2675027f1",
+    "patent": "US 4,621,909",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_dodotto_400f8": {
+    "name": "NIKON DODOTTO 400mm f/8",
+    "group": "Nikon",
+    "focal_mm": 400.0,
+    "nominal_f": 8.0,
+    "prescription": "prescriptions/lv_nikon_dodotto_400f8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonDodotto400mmf8.data.ts"
+    ],
+    "source_sha256": "daf6b2e800d9bf2e06f9ae075d1c99688092b1f4a4d4266bcece0757463db5f4",
+    "patent": "JP H9-105860 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_fuwatto_soft_90mm_f48": {
+    "name": "NIKON Fuwatto Soft 90mm f/4.8",
+    "group": "Nikon",
+    "focal_mm": 90.0,
+    "nominal_f": 4.8,
+    "prescription": "prescriptions/lv_nikon_fuwatto_soft_90mm_f48.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonFuwattoSoft90mmf48.data.ts"
+    ],
+    "source_sha256": "e0c159bb7babfd9f8cc3e3c45249bc2f5cceac5dea0bcacf63d2f4d754bbcce4",
+    "patent": "US 5,796,530",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_gugotto_120mm_f45": {
+    "name": "NIKON Gugutto Macro 120mm f/4.5",
+    "group": "Nikon",
+    "focal_mm": 120.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_nikon_gugotto_120mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonGugotto120mmf45.data.ts"
+    ],
+    "source_sha256": "c3821967365b7398344b14127232d3538cc9a2d0fe3b1619e683210073bd187e",
+    "patent": "US 5,764,425",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_l35af_35f28": {
+    "name": "NIKON 35mm f/2.8 (Nikon L35AF)",
+    "group": "Nikon",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_l35af_35f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonL35AF35mmf28.data.ts"
+    ],
+    "source_sha256": "7fc4b60c409abca850d7f343ff911214c0604220ef835f62135310428f607754",
+    "patent": "US 4,457,596",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_medical_nikkor_120mm_f4_if": {
+    "name": "NIKON MEDICAL-NIKKOR 120mm f/4 IF",
+    "group": "Nikon",
+    "focal_mm": 120.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_nikon_medical_nikkor_120mm_f4_if.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonMedicalNikkor120mmf4IF.data.ts"
+    ],
+    "source_sha256": "ea2f58b0096700d21f13af7ca88c88f78558c0a7ad68c6951723c4598d074b99",
+    "patent": "US 4,437,734 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_pce_micro_nikkor_45f28d": {
+    "name": "NIKON PC-E MICRO-NIKKOR 45mm f/2.8 D ED",
+    "group": "Nikon",
+    "focal_mm": 45.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_pce_micro_nikkor_45f28d.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonMicroNikkorPCE45mmf28D.data.ts"
+    ],
+    "source_sha256": "a92c695285eb721019893a7199228275eabc10ac6dc9e964354d24a1733f3155",
+    "patent": "US 7,656,591 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_5cm_f11": {
+    "name": "NIKON NIKKOR-N 5cm f/1.1",
+    "group": "Nikon",
+    "focal_mm": 50.0,
+    "nominal_f": 1.1,
+    "prescription": "prescriptions/lv_nikon_5cm_f11.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonN5cmf11.data.ts"
+    ],
+    "source_sha256": "b617027c2a9995726a20955aae3e7f065085e0e5a46e4293b47667a586af36d1",
+    "patent": "US 2,828,671",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_new_nikkor_auto_28mm_f28": {
+    "name": "NIKON NIKKOR AUTO 28mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 28.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_new_nikkor_auto_28mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNewNikkorAuto28mmf28.data.ts"
+    ],
+    "source_sha256": "c5f5dc803121671970ab0f5145d1d52a3121be53e06fe861cf3e1526e6909676",
+    "patent": "US 3,635,546",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_105_f14e_ed": {
+    "name": "NIKON AF-S NIKKOR 105mm f/1.4E ED",
+    "group": "Nikon",
+    "focal_mm": 105.0,
+    "nominal_f": 1.45,
+    "prescription": "prescriptions/lv_nikkor_105_f14e_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkor105f14E.data.ts"
+    ],
+    "source_sha256": "11ab3a11a38e93907b725f405f99667a70def80e65f5ab64ce9df7e63b622188",
+    "patent": "WO 2019/116563 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_nikkor_300mm_f45_ed": {
+    "name": "NIKON NIKKOR 300mm f/4.5 ED",
+    "group": "Nikon",
+    "focal_mm": 300.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_nikon_nikkor_300mm_f45_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkor300mmf45ED.data.ts"
+    ],
+    "source_sha256": "bbdcdcfc0dfd0ac07f0601de1b28dd029c4a476efaea7b1850191fd83070499d",
+    "patent": "US 3,774,991",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_85f14g": {
+    "name": "NIKON AF-S NIKKOR 85mm f/1.4 G",
+    "group": "Nikon",
+    "focal_mm": 85.0,
+    "nominal_f": 1.45,
+    "prescription": "prescriptions/lv_nikkor_85f14g.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkor85f14G.data.ts"
+    ],
+    "source_sha256": "24f4002479d6cb1c2fb7690d4256f2808ca84d95941b34192784ed1a3f3dfb44",
+    "patent": "US 8,767,319 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_24f28": {
+    "name": "NIKON NIKKOR-N Auto 24mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikkor_24f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorAuto24f28.data.ts"
+    ],
+    "source_sha256": "91dff648722f251998d773b1cbc2e70d793a650e1dfedd5b8ea00da7362cfb5d",
+    "patent": "US 3,622,227",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_nikkor_h_auto_28mm_f35": {
+    "name": "NIKON NIKKOR-H Auto 2.8cm f/3.5",
+    "group": "Nikon",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_nikon_nikkor_h_auto_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorH28mmf35.data.ts"
+    ],
+    "source_sha256": "32fb49facd035f0d9a2f2f15d707dd0be93962a81b776acdac5e4cb1c7622a36",
+    "patent": "JP S38-26133 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_n_28f2": {
+    "name": "NIKON NIKKOR-N AUTO 28mm f/2",
+    "group": "Nikon",
+    "focal_mm": 28.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikkor_n_28f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorN28mmf2.data.ts"
+    ],
+    "source_sha256": "46cd9e39d2548dcf156cab7233827a53cc1b56ed4b57dc4200a4cf8bebe5b5f5",
+    "patent": "US 3,736,049",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_nikkor_o_21mm_f4": {
+    "name": "NIKON NIKKOR-O 2.1cm f/4",
+    "group": "Nikon",
+    "focal_mm": 21.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_nikon_nikkor_o_21mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorO21mmf4.data.ts"
+    ],
+    "source_sha256": "49dd540f2d8a37ab1084974e31663a7b6520984e9c54ab5aa01e18f917efcee8",
+    "patent": "JP 1968-030782 Y1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_s_auto_50mm_f14": {
+    "name": "NIKON NIKKOR-S AUTO 50mm f/1.4",
+    "group": "Nikon",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_nikkor_s_auto_50mm_f14.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorSAuto50mmf14.data.ts"
+    ],
+    "source_sha256": "ccbc42b8b34bd61a6ed821577d9524cb606ea56c80a5f34ca348bd4bccf59c5c",
+    "patent": "US 3,560,079",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_nikkor_s_auto_50f2": {
+    "name": "NIKON NIKKOR-S AUTO 5cm f/2",
+    "group": "Nikon",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_nikon_nikkor_s_auto_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorSAuto50mmf2.data.ts"
+    ],
+    "source_sha256": "539dc6f4be36e3ba94b432aa449d019af2bd7dea0178f4fad60268ca2a6bc5af",
+    "patent": "JP 1964-025754 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_nikkor_s_auto_58mm_f1_4": {
+    "name": "NIKON NIKKOR-S AUTO 5.8cm f/1.4",
+    "group": "Nikon",
+    "focal_mm": 58.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_nikon_nikkor_s_auto_58mm_f1_4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorSAuto58mmf14.data.ts"
+    ],
+    "source_sha256": "2347028d497ffe7534bd57fe8dce6c69145228179961c2b711fc9594e10a9d0c",
+    "patent": "JP 1966-017177 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_nikkor_sw_75mm_f45": {
+    "name": "NIKON NIKKOR-SW 75mm f/4.5",
+    "group": "Nikon",
+    "focal_mm": 75.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_nikon_nikkor_sw_75mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonNikkorSW75mmf45.data.ts"
+    ],
+    "source_sha256": "04ac3b953400c83a6f16ac1f1a7b9f06f3696226f7ca89ec381f7ff89e2c9816",
+    "patent": "JP S53-57028 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_pc_nikkor_35mm_f28": {
+    "name": "NIKON PC-NIKKOR 35mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_pc_nikkor_35mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonPCNikkor35mmf28.data.ts"
+    ],
+    "source_sha256": "4f0fe138759c7a44f4ee428d720978ee41c40810781c8befbac7b4d12b6d53b0",
+    "patent": "DE 1 497 540 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ruw_af_micro_nikkor_50f28": {
+    "name": "NIKON R-UW AF MICRO-NIKKOR 50mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 50.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_ruw_af_micro_nikkor_50f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonRUWMicroNikkor50mmf28.data.ts"
+    ],
+    "source_sha256": "ed87e47ab2dc2bad5ee5aada1c24db33b85db63581311393a810cb5703005bd5",
+    "patent": "US 5,257,137",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_series_e_100mm_f28": {
+    "name": "NIKON SERIES E 100mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 100.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_series_e_100mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonSeriesE100mmf28.data.ts"
+    ],
+    "source_sha256": "69f9d732fa8cbf3ebb90baf6b165f79ea30044762f5b3fe37e13f2aaf4cb8757",
+    "patent": "US 4,303,314",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_series_e_135mm_f28": {
+    "name": "NIKON SERIES E 135mm f/2.8",
+    "group": "Nikon",
+    "focal_mm": 135.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_nikon_series_e_135mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonSeriesE135mmf28.data.ts"
+    ],
+    "source_sha256": "c5387421f11cb0ce10de7048ad042bba01af07f9a5d3b19adf5f2e38070efbc1",
+    "patent": "US 4,303,314",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_ultra_micro_nikkor_295mm_f12": {
+    "name": "NIKON ULTRA-MICRO-NIKKOR 29.5mm f/1.2",
+    "group": "Nikon",
+    "focal_mm": 29.5,
+    "nominal_f": 1.2,
+    "prescription": "prescriptions/lv_nikon_ultra_micro_nikkor_295mm_f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonUltraMicroNikkor295mmf12.data.ts"
+    ],
+    "source_sha256": "971eb74106933c1439a721517f0194955882156101343c275d72491c52b5e80a",
+    "patent": "GB 1,050,055",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_uv_nikkor_105mm_f45": {
+    "name": "NIKON UV-NIKKOR 105mm f/4.5",
+    "group": "Nikon",
+    "focal_mm": 105.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_nikon_uv_nikkor_105mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonUvNikkor105mmf45.data.ts"
+    ],
+    "source_sha256": "82a0bf796c01dd13a6f6a7e10bda2c3142acd7332caa3e31d38c52273563ef8c",
+    "patent": "JP S61-090115 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_uv_nikkor_55mm_f4": {
+    "name": "NIKON UV-NIKKOR AUTO 55mm f/4",
+    "group": "Nikon",
+    "focal_mm": 55.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_nikon_uv_nikkor_55mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonUvNikkor55mmf4.data.ts"
+    ],
+    "source_sha256": "bbb71722c371e18b6f172aafdadafc3cb954f1f71c25e6a0c3b9492d0d3c7fb8",
+    "patent": "JP S42-9417 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikon_w_nikkor_35mm_f18": {
+    "name": "NIKON W-NIKKOR 35mm f/1.8",
+    "group": "Nikon",
+    "focal_mm": 35.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_nikon_w_nikkor_35mm_f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonWNikkor35mmf18.data.ts"
+    ],
+    "source_sha256": "5518659fc6c674cbb5de9a4602fc19906f5283adac6d3dd9ad754685d622cdd2",
+    "patent": "US 2,896,506",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_nikkor_z_85f18s": {
+    "name": "NIKON NIKKOR Z 85mm f/1.8 S",
+    "group": "Nikon",
+    "focal_mm": 85.0,
+    "nominal_f": 1.85,
+    "prescription": "prescriptions/lv_nikkor_z_85f18s.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/nikon/NikonZ85f18S.data.ts"
+    ],
+    "source_sha256": "c9ca057e4494f9e7529f3ed7cb1d2bc78d901a0bcbe9e0787b6f45eb83e4d299",
+    "patent": "JP 2020-173366 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_g_zuiko_auto_w_21mm_f35": {
+    "name": "OLYMPUS G.ZUIKO AUTO-W 21mm f/3.5",
+    "group": "Olympus",
+    "focal_mm": 21.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_olympus_g_zuiko_auto_w_21mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusGZuikoAutoW21mmf35.data.ts"
+    ],
+    "source_sha256": "94022b31c9980da540cd6bf0e3a96e2e56f22b5d8e72ec79ba341445b24d23a7",
+    "patent": "US 3,884,556",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_digital_ed_150mm_f2": {
+    "name": "OLYMPUS ZUIKO DIGITAL ED 150mm f/2.0",
+    "group": "Olympus",
+    "focal_mm": 150.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_digital_ed_150mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusMZuiko150mmf2ED.data.ts"
+    ],
+    "source_sha256": "4ade321dee0fd99f0bbeada19fbf85dc975cd37ca25822c74bf1eb30311085fb",
+    "patent": "US 7,408,719 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_xa_zuiko_35_f28": {
+    "name": "OLYMPUS F.ZUIKO 35mm f/2.8 (Olympus XA)",
+    "group": "Olympus",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_olympus_xa_zuiko_35_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusXAZuiko35mmf28.data.ts"
+    ],
+    "source_sha256": "c19a9921bcf08bb47a2a7b1b06755bf9e5913840ef2768220caf256ffd5498b0",
+    "patent": "US 4,235,521",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_135_f35": {
+    "name": "OLYMPUS E.ZUIKO AUTO-T 135mm f/3.5",
+    "group": "Olympus",
+    "focal_mm": 135.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_olympus_zuiko_135_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuiko135mmf35.data.ts"
+    ],
+    "source_sha256": "49480c0c158d9391036fbb806c99cbc901040ab50ac15e23fae6901c03401bab",
+    "patent": "US 3,838,911",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_w_24mm_f28": {
+    "name": "OLYMPUS H.ZUIKO AUTO-W 24mm f/2.8",
+    "group": "Olympus",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_w_24mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuiko24mmf28.data.ts"
+    ],
+    "source_sha256": "de0d444175d803637b824b4500213c9690f20c60d5d59840e95ec550a0a5f5c8",
+    "patent": "US 3,884,556",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_24f2_j": {
+    "name": "OLYMPUS OM J. ZUIKO AUTO-W 24mm f/2",
+    "group": "Olympus",
+    "focal_mm": 24.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_24f2_j.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuiko24mmf2J.data.ts"
+    ],
+    "source_sha256": "337d5da9217f35773c6375e1d7772208149f56e2f547e17786afe254a76291ff",
+    "patent": "US 3,830,559",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_28mm_f35": {
+    "name": "OLYMPUS G.ZUIKO AUTO-W 28mm f/3.5",
+    "group": "Olympus",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_olympus_zuiko_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuiko28mmf35.data.ts"
+    ],
+    "source_sha256": "ad7655e63fbbb1f3607764e720e1f5770809200cb2c36d6606b0bf3efd17c768",
+    "patent": "DE 2205380 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_85mm_f2": {
+    "name": "OLYMPUS ZUIKO AUTO-T 85mm f/2",
+    "group": "Olympus",
+    "focal_mm": 85.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_85mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuiko85mmf2.data.ts"
+    ],
+    "source_sha256": "e9c35ac08c328a63a862a73801c4a5248d8cceddf96d0d52fbf7c82bb55bd34e",
+    "patent": "US 4,063,802",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_macro_50f2": {
+    "name": "OLYMPUS ZUIKO AUTO-MACRO 50mm f/2",
+    "group": "Olympus",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_macro_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoMacro50mmf2.data.ts"
+    ],
+    "source_sha256": "091b167d8f4c29d6443dd82f1dc0928a59701fc06beff9e5943c77bd4c348832",
+    "patent": "US 4,708,445",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_macro_90f2": {
+    "name": "OLYMPUS ZUIKO AUTO-MACRO 90mm f/2",
+    "group": "Olympus",
+    "focal_mm": 90.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_macro_90f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoMacro90mmf2.data.ts"
+    ],
+    "source_sha256": "a0388167eecfdee6291900297b6966d3fa8c04d55e08841445c671a258b9ee27",
+    "patent": "US 4,792,219",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_s_50f12": {
+    "name": "OLYMPUS ZUIKO AUTO-S 50mm f/1.2",
+    "group": "Olympus",
+    "focal_mm": 50.0,
+    "nominal_f": 1.2,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_s_50f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoS50mmf12.data.ts"
+    ],
+    "source_sha256": "6c323f5d54ae557ef9c300cc8013f55dcac341aa54845e0cee71cbeadf5605d1",
+    "patent": "US 4,099,843",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_s_55_f12": {
+    "name": "OLYMPUS G.ZUIKO AUTO-S 55mm f/1.2",
+    "group": "Olympus",
+    "focal_mm": 55.0,
+    "nominal_f": 1.2,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_s_55_f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoS55mmf12.data.ts"
+    ],
+    "source_sha256": "c40ba50385495a12f629e6e2a4d50cf5f581246e283452f391185bf7e220962c",
+    "patent": "US 3,743,387",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_t_200mm_f5": {
+    "name": "OLYMPUS F.ZUIKO AUTO-T 200mm f/5",
+    "group": "Olympus",
+    "focal_mm": 200.0,
+    "nominal_f": 5.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_t_200mm_f5.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoT200mmf5.data.ts"
+    ],
+    "source_sha256": "ac66393eb238a9553a641903766c9c1ac248dad9451bdadb60c8d432415bb14f",
+    "patent": "US 3,804,494",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_w_18f35": {
+    "name": "OLYMPUS ZUIKO AUTO-W 18mm f/3.5",
+    "group": "Olympus",
+    "focal_mm": 18.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_w_18f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoW18mmf35.data.ts"
+    ],
+    "source_sha256": "be3c621b2e6dfa90d5f99f5d23aea4f74fb94b6953a0c25dc25a08fc1ddbeb89",
+    "patent": "US 4,029,397",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_w_24f28": {
+    "name": "OLYMPUS H.ZUIKO AUTO-W 24mm f/2.8 (US 3,994,574 Design)",
+    "group": "Olympus",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_w_24f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoW24mmf28.data.ts"
+    ],
+    "source_sha256": "3eb01413bdf6eec5e6a032b5d93a567b89ba0cea93bcf7f13a881bbc7c8d209a",
+    "patent": "US 3,994,574",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_olympus_zuiko_auto_w_28mm_f2": {
+    "name": "OLYMPUS ZUIKO AUTO-W 28mm f/2",
+    "group": "Olympus",
+    "focal_mm": 28.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_olympus_zuiko_auto_w_28mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/olympus/OlympusZuikoAutoW28mmf2.data.ts"
+    ],
+    "source_sha256": "306a5894519c7e6b031049da4f47a6deaf0ec23afe5ca55848922cd3c1947e9d",
+    "patent": "US 3,862,794 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_angenieux_dem_180mm_f23_apo": {
+    "name": "P. ANGÉNIEUX DEM 180mm f/2.3 APO",
+    "group": "P. Angénieux",
+    "focal_mm": 180.0,
+    "nominal_f": 2.3,
+    "prescription": "prescriptions/lv_angenieux_dem_180mm_f23_apo.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/p.-ang├®nieux/AngenieuxDEM180mmf23APO.data.ts"
+    ],
+    "source_sha256": "f7277ff8f26a30da1b9f036d67f7dc39e5a67f1a9be1fc786031dba8c1de2faa",
+    "patent": "US 4,726,669",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_angenieux_retrofocus_r11_28mm_f35": {
+    "name": "P. ANGÉNIEUX RETROFOCUS TYPE R11 28mm f/3.5",
+    "group": "P. Angénieux",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_angenieux_retrofocus_r11_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/p.-ang├®nieux/AngenieuxRetrofocusR1128mmf35.data.ts"
+    ],
+    "source_sha256": "8cbaedb5bc489497883bf33e0f2a9989c4f17834b406fdb3caf878edcf815bdb",
+    "patent": "GB 720,808",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_angenieux_retrofocus_r1_35mm_f25": {
+    "name": "P. ANGÉNIEUX RETROFOCUS TYPE R1 35mm f/2.5",
+    "group": "P. Angénieux",
+    "focal_mm": 35.0,
+    "nominal_f": 2.5,
+    "prescription": "prescriptions/lv_angenieux_retrofocus_r1_35mm_f25.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/p.-ang├®nieux/AngenieuxRetrofocusR135mmf25.data.ts"
+    ],
+    "source_sha256": "5c5f0c1782bfd98e269ad12e3a503a98cf266208fd684c249b2b94c404d1145b",
+    "patent": "GB 673,358 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_110_24f28": {
+    "name": "PENTAX 110 24mm f/2.8",
+    "group": "Pentax",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_pentax_110_24f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/Pentax11024mmf28.data.ts"
+    ],
+    "source_sha256": "2d2de5fb77a0c91ad840c1380f0183761af0ff27f7c693e74ae93323c0a9c57a",
+    "patent": "US 4,223,982",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax110_50f28": {
+    "name": "PENTAX 110 50mm f/2.8",
+    "group": "Pentax",
+    "focal_mm": 50.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_pentax110_50f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/Pentax11050mmf28.data.ts"
+    ],
+    "source_sha256": "8860ed96df44a6408960cb6a03a1950b691abc28f253e72b3f9cd7d9fde0a6a6",
+    "patent": "US 4,289,385",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_645_a_45mm_f28": {
+    "name": "PENTAX SMC A 645 45mm f/2.8",
+    "group": "Pentax",
+    "focal_mm": 45.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_pentax_645_a_45mm_f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/Pentax645A45mmf28.data.ts"
+    ],
+    "source_sha256": "4aaa0c9d453834f909def4233cd1509f6a95e66ecf7cb664d0e12b518770448e",
+    "patent": "US 4,487,485",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_645_fa_120mm_f4_macro": {
+    "name": "PENTAX SMC FA 645 120mm f/4 Macro",
+    "group": "Pentax",
+    "focal_mm": 120.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_pentax_645_fa_120mm_f4_macro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/Pentax645FA120mmf4.data.ts"
+    ],
+    "source_sha256": "0ce704e5c55e7539950de9a14fa7d2968714ec1e4dfc0eda2afad1c6502dd48f",
+    "patent": "US 6,154,324",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_a_star_135mm_f18": {
+    "name": "PENTAX SMC PENTAX-A★ 135mm f/1.8",
+    "group": "Pentax",
+    "focal_mm": 135.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_pentax_a_star_135mm_f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxA135mmf18.data.ts"
+    ],
+    "source_sha256": "3603002de9b215cedee96ea679c334c79a46dc8abbe99d2d4a5d6bb4668d39ca",
+    "patent": "US 4,447,137",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_a_200mm_f4_macro_ed": {
+    "name": "PENTAX SMC PENTAX-A★ 200mm f/4 MACRO ED",
+    "group": "Pentax",
+    "focal_mm": 200.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_pentax_a_200mm_f4_macro_ed.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxA200mmf4MacroED.data.ts"
+    ],
+    "source_sha256": "60475c02e6a7d67f95a2d02e35523195b9e5eddd8e9767ac4a61681f2106ee90",
+    "patent": "US 4,666,260",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_da_70mm_f24_limited": {
+    "name": "PENTAX DA 70mm f/2.4 Limited",
+    "group": "Pentax",
+    "focal_mm": 70.0,
+    "nominal_f": 2.4,
+    "prescription": "prescriptions/lv_pentax_da_70mm_f24_limited.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxDA70mmf24Limited.data.ts"
+    ],
+    "source_sha256": "01b97c3f5521d26cb5c8cfb0af64fd7d0fc5bde865c8109ca3a90626cbdf78e6",
+    "patent": "US 7,542,219 B2",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_f_85_f28_soft": {
+    "name": "PENTAX F 85mm f/2.8 Soft",
+    "group": "Pentax",
+    "focal_mm": 85.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_pentax_f_85_f28_soft.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxF85mmf28Soft.data.ts"
+    ],
+    "source_sha256": "dbcefadc5e3acb43da63581541b4e4717fbcc914c50a66b2d4121d7b5b296703",
+    "patent": "US 5,267,086",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_fa_28mm_f28_soft": {
+    "name": "PENTAX SMC PENTAX-FA 28mm f/2.8 Soft",
+    "group": "Pentax",
+    "focal_mm": 28.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_pentax_fa_28mm_f28_soft.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxFA28mmf28Soft.data.ts"
+    ],
+    "source_sha256": "30dc57e7421971f5907bb8ae51a7ad3c0320f76da66c181c21247a711a5fc046",
+    "patent": "US 5,822,132",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_smc_67_100mm_f4": {
+    "name": "PENTAX SMC 67 Macro 100mm f/4",
+    "group": "Pentax",
+    "focal_mm": 100.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_pentax_smc_67_100mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxSMC67100mmf4.data.ts"
+    ],
+    "source_sha256": "0ad8b8c26ba8f3b809a87dde2e6fa66ab55872f5802baf7f267c75cac9494dee",
+    "patent": "US 6,002,533",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_super_takumar_135mm_f2_5": {
+    "name": "PENTAX SUPER-TAKUMAR 135mm f/2.5",
+    "group": "Pentax",
+    "focal_mm": 135.0,
+    "nominal_f": 2.4907098243815624,
+    "prescription": "prescriptions/lv_pentax_super_takumar_135mm_f2_5.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxSuperTakumar135mmf2.5.data.ts"
+    ],
+    "source_sha256": "3541bd9bb2f61c1a438bd575f5fee3b5c11c11ee0777525029698163a9edd407",
+    "patent": "US 3,459,469",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_super_takumar_28mm_f35": {
+    "name": "PENTAX SUPER-TAKUMAR 28mm f/3.5",
+    "group": "Pentax",
+    "focal_mm": 28.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_pentax_super_takumar_28mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxSuperTakumar28mmf35.data.ts"
+    ],
+    "source_sha256": "58060e1c3bb3ef57c6756380d978aaecf7df6fe0ecc2b438cf37806c572b4e3e",
+    "patent": "US 3,506,339",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_super_takumar_35mm_f2": {
+    "name": "PENTAX SUPER-TAKUMAR 35mm f/2",
+    "group": "Pentax",
+    "focal_mm": 35.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_pentax_super_takumar_35mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxSuperTakumar35mmf2.data.ts"
+    ],
+    "source_sha256": "1cfc73eac1f4f36c830ac249788f9c0cd8eb6df2e29c6997610268c856b56a7a",
+    "patent": "US 3,506,336",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_pentax_ultra_achromatic_takumar_85f45": {
+    "name": "PENTAX ULTRA-ACHROMATIC-TAKUMAR 85mm f/4.5",
+    "group": "Pentax",
+    "focal_mm": 85.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_pentax_ultra_achromatic_takumar_85f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/pentax/PentaxUltraAchromaticTakumar85mmf45.data.ts"
+    ],
+    "source_sha256": "f24489d355fe9c1c946479a384e7cefd43ed77469e2a0d7b172d775ccafed349",
+    "patent": "US 3,490,825",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_apo_sironar_w_150f56": {
+    "name": "RODENSTOCK APO-SIRONAR-W 150mm f/5.6",
+    "group": "Rodenstock",
+    "focal_mm": 150.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_rodenstock_apo_sironar_w_150f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockApoSironarW150mmf56.data.ts"
+    ],
+    "source_sha256": "11608890227adc01d96881e3b9916c055954a23e826175d10d1b9da8019f6f98",
+    "patent": "DE 3,907,928 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_geronar_210mm_f68": {
+    "name": "RODENSTOCK GERONAR 210mm f/6.8",
+    "group": "Rodenstock",
+    "focal_mm": 210.0,
+    "nominal_f": 6.8,
+    "prescription": "prescriptions/lv_rodenstock_geronar_210mm_f68.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockGeronar210mmf68.data.ts"
+    ],
+    "source_sha256": "c92cd0843a31f5c44aaa77ee44776dc0e72268e28433d059d404f0deb53a7793",
+    "patent": "DE 28 18 394 B1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_grandagon_n_65mm_f45": {
+    "name": "RODENSTOCK GRANDAGON-N 65mm f/4.5",
+    "group": "Rodenstock",
+    "focal_mm": 65.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_rodenstock_grandagon_n_65mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockGrandagonN65mmf45.data.ts"
+    ],
+    "source_sha256": "d3718d5d831a1f0a2081ec3e05f144f697d3607bf5d203e3e972352b8e3d45c9",
+    "patent": "DE 2444954 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_grandagon_n_75mm_f45": {
+    "name": "RODENSTOCK GRANDAGON-N 75mm f/4.5",
+    "group": "Rodenstock",
+    "focal_mm": 75.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_rodenstock_grandagon_n_75mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockGrandagonN75mmf45.data.ts"
+    ],
+    "source_sha256": "c0ad5decad26a58e8ce9b92594e04d45e6ef3a44e44a2909547d6ebab9dd1aa8",
+    "patent": "DE 2444954 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_grandagon_n_75mm_f68": {
+    "name": "RODENSTOCK GRANDAGON-N 75mm f/6.8",
+    "group": "Rodenstock",
+    "focal_mm": 75.0,
+    "nominal_f": 6.8,
+    "prescription": "prescriptions/lv_rodenstock_grandagon_n_75mm_f68.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockGrandagonN75mmf68.data.ts"
+    ],
+    "source_sha256": "65a56ea57b931393b67b160df1b8405d7d0d263cb9e2551e120f56d032b7998a",
+    "patent": "DE 26 35 415 B1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_grandagon_n_90mm_f45": {
+    "name": "RODENSTOCK GRANDAGON-N 90mm f/4.5",
+    "group": "Rodenstock",
+    "focal_mm": 90.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_rodenstock_grandagon_n_90mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockGrandagonN90mmf45.data.ts"
+    ],
+    "source_sha256": "95f99f8e16be2c7e8d459507e5e768353ea797f9e9e0d5e3e2f548bd3581bd32",
+    "patent": "DE 2444954 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_rodagon_wa_80mm_f4": {
+    "name": "RODENSTOCK RODAGON-WA 80mm f/4",
+    "group": "Rodenstock",
+    "focal_mm": 80.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_rodenstock_rodagon_wa_80mm_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockRodagonWA80mmf4.data.ts"
+    ],
+    "source_sha256": "29d0dc822f420ded5367d12ee5eaa5b1b3aefbca279847a46ead5171891276e3",
+    "patent": "DE 2818435 B1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_rodenstock_rogonar_s_50f28": {
+    "name": "RODENSTOCK ROGONAR-S 50mm f/2.8",
+    "group": "Rodenstock",
+    "focal_mm": 50.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_rodenstock_rogonar_s_50f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/rodenstock/RodenstockRogonarS50mmf28.data.ts"
+    ],
+    "source_sha256": "727473573c644ff10df68ba8dfb6953e62b2a1307e73c36ee3d69d738c1c4f67",
+    "patent": "DE 1,089,991",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_samsung_nx_45mm_f18": {
+    "name": "SAMSUNG 45mm f/1.8",
+    "group": "Samsung",
+    "focal_mm": 45.0,
+    "nominal_f": 1.84,
+    "prescription": "prescriptions/lv_samsung_nx_45mm_f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/samsung/Samsung45mmf18.data.ts"
+    ],
+    "source_sha256": "b7354ab04d11b2a7ed0e7f12dc246f94077e3cc074cd9d68a6399873bc851380",
+    "patent": "US 2013/0314588 A1",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schacht_s_travenar_135f28": {
+    "name": "SCHACHT S-TRAVENAR 135mm f/2.8",
+    "group": "Schacht",
+    "focal_mm": 135.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_schacht_s_travenar_135f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schacht/SchachtSTravenar135mmf28.data.ts"
+    ],
+    "source_sha256": "9b3a94db235ae7b84a00c7086cc53a66fdc209e7c6e750dfff998a42f4e6678a",
+    "patent": "CH 479 879",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schacht_travenar_135mm_f35": {
+    "name": "SCHACHT TRAVENAR 135mm f/3.5",
+    "group": "Schacht",
+    "focal_mm": 135.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_schacht_travenar_135mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schacht/SchachtTravenar135mmf35.data.ts"
+    ],
+    "source_sha256": "20132e14307ea19db2996a460c97ea78f0902ffed1133dbd818e9b8c0a9abbc1",
+    "patent": "DE 843 305",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schacht_travenar_90f28": {
+    "name": "SCHACHT TRAVENAR 90mm f/2.8",
+    "group": "Schacht",
+    "focal_mm": 90.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_schacht_travenar_90f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schacht/SchachtTravenar90mmf28.data.ts"
+    ],
+    "source_sha256": "d4bdee9785dc234cb2ed0e0cef92faec876cd06250c04112b2bd1c28282985b8",
+    "patent": "US 2,721,501",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_kreuznach_angulon_210_f68": {
+    "name": "SCHNEIDER-KREUZNACH ANGULON 210mm f/6.8",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 210.0,
+    "nominal_f": 6.8,
+    "prescription": "prescriptions/lv_schneider_kreuznach_angulon_210_f68.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderAngulon210mmf68.data.ts"
+    ],
+    "source_sha256": "718e4d9c66f931c40e9bef83463fd394973832b7effc28d0d65c938ff86620ff",
+    "patent": "US 1,882,530 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_apo_symmar_100_f56": {
+    "name": "SCHNEIDER-KREUZNACH APO-SYMMAR 100mm f/5.6",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 100.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_schneider_apo_symmar_100_f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderAPOSymmar100mmf56.data.ts"
+    ],
+    "source_sha256": "c263dc93294cf6ed2aaf219a11af828c88dad179c332f2205fab37a646e6dca9",
+    "patent": "US 6,028,720",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_cinegon_10f18": {
+    "name": "SCHNEIDER-KREUZNACH CINEGON 10mm f/1.8",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 10.0,
+    "nominal_f": 1.8,
+    "prescription": "prescriptions/lv_schneider_cinegon_10f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderCinegon1810.data.ts"
+    ],
+    "source_sha256": "d9181fc25a7ee37179ddda143e0bc392e8f9ed1be2d56e1a60fcb93e30d9157e",
+    "patent": "US 3,038,379",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_cinegon_65f19": {
+    "name": "SCHNEIDER-KREUZNACH CINEGON 6.5mm f/1.9",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 6.5,
+    "nominal_f": 1.9,
+    "prescription": "prescriptions/lv_schneider_cinegon_65f19.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderCinegon1965.data.ts"
+    ],
+    "source_sha256": "147efba8acf8bafe0487f7c2f4cfbd818a1663a33e7ddccf277c310dfaa22d14",
+    "patent": "DE 927 540",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_cine_xenon_25f14": {
+    "name": "SCHNEIDER-KREUZNACH CINE-XENON 25mm f/1.4",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 25.0,
+    "nominal_f": 1.400000081,
+    "prescription": "prescriptions/lv_schneider_cine_xenon_25f14.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderCineXenon1425.data.ts"
+    ],
+    "source_sha256": "db3331d42d8e0e7b27879c629cad9a6738b58dc339ca52c615c14226dfe9df52",
+    "patent": "US 3,005,379",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_curtagon_35mm_f28_gen2": {
+    "name": "SCHNEIDER-KREUZNACH CURTAGON 35mm f/2.8",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 35.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_schneider_curtagon_35mm_f28_gen2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderCurtagon2835gen2.data.ts"
+    ],
+    "source_sha256": "1e9698130d90e553e3b922fd0ea3d4864477fb8586fbacd7c96cb7ffb468f03c",
+    "patent": "US 3,318,653",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_retina_curtagon_28f4": {
+    "name": "SCHNEIDER-KREUZNACH RETINA-CURTAGON 28mm f/4",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 28.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_schneider_retina_curtagon_28f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderCurtagon428.data.ts"
+    ],
+    "source_sha256": "fea07f2a5c2831321082908dbf8b0b1fbd2b4e5ec2226e26d13bd3f278e6544b",
+    "patent": "US 2,824,495",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_super_angulon_75_f56": {
+    "name": "SCHNEIDER-KREUZNACH SUPER-ANGULON 75mm f/5.6",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 75.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_schneider_super_angulon_75_f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderSuperAngulon75mmf56.data.ts"
+    ],
+    "source_sha256": "44aee4941dcb41d79e17cd27a1f734c62523ea8065a3667b87e31dc6af1021bb",
+    "patent": "US 3,376,091",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_super_angulon_90mm_f8": {
+    "name": "SCHNEIDER-KREUZNACH SUPER-ANGULON 90mm f/8",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 90.0,
+    "nominal_f": 8.0,
+    "prescription": "prescriptions/lv_schneider_super_angulon_90mm_f8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderSuperAngulon90mmf8.data.ts"
+    ],
+    "source_sha256": "d832adbf4234be324378a7f107c74aeed6f8844030f6b384083ed7f1c8e2793c",
+    "patent": "DE 975 637 C",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_super_symmar_hm_120f56": {
+    "name": "SCHNEIDER-KREUZNACH SUPER-SYMMAR HM 120mm f/5.6",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 120.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_schneider_super_symmar_hm_120f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderSuperSymmarHM120mmf56.data.ts"
+    ],
+    "source_sha256": "dad73300bfd8ed6ecacbd01a179e261e6a4230f4bd5cd4f34456545f1a35695a",
+    "patent": "US 4,773,745",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_technika_super_angulon_75mm_f8": {
+    "name": "SCHNEIDER-KREUZNACH TECHNIKA SUPER-ANGULON 75mm f/8",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 75.0,
+    "nominal_f": 8.0,
+    "prescription": "prescriptions/lv_schneider_technika_super_angulon_75mm_f8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderTechnikaSuperAngulon75mmf8.data.ts"
+    ],
+    "source_sha256": "c36e324e6c36a875e6cd84cdcdbd7c9afc536c42321c78fab6e9140421f9f178",
+    "patent": "JP S42-023896 B",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_kreuznach_xenar_50f28": {
+    "name": "SCHNEIDER-KREUZNACH XENAR 50mm f/2.8",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 50.0,
+    "nominal_f": 2.9,
+    "prescription": "prescriptions/lv_schneider_kreuznach_xenar_50f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderXenar2850.data.ts"
+    ],
+    "source_sha256": "3b8dcdf168b0182a8538acec21fefa1a8f914331392b60e397812636d82a5f49",
+    "patent": "DE 753329",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_xenon_50f19": {
+    "name": "SCHNEIDER-KREUZNACH XENON 50mm f/1.9",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_schneider_xenon_50f19.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderXenon1950.data.ts"
+    ],
+    "source_sha256": "660b5365156b5060db2e5ca95bf288c3f4c654714b78358396c12e7d235b1beb",
+    "patent": "CH 346706",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_schneider_retina_xenon_c_50f2": {
+    "name": "SCHNEIDER-KREUZNACH RETINA-XENON C 50mm f/2 (Kodak Retina IIIc)",
+    "group": "Schneider-Kreuznach",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_schneider_retina_xenon_c_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/schneider-kreuznach/SchneiderXenon250.data.ts"
+    ],
+    "source_sha256": "72f87e584fb1cd20ae70f006dee1b913441bf3d045547c725f08901fef8bebd9",
+    "patent": "CH 352844",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_sony_e_50mm_f18_oss": {
+    "name": "SONY E 50mm f/1.8 OSS",
+    "group": "Sony",
+    "focal_mm": 50.0,
+    "nominal_f": 1.85,
+    "prescription": "prescriptions/lv_sony_e_50mm_f18_oss.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/sony/SonyE50mmf18OSS.data.ts"
+    ],
+    "source_sha256": "d0399d0012521da5a8147a60656376bd407768498773e085b15859ad1f1fec62",
+    "patent": "JP 2012-242690 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_sony_fe_400mm_f28_gm_oss": {
+    "name": "SONY FE 400mm f/2.8 GM OSS",
+    "group": "Sony",
+    "focal_mm": 400.0,
+    "nominal_f": 2.91,
+    "prescription": "prescriptions/lv_sony_fe_400mm_f28_gm_oss.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/sony/SonyFE400mmF28GMOSS.data.ts"
+    ],
+    "source_sha256": "1b3b5b785e24ca7ba76438f3d2bfbbd2ce24f6dcec8d656d697976b3a0266383",
+    "patent": "JP 2025-63175 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_viltrox_af_33mm_f14_e": {
+    "name": "VILTROX AF 33mm f/1.4 E",
+    "group": "Viltrox",
+    "focal_mm": 33.0,
+    "nominal_f": 1.4,
+    "prescription": "prescriptions/lv_viltrox_af_33mm_f14_e.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/viltrox/ViltroxAF33mmf14E.data.ts"
+    ],
+    "source_sha256": "5602c1bf5d8a8919c1a2adc84b0c8ebaf65d0ad6529587e1b46c64da1aefdde3",
+    "patent": "CN 211826699 U",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_viltrox_af_56mm_f14_e": {
+    "name": "VILTROX AF 56mm f/1.4 E",
+    "group": "Viltrox",
+    "focal_mm": 56.0,
+    "nominal_f": 1.4120949446201125,
+    "prescription": "prescriptions/lv_viltrox_af_56mm_f14_e.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/viltrox/ViltroxAF56mmf14E.data.ts"
+    ],
+    "source_sha256": "f518316d60c79f471f3aeaa6255bf8adc284bd4120b497cc7fbc9aa9b04c62f6",
+    "patent": "CN 211955965 U",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_viltrox_af_75mm_f12_pro": {
+    "name": "VILTROX AF 75mm f/1.2 PRO",
+    "group": "Viltrox",
+    "focal_mm": 75.0,
+    "nominal_f": 1.27,
+    "prescription": "prescriptions/lv_viltrox_af_75mm_f12_pro.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/viltrox/ViltroxAF75mmf12STMEDIF.data.ts"
+    ],
+    "source_sha256": "574995e609a7dad01b0a1bf8d11557b7ecdc1cff42cea10fadaae2c6a7bb26c7",
+    "patent": "CN 114755806 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_vivitar_series_1_135mm_f2_3": {
+    "name": "VIVITAR SERIES 1 135mm f/2.3 AUTO TELEPHOTO",
+    "group": "Vivitar",
+    "focal_mm": 135.0,
+    "nominal_f": 2.3,
+    "prescription": "prescriptions/lv_vivitar_series_1_135mm_f2_3.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/vivitar/VivitarSeries1135mmf23.data.ts"
+    ],
+    "source_sha256": "a3c754f610eb23ecf09611ca3f915d4327d7496d0b0c6c3901f16895aa178fd8",
+    "patent": "GB 1,408,910",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_vivitar_series1_200f3": {
+    "name": "VIVITAR SERIES 1 200mm f/3.0 VMC",
+    "group": "Vivitar",
+    "focal_mm": 200.0,
+    "nominal_f": 3.0,
+    "prescription": "prescriptions/lv_vivitar_series1_200f3.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/vivitar/VivitarSeries1200mmf3.data.ts"
+    ],
+    "source_sha256": "442154f7f1b68f273d52f7a9aa478d619410913354252702673b715de3516980",
+    "patent": "US 3,942,876",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_apo_lanthar_180_f4": {
+    "name": "VOIGTLÄNDER APO-LANTHAR 180mm f/4 SL Close Focus",
+    "group": "Voigtländer",
+    "focal_mm": 180.0,
+    "nominal_f": 4.0,
+    "prescription": "prescriptions/lv_voigtlander_apo_lanthar_180_f4.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderApoLanthar180mmf4.data.ts"
+    ],
+    "source_sha256": "3798076d2314e438cc67b07ad3130a5cb14b1b74578acd9275729ba6f075c8ea",
+    "patent": "JP 2003-270529 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_apo_lanthar_210mm_f45": {
+    "name": "VOIGTLÄNDER APO-LANTHAR 210mm f/4.5",
+    "group": "Voigtländer",
+    "focal_mm": 210.0,
+    "nominal_f": 4.5,
+    "prescription": "prescriptions/lv_voigtlander_apo_lanthar_210mm_f45.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderApoLanthar210mmf45.data.ts"
+    ],
+    "source_sha256": "5878b75ef297269e7ac3808aa115c6e7e430b62bf207e15f1852a3ac2573268a",
+    "patent": "US 2,645,154",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_apo_lanthar_50mm_f35_vm": {
+    "name": "VOIGTLÄNDER APO-LANTHAR 50mm f/3.5 (Type II) VM",
+    "group": "Voigtländer",
+    "focal_mm": 50.0,
+    "nominal_f": 3.56,
+    "prescription": "prescriptions/lv_voigtlander_apo_lanthar_50mm_f35_vm.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderAPOLanthar50mmf35VM.data.ts"
+    ],
+    "source_sha256": "a7d32f2ab2dc21daa62de34636728b1057736f11fbf62164657a5a4f682a0fb2",
+    "patent": "JP 2025-108279 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_apo_skopar_90f28": {
+    "name": "VOIGTLÄNDER APO-SKOPAR 90mm f/2.8 VM / SL IIs",
+    "group": "Voigtländer",
+    "focal_mm": 90.0,
+    "nominal_f": 2.88000737,
+    "prescription": "prescriptions/lv_voigtlander_apo_skopar_90f28.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderApoSkopar90mmf28.data.ts"
+    ],
+    "source_sha256": "894f6f078a345c127ec8831910aa47b0c5b911ac8c6bf110f4e44269bf7d2267",
+    "patent": "JP 2023-049919 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_apo_ultron_vm_90mm_f2": {
+    "name": "VOIGTLÄNDER APO-ULTRON 90mm f/2 VM",
+    "group": "Voigtländer",
+    "focal_mm": 90.0,
+    "nominal_f": 2.05,
+    "prescription": "prescriptions/lv_voigtlander_apo_ultron_vm_90mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderAPOUltron90mmf2VM.data.ts"
+    ],
+    "source_sha256": "0b41612cea82432400b2a327ab1786a95befadf82466aeb2f2b7636e4b7471ab",
+    "patent": "JP 2026-8235 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_color_heliar_105mm_f35": {
+    "name": "VOIGTLÄNDER COLOR-HELIAR 105mm f/3.5 (Voigtländer Bessa II)",
+    "group": "Voigtländer",
+    "focal_mm": 105.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_voigtlander_color_heliar_105mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderColorHeliar105mmf35.data.ts"
+    ],
+    "source_sha256": "16945262659050901d7307cd42b7a057e9abc7d7d34dd40c963d6eb15f4cc8a3",
+    "patent": "US 2,645,156 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_color_skopar_105mm_f35": {
+    "name": "VOIGTLÄNDER COLOR-SKOPAR 105mm f/3.5 (Voigtländer Bessa II)",
+    "group": "Voigtländer",
+    "focal_mm": 105.0,
+    "nominal_f": 3.5,
+    "prescription": "prescriptions/lv_voigtlander_color_skopar_105mm_f35.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderColorSkopar105mmf35.data.ts"
+    ],
+    "source_sha256": "e06d3c7b7a478adbdfe8de8a29f7c1e12f243937c326088101cd0804939bde75",
+    "patent": "US 2,573,511 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_heliar_100mm_f4_5_second_asymmetric": {
+    "name": "VOIGTLÄNDER HELIAR 100mm f/4.5 (Second Asymmetric Form)",
+    "group": "Voigtländer",
+    "focal_mm": 100.0,
+    "nominal_f": 4.3416595905124735,
+    "prescription": "prescriptions/lv_voigtlander_heliar_100mm_f4_5_second_asymmetric.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderHeliarF45SecondAsymmetric.data.ts"
+    ],
+    "source_sha256": "6441fc98b25b7cbdbab47b2f80965d3a180498799e75d0a00dae943742d09782",
+    "patent": "DE 143889 C",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_macro_apo_lanthar_125_f25": {
+    "name": "VOIGTLÄNDER MACRO APO-LANTHAR 125mm f/2.5 SL",
+    "group": "Voigtländer",
+    "focal_mm": 125.0,
+    "nominal_f": 2.5,
+    "prescription": "prescriptions/lv_voigtlander_macro_apo_lanthar_125_f25.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderMacroApoLanthar125mmf25.data.ts"
+    ],
+    "source_sha256": "ec1c7218d648360cdca8a4edbbfade295ff5f13b965a4c8c1166079b35b1fe62",
+    "patent": "JP 2002-090622 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_nokton_50f15": {
+    "name": "VOIGTLÄNDER NOKTON 50mm f/1.5",
+    "group": "Voigtländer",
+    "focal_mm": 50.0,
+    "nominal_f": 1.4999965746548385,
+    "prescription": "prescriptions/lv_voigtlander_nokton_50f15.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderNokton50mmf15.data.ts"
+    ],
+    "source_sha256": "6b87bc4af52c8d02d4160a7253c8c5be58b79b62c5f040851a1670cfbe6ea843",
+    "patent": "US 2,646,721 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_nokton_60mm_f095_mft": {
+    "name": "VOIGTLÄNDER NOKTON 60mm f/0.95",
+    "group": "Voigtländer",
+    "focal_mm": 60.0,
+    "nominal_f": 0.93,
+    "prescription": "prescriptions/lv_voigtlander_nokton_60mm_f095_mft.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderNokton60mmf95.data.ts"
+    ],
+    "source_sha256": "629bac462dd3ffb91f7392d9ff2b5ac165237518ee32f7f0531039e216e62d5f",
+    "patent": "JP 2021-076740 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_nokton_x_50f12": {
+    "name": "VOIGTLÄNDER NOKTON 50mm f/1.2 X-Mount",
+    "group": "Voigtländer",
+    "focal_mm": 50.0,
+    "nominal_f": 1.23,
+    "prescription": "prescriptions/lv_voigtlander_nokton_x_50f12.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderNoktonX50mmf12.data.ts"
+    ],
+    "source_sha256": "ff78d837b35895c047534ee0d9ef39f5e67d04634a361722a8af73b6bf88014b",
+    "patent": "JP 2025-58577 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_portrait_heliar_75f18": {
+    "name": "VOIGTLÄNDER PORTRAIT HELIAR 75mm f/1.8",
+    "group": "Voigtländer",
+    "focal_mm": 75.0,
+    "nominal_f": 1.858,
+    "prescription": "prescriptions/lv_voigtlander_portrait_heliar_75f18.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderPortraitHeliar75mmf18.data.ts"
+    ],
+    "source_sha256": "b623eb0fbe0a62aa3a0e2d0869ad55859f675537a320740f48697d2833ed53b7",
+    "patent": "JP 2026-120386 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_skoparex_35f34_bessamatic": {
+    "name": "VOIGTLÄNDER SKOPAREX 35mm f/3.4 (Bessamatic)",
+    "group": "Voigtländer",
+    "focal_mm": 35.0,
+    "nominal_f": 3.4,
+    "prescription": "prescriptions/lv_voigtlander_skoparex_35f34_bessamatic.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderSkoparex35mmf34Bessamatic.data.ts"
+    ],
+    "source_sha256": "05f8b64c0f36fe4a31c7ba92071dda7f2e6abdbe3e49ec2918a9d25d4c51eb82",
+    "patent": "US 2,927,506",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_telomar_100mm_f55": {
+    "name": "VOIGTLÄNDER TELOMAR 100mm f/5.5",
+    "group": "Voigtländer",
+    "focal_mm": 100.0,
+    "nominal_f": 5.473462636261754,
+    "prescription": "prescriptions/lv_voigtlander_telomar_100mm_f55.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderTelomar100mmf55.data.ts"
+    ],
+    "source_sha256": "c726ee63a7dc64d7d7dbd8a9795e07104caa1d60e642cb3051d31bbd789ae456",
+    "patent": "US 2,662,446 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_telomar_180mm_f55": {
+    "name": "VOIGTLÄNDER TELOMAR 180mm f/5.5",
+    "group": "Voigtländer",
+    "focal_mm": 180.0,
+    "nominal_f": 5.473462636261754,
+    "prescription": "prescriptions/lv_voigtlander_telomar_180mm_f55.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderTelomar180mmf55.data.ts"
+    ],
+    "source_sha256": "e23480a9ee258e614288e0649a664bc10125b6dde7a9edb9e9d64a97ed3afdf2",
+    "patent": "FR 1,045,076",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_voigtlander_ultron_27mm_f2": {
+    "name": "VOIGTLÄNDER ULTRON 27mm f/2",
+    "group": "Voigtländer",
+    "focal_mm": 27.0,
+    "nominal_f": 2.0441,
+    "prescription": "prescriptions/lv_voigtlander_ultron_27mm_f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderUltron27mmf2.data.ts"
+    ],
+    "source_sha256": "5e3b62e49497909998a2fef22b6b09ec75920f6288a3290496b099378b3d5a0a",
+    "patent": "JP 2024-167569 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_ultron_50f2": {
+    "name": "VOIGTLÄNDER ULTRON 50mm f/2",
+    "group": "Voigtländer",
+    "focal_mm": 50.0,
+    "nominal_f": 2.0,
+    "prescription": "prescriptions/lv_ultron_50f2.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/voigtlander/VoigtlanderUltron50f2.data.ts"
+    ],
+    "source_sha256": "11ebdd479ed7e2ad4bb2b57b972748f8ce4054884bd66716dfc1a7cae2a2be79",
+    "patent": "US 2,627,204 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_yashica_ml_24mm_f2_8": {
+    "name": "YASHICA ML 24mm f/2.8",
+    "group": "Yashica",
+    "focal_mm": 24.0,
+    "nominal_f": 2.8,
+    "prescription": "prescriptions/lv_yashica_ml_24mm_f2_8.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/yashica/YashicaML24mmf28.data.ts"
+    ],
+    "source_sha256": "11d51bc1085f296bac728ed8726494a418b8cd7f81880f01a35b480679f3a711",
+    "patent": "JP 1975-110330 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_yashica_ml_300mm_f56": {
+    "name": "YASHICA ML 300mm f/5.6 C",
+    "group": "Yashica",
+    "focal_mm": 300.0,
+    "nominal_f": 5.6,
+    "prescription": "prescriptions/lv_yashica_ml_300mm_f56.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/yashica/YashicaML300mmf56.data.ts"
+    ],
+    "source_sha256": "2c445d1138e2c82a39dbe654e3d16eeb6fbeb54e83c722b9a139d86a397a6aab",
+    "patent": "JP 1978-129629 A",
+    "look": {
+      "blades": 0
+    }
+  },
+  "lv_yashica_yashinon_dx_21mm_f3_3": {
+    "name": "YASHICA YASHINON-DX 21mm f/3.3",
+    "group": "Yashica",
+    "focal_mm": 21.0,
+    "nominal_f": 3.3,
+    "prescription": "prescriptions/lv_yashica_yashinon_dx_21mm_f3_3.json",
+    "status": "reconstrução de patente; estado fixo; abertura modelada; sem calibração comercial",
+    "sources": [
+      "https://github.com/ronbuening/LensVisualizer/blob/main/src/lens-data/yashica/YashicaYashinonDX21mmf33.data.ts"
+    ],
+    "source_sha256": "142f30471c2584dd654de2e541ab525cbe0d358787c02ead6175cd7e698dece9",
+    "patent": "JP 1969-024068 B",
+    "look": {
+      "blades": 0
+    }
+  }
+}

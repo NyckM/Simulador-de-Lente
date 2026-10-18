@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 39.4075,
+    "thickness": 6.0665,
+    "nd": 1.803,
+    "aperture_diameter": 46.0
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 138.259,
+    "thickness": 0.1155,
+    "nd": 1.0,
+    "aperture_diameter": 43.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 25.861,
+    "thickness": 4.895,
+    "nd": 1.8061,
+    "aperture_diameter": 39.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 39.567,
+    "thickness": 1.9085,
+    "nd": 1.0,
+    "aperture_diameter": 38.0
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 47.6465,
+    "thickness": 1.76,
+    "nd": 1.7618,
+    "aperture_diameter": 29.0
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 16.2635,
+    "thickness": 10.3243,
+    "nd": 1.0,
+    "aperture_diameter": 29.0
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 0.0,
+    "thickness": 8.4472,
+    "nd": 1.0,
+    "aperture_diameter": 30.2,
+    "is_stop": true
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": -17.9685,
+    "thickness": 1.76,
+    "nd": 1.7283,
+    "aperture_diameter": 29.0
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": -97.7955,
+    "thickness": 7.634,
+    "nd": 1.755,
+    "aperture_diameter": 30.0
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -28.5615,
+    "thickness": 0.099,
+    "nd": 1.0,
+    "aperture_diameter": 34.0
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": -101.167,
+    "thickness": 5.577,
+    "nd": 1.713,
+    "aperture_diameter": 34.0
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -31.5755,
+    "thickness": 0.1155,
+    "nd": 1.0,
+    "aperture_diameter": 35.0
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": 80.6025,
+    "thickness": 3.4265,
+    "nd": 1.713,
+    "aperture_diameter": 34.0
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": -917.224,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 33.0
+  }
+}

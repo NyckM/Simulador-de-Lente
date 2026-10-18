@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 41.184,
+    "thickness": 5.908,
+    "nd": 1.788,
+    "aperture_diameter": 45.0
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 298.388,
+    "thickness": 0.145,
+    "nd": 1.0,
+    "aperture_diameter": 43.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 27.334,
+    "thickness": 4.319,
+    "nd": 1.788,
+    "aperture_diameter": 38.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 42.617,
+    "thickness": 1.773,
+    "nd": 1.0,
+    "aperture_diameter": 33.2
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 84.266,
+    "thickness": 2.228,
+    "nd": 1.6668,
+    "aperture_diameter": 33.2
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 17.725,
+    "thickness": 7.797,
+    "nd": 1.0,
+    "aperture_diameter": 28.4
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 0.0,
+    "thickness": 7.797,
+    "nd": 1.0,
+    "aperture_diameter": 28.2,
+    "is_stop": true
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": -18.209,
+    "thickness": 1.646,
+    "nd": 1.80518,
+    "aperture_diameter": 28.4
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": -1568.136,
+    "thickness": 7.007,
+    "nd": 1.7725,
+    "aperture_diameter": 34.0
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -29.365,
+    "thickness": 0.145,
+    "nd": 1.0,
+    "aperture_diameter": 35.4
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": -197.48,
+    "thickness": 5.036,
+    "nd": 1.863,
+    "aperture_diameter": 37.4
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -36.002,
+    "thickness": 0.145,
+    "nd": 1.0,
+    "aperture_diameter": 37.4
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": 118.686,
+    "thickness": 3.099,
+    "nd": 1.7725,
+    "aperture_diameter": 34.4
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": -238.176,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 34.4
+  }
+}

@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),D=require('../web/depth-utils.js');
+const s={depth_mode:'slicing',depth_slices:12,depth_gain:1,depth_bias:0,invert_depth:false},range={near:3,far:12};
+assert.equal(D.focusDistance(1,s,range,false),3);assert.equal(D.focusDistance(0,s,range,false),12);
+assert.equal(D.focusDistance(1,{...s,invert_depth:true},range,false),12);
+assert.equal(D.focusDistance(.3,{...s,depth_mode:'cut',depth_cut:.2},range,false),3);
+assert.equal(D.focusDistance(0,{...s,depth_mode:'auto',depth_cut:0},range,true),12);
+assert.equal(D.focusDistance(.5,{...s,depth_gain:2},range,false),3);
+assert.equal(D.focusDistance(.5,{...s,depth_bias:-.5},range,false),12);
+assert.ok(Math.abs(D.focusDistance(.4,s,range,false)-D.meters(1-.4,3,12))<1e-6);
+console.log('Focus picker distance: direction, gain, bias, cut and slicing passed.');

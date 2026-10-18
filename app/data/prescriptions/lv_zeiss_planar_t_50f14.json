@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 44.452,
+    "thickness": 5.091,
+    "nd": 1.717,
+    "aperture_diameter": 39.0
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 288.661,
+    "thickness": 0.059,
+    "nd": 1.0,
+    "aperture_diameter": 37.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 21.804,
+    "thickness": 4.856,
+    "nd": 1.78831,
+    "aperture_diameter": 37.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 34.062,
+    "thickness": 1.589,
+    "nd": 1.0,
+    "aperture_diameter": 32.0
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 47.086,
+    "thickness": 1.187,
+    "nd": 1.68893,
+    "aperture_diameter": 30.0
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 15.324,
+    "thickness": 7.136,
+    "nd": 1.0,
+    "aperture_diameter": 27.0
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 0.0,
+    "thickness": 7.136,
+    "nd": 1.0,
+    "aperture_diameter": 28.0,
+    "is_stop": true
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": -17.319,
+    "thickness": 1.148,
+    "nd": 1.7283,
+    "aperture_diameter": 25.0
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": 374.022,
+    "thickness": 5.15,
+    "nd": 1.78831,
+    "aperture_diameter": 25.0
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -30.357,
+    "thickness": 0.284,
+    "nd": 1.0,
+    "aperture_diameter": 28.0
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": -87.426,
+    "thickness": 4.385,
+    "nd": 1.78831,
+    "aperture_diameter": 28.0
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -28.25,
+    "thickness": 0.128,
+    "nd": 1.0,
+    "aperture_diameter": 28.0
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": 164.68,
+    "thickness": 2.835,
+    "nd": 1.744,
+    "aperture_diameter": 28.0
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": -130.808,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 27.0
+  }
+}

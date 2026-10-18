@@ -1,0 +1,12 @@
+schema_version = "1.0.0"
+id = "bruxos_physical_lens"
+version = "0.4.0"
+name = "Bruxos Physical Lens"
+tagline = "Sequential glass optics camera and Gaussian volume bridge"
+maintainer = "Bruxosdovfx"
+type = "add-on"
+blender_version_min = "4.5.0"
+license = ["SPDX:GPL-3.0-or-later"]
+tags = ["Camera", "Render"]
+[permissions]
+files = "Import user-selected optical prescriptions and 3DGS PLY files"

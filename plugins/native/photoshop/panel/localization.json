@@ -1,0 +1,3910 @@
+{
+  "language": "pt-BR",
+  "catalog": {
+    " (fora do intervalo do mapa)": {
+      "pt-BR": " (fora do intervalo do mapa)",
+      "en": " (outside map range)",
+      "zh-CN": "（超出深度图范围）"
+    },
+    " Ampliação criativa ativa.": {
+      "pt-BR": " Ampliação criativa ativa.",
+      "en": " Creative enlargement active.",
+      "zh-CN": "创意放大已启用。"
+    },
+    " Depth Cut: dois planos, sem recuperar fundo oculto.": {
+      "pt-BR": " Depth Cut: dois planos, sem recuperar fundo oculto.",
+      "en": " Depth Cut: two planes; hidden background is not recovered.",
+      "zh-CN": "深度分割：两个平面，不恢复被遮挡的背景。"
+    },
+    " Depth Slicing: ${settings.depth_slices} planos, fundo oculto não reconstruído.": {
+      "pt-BR": " Depth Slicing: ${settings.depth_slices} planos, fundo oculto não reconstruído.",
+      "en": " Depth Slicing: ${settings.depth_slices} planes; hidden background is not reconstructed.",
+      "zh-CN": "深度切片：${settings.depth_slices} 个平面，不重建被遮挡的背景。"
+    },
+    " Depth automático: composição em ordem de distância.": {
+      "pt-BR": " Depth automático: composição em ordem de distância.",
+      "en": " Automatic depth: composite in distance order.",
+      "zh-CN": "自动深度：按距离顺序合成。"
+    },
+    " Depth estático no vídeo; sem tracking ou oclusões exatas.": {
+      "pt-BR": " Depth estático no vídeo; sem tracking ou oclusões exatas.",
+      "en": " Static depth in video; no tracking or exact occlusion.",
+      "zh-CN": "视频使用静态深度，无跟踪或精确遮挡。"
+    },
+    " Depth gerado: ": {
+      "pt-BR": " Depth gerado: ",
+      "en": " Generated depth: ",
+      "zh-CN": "已生成深度："
+    },
+    " Esta prescrição é Soft Focus: mantém suavidade mesmo no plano focado. Fechar o diafragma reduz esse efeito.": {
+      "pt-BR": " Esta prescrição é Soft Focus: mantém suavidade mesmo no plano focado. Fechar o diafragma reduz esse efeito.",
+      "en": " This is a Soft Focus prescription: some softness remains at focus. Stopping down reduces it.",
+      "zh-CN": "此处方为柔焦设计，合焦时仍保留柔化；缩小光圈可减弱此效果。"
+    },
+    " Faixa de distância inválida restaurada para 0,8–10 m.": {
+      "pt-BR": " Faixa de distância inválida restaurada para 0,8–10 m.",
+      "en": " Invalid distance range reset to 0.8–10 m.",
+      "zh-CN": "无效距离范围已重置为 0.8–10 米。"
+    },
+    " Fonte ": {
+      "pt-BR": " Fonte ",
+      "en": " Source ",
+      "zh-CN": "源图像 "
+    },
+    " Fonte ampliada; não acrescenta detalhe capturado.": {
+      "pt-BR": " Fonte ampliada; não acrescenta detalhe capturado.",
+      "en": " Source enlarged; no captured detail is added.",
+      "zh-CN": "源图像已放大，不会增加拍摄细节。"
+    },
+    " Ghosts e raios de difração: proxies de imagem, sem validação fotométrica.": {
+      "pt-BR": " Ghosts e raios de difração: proxies de imagem, sem validação fotométrica.",
+      "en": " Ghosts and diffraction rays: image proxies, without photometric validation.",
+      "zh-CN": "鬼影和衍射光芒为图像近似，未经光度验证。"
+    },
+    " MP4: exportação quadro a quadro. WebM: captura em reprodução. Sem áudio.": {
+      "pt-BR": " MP4: exportação quadro a quadro. WebM: captura em reprodução. Sem áudio.",
+      "en": " MP4: frame-by-frame export. WebM: playback capture. No audio.",
+      "zh-CN": "MP4：逐帧导出。WebM：播放录制。无音频。"
+    },
+    " Modificadores não calibrados ativos.": {
+      "pt-BR": " Modificadores não calibrados ativos.",
+      "en": " Uncalibrated modifiers active.",
+      "zh-CN": "未校准的调整已启用。"
+    },
+    " Oclusão por depth aproximada.": {
+      "pt-BR": " Oclusão por depth aproximada.",
+      "en": " Approximate depth occlusion.",
+      "zh-CN": "近似深度遮挡。"
+    },
+    " Realce de luzes não recupera HDR perdido.": {
+      "pt-BR": " Realce de luzes não recupera HDR perdido.",
+      "en": " Highlight gain cannot recover lost HDR.",
+      "zh-CN": "高光增强无法恢复丢失的 HDR。"
+    },
+    " Traçado dos vidros: ": {
+      "pt-BR": " Traçado dos vidros: ",
+      "en": " Glass tracing: ",
+      "zh-CN": "镜片光线追踪："
+    },
+    " ajuste(s).": {
+      "pt-BR": " ajuste(s).",
+      "en": " adjustment(s).",
+      "zh-CN": "项调整。"
+    },
+    " mm. Trocar o modo conserva a intensidade.": {
+      "pt-BR": " mm. Trocar o modo conserva a intensidade.",
+      "en": " mm. Switching mode preserves intensity.",
+      "zh-CN": "毫米。切换模式保留强度。"
+    },
+    " · ${(performance.now()-started).toFixed(0)} ms quadro": {
+      "pt-BR": " · ${(performance.now()-started).toFixed(0)} ms quadro",
+      "en": " · ${(performance.now()-started).toFixed(0)} ms per frame",
+      "zh-CN": "· 每帧 ${(performance.now()-started).toFixed(0)} 毫秒"
+    },
+    " · ajustando": {
+      "pt-BR": " · ajustando",
+      "en": " · adjusting",
+      "zh-CN": "· 调整中"
+    },
+    " · ativa": {
+      "pt-BR": " · ativa",
+      "en": " · active",
+      "zh-CN": "· 已启用"
+    },
+    " · até 512 × 512 px": {
+      "pt-BR": " · até 512 × 512 px",
+      "en": " · up to 512 × 512 px",
+      "zh-CN": "· 最大 512 × 512 像素"
+    },
+    " · branco = sujeira": {
+      "pt-BR": " · branco = sujeira",
+      "en": " · white = dirt",
+      "zh-CN": "· 白色 = 污渍"
+    },
+    " · compensação pelos raios ${(data.focus_shift_mm||0).toFixed(3)} mm": {
+      "pt-BR": " · compensação pelos raios ${(data.focus_shift_mm||0).toFixed(3)} mm",
+      "en": " · ray-based compensation ${(data.focus_shift_mm||0).toFixed(3)} mm",
+      "zh-CN": "· 光线补偿 ${(data.focus_shift_mm||0).toFixed(3)} 毫米"
+    },
+    " · conjunto ${offset>=0?'+':''}${offset.toFixed(2)} mm": {
+      "pt-BR": " · conjunto ${offset>=0?'+':''}${offset.toFixed(2)} mm",
+      "en": " · lens assembly ${offset>=0?'+':''}${offset.toFixed(2)} mm",
+      "zh-CN": "· 镜片组 ${offset>=0?'+':''}${offset.toFixed(2)} 毫米"
+    },
+    " · desativada": {
+      "pt-BR": " · desativada",
+      "en": " · disabled",
+      "zh-CN": "· 已关闭"
+    },
+    " · perfil personalizado sobre ": {
+      "pt-BR": " · perfil personalizado sobre ",
+      "en": " · custom profile based on ",
+      "zh-CN": "· 自定义配置基于 "
+    },
+    " · qualidade alta no quadro inteiro": {
+      "pt-BR": " · qualidade alta no quadro inteiro",
+      "en": " · high quality across the full frame",
+      "zh-CN": "· 全画面高质量"
+    },
+    " · refinando": {
+      "pt-BR": " · refinando",
+      "en": " · refining",
+      "zh-CN": "· 精化中"
+    },
+    " · solicitado ": {
+      "pt-BR": " · solicitado ",
+      "en": " · requested ",
+      "zh-CN": "· 请求 "
+    },
+    " · vídeo de depth sincronizado": {
+      "pt-BR": " · vídeo de depth sincronizado",
+      "en": " · synchronized depth video",
+      "zh-CN": "· 已同步深度视频"
+    },
+    "${(fpsCount*1000/(now-fpsStart)).toFixed(1)} frames/s processados": {
+      "pt-BR": "${(fpsCount*1000/(now-fpsStart)).toFixed(1)} frames/s processados",
+      "en": "${(fpsCount*1000/(now-fpsStart)).toFixed(1)} processed frames/s",
+      "zh-CN": "每秒处理 ${(fpsCount*1000/(now-fpsStart)).toFixed(1)} 帧"
+    },
+    "${Math.round(wipePercent)}% imagem original": {
+      "pt-BR": "${Math.round(wipePercent)}% imagem original",
+      "en": "${Math.round(wipePercent)}% original image",
+      "zh-CN": "${Math.round(wipePercent)}% 原始图像"
+    },
+    "${inspected.label} ${inspected.distance.toFixed(2)} m · ": {
+      "pt-BR": "${inspected.label} ${inspected.distance.toFixed(2)} m · ",
+      "en": "${inspected.label} ${inspected.distance.toFixed(2)} m · ",
+      "zh-CN": "${inspected.label} ${inspected.distance.toFixed(2)} 米 · "
+    },
+    "${settings.focus_m.toFixed(2)} metros": {
+      "pt-BR": "${settings.focus_m.toFixed(2)} metros",
+      "en": "${settings.focus_m.toFixed(2)} meters",
+      "zh-CN": "${settings.focus_m.toFixed(2)} 米"
+    },
+    "${state.count} mapa(s), ${state.width} × ${state.height} · escala relativa global": {
+      "pt-BR": "${state.count} mapa(s), ${state.width} × ${state.height} · escala relativa global",
+      "en": "${state.count} map(s), ${state.width} × ${state.height} · global relative scale",
+      "zh-CN": "${state.count} 张深度图，${state.width} × ${state.height} · 全局相对尺度"
+    },
+    "+ Depth importa PNG ou vídeo MP4/WebM. Vídeos de depth devem estar alinhados ao vídeo principal, com o mesmo início e dimensões.": {
+      "pt-BR": "+ Depth importa PNG ou vídeo MP4/WebM. Vídeos de depth devem estar alinhados ao vídeo principal, com o mesmo início e dimensões.",
+      "en": "+ Depth imports PNG or MP4/WebM video. Depth videos must match the main video's start time and dimensions.",
+      "zh-CN": "＋深度可导入 PNG 或 MP4/WebM 视频。深度视频须与主视频的起始时间和尺寸一致。"
+    },
+    ". Prévia alternada para WebGL.": {
+      "pt-BR": ". Prévia alternada para WebGL.",
+      "en": ". Preview switched to WebGL.",
+      "zh-CN": "。预览已切换为 WebGL。"
+    },
+    ". Reset restaura a configuração salva.": {
+      "pt-BR": ". Reset restaura a configuração salva.",
+      "en": ". Reset restores the saved settings.",
+      "zh-CN": "。重置恢复已保存的设置。"
+    },
+    "01 / LENTE": {
+      "pt-BR": "01 / LENTE",
+      "en": "01 / LENS",
+      "zh-CN": "01 / 镜头"
+    },
+    "02 / CAPTURA": {
+      "pt-BR": "02 / CAPTURA",
+      "en": "02 / CAPTURE",
+      "zh-CN": "02 / 拍摄"
+    },
+    "1024 amostras": {
+      "pt-BR": "1024 amostras",
+      "en": "1024 samples",
+      "zh-CN": "1024 个采样"
+    },
+    "128 amostras": {
+      "pt-BR": "128 amostras",
+      "en": "128 samples",
+      "zh-CN": "128 个采样"
+    },
+    "2 planos": {
+      "pt-BR": "2 planos",
+      "en": "2 planes",
+      "zh-CN": "2 个平面"
+    },
+    "256 amostras": {
+      "pt-BR": "256 amostras",
+      "en": "256 samples",
+      "zh-CN": "256 个采样"
+    },
+    "293 construções disponíveis · 9 aguardando prescrição. Reconstruções experimentais, sem calibração de exemplar. Os perfis de aparência ficam separados.": {
+      "pt-BR": "293 construções disponíveis · 9 aguardando prescrição. Reconstruções experimentais, sem calibração de exemplar. Os perfis de aparência ficam separados.",
+      "en": "293 constructions available · 9 awaiting prescriptions. Experimental reconstructions, without specimen calibration. Appearance profiles are separate.",
+      "zh-CN": "293 种结构可用，9 种等待处方。实验性重建，未经实物校准。外观配置单独列出。"
+    },
+    "3 × 3 · rápida": {
+      "pt-BR": "3 × 3 · rápida",
+      "en": "3 × 3 · fast",
+      "zh-CN": "3 × 3 · 快速"
+    },
+    "5 × 5 · padrão": {
+      "pt-BR": "5 × 5 · padrão",
+      "en": "5 × 5 · standard",
+      "zh-CN": "5 × 5 · 标准"
+    },
+    "50,36 mm calculados · 10 superfícies refrativas + íris. Sem calibração de uma lente comercial.": {
+      "pt-BR": "50,36 mm calculados · 10 superfícies refrativas + íris. Sem calibração de uma lente comercial.",
+      "en": "50.36 mm calculated · 10 refracting surfaces + iris. No commercial lens calibration.",
+      "zh-CN": "计算焦距 50.36 毫米，10 个折射面加光圈。未经商业镜头校准。"
+    },
+    "512 amostras": {
+      "pt-BR": "512 amostras",
+      "en": "512 samples",
+      "zh-CN": "512 个采样"
+    },
+    "64 amostras": {
+      "pt-BR": "64 amostras",
+      "en": "64 samples",
+      "zh-CN": "64 个采样"
+    },
+    "9 × 9 · detalhada": {
+      "pt-BR": "9 × 9 · detalhada",
+      "en": "9 × 9 · detailed",
+      "zh-CN": "9 × 9 · 精细"
+    },
+    ": use um valor entre ": {
+      "pt-BR": ": use um valor entre ",
+      "en": ": enter a value between ",
+      "zh-CN": "：请输入数值，范围为 "
+    },
+    "; limitado pelo atlas/GPU": {
+      "pt-BR": "; limitado pelo atlas/GPU",
+      "en": "; limited by atlas/GPU",
+      "zh-CN": "；受光线图集或 GPU 限制"
+    },
+    "A distância próxima deve ser menor que a distante.": {
+      "pt-BR": "A distância próxima deve ser menor que a distante.",
+      "en": "Near distance must be less than far distance.",
+      "zh-CN": "近端距离必须小于远端距离。"
+    },
+    "A forma do desfoque": {
+      "pt-BR": "A forma do desfoque",
+      "en": "The shape of defocus",
+      "zh-CN": "散焦形状"
+    },
+    "A janela de salvamento não está disponível. Reabra o app.": {
+      "pt-BR": "A janela de salvamento não está disponível. Reabra o app.",
+      "en": "The save dialog is unavailable. Reopen the app.",
+      "zh-CN": "保存对话框不可用。请重新打开应用。"
+    },
+    "A luz tem": {
+      "pt-BR": "A luz tem",
+      "en": "Light has",
+      "zh-CN": "光线拥有"
+    },
+    "A mídia mudou durante a geração": {
+      "pt-BR": "A mídia mudou durante a geração",
+      "en": "The media changed during generation",
+      "zh-CN": "生成过程中媒体已改变"
+    },
+    "ATLAS DE RAIOS / PRÉVIA AUTOMÁTICA / VÍDEO LOCAL": {
+      "pt-BR": "ATLAS DE RAIOS / PRÉVIA AUTOMÁTICA / VÍDEO LOCAL",
+      "en": "RAY ATLAS / AUTOMATIC PREVIEW / LOCAL VIDEO",
+      "zh-CN": "光线图集 / 自动预览 / 本地视频"
+    },
+    "Aberracao esferica 3": {
+      "pt-BR": "Aberracao esferica 3",
+      "en": "Spherical aberration 3",
+      "zh-CN": "三阶球差"
+    },
+    "Aberracao esferica 5": {
+      "pt-BR": "Aberracao esferica 5",
+      "en": "Spherical aberration 5",
+      "zh-CN": "五阶球差"
+    },
+    "Abertura calculada pela pupila de entrada da lente.": {
+      "pt-BR": "Abertura calculada pela pupila de entrada da lente.",
+      "en": "Aperture calculated from the lens entrance pupil.",
+      "zh-CN": "根据镜头入瞳计算光圈。"
+    },
+    "Abertura rápida": {
+      "pt-BR": "Abertura rápida",
+      "en": "Quick aperture",
+      "zh-CN": "快速光圈"
+    },
+    "Abertura · f/": {
+      "pt-BR": "Abertura · f/",
+      "en": "Aperture · f/",
+      "zh-CN": "光圈 · f/"
+    },
+    "Abra o vídeo principal antes de importar um vídeo de depth.": {
+      "pt-BR": "Abra o vídeo principal antes de importar um vídeo de depth.",
+      "en": "Open the main video before importing a depth video.",
+      "zh-CN": "请先打开主视频，再导入深度视频。"
+    },
+    "Abra uma imagem no Photoshop.": {
+      "pt-BR": "Abra uma imagem no Photoshop.",
+      "en": "Open an image in Photoshop.",
+      "zh-CN": "请在 Photoshop 中打开图像。"
+    },
+    "Abra uma imagem primeiro.": {
+      "pt-BR": "Abra uma imagem primeiro.",
+      "en": "Open an image first.",
+      "zh-CN": "请先打开图像。"
+    },
+    "Abrir ou fechar diafragma": {
+      "pt-BR": "Abrir ou fechar diafragma",
+      "en": "Open or close aperture",
+      "zh-CN": "扩大或缩小光圈"
+    },
+    "Aguarde a atualização da lente.": {
+      "pt-BR": "Aguarde a atualização da lente.",
+      "en": "Wait for the lens update.",
+      "zh-CN": "请等待镜头更新。"
+    },
+    "Aguarde a instalação dos complementos.": {
+      "pt-BR": "Aguarde a instalação dos complementos.",
+      "en": "Wait for add-on installation.",
+      "zh-CN": "请等待扩展组件安装完成。"
+    },
+    "Aguarde o atlas da lente terminar de atualizar.": {
+      "pt-BR": "Aguarde o atlas da lente terminar de atualizar.",
+      "en": "Wait for the lens atlas to finish updating.",
+      "zh-CN": "请等待镜头光线图集更新完成。"
+    },
+    "Aguarde o atlas da qualidade escolhida terminar de atualizar.": {
+      "pt-BR": "Aguarde o atlas da qualidade escolhida terminar de atualizar.",
+      "en": "Wait for the selected quality atlas to finish updating.",
+      "zh-CN": "请等待所选质量的光线图集更新完成。"
+    },
+    "Aguarde o render terminar.": {
+      "pt-BR": "Aguarde o render terminar.",
+      "en": "Wait for rendering to finish.",
+      "zh-CN": "请等待渲染完成。"
+    },
+    "Alpha": {
+      "pt-BR": "Alfa",
+      "en": "Alpha",
+      "zh-CN": "透明度"
+    },
+    "Alteração rejeitada; a última geometria válida foi preservada.": {
+      "pt-BR": "Alteração rejeitada; a última geometria válida foi preservada.",
+      "en": "Change rejected; the last valid geometry was preserved.",
+      "zh-CN": "修改被拒绝，已保留上次有效的几何结构。"
+    },
+    "Amostragem e altas luzes": {
+      "pt-BR": "Amostragem e altas luzes",
+      "en": "Sampling and highlights",
+      "zh-CN": "采样与高光"
+    },
+    "Amostragem fixa durante todo o render; não animável.": {
+      "pt-BR": "Amostragem fixa durante todo o render; não animável.",
+      "en": "Sampling stays fixed throughout rendering; not animatable.",
+      "zh-CN": "渲染过程中采样保持固定，不可制作动画。"
+    },
+    "Ampliação do bokeh · criativa": {
+      "pt-BR": "Ampliação do bokeh · criativa",
+      "en": "Bokeh enlargement · creative",
+      "zh-CN": "散景放大 · 创意"
+    },
+    "Anamorfico": {
+      "pt-BR": "Anamorfico",
+      "en": "Anamorphic",
+      "zh-CN": "变形宽银幕"
+    },
+    "Anel do bokeh": {
+      "pt-BR": "Anel do bokeh",
+      "en": "Bokeh rim",
+      "zh-CN": "散景边环"
+    },
+    "Aplicar ao traçado": {
+      "pt-BR": "Aplicar ao traçado",
+      "en": "Apply to tracing",
+      "zh-CN": "应用到光线追踪"
+    },
+    "Aplicar bokeh giratório": {
+      "pt-BR": "Aplicar bokeh giratório",
+      "en": "Apply swirling bokeh",
+      "zh-CN": "应用旋转散景"
+    },
+    "Aplicar deformação da luz": {
+      "pt-BR": "Aplicar deformação da luz",
+      "en": "Apply light deformation",
+      "zh-CN": "应用光线变形"
+    },
+    "Aplicar em nova camada": {
+      "pt-BR": "Aplicar em nova camada",
+      "en": "Apply to a new layer",
+      "zh-CN": "应用到新图层"
+    },
+    "Apodizacao": {
+      "pt-BR": "Apodizacao",
+      "en": "Apodization",
+      "zh-CN": "切趾"
+    },
+    "Arquivo de perfil muito grande.": {
+      "pt-BR": "Arquivo de perfil muito grande.",
+      "en": "Profile file is too large.",
+      "zh-CN": "配置文件过大。"
+    },
+    "Arquivo salvo em: ": {
+      "pt-BR": "Arquivo salvo em: ",
+      "en": "File saved to: ",
+      "zh-CN": "文件已保存至："
+    },
+    "Arrastar para mudar a curvatura": {
+      "pt-BR": "Arrastar para mudar a curvatura",
+      "en": "Drag to change curvature",
+      "zh-CN": "拖动修改曲率"
+    },
+    "Arrastar para mudar o diâmetro": {
+      "pt-BR": "Arrastar para mudar o diâmetro",
+      "en": "Drag to change diameter",
+      "zh-CN": "拖动修改直径"
+    },
+    "Arrastar para mudar o espaçamento anterior": {
+      "pt-BR": "Arrastar para mudar o espaçamento anterior",
+      "en": "Drag to change preceding spacing",
+      "zh-CN": "拖动修改前方间距"
+    },
+    "Arraste as alças laranja da íris para abrir ou fechar o diafragma. Arraste a barra sob os vidros para focar, ou ajuste Distância de foco. Os controles acompanham o desenho. Sensor fixo em laranja; plano de foco paraxial tracejado em azul.": {
+      "pt-BR": "Arraste as alças laranja da íris para abrir ou fechar o diafragma. Arraste a barra sob os vidros para focar, ou ajuste Distância de foco. Os controles acompanham o desenho. Sensor fixo em laranja; plano de foco paraxial tracejado em azul.",
+      "en": "Drag the orange iris handles to open or close the aperture. Drag the bar below the glass to focus, or adjust Focus distance. Controls follow the drawing. Fixed sensor in orange; paraxial focus plane dashed in blue.",
+      "zh-CN": "拖动橙色光圈控制柄调整光圈。拖动镜片下方的条形控件合焦，或调整对焦距离。控件与图示同步。固定传感器为橙色，近轴焦平面为蓝色虚线。"
+    },
+    "Arraste no desenho: a curva e os valores mudam na hora; os raios e o bokeh são recalculados em seguida. Superfícies esféricas centradas, sem inclinação ou vidro dispersivo calibrado.": {
+      "pt-BR": "Arraste no desenho: a curva e os valores mudam na hora; os raios e o bokeh são recalculados em seguida. Superfícies esféricas centradas, sem inclinação ou vidro dispersivo calibrado.",
+      "en": "Drag in the drawing: curves and values update immediately; rays and bokeh recalculate next. Centered spherical surfaces, without tilt or calibrated dispersive glass.",
+      "zh-CN": "在图示中拖动，曲线和数值即时改变，随后重新计算光线与散景。使用居中球面，不含倾斜或已校准的色散玻璃。"
+    },
+    "Arraste para abrir / fechar a íris": {
+      "pt-BR": "Arraste para abrir / fechar a íris",
+      "en": "Drag to open / close the iris",
+      "zh-CN": "拖动扩大或缩小光圈"
+    },
+    "As durações dos vídeos são diferentes. Após o fim do depth, o último mapa será mantido.": {
+      "pt-BR": "As durações dos vídeos são diferentes. Após o fim do depth, o último mapa será mantido.",
+      "en": "Video durations differ. After the depth video ends, its last map will be held.",
+      "zh-CN": "视频时长不同。深度视频结束后将保持最后一张深度图。"
+    },
+    "Astigmatismo adicional: desloca os planos radial e tangencial em sentidos opostos, crescendo nas bordas e deixando o eixo central preservado. Os botões Negativo e Positivo trocam o sinal sem alterar a intensidade. O sinal e o lado do foco alteram a orientação; zero desliga o efeito. Os valores em mm são um ajuste aproximado da resposta, sem recalibrar a prescrição.": {
+      "pt-BR": "Astigmatismo adicional: desloca os planos radial e tangencial em sentidos opostos, crescendo nas bordas e deixando o eixo central preservado. Os botões Negativo e Positivo trocam o sinal sem alterar a intensidade. O sinal e o lado do foco alteram a orientação; zero desliga o efeito. Os valores em mm são um ajuste aproximado da resposta, sem recalibrar a prescrição.",
+      "en": "Additional astigmatism shifts radial and tangential focus planes in opposite directions, growing toward the edges while preserving the center. Negative and Positive change the sign without changing intensity. Sign and side of focus affect orientation; zero disables it. Values in mm approximate the response without recalibrating the prescription.",
+      "zh-CN": "附加像散使径向和切向焦平面向相反方向移动，边缘效果增强，中心保持不变。正负按钮只切换符号，保留强度。方向取决于符号及散焦侧，零值关闭。毫米值为响应近似，不重新校准处方。"
+    },
+    "Astigmatismo · intensidade ± mm": {
+      "pt-BR": "Astigmatismo · intensidade ± mm",
+      "en": "Astigmatism · intensity ± mm",
+      "zh-CN": "像散 · 强度 ± 毫米"
+    },
+    "Atualizando a resposta da lente…": {
+      "pt-BR": "Atualizando a resposta da lente…",
+      "en": "Updating lens response…",
+      "zh-CN": "正在更新镜头响应…"
+    },
+    "Atualizando atlas da lente… vídeo continua": {
+      "pt-BR": "Atualizando atlas da lente… vídeo continua",
+      "en": "Updating lens atlas… video continues",
+      "zh-CN": "正在更新光线图集…视频继续播放"
+    },
+    "Atualizando vidro, raios e imagem…": {
+      "pt-BR": "Atualizando vidro, raios e imagem…",
+      "en": "Updating glass, rays and image…",
+      "zh-CN": "正在更新镜片、光线和图像…"
+    },
+    "Atualizar camadas": {
+      "pt-BR": "Atualizar camadas",
+      "en": "Refresh layers",
+      "zh-CN": "刷新图层"
+    },
+    "Atualizar lente": {
+      "pt-BR": "Atualizar lente",
+      "en": "Update lens",
+      "zh-CN": "更新镜头"
+    },
+    "Atualizar prévia": {
+      "pt-BR": "Atualizar prévia",
+      "en": "Update preview",
+      "zh-CN": "更新预览"
+    },
+    "Atualizar salvo": {
+      "pt-BR": "Atualizar salvo",
+      "en": "Update saved profile",
+      "zh-CN": "更新已保存配置"
+    },
+    "Aumentar zoom": {
+      "pt-BR": "Aumentar zoom",
+      "en": "Zoom in",
+      "zh-CN": "放大"
+    },
+    "Aumente a intensidade para ativar. Pontos de glitter fixos em uma camada com profundidade própria: cada disco responde à mudança de foco. Cor prismática controla pequenas cores nos pontos; zero mantém o glitter neutro. Normalizar compensa a energia média acrescentada. Modelo procedural aproximado, sem ruído animado.": {
+      "pt-BR": "Aumente a intensidade para ativar. Pontos de glitter fixos em uma camada com profundidade própria: cada disco responde à mudança de foco. Cor prismática controla pequenas cores nos pontos; zero mantém o glitter neutro. Normalizar compensa a energia média acrescentada. Modelo procedural aproximado, sem ruído animado.",
+      "en": "Increase intensity to enable. Fixed glitter points sit on a layer at its own depth, so each disc responds to focus changes. Prismatic color adds small color variations; zero keeps glitter neutral. Normalization compensates average added energy. Approximate procedural model, without animated noise.",
+      "zh-CN": "提高强度以启用。固定闪粉位于独立深度图层，每个散景光斑随焦点变化响应。棱镜色控制微小色彩变化，零值保持中性。归一化补偿平均新增能量。程序化近似模型，无动态噪声。"
+    },
+    "Aumente a mistura para ativar. Ajuste o foco à distância das gotas para revelar a distorção. Gotas procedurais fixas, com amostragem pela pupila; refração em espaço de imagem aproximada. Com depth, superfícies à frente da camada são preservadas.": {
+      "pt-BR": "Aumente a mistura para ativar. Ajuste o foco à distância das gotas para revelar a distorção. Gotas procedurais fixas, com amostragem pela pupila; refração em espaço de imagem aproximada. Com depth, superfícies à frente da camada são preservadas.",
+      "en": "Increase blend to enable. Focus at the drop distance to reveal distortion. Fixed procedural drops sampled through the pupil; approximate image-space refraction. With depth, surfaces in front of the layer are preserved.",
+      "zh-CN": "提高混合量以启用。对焦到水滴距离以显示畸变。固定程序化水滴通过瞳孔采样，折射为图像空间近似。启用深度时保留图层前方的表面。"
+    },
+    "Automatico (CUDA / CPU)": {
+      "pt-BR": "Automatico (CUDA / CPU)",
+      "en": "Automatic (CUDA / CPU)",
+      "zh-CN": "自动（CUDA / CPU）"
+    },
+    "Automática · compatibilidade": {
+      "pt-BR": "Automática · compatibilidade",
+      "en": "Automatic · compatibility",
+      "zh-CN": "自动 · 兼容模式"
+    },
+    "Automática · oclusão por profundidade": {
+      "pt-BR": "Automática · oclusão por profundidade",
+      "en": "Automatic · depth occlusion",
+      "zh-CN": "自动 · 深度遮挡"
+    },
+    "Automático": {
+      "pt-BR": "Automático",
+      "en": "Automatic",
+      "zh-CN": "自动"
+    },
+    "BANCO DE LUZES / HDR SINTÉTICO": {
+      "pt-BR": "BANCO DE LUZES / HDR SINTÉTICO",
+      "en": "LIGHT BENCH / SYNTHETIC HDR",
+      "zh-CN": "光源测试台 / 合成 HDR"
+    },
+    "Base Only": {
+      "pt-BR": "Só base",
+      "en": "Base only",
+      "zh-CN": "仅基础图像"
+    },
+    "Bias": {
+      "pt-BR": "Deslocamento",
+      "en": "Bias",
+      "zh-CN": "偏移"
+    },
+    "Bias · deslocamento do mapa": {
+      "pt-BR": "Bias · deslocamento do mapa",
+      "en": "Bias · map offset",
+      "zh-CN": "偏移 · 深度图偏移"
+    },
+    "Biblioteca de lentes": {
+      "pt-BR": "Biblioteca de lentes",
+      "en": "Lens library",
+      "zh-CN": "镜头库"
+    },
+    "Biblioteca de perfis inválida.": {
+      "pt-BR": "Biblioteca de perfis inválida.",
+      "en": "Invalid profile library.",
+      "zh-CN": "配置库无效。"
+    },
+    "Blue": {
+      "pt-BR": "Azul",
+      "en": "Blue",
+      "zh-CN": "蓝色"
+    },
+    "Bokeh anamórfico": {
+      "pt-BR": "Bokeh anamórfico",
+      "en": "Anamorphic bokeh",
+      "zh-CN": "变形宽银幕散景"
+    },
+    "Bokeh giratório aplicado. Ajuste Swirl, Vinheta e Ampliação do bokeh; o foco e o depth foram mantidos.": {
+      "pt-BR": "Bokeh giratório aplicado. Ajuste Swirl, Vinheta e Ampliação do bokeh; o foco e o depth foram mantidos.",
+      "en": "Swirling bokeh applied. Adjust Swirl, Vignette and Bokeh enlargement; focus and depth were preserved.",
+      "zh-CN": "已应用旋转散景。可调整旋转、暗角和散景放大；焦点及深度保持不变。"
+    },
+    "Bokeh · borda": {
+      "pt-BR": "Bokeh · borda",
+      "en": "Bokeh · edge",
+      "zh-CN": "散景 · 边缘"
+    },
+    "Bokeh · centro": {
+      "pt-BR": "Bokeh · centro",
+      "en": "Bokeh · center",
+      "zh-CN": "散景 · 中心"
+    },
+    "Bokeh · frente": {
+      "pt-BR": "Bokeh · frente",
+      "en": "Bokeh · foreground",
+      "zh-CN": "散景 · 前景"
+    },
+    "Branco = mais sujeira; preto e transparência = vidro limpo. Textura ajustada a até 512 × 512 px, salva nos projetos e perfis. Para sujeira sutil, comece com intensidade de 0,15–0,30.": {
+      "pt-BR": "Branco = mais sujeira; preto e transparência = vidro limpo. Textura ajustada a até 512 × 512 px, salva nos projetos e perfis. Para sujeira sutil, comece com intensidade de 0,15–0,30.",
+      "en": "White = more dirt; black and transparency = clean glass. Texture resized to a maximum of 512 × 512 px and saved in projects and profiles. For subtle dirt, start at 0.15–0.30 intensity.",
+      "zh-CN": "白色表示更多污渍，黑色与透明表示干净玻璃。纹理最大为 512 × 512 像素，随项目和配置保存。轻微污渍建议从 0.15–0.30 强度开始。"
+    },
+    "Branco deixa passar luz; preto e transparência bloqueiam. PNG, JPG ou WebP: a máscara é ajustada a até 512 × 512 px. O desenho substitui as lâminas e é recortado pelo círculo da abertura. Use Rotação da íris para girá-lo. Salvo nos projetos e perfis.": {
+      "pt-BR": "Branco deixa passar luz; preto e transparência bloqueiam. PNG, JPG ou WebP: a máscara é ajustada a até 512 × 512 px. O desenho substitui as lâminas e é recortado pelo círculo da abertura. Use Rotação da íris para girá-lo. Salvo nos projetos e perfis.",
+      "en": "White transmits light; black and transparency block it. PNG, JPG or WebP: resized to a maximum of 512 × 512 px. The design replaces the blades and is clipped to the aperture circle. Use Iris rotation to rotate it. Saved in projects and profiles.",
+      "zh-CN": "白色透光，黑色与透明遮光。支持 PNG、JPG 或 WebP，最大调整为 512 × 512 像素。图案替代光圈叶片，并裁切到光圈圆内。用光圈旋转调整方向。随项目和配置保存。"
+    },
+    "Branco: 2 m · preto: 5 m": {
+      "pt-BR": "Branco: 2 m · preto: 5 m",
+      "en": "White: 2 m · black: 5 m",
+      "zh-CN": "白色：2 米 · 黑色：5 米"
+    },
+    "Branco: proximo (m)": {
+      "pt-BR": "Branco: proximo (m)",
+      "en": "White: near (m)",
+      "zh-CN": "白色：近端（米）"
+    },
+    "Bruxosdovfx Desfoque": {
+      "pt-BR": "Bruxosdovfx Desfoque",
+      "en": "Bruxosdovfx Defocus",
+      "zh-CN": "Bruxosdovfx 散焦"
+    },
+    "Buscar lente": {
+      "pt-BR": "Buscar lente",
+      "en": "Search lenses",
+      "zh-CN": "搜索镜头"
+    },
+    "Buscar modelo ou distância focal": {
+      "pt-BR": "Buscar modelo ou distância focal",
+      "en": "Search model or focal length",
+      "zh-CN": "搜索型号或焦距"
+    },
+    "CA axial (mm)": {
+      "pt-BR": "CA axial (mm)",
+      "en": "Axial CA (mm)",
+      "zh-CN": "轴向色差（毫米）"
+    },
+    "CA lateral azul": {
+      "pt-BR": "CA lateral azul",
+      "en": "Lateral CA · red",
+      "zh-CN": "横向色差 · 红"
+    },
+    "CA lateral vermelha": {
+      "pt-BR": "CA lateral vermelha",
+      "en": "Lateral CA · blue",
+      "zh-CN": "横向色差 · 蓝"
+    },
+    "CA lateral · azul/amarelo %": {
+      "pt-BR": "CA lateral · azul/amarelo %",
+      "en": "Lateral CA · blue/yellow %",
+      "zh-CN": "横向色差 · 蓝/黄 %"
+    },
+    "CA lateral · vermelho/ciano %": {
+      "pt-BR": "CA lateral · vermelho/ciano %",
+      "en": "Lateral CA · red/cyan %",
+      "zh-CN": "横向色差 · 红/青 %"
+    },
+    "CA longitudinal · foco RGB mm": {
+      "pt-BR": "CA longitudinal · foco RGB mm",
+      "en": "Longitudinal CA · RGB focus mm",
+      "zh-CN": "纵向色差 · RGB 焦点毫米"
+    },
+    "CPU · Vulkan indisponível": {
+      "pt-BR": "CPU · Vulkan indisponível",
+      "en": "CPU · Vulkan unavailable",
+      "zh-CN": "CPU · Vulkan 不可用"
+    },
+    "CPU · fallback após falha Vulkan": {
+      "pt-BR": "CPU · fallback após falha Vulkan",
+      "en": "CPU · fallback after Vulkan failure",
+      "zh-CN": "CPU · Vulkan 失败后回退"
+    },
+    "CPU · referência": {
+      "pt-BR": "CPU · referência",
+      "en": "CPU · reference",
+      "zh-CN": "CPU · 参考"
+    },
+    "CUDA indisponível": {
+      "pt-BR": "CUDA indisponível",
+      "en": "CUDA unavailable",
+      "zh-CN": "CUDA 不可用"
+    },
+    "CUDA indisponível · WebGL ativo": {
+      "pt-BR": "CUDA indisponível · WebGL ativo",
+      "en": "CUDA unavailable · WebGL active",
+      "zh-CN": "CUDA 不可用 · WebGL 已启用"
+    },
+    "CUDA · ${result.device} · ${result.gpuMs.toFixed(1)} ms GPU · ${result.samples} amostras": {
+      "pt-BR": "CUDA · ${result.device} · ${result.gpuMs.toFixed(1)} ms GPU · ${result.samples} amostras",
+      "en": "CUDA · ${result.device} · ${result.gpuMs.toFixed(1)} ms GPU · ${result.samples} samples",
+      "zh-CN": "CUDA · ${result.device} · GPU ${result.gpuMs.toFixed(1)} 毫秒 · ${result.samples} 个采样"
+    },
+    "Cada ponto traça os vidros; os pixels entre eles interpolam o resultado. Mais pontos preservam melhor as variações nas bordas e exigem mais tempo ao recalcular a lente.": {
+      "pt-BR": "Cada ponto traça os vidros; os pixels entre eles interpolam o resultado. Mais pontos preservam melhor as variações nas bordas e exigem mais tempo ao recalcular a lente.",
+      "en": "Each point traces the glass; intermediate pixels interpolate the result. More points preserve edge variations better and take longer to recalculate the lens.",
+      "zh-CN": "每个点追踪镜片，中间像素插值结果。更多点能更好地保留边缘变化，但镜头重新计算耗时更长。"
+    },
+    "Calculando o desfoque…": {
+      "pt-BR": "Calculando o desfoque…",
+      "en": "Calculating defocus…",
+      "zh-CN": "正在计算散焦…"
+    },
+    "Camada Depth": {
+      "pt-BR": "Camada Depth",
+      "en": "Depth layer",
+      "zh-CN": "深度图层"
+    },
+    "Camadas A / B / C": {
+      "pt-BR": "Camadas A / B / C",
+      "en": "Layers A / B / C",
+      "zh-CN": "图层 A / B / C"
+    },
+    "Campo 84%": {
+      "pt-BR": "Campo 84%",
+      "en": "Field 84%",
+      "zh-CN": "视场 84%"
+    },
+    "Campo optico": {
+      "pt-BR": "Campo optico",
+      "en": "Optical field",
+      "zh-CN": "光学视场"
+    },
+    "Canal": {
+      "pt-BR": "Canal",
+      "en": "Channel",
+      "zh-CN": "通道"
+    },
+    "Cancelar depth": {
+      "pt-BR": "Cancelar depth",
+      "en": "Cancel depth",
+      "zh-CN": "取消深度生成"
+    },
+    "Cancelar instalação": {
+      "pt-BR": "Cancelar instalação",
+      "en": "Cancel installation",
+      "zh-CN": "取消安装"
+    },
+    "Cancelar processamento": {
+      "pt-BR": "Cancelar processamento",
+      "en": "Cancel processing",
+      "zh-CN": "取消处理"
+    },
+    "Carregar JSON": {
+      "pt-BR": "Carregar JSON",
+      "en": "Load JSON",
+      "zh-CN": "加载 JSON"
+    },
+    "Caráter criativo": {
+      "pt-BR": "Caráter criativo",
+      "en": "Creative character",
+      "zh-CN": "创意风格"
+    },
+    "Cena de teste": {
+      "pt-BR": "Cena de teste",
+      "en": "Test scene",
+      "zh-CN": "测试场景"
+    },
+    "Centro": {
+      "pt-BR": "Centro",
+      "en": "Center",
+      "zh-CN": "中心"
+    },
+    "Channel": {
+      "pt-BR": "Canal",
+      "en": "Channel",
+      "zh-CN": "通道"
+    },
+    "Cinema e luz baixa": {
+      "pt-BR": "Cinema e luz baixa",
+      "en": "Cinema and low light",
+      "zh-CN": "电影与弱光"
+    },
+    "Circular": {
+      "pt-BR": "Circular",
+      "en": "Circular",
+      "zh-CN": "圆形"
+    },
+    "Clique em uma pessoa ou objeto da imagem para focar usando o mapa de profundidade.": {
+      "pt-BR": "Clique em uma pessoa ou objeto da imagem para focar usando o mapa de profundidade.",
+      "en": "Click a person or object to focus using the depth map.",
+      "zh-CN": "点击人物或物体，通过深度图对焦。"
+    },
+    "Clique na imagem · cancelar": {
+      "pt-BR": "Clique na imagem · cancelar",
+      "en": "Click the image · cancel",
+      "zh-CN": "点击图像 · 取消"
+    },
+    "Coating AR · cobertura idealizada": {
+      "pt-BR": "Coating AR · cobertura idealizada",
+      "en": "AR coating · idealized coverage",
+      "zh-CN": "增透膜 · 理想覆盖率"
+    },
+    "Coating · comprimento de projeto nm": {
+      "pt-BR": "Coating · comprimento de projeto nm",
+      "en": "Coating · design wavelength nm",
+      "zh-CN": "镀膜 · 设计波长纳米"
+    },
+    "Coating: camada AR idealizada aplicada à transmissão traçada. Ghosts: intensidade por pares de superfícies, posição aproximada. Reflexos e difração acompanham o foco e o depth das altas luzes. Raios de difração: abertura e escala física como base, ganho/escala visual criativos. Ainda sem calibração de produção.": {
+      "pt-BR": "Coating: camada AR idealizada aplicada à transmissão traçada. Ghosts: intensidade por pares de superfícies, posição aproximada. Reflexos e difração acompanham o foco e o depth das altas luzes. Raios de difração: abertura e escala física como base, ganho/escala visual criativos. Ainda sem calibração de produção.",
+      "en": "Coating: idealized AR layer applied to traced transmission. Ghost intensity uses surface pairs with approximate positions. Reflections and diffraction follow highlight focus and depth. Diffraction rays use aperture and physical scale as a basis, with creative gain and visual scale. Not yet production-calibrated.",
+      "zh-CN": "镀膜为追踪透射中的理想增透层。鬼影强度基于表面对，位置为近似。反射和衍射随高光焦点及深度变化。衍射光芒以光圈和物理尺度为基础，增益与视觉尺度可创意调整。尚未进行生产校准。"
+    },
+    "Codec de vídeo de depth não suportado. Use MP4 H.264 ou WebM.": {
+      "pt-BR": "Codec de vídeo de depth não suportado. Use MP4 H.264 ou WebM.",
+      "en": "Depth video codec unsupported. Use MP4 H.264 or WebM.",
+      "zh-CN": "不支持此深度视频编码。请使用 MP4 H.264 或 WebM。"
+    },
+    "Codec de vídeo não suportado pelo navegador. Tente MP4 H.264 ou WebM.": {
+      "pt-BR": "Codec de vídeo não suportado pelo navegador. Tente MP4 H.264 ou WebM.",
+      "en": "Video codec unsupported by this browser. Try MP4 H.264 or WebM.",
+      "zh-CN": "浏览器不支持此视频编码。请尝试 MP4 H.264 或 WebM。"
+    },
+    "Coloque o depth em uma camada deste documento. Ela pode ficar oculta.": {
+      "pt-BR": "Coloque o depth em uma camada deste documento. Ela pode ficar oculta.",
+      "en": "Place depth on a layer in this document. It may be hidden.",
+      "zh-CN": "将深度图放在此文档的一个图层中，可保持隐藏。"
+    },
+    "Coma": {
+      "pt-BR": "Coma",
+      "en": "Coma",
+      "zh-CN": "彗差"
+    },
+    "Coma adicional": {
+      "pt-BR": "Coma adicional",
+      "en": "Additional coma",
+      "zh-CN": "附加彗差"
+    },
+    "Compatibilidade Depth Cut": {
+      "pt-BR": "Compatibilidade Depth Cut",
+      "en": "Depth Cut compatibility",
+      "zh-CN": "深度分割兼容"
+    },
+    "Compensar foco pelos raios da lente": {
+      "pt-BR": "Compensar foco pelos raios da lente",
+      "en": "Compensate focus using lens rays",
+      "zh-CN": "根据镜头光线补偿焦点"
+    },
+    "Complementos IA sob demanda · até 3000 frames / 500 MB, mapas até 640 px. Primeiro uso baixa os pesos do modelo; requer internet e espaço em disco. DA2 Large: pesos CC-BY-NC-4.0.": {
+      "pt-BR": "Complementos IA sob demanda · até 3000 frames / 500 MB, mapas até 640 px. Primeiro uso baixa os pesos do modelo; requer internet e espaço em disco. DA2 Large: pesos CC-BY-NC-4.0.",
+      "en": "AI add-ons on demand · up to 3000 frames / 500 MB, maps up to 640 px. First use downloads model weights; internet and disk space required. DA2 Large weights: CC-BY-NC-4.0.",
+      "zh-CN": "按需安装 AI 组件，最多 3000 帧 / 500 MB，深度图最大 640 像素。首次使用下载模型权重，需要网络和磁盘空间。DA2 Large 权重许可：CC-BY-NC-4.0。"
+    },
+    "Complementos instalados": {
+      "pt-BR": "Complementos instalados",
+      "en": "Add-ons installed",
+      "zh-CN": "扩展组件已安装"
+    },
+    "Composicao de profundidade": {
+      "pt-BR": "Composicao de profundidade",
+      "en": "Depth compositing",
+      "zh-CN": "深度合成"
+    },
+    "Composição de profundidade": {
+      "pt-BR": "Composição de profundidade",
+      "en": "Depth compositing",
+      "zh-CN": "深度合成"
+    },
+    "Configuração do perfil inválida.": {
+      "pt-BR": "Configuração do perfil inválida.",
+      "en": "Invalid profile settings.",
+      "zh-CN": "配置设置无效。"
+    },
+    "Configuração salva do perfil restaurada.": {
+      "pt-BR": "Configuração salva do perfil restaurada.",
+      "en": "Saved profile settings restored.",
+      "zh-CN": "已恢复保存的配置设置。"
+    },
+    "Controles de depth inválidos.": {
+      "pt-BR": "Controles de depth inválidos.",
+      "en": "Invalid depth controls.",
+      "zh-CN": "深度控件无效。"
+    },
+    "Convolução GPU ${result.gpuMs.toFixed(1)} ms · campo ${atlas.grid} × ${atlas.grid} · ${result.samples} amostras": {
+      "pt-BR": "Convolução GPU ${result.gpuMs.toFixed(1)} ms · campo ${atlas.grid} × ${atlas.grid} · ${result.samples} amostras",
+      "en": "GPU convolution ${result.gpuMs.toFixed(1)} ms · field ${atlas.grid} × ${atlas.grid} · ${result.samples} samples",
+      "zh-CN": "GPU 卷积 ${result.gpuMs.toFixed(1)} 毫秒 · 视场 ${atlas.grid} × ${atlas.grid} · ${result.samples} 个采样"
+    },
+    "Cor prismática do glitter": {
+      "pt-BR": "Cor prismática do glitter",
+      "en": "Glitter prismatic color",
+      "zh-CN": "闪粉棱镜色"
+    },
+    "Corrige o deslocamento entre o foco paraxial e o maior concentração central dos raios transmitidos. Mantém aberrações e caráter Soft Focus.": {
+      "pt-BR": "Corrige o deslocamento entre o foco paraxial e o maior concentração central dos raios transmitidos. Mantém aberrações e caráter Soft Focus.",
+      "en": "Corrects the offset between paraxial focus and the strongest central concentration of transmitted rays. Preserves aberrations and Soft Focus character.",
+      "zh-CN": "校正近轴焦点与透射光线最大中心聚集位置之间的偏移。保留像差和柔焦风格。"
+    },
+    "Coverage": {
+      "pt-BR": "Cobertura",
+      "en": "Coverage",
+      "zh-CN": "覆盖范围"
+    },
+    "Curvatura - multiplicador": {
+      "pt-BR": "Curvatura - multiplicador",
+      "en": "Curvature multiplier",
+      "zh-CN": "曲率倍率"
+    },
+    "Curvatura · mm": {
+      "pt-BR": "Curvatura · mm",
+      "en": "Curvature · mm",
+      "zh-CN": "曲率 · 毫米"
+    },
+    "DENTRO DA LENTE": {
+      "pt-BR": "DENTRO DA LENTE",
+      "en": "INSIDE THE LENS",
+      "zh-CN": "镜头内部"
+    },
+    "DIÂMETRO ESTIMADO / CENTRO": {
+      "pt-BR": "DIÂMETRO ESTIMADO / CENTRO",
+      "en": "ESTIMATED DIAMETER / CENTER",
+      "zh-CN": "估算直径 / 中心"
+    },
+    "DVD 1.1 · vídeo temporal": {
+      "pt-BR": "DVD 1.1 · vídeo temporal",
+      "en": "DVD 1.1 · temporal video",
+      "zh-CN": "DVD 1.1 · 时序视频"
+    },
+    "Deakinizer · aproximação criativa sobre Double-Gauss. Centro preservado, bordas alongadas por Swirl e Coma; sem calibração da lente reconstruída.": {
+      "pt-BR": "Deakinizer · aproximação criativa sobre Double-Gauss. Centro preservado, bordas alongadas por Swirl e Coma; sem calibração da lente reconstruída.",
+      "en": "Deakinizer · creative approximation on Double-Gauss. Center preserved; edges stretched by Swirl and Coma. No reconstructed-lens calibration.",
+      "zh-CN": "Deakinizer · 基于双高斯的创意近似。保留中心，旋转和彗差拉伸边缘。未经重建镜头校准。"
+    },
+    "Deformação da luz ativada no desfoque. Ajuste as dobras e a dispersão; foco e depth mantidos.": {
+      "pt-BR": "Deformação da luz ativada no desfoque. Ajuste as dobras e a dispersão; foco e depth mantidos.",
+      "en": "Light deformation enabled in defocus. Adjust folds and dispersion; focus and depth preserved.",
+      "zh-CN": "散焦光线变形已启用。调整折叠与色散；焦点和深度保持不变。"
+    },
+    "Deformação da luz · dobras": {
+      "pt-BR": "Deformação da luz · dobras",
+      "en": "Light deformation · folds",
+      "zh-CN": "光线变形 · 折叠"
+    },
+    "Deformação · dispersão de cor": {
+      "pt-BR": "Deformação · dispersão de cor",
+      "en": "Deformation · color dispersion",
+      "zh-CN": "变形 · 色散"
+    },
+    "Demo: branco / objeto ${near.toFixed(2)} m · preto / luzes ${far.toFixed(2)} m": {
+      "pt-BR": "Demo: branco / objeto ${near.toFixed(2)} m · preto / luzes ${far.toFixed(2)} m",
+      "en": "Demo: white / object ${near.toFixed(2)} m · black / lights ${far.toFixed(2)} m",
+      "zh-CN": "演示：白色物体 ${near.toFixed(2)} 米 · 黑色光源 ${far.toFixed(2)} 米"
+    },
+    "Demo: objeto ${near.toFixed(2)} m; luzes ${far.toFixed(2)} m. Ajuste os limites abaixo do controle de foco.": {
+      "pt-BR": "Demo: objeto ${near.toFixed(2)} m; luzes ${far.toFixed(2)} m. Ajuste os limites abaixo do controle de foco.",
+      "en": "Demo: object ${near.toFixed(2)} m; lights ${far.toFixed(2)} m. Adjust the limits below focus.",
+      "zh-CN": "演示：物体 ${near.toFixed(2)} 米，光源 ${far.toFixed(2)} 米。可在对焦控件下调整范围。"
+    },
+    "Demo: objeto a 2 m; luzes a 5 m.": {
+      "pt-BR": "Demo: objeto a 2 m; luzes a 5 m.",
+      "en": "Demo: object at 2 m; lights at 5 m.",
+      "zh-CN": "演示：物体 2 米，光源 5 米。"
+    },
+    "Densidade": {
+      "pt-BR": "Densidade",
+      "en": "Density",
+      "zh-CN": "密度"
+    },
+    "Depth Cut": {
+      "pt-BR": "Depth Cut",
+      "en": "Depth Cut",
+      "zh-CN": "深度分割"
+    },
+    "Depth Cut + Eclipsed bokeh": {
+      "pt-BR": "Depth Cut + Eclipsed bokeh",
+      "en": "Depth Cut + Eclipsed bokeh",
+      "zh-CN": "深度分割与散景遮挡"
+    },
+    "Depth Cut · posição": {
+      "pt-BR": "Depth Cut · posição",
+      "en": "Depth Cut · position",
+      "zh-CN": "深度分割 · 位置"
+    },
+    "Depth Cut · suavidade": {
+      "pt-BR": "Depth Cut · suavidade",
+      "en": "Depth Cut · softness",
+      "zh-CN": "深度分割 · 柔度"
+    },
+    "Depth Cut · sujeito / fundo": {
+      "pt-BR": "Depth Cut · sujeito / fundo",
+      "en": "Depth Cut · subject / background",
+      "zh-CN": "深度分割 · 主体/背景"
+    },
+    "Depth Layer A": {
+      "pt-BR": "Depth da camada A",
+      "en": "Layer A depth",
+      "zh-CN": "图层 A 深度"
+    },
+    "Depth Layer B": {
+      "pt-BR": "Depth da camada B",
+      "en": "Layer B depth",
+      "zh-CN": "图层 B 深度"
+    },
+    "Depth Layer C": {
+      "pt-BR": "Depth da camada C",
+      "en": "Layer C depth",
+      "zh-CN": "图层 C 深度"
+    },
+    "Depth Slicing": {
+      "pt-BR": "Depth Slicing",
+      "en": "Depth Slicing",
+      "zh-CN": "深度切片"
+    },
+    "Depth Slicing · rampas / vários planos": {
+      "pt-BR": "Depth Slicing · rampas / vários planos",
+      "en": "Depth Slicing · ramps / multiple planes",
+      "zh-CN": "深度切片 · 渐变/多平面"
+    },
+    "Depth da Source se pin vazio": {
+      "pt-BR": "Depth da Source se pin vazio",
+      "en": "Use Source depth if pin is empty",
+      "zh-CN": "空输入时使用源深度"
+    },
+    "Depth da imagem se camada vazia": {
+      "pt-BR": "Depth da imagem se camada vazia",
+      "en": "Use image depth if layer is empty",
+      "zh-CN": "空图层时使用图像深度"
+    },
+    "Depth em metros (mapa / Cut)": {
+      "pt-BR": "Depth em metros (mapa / Cut)",
+      "en": "Depth in meters (map / Cut)",
+      "zh-CN": "深度单位米（图/切割）"
+    },
+    "Depth externo por tempo do vídeo principal · início em 0 s": {
+      "pt-BR": "Depth externo por tempo do vídeo principal · início em 0 s",
+      "en": "External depth follows main video time · starts at 0 s",
+      "zh-CN": "外部深度跟随主视频时间，从 0 秒开始"
+    },
+    "Depth incompleto": {
+      "pt-BR": "Depth incompleto",
+      "en": "Incomplete depth",
+      "zh-CN": "深度不完整"
+    },
+    "Depth por frame · ": {
+      "pt-BR": "Depth por frame · ",
+      "en": "Depth per frame · ",
+      "zh-CN": "逐帧深度 · "
+    },
+    "Descentramento p₁": {
+      "pt-BR": "Descentramento p₁",
+      "en": "Decentering p₁",
+      "zh-CN": "偏心 p₁"
+    },
+    "Descentramento p₂": {
+      "pt-BR": "Descentramento p₂",
+      "en": "Decentering p₂",
+      "zh-CN": "偏心 p₂"
+    },
+    "Desenho, raios e imagem atualizados · ": {
+      "pt-BR": "Desenho, raios e imagem atualizados · ",
+      "en": "Drawing, rays and image updated · ",
+      "zh-CN": "图示、光线和图像已更新 · "
+    },
+    "Desfoque aplicado em uma nova camada. Use a visibilidade da camada para comparar.": {
+      "pt-BR": "Desfoque aplicado em uma nova camada. Use a visibilidade da camada para comparar.",
+      "en": "Defocus applied to a new layer. Toggle layer visibility to compare.",
+      "zh-CN": "散焦已应用到新图层。切换图层可见性以比较。"
+    },
+    "Desfoque da Bruxosdovfx": {
+      "pt-BR": "Desfoque da Bruxosdovfx",
+      "en": "Bruxosdovfx Defocus",
+      "zh-CN": "Bruxosdovfx 散焦"
+    },
+    "Desligado. Escolher um modo ativa 1 mm; intensidade zero desativa.": {
+      "pt-BR": "Desligado. Escolher um modo ativa 1 mm; intensidade zero desativa.",
+      "en": "Off. Choosing a mode enables 1 mm; zero intensity disables it.",
+      "zh-CN": "已关闭。选择模式会启用 1 毫米；零强度关闭。"
+    },
+    "Desmarcado: valores maiores = mais perto. Gain/Bias não convertem automaticamente mapas relativos em metros. Demo interno usa branco = perto.": {
+      "pt-BR": "Desmarcado: valores maiores = mais perto. Gain/Bias não convertem automaticamente mapas relativos em metros. Demo interno usa branco = perto.",
+      "en": "Unchecked: higher values = nearer. Gain/Bias do not automatically convert relative maps to meters. The built-in demo uses white = near.",
+      "zh-CN": "未选中时，数值越大越近。增益和偏移不会自动将相对深度转换为米。内置演示使用白色表示近端。"
+    },
+    "Diafragma (f/)": {
+      "pt-BR": "Diafragma (f/)",
+      "en": "Aperture (f/)",
+      "zh-CN": "光圈（f/）"
+    },
+    "Diafragma e formato": {
+      "pt-BR": "Diafragma e formato",
+      "en": "Aperture and shape",
+      "zh-CN": "光圈与形状"
+    },
+    "Diametro - multiplicador": {
+      "pt-BR": "Diametro - multiplicador",
+      "en": "Diameter multiplier",
+      "zh-CN": "直径倍率"
+    },
+    "Difração e ghosts na prévia GPU como modelos controláveis, ainda aproximados.": {
+      "pt-BR": "Difração e ghosts na prévia GPU como modelos controláveis, ainda aproximados.",
+      "en": "Diffraction and ghosts in GPU preview are controllable, approximate models.",
+      "zh-CN": "GPU 预览中的衍射和鬼影为可调近似模型。"
+    },
+    "Difração · escala visual": {
+      "pt-BR": "Difração · escala visual",
+      "en": "Diffraction · visual scale",
+      "zh-CN": "衍射 · 视觉尺度"
+    },
+    "Difração · ganho dos raios": {
+      "pt-BR": "Difração · ganho dos raios",
+      "en": "Diffraction · ray gain",
+      "zh-CN": "衍射 · 光芒增益"
+    },
+    "Difração, reflexos e coatings": {
+      "pt-BR": "Difração, reflexos e coatings",
+      "en": "Diffraction, reflections and coatings",
+      "zh-CN": "衍射、反射与镀膜"
+    },
+    "Difusão aproximada": {
+      "pt-BR": "Difusão aproximada",
+      "en": "Approximate diffusion",
+      "zh-CN": "近似扩散"
+    },
+    "Discos alongados em torno do centro e vinheta nas bordas. Use depth e ajuste o foco no assunto. Mantém a lente, as distâncias e o mapa carregado. Swirl e vinheta são reguláveis; aparência criativa inspirada em Petzval, sem calibração de uma lente específica.": {
+      "pt-BR": "Discos alongados em torno do centro e vinheta nas bordas. Use depth e ajuste o foco no assunto. Mantém a lente, as distâncias e o mapa carregado. Swirl e vinheta são reguláveis; aparência criativa inspirada em Petzval, sem calibração de uma lente específica.",
+      "en": "Discs stretch around the center with edge vignetting. Use depth and focus on the subject. Lens, distances and loaded map are preserved. Swirl and vignette are adjustable; creative Petzval-inspired appearance, without specimen calibration.",
+      "zh-CN": "光斑绕中心拉伸，边缘产生暗角。启用深度并对焦主体。保留镜头、距离和已加载深度图。旋转与暗角可调，是受 Petzval 启发的创意外观，未经实物校准。"
+    },
+    "Dispersao cromatica": {
+      "pt-BR": "Dispersao cromatica",
+      "en": "Chromatic dispersion",
+      "zh-CN": "色散"
+    },
+    "Dispersão / fringe · proxy": {
+      "pt-BR": "Dispersão / fringe · proxy",
+      "en": "Dispersion / fringe · proxy",
+      "zh-CN": "色散/彩边 · 近似"
+    },
+    "Dispersão das altas luzes": {
+      "pt-BR": "Dispersão das altas luzes",
+      "en": "Highlight dispersion",
+      "zh-CN": "高光色散"
+    },
+    "Distancia sem depth (m)": {
+      "pt-BR": "Distancia sem depth (m)",
+      "en": "Distance without depth (m)",
+      "zh-CN": "无深度距离（米）"
+    },
+    "Distorcao K1": {
+      "pt-BR": "Distorcao K1",
+      "en": "Distortion K1",
+      "zh-CN": "畸变 K1"
+    },
+    "Distorcao K2": {
+      "pt-BR": "Distorcao K2",
+      "en": "Distortion K2",
+      "zh-CN": "畸变 K2"
+    },
+    "Distorcao do vidro (px)": {
+      "pt-BR": "Distorcao do vidro (px)",
+      "en": "Glass distortion (px)",
+      "zh-CN": "玻璃畸变（像素）"
+    },
+    "Distorção geométrica": {
+      "pt-BR": "Distorção geométrica",
+      "en": "Geometric distortion",
+      "zh-CN": "几何畸变"
+    },
+    "Distribuição das manchas · seed": {
+      "pt-BR": "Distribuição das manchas · seed",
+      "en": "Dirt distribution · seed",
+      "zh-CN": "污渍分布 · 随机种子"
+    },
+    "Distribuição · seed": {
+      "pt-BR": "Distribuição · seed",
+      "en": "Distribution · seed",
+      "zh-CN": "分布 · 随机种子"
+    },
+    "Distância da camada · m": {
+      "pt-BR": "Distância da camada · m",
+      "en": "Layer distance · m",
+      "zh-CN": "图层距离 · 米"
+    },
+    "Distância das gotas · m": {
+      "pt-BR": "Distância das gotas · m",
+      "en": "Drop distance · m",
+      "zh-CN": "水滴距离 · 米"
+    },
+    "Distância de foco · m": {
+      "pt-BR": "Distância de foco · m",
+      "en": "Focus distance · m",
+      "zh-CN": "对焦距离 · 米"
+    },
+    "Distância do plano · m": {
+      "pt-BR": "Distância do plano · m",
+      "en": "Plane distance · m",
+      "zh-CN": "平面距离 · 米"
+    },
+    "Dither Amount": {
+      "pt-BR": "Intensidade do dither",
+      "en": "Dither amount",
+      "zh-CN": "抖动量"
+    },
+    "Dither fixo": {
+      "pt-BR": "Dither fixo",
+      "en": "Fixed dither",
+      "zh-CN": "固定抖动"
+    },
+    "Dither no bokeh": {
+      "pt-BR": "Dither no bokeh",
+      "en": "Bokeh dither",
+      "zh-CN": "散景抖动"
+    },
+    "Divisor antes e depois": {
+      "pt-BR": "Divisor antes e depois",
+      "en": "Before / after divider",
+      "zh-CN": "前后对比滑块"
+    },
+    "Diâmetro livre": {
+      "pt-BR": "Diâmetro livre",
+      "en": "Clear diameter",
+      "zh-CN": "有效直径"
+    },
+    "Diâmetro · mm": {
+      "pt-BR": "Diâmetro · mm",
+      "en": "Diameter · mm",
+      "zh-CN": "直径 · 毫米"
+    },
+    "Dobras e bordas coloridas dentro do bokeh, variando com a profundidade e a posição no quadro. Zero desativa. Atua no desfoque, sem deformação adicional no plano focado. Aproximação criativa de cáusticas; altas luzes se somam em luz linear.": {
+      "pt-BR": "Dobras e bordas coloridas dentro do bokeh, variando com a profundidade e a posição no quadro. Zero desativa. Atua no desfoque, sem deformação adicional no plano focado. Aproximação criativa de cáusticas; altas luzes se somam em luz linear.",
+      "en": "Folds and colored edges inside bokeh vary with depth and frame position. Zero disables it. Acts in defocus without extra deformation at focus. Creative caustic approximation; highlights add in linear light.",
+      "zh-CN": "散景中的折叠和彩边随深度及画面位置变化。零值关闭。仅作用于散焦，合焦处不额外变形。为焦散的创意近似；高光在线性光空间相加。"
+    },
+    "Double-Gauss 50,36 mm · prescrição pública.": {
+      "pt-BR": "Double-Gauss 50,36 mm · prescrição pública.",
+      "en": "Double-Gauss 50.36 mm · public prescription.",
+      "zh-CN": "双高斯 50.36 毫米 · 公开处方。"
+    },
+    "Draft": {
+      "pt-BR": "Rascunho",
+      "en": "Draft",
+      "zh-CN": "草稿"
+    },
+    "Draft para reprodução; Fast ou Medium para trabalhar; High ou Very High para revisar; Extreme para imagens estáticas.": {
+      "pt-BR": "Draft para reprodução; Fast ou Medium para trabalhar; High ou Very High para revisar; Extreme para imagens estáticas.",
+      "en": "Draft for playback; Fast or Medium for editing; High or Very High for review; Extreme for still images.",
+      "zh-CN": "播放用草稿，编辑用快速或中等，检查用高或极高，静态图像用极限质量。"
+    },
+    "Draft · 24 amostras": {
+      "pt-BR": "Draft · 24 amostras",
+      "en": "Draft · 24 samples",
+      "zh-CN": "草稿 · 24 个采样"
+    },
+    "Duração de vídeo inválida.": {
+      "pt-BR": "Duração de vídeo inválida.",
+      "en": "Invalid video duration.",
+      "zh-CN": "视频时长无效。"
+    },
+    "Dê um nome ao seu perfil.": {
+      "pt-BR": "Dê um nome ao seu perfil.",
+      "en": "Give your profile a name.",
+      "zh-CN": "请为配置命名。"
+    },
+    "ENTRADA": {
+      "pt-BR": "ENTRADA",
+      "en": "INPUT",
+      "zh-CN": "输入"
+    },
+    "Eclipsar bokeh · oclusão por pupila": {
+      "pt-BR": "Eclipsar bokeh · oclusão por pupila",
+      "en": "Eclipse bokeh · pupil occlusion",
+      "zh-CN": "散景遮挡 · 瞳孔遮挡"
+    },
+    "Eclipsed bokeh": {
+      "pt-BR": "Eclipsed bokeh",
+      "en": "Eclipsed bokeh",
+      "zh-CN": "散景遮挡"
+    },
+    "Edite um valor válido: o desenho, os raios e a imagem são atualizados automaticamente.": {
+      "pt-BR": "Edite um valor válido: o desenho, os raios e a imagem são atualizados automaticamente.",
+      "en": "Enter a valid value: drawing, rays and image update automatically.",
+      "zh-CN": "输入有效数值，图示、光线和图像会自动更新。"
+    },
+    "Editor visual da lente: selecione uma curva e arraste as alças": {
+      "pt-BR": "Editor visual da lente: selecione uma curva e arraste as alças",
+      "en": "Visual lens editor: select a curve and drag its handles",
+      "zh-CN": "镜头可视编辑器：选择曲线并拖动控制柄"
+    },
+    "Efeitos criativos": {
+      "pt-BR": "Efeitos criativos",
+      "en": "Creative effects",
+      "zh-CN": "创意效果"
+    },
+    "Encerrar motor": {
+      "pt-BR": "Encerrar motor",
+      "en": "Stop engine",
+      "zh-CN": "停止引擎"
+    },
+    "Encoder WebM indisponível.": {
+      "pt-BR": "Encoder WebM indisponível.",
+      "en": "WebM encoder unavailable.",
+      "zh-CN": "WebM 编码器不可用。"
+    },
+    "Enviando mídia ao motor local…": {
+      "pt-BR": "Enviando mídia ao motor local…",
+      "en": "Sending media to local engine…",
+      "zh-CN": "正在将媒体发送到本地引擎…"
+    },
+    "Erro na gravação: ": {
+      "pt-BR": "Erro na gravação: ",
+      "en": "Recording error: ",
+      "zh-CN": "录制错误："
+    },
+    "Escala das manchas procedurais": {
+      "pt-BR": "Escala das manchas procedurais",
+      "en": "Procedural dirt scale",
+      "zh-CN": "程序化污渍尺度"
+    },
+    "Escala do bokeh": {
+      "pt-BR": "Escala do bokeh",
+      "en": "Bokeh scale",
+      "zh-CN": "散景尺度"
+    },
+    "Escala · px em largura 1080": {
+      "pt-BR": "Escala · px em largura 1080",
+      "en": "Scale · px at 1080 width",
+      "zh-CN": "尺度 · 1080 宽度下的像素"
+    },
+    "Escolha a camada de imagem.": {
+      "pt-BR": "Escolha a camada de imagem.",
+      "en": "Choose the image layer.",
+      "zh-CN": "请选择图像图层。"
+    },
+    "Escolha uma camada de depth ou desative Usar depth.": {
+      "pt-BR": "Escolha uma camada de depth ou desative Usar depth.",
+      "en": "Choose a depth layer or disable Use depth.",
+      "zh-CN": "请选择深度图层，或关闭使用深度。"
+    },
+    "Escolha uma imagem e um mapa de profundidade.": {
+      "pt-BR": "Escolha uma imagem e um mapa de profundidade.",
+      "en": "Choose an image and a depth map.",
+      "zh-CN": "请选择图像和深度图。"
+    },
+    "Esférica primária · sinal ±": {
+      "pt-BR": "Esférica primária · sinal ±",
+      "en": "Primary spherical · signed ±",
+      "zh-CN": "初级球差 · 正负 ±"
+    },
+    "Esférica secundária · sinal ±": {
+      "pt-BR": "Esférica secundária · sinal ±",
+      "en": "Secondary spherical · signed ±",
+      "zh-CN": "次级球差 · 正负 ±"
+    },
+    "Espacamento - multiplicador": {
+      "pt-BR": "Espacamento - multiplicador",
+      "en": "Spacing multiplier",
+      "zh-CN": "间距倍率"
+    },
+    "Espessura ou espaço até a próxima superfície": {
+      "pt-BR": "Espessura ou espaço até a próxima superfície",
+      "en": "Thickness or gap to the next surface",
+      "zh-CN": "厚度或到下一表面的间距"
+    },
+    "Espessura seguinte · mm": {
+      "pt-BR": "Espessura seguinte · mm",
+      "en": "Next thickness · mm",
+      "zh-CN": "下一厚度 · 毫米"
+    },
+    "Esta GPU não suporta a qualidade de exportação escolhida. Selecione um nível menor.": {
+      "pt-BR": "Esta GPU não suporta a qualidade de exportação escolhida. Selecione um nível menor.",
+      "en": "This GPU does not support the chosen export quality. Select a lower level.",
+      "zh-CN": "此 GPU 不支持所选导出质量。请选择较低等级。"
+    },
+    "Esta versão aceita até 8 megapixels e 8192 pixels por lado.": {
+      "pt-BR": "Esta versão aceita até 8 megapixels e 8192 pixels por lado.",
+      "en": "This version supports up to 8 megapixels and 8192 pixels per side.",
+      "zh-CN": "此版本最大支持 800 万像素，每边最多 8192 像素。"
+    },
+    "Este navegador não suporta gravação do canvas.": {
+      "pt-BR": "Este navegador não suporta gravação do canvas.",
+      "en": "This browser cannot record the canvas.",
+      "zh-CN": "此浏览器不支持画布录制。"
+    },
+    "Estudo criativo sobre Double-Gauss.": {
+      "pt-BR": "Estudo criativo sobre Double-Gauss.",
+      "en": "Creative study based on Double-Gauss.",
+      "zh-CN": "基于双高斯的创意研究。"
+    },
+    "Ex.: Biotar, 135": {
+      "pt-BR": "Ex.: Biotar, 135",
+      "en": "E.g. Biotar, 135",
+      "zh-CN": "例如：Biotar、135"
+    },
+    "Ex.: Minha Helios · retrato": {
+      "pt-BR": "Ex.: Minha Helios · retrato",
+      "en": "E.g. My Helios · portrait",
+      "zh-CN": "例如：我的 Helios · 人像"
+    },
+    "Excluir perfil salvo": {
+      "pt-BR": "Excluir perfil salvo",
+      "en": "Delete saved profile",
+      "zh-CN": "删除已保存配置"
+    },
+    "Explore o que acontece quando a luz atravessa uma lente de verdade.": {
+      "pt-BR": "Explore o que acontece quando a luz atravessa uma lente de verdade.",
+      "en": "Explore what happens when light travels through a real lens.",
+      "zh-CN": "探索光线穿过真实镜头时的变化。"
+    },
+    "Exportando MP4: ${i+1}/${total} · ${Math.round((i+1)/total*100)}%": {
+      "pt-BR": "Exportando MP4: ${i+1}/${total} · ${Math.round((i+1)/total*100)}%",
+      "en": "Exporting MP4: ${i+1}/${total} · ${Math.round((i+1)/total*100)}%",
+      "zh-CN": "正在导出 MP4：${i+1}/${total} · ${Math.round((i+1)/total*100)}%"
+    },
+    "Exportar PNG": {
+      "pt-BR": "Exportar PNG",
+      "en": "Export PNG",
+      "zh-CN": "导出 PNG"
+    },
+    "Exportar frame PNG ↓": {
+      "pt-BR": "Exportar frame PNG ↓",
+      "en": "Export PNG frame ↓",
+      "zh-CN": "导出 PNG 帧 ↓"
+    },
+    "Exportar perfil": {
+      "pt-BR": "Exportar perfil",
+      "en": "Export profile",
+      "zh-CN": "导出配置"
+    },
+    "Exportar vídeo MP4": {
+      "pt-BR": "Exportar vídeo MP4",
+      "en": "Export MP4 video",
+      "zh-CN": "导出 MP4 视频"
+    },
+    "Exportar · 1920 px": {
+      "pt-BR": "Exportar · 1920 px",
+      "en": "Export · 1920 px",
+      "zh-CN": "导出 · 1920 像素"
+    },
+    "Exportar · 4096 px": {
+      "pt-BR": "Exportar · 4096 px",
+      "en": "Export · 4096 px",
+      "zh-CN": "导出 · 4096 像素"
+    },
+    "Exportar · 4K / 3840 px": {
+      "pt-BR": "Exportar · 4K / 3840 px",
+      "en": "Export · 4K / 3840 px",
+      "zh-CN": "导出 · 4K / 3840 像素"
+    },
+    "Exportar · original": {
+      "pt-BR": "Exportar · original",
+      "en": "Export · original",
+      "zh-CN": "导出 · 原始尺寸"
+    },
+    "Exportação": {
+      "pt-BR": "Exportação",
+      "en": "Export",
+      "zh-CN": "导出"
+    },
+    "Exportação cancelada.": {
+      "pt-BR": "Exportação cancelada.",
+      "en": "Export cancelled.",
+      "zh-CN": "导出已取消。"
+    },
+    "Exportação cancelada. Nenhum arquivo foi salvo.": {
+      "pt-BR": "Exportação cancelada. Nenhum arquivo foi salvo.",
+      "en": "Export cancelled. No file was saved.",
+      "zh-CN": "导出已取消。未保存文件。"
+    },
+    "Exportação enviada ao navegador. Consulte os downloads do navegador.": {
+      "pt-BR": "Exportação enviada ao navegador. Consulte os downloads do navegador.",
+      "en": "Export sent to browser. Check browser downloads.",
+      "zh-CN": "导出已发送到浏览器。请查看浏览器下载列表。"
+    },
+    "Exposicao (stops)": {
+      "pt-BR": "Exposicao (stops)",
+      "en": "Exposure (stops)",
+      "zh-CN": "曝光（档）"
+    },
+    "Exposição · EV": {
+      "pt-BR": "Exposição · EV",
+      "en": "Exposure · EV",
+      "zh-CN": "曝光 · EV"
+    },
+    "Extreme": {
+      "pt-BR": "Extrema",
+      "en": "Extreme",
+      "zh-CN": "极限"
+    },
+    "Extreme · 1024 amostras": {
+      "pt-BR": "Extreme · 1024 amostras",
+      "en": "Extreme · 1024 samples",
+      "zh-CN": "极限 · 1024 个采样"
+    },
+    "FORMAÇÃO DO FOCO NO SENSOR": {
+      "pt-BR": "FORMAÇÃO DO FOCO NO SENSOR",
+      "en": "FOCUS FORMATION AT THE SENSOR",
+      "zh-CN": "传感器上的成焦"
+    },
+    "Falha ao capturar frame": {
+      "pt-BR": "Falha ao capturar frame",
+      "en": "Failed to capture frame",
+      "zh-CN": "帧捕获失败"
+    },
+    "Falha ao carregar frame de depth": {
+      "pt-BR": "Falha ao carregar frame de depth",
+      "en": "Failed to load depth frame",
+      "zh-CN": "深度帧加载失败"
+    },
+    "Falha ao consultar complementos": {
+      "pt-BR": "Falha ao consultar complementos",
+      "en": "Failed to check add-ons",
+      "zh-CN": "扩展组件查询失败"
+    },
+    "Falha ao exportar o frame.": {
+      "pt-BR": "Falha ao exportar o frame.",
+      "en": "Failed to export frame.",
+      "zh-CN": "帧导出失败。"
+    },
+    "Falha ao preparar render.": {
+      "pt-BR": "Falha ao preparar render.",
+      "en": "Failed to prepare rendering.",
+      "zh-CN": "渲染准备失败。"
+    },
+    "Falha no frame ": {
+      "pt-BR": "Falha no frame ",
+      "en": "Failure at frame ",
+      "zh-CN": "失败帧："
+    },
+    "Falha no processamento": {
+      "pt-BR": "Falha no processamento",
+      "en": "Processing failed",
+      "zh-CN": "处理失败"
+    },
+    "Falha no servidor.": {
+      "pt-BR": "Falha no servidor.",
+      "en": "Server failure.",
+      "zh-CN": "服务器错误。"
+    },
+    "Fast": {
+      "pt-BR": "Rápida",
+      "en": "Fast",
+      "zh-CN": "快速"
+    },
+    "Fast · 48 amostras": {
+      "pt-BR": "Fast · 48 amostras",
+      "en": "Fast · 48 samples",
+      "zh-CN": "快速 · 48 个采样"
+    },
+    "Fatias": {
+      "pt-BR": "Fatias",
+      "en": "Slices",
+      "zh-CN": "切片数"
+    },
+    "Fatias de profundidade": {
+      "pt-BR": "Fatias de profundidade",
+      "en": "Depth slices",
+      "zh-CN": "深度切片数"
+    },
+    "Feather (px)": {
+      "pt-BR": "Feather (px)",
+      "en": "Feather (px)",
+      "zh-CN": "羽化（像素）"
+    },
+    "Feather do corte": {
+      "pt-BR": "Feather do corte",
+      "en": "Cut feather",
+      "zh-CN": "分割羽化"
+    },
+    "Fechar diafragma em stops": {
+      "pt-BR": "Fechar diafragma em stops",
+      "en": "Stop down in stops",
+      "zh-CN": "按档缩小光圈"
+    },
+    "Fechar inspeção óptica": {
+      "pt-BR": "Fechar inspeção óptica",
+      "en": "Close optical inspection",
+      "zh-CN": "关闭光学检查"
+    },
+    "Filmback · mm": {
+      "pt-BR": "Filmback · mm",
+      "en": "Filmback · mm",
+      "zh-CN": "像面偏移 · 毫米"
+    },
+    "Filtro de caráter · negativo / positivo": {
+      "pt-BR": "Filtro de caráter · negativo / positivo",
+      "en": "Character filter · negative / positive",
+      "zh-CN": "风格滤镜 · 负/正"
+    },
+    "Filtro de caráter: negativo concentra o bokeh do fundo em um anel; positivo realça o centro. O comportamento se inverte antes do foco. Aproximação criativa, sem calibração de filtros comerciais.": {
+      "pt-BR": "Filtro de caráter: negativo concentra o bokeh do fundo em um anel; positivo realça o centro. O comportamento se inverte antes do foco. Aproximação criativa, sem calibração de filtros comerciais.",
+      "en": "Character filter: negative concentrates background bokeh in a ring; positive emphasizes the center. Behavior reverses in front of focus. Creative approximation, without commercial filter calibration.",
+      "zh-CN": "风格滤镜：负值使背景散景集中于边环，正值强调中心。焦点前方表现相反。创意近似，未经商业滤镜校准。"
+    },
+    "Final": {
+      "pt-BR": "Final",
+      "en": "Final",
+      "zh-CN": "最终图像"
+    },
+    "Focar na camada Shimmer": {
+      "pt-BR": "Focar na camada Shimmer",
+      "en": "Focus on Shimmer layer",
+      "zh-CN": "对焦到闪烁图层"
+    },
+    "Focar nas gotas": {
+      "pt-BR": "Focar nas gotas",
+      "en": "Focus on drops",
+      "zh-CN": "对焦到水滴"
+    },
+    "Foco (m)": {
+      "pt-BR": "Foco (m)",
+      "en": "Focus (m)",
+      "zh-CN": "对焦距离（米）"
+    },
+    "Foco / Diafragma": {
+      "pt-BR": "Foco / Diafragma",
+      "en": "Focus / Aperture",
+      "zh-CN": "对焦/光圈"
+    },
+    "Foco compensado": {
+      "pt-BR": "Foco compensado",
+      "en": "Compensated focus",
+      "zh-CN": "补偿焦点"
+    },
+    "Foco compensado no sensor": {
+      "pt-BR": "Foco compensado no sensor",
+      "en": "Compensated focus at sensor",
+      "zh-CN": "传感器补偿焦点"
+    },
+    "Foco fundo": {
+      "pt-BR": "Foco fundo",
+      "en": "Focus background",
+      "zh-CN": "对焦背景"
+    },
+    "Foco no depth · perto → fundo": {
+      "pt-BR": "Foco no depth · perto → fundo",
+      "en": "Depth focus · near → background",
+      "zh-CN": "深度对焦 · 近端 → 背景"
+    },
+    "Foco paraxial": {
+      "pt-BR": "Foco paraxial",
+      "en": "Paraxial focus",
+      "zh-CN": "近轴焦点"
+    },
+    "Foco paraxial no sensor": {
+      "pt-BR": "Foco paraxial no sensor",
+      "en": "Paraxial focus at sensor",
+      "zh-CN": "传感器近轴焦点"
+    },
+    "Foco perto": {
+      "pt-BR": "Foco perto",
+      "en": "Focus near",
+      "zh-CN": "对焦近端"
+    },
+    "Foco selecionado no depth: ": {
+      "pt-BR": "Foco selecionado no depth: ",
+      "en": "Depth focus selected: ",
+      "zh-CN": "已选择深度焦点："
+    },
+    "Focus está em metros. Gain e Bias transformam o canal antes do mapeamento entre os limites próximo e distante. Preto e branco correspondem aos limites em metros, conforme a direção do mapa; preto não significa infinito. Os limites também alteram as distâncias do demo. Mapas IA são relativos; fundo oculto não pode ser reconstruído só com RGB + Z.": {
+      "pt-BR": "Focus está em metros. Gain e Bias transformam o canal antes do mapeamento entre os limites próximo e distante. Preto e branco correspondem aos limites em metros, conforme a direção do mapa; preto não significa infinito. Os limites também alteram as distâncias do demo. Mapas IA são relativos; fundo oculto não pode ser reconstruído só com RGB + Z.",
+      "en": "Focus is in meters. Gain and Bias transform the channel before mapping between near and far limits. Black and white correspond to these meter limits according to map direction; black does not mean infinity. The limits also set demo distances. AI maps are relative; RGB + Z alone cannot reconstruct hidden background.",
+      "zh-CN": "对焦单位为米。增益和偏移先变换通道，再映射到近远距离。黑白按深度图方向对应米制范围，黑色不表示无穷远。范围也改变演示距离。AI 深度图为相对值，仅 RGB + Z 无法重建被遮挡的背景。"
+    },
+    "Formato de imagem não suportado.": {
+      "pt-BR": "Formato de imagem não suportado.",
+      "en": "Unsupported image format.",
+      "zh-CN": "不支持的图像格式。"
+    },
+    "Formato e tamanho do diafragma": {
+      "pt-BR": "Formato e tamanho do diafragma",
+      "en": "Aperture shape and size",
+      "zh-CN": "光圈形状与大小"
+    },
+    "Frame CUDA incompleto.": {
+      "pt-BR": "Frame CUDA incompleto.",
+      "en": "Incomplete CUDA frame.",
+      "zh-CN": "CUDA 帧不完整。"
+    },
+    "Full-frame checkout required": {
+      "pt-BR": "Full-frame checkout required",
+      "en": "Full-frame checkout required",
+      "zh-CN": "需要完整帧图像"
+    },
+    "GPU · LOCAL": {
+      "pt-BR": "GPU · LOCAL",
+      "en": "GPU · LOCAL",
+      "zh-CN": "GPU · 本地"
+    },
+    "Gain": {
+      "pt-BR": "Ganho",
+      "en": "Gain",
+      "zh-CN": "增益"
+    },
+    "Gain · escala do mapa": {
+      "pt-BR": "Gain · escala do mapa",
+      "en": "Gain · map scale",
+      "zh-CN": "增益 · 深度图尺度"
+    },
+    "Ganho do glitter": {
+      "pt-BR": "Ganho do glitter",
+      "en": "Glitter gain",
+      "zh-CN": "闪粉增益"
+    },
+    "Ganho dos highlights": {
+      "pt-BR": "Ganho dos highlights",
+      "en": "Highlight gain",
+      "zh-CN": "高光增益"
+    },
+    "Geometria Double-Gauss derivada, não a prescrição original. Valores de aparência não medidos.": {
+      "pt-BR": "Geometria Double-Gauss derivada, não a prescrição original. Valores de aparência não medidos.",
+      "en": "Derived Double-Gauss geometry, not the original prescription. Appearance values are not measured.",
+      "zh-CN": "派生双高斯结构，并非原始处方。外观数值未经测量。"
+    },
+    "Geometria aplicada · atualizando a imagem na GPU.": {
+      "pt-BR": "Geometria aplicada · atualizando a imagem na GPU.",
+      "en": "Geometry applied · updating GPU image.",
+      "zh-CN": "结构已应用，正在更新 GPU 图像。"
+    },
+    "Geometria independente; o desenho e o atlas usam esta prescrição.": {
+      "pt-BR": "Geometria independente; o desenho e o atlas usam esta prescrição.",
+      "en": "Independent geometry; drawing and atlas use this prescription.",
+      "zh-CN": "独立几何结构，图示和光线图集使用此处方。"
+    },
+    "Gerar depth com IA": {
+      "pt-BR": "Gerar depth com IA",
+      "en": "Generate AI depth",
+      "zh-CN": "生成 AI 深度"
+    },
+    "Gerar depth da mídia": {
+      "pt-BR": "Gerar depth da mídia",
+      "en": "Generate media depth",
+      "zh-CN": "生成媒体深度"
+    },
+    "Geração cancelada.": {
+      "pt-BR": "Geração cancelada.",
+      "en": "Generation cancelled.",
+      "zh-CN": "生成已取消。"
+    },
+    "Ghosts · ganho criativo": {
+      "pt-BR": "Ghosts · ganho criativo",
+      "en": "Ghosts · creative gain",
+      "zh-CN": "鬼影 · 创意增益"
+    },
+    "Glitter Matte": {
+      "pt-BR": "Máscara do glitter",
+      "en": "Glitter matte",
+      "zh-CN": "闪粉遮罩"
+    },
+    "Gotas / plano refrativo": {
+      "pt-BR": "Gotas / plano refrativo",
+      "en": "Drops / refractive plane",
+      "zh-CN": "水滴/折射平面"
+    },
+    "Grande-angular e tele": {
+      "pt-BR": "Grande-angular e tele",
+      "en": "Wide-angle and telephoto",
+      "zh-CN": "广角与长焦"
+    },
+    "Gravar WebM sem áudio": {
+      "pt-BR": "Gravar WebM sem áudio",
+      "en": "Record silent WebM",
+      "zh-CN": "录制无声 WebM"
+    },
+    "Gravação encerrada. WebM sem áudio, na resolução de exportação; ritmo depende dos frames processados.": {
+      "pt-BR": "Gravação encerrada. WebM sem áudio, na resolução de exportação; ritmo depende dos frames processados.",
+      "en": "Recording finished. Silent WebM at export resolution; timing depends on processed frames.",
+      "zh-CN": "录制已结束。无声 WebM 使用导出分辨率，节奏取决于处理帧速率。"
+    },
+    "Green": {
+      "pt-BR": "Verde",
+      "en": "Green",
+      "zh-CN": "绿色"
+    },
+    "Grow (px)": {
+      "pt-BR": "Grow (px)",
+      "en": "Grow (px)",
+      "zh-CN": "扩展（像素）"
+    },
+    "High": {
+      "pt-BR": "Alta",
+      "en": "High",
+      "zh-CN": "高"
+    },
+    "High · 256 amostras": {
+      "pt-BR": "High · 256 amostras",
+      "en": "High · 256 samples",
+      "zh-CN": "高 · 256 个采样"
+    },
+    "Highlight Detail": {
+      "pt-BR": "Detalhe das altas luzes",
+      "en": "Highlight detail",
+      "zh-CN": "高光细节"
+    },
+    "Highlight Quality": {
+      "pt-BR": "Qualidade das altas luzes",
+      "en": "Highlight quality",
+      "zh-CN": "高光质量"
+    },
+    "Highlight Threshold · linear": {
+      "pt-BR": "Highlight Threshold · linear",
+      "en": "Highlight threshold · linear",
+      "zh-CN": "高光阈值 · 线性"
+    },
+    "Highlight View": {
+      "pt-BR": "Visualização das altas luzes",
+      "en": "Highlight view",
+      "zh-CN": "高光视图"
+    },
+    "Highlights Only": {
+      "pt-BR": "Só altas luzes",
+      "en": "Highlights only",
+      "zh-CN": "仅高光"
+    },
+    "Identificação de perfil inválida.": {
+      "pt-BR": "Identificação de perfil inválida.",
+      "en": "Invalid profile identifier.",
+      "zh-CN": "配置标识无效。"
+    },
+    "Imagem": {
+      "pt-BR": "Imagem",
+      "en": "Image",
+      "zh-CN": "图像"
+    },
+    "Imagem de máscara muito grande.": {
+      "pt-BR": "Imagem de máscara muito grande.",
+      "en": "Mask image is too large.",
+      "zh-CN": "遮罩图像过大。"
+    },
+    "Imagem e depth precisam ser camadas diferentes.": {
+      "pt-BR": "Imagem e depth precisam ser camadas diferentes.",
+      "en": "Image and depth must be different layers.",
+      "zh-CN": "图像与深度必须使用不同图层。"
+    },
+    "Importar máscara": {
+      "pt-BR": "Importar máscara",
+      "en": "Import mask",
+      "zh-CN": "导入遮罩"
+    },
+    "Importar perfil": {
+      "pt-BR": "Importar perfil",
+      "en": "Import profile",
+      "zh-CN": "导入配置"
+    },
+    "Importar textura": {
+      "pt-BR": "Importar textura",
+      "en": "Import texture",
+      "zh-CN": "导入纹理"
+    },
+    "Importe ou gere o mapa de profundidade desta imagem para selecionar o foco.": {
+      "pt-BR": "Importe ou gere o mapa de profundidade desta imagem para selecionar o foco.",
+      "en": "Import or generate this image's depth map to select focus.",
+      "zh-CN": "请导入或生成此图像的深度图，以选择焦点。"
+    },
+    "Importe ou gere um mapa de profundidade para focar no depth.": {
+      "pt-BR": "Importe ou gere um mapa de profundidade para focar no depth.",
+      "en": "Import or generate a depth map to focus by depth.",
+      "zh-CN": "请导入或生成深度图，以进行深度对焦。"
+    },
+    "Importe um mapa com as mesmas dimensões.": {
+      "pt-BR": "Importe um mapa com as mesmas dimensões.",
+      "en": "Import a map with matching dimensions.",
+      "zh-CN": "请导入尺寸一致的深度图。"
+    },
+    "Importe um mapa de profundidade primeiro.": {
+      "pt-BR": "Importe um mapa de profundidade primeiro.",
+      "en": "Import a depth map first.",
+      "zh-CN": "请先导入深度图。"
+    },
+    "Importe um vídeo de depth sincronizado ou um mapa estático.": {
+      "pt-BR": "Importe um vídeo de depth sincronizado ou um mapa estático.",
+      "en": "Import synchronized depth video or a static map.",
+      "zh-CN": "请导入同步深度视频或静态深度图。"
+    },
+    "Impression (+ / -)": {
+      "pt-BR": "Impression (+ / -)",
+      "en": "Impression (+ / -)",
+      "zh-CN": "风格滤镜（正/负）"
+    },
+    "Indice - ajuste": {
+      "pt-BR": "Indice - ajuste",
+      "en": "Refractive index offset",
+      "zh-CN": "折射率偏移"
+    },
+    "Iniciar motor": {
+      "pt-BR": "Iniciar motor",
+      "en": "Start engine",
+      "zh-CN": "启动引擎"
+    },
+    "Inspeção óptica": {
+      "pt-BR": "Inspeção óptica",
+      "en": "Optical inspection",
+      "zh-CN": "光学检查"
+    },
+    "Instalar complementos": {
+      "pt-BR": "Instalar complementos",
+      "en": "Install add-ons",
+      "zh-CN": "安装扩展组件"
+    },
+    "Intensidade": {
+      "pt-BR": "Intensidade",
+      "en": "Intensity",
+      "zh-CN": "强度"
+    },
+    "Intensidade da sujeira": {
+      "pt-BR": "Intensidade da sujeira",
+      "en": "Dirt intensity",
+      "zh-CN": "污渍强度"
+    },
+    "Intensidade do Shimmer": {
+      "pt-BR": "Intensidade do Shimmer",
+      "en": "Shimmer intensity",
+      "zh-CN": "闪烁强度"
+    },
+    "Inverter branco e preto": {
+      "pt-BR": "Inverter branco e preto",
+      "en": "Invert black and white",
+      "zh-CN": "反转黑白"
+    },
+    "Inverter mapa": {
+      "pt-BR": "Inverter mapa",
+      "en": "Invert map",
+      "zh-CN": "反转深度图"
+    },
+    "JSON muito grande.": {
+      "pt-BR": "JSON muito grande.",
+      "en": "JSON is too large.",
+      "zh-CN": "JSON 过大。"
+    },
+    "LENTE": {
+      "pt-BR": "LENTE",
+      "en": "LENS",
+      "zh-CN": "镜头"
+    },
+    "LENTE / PRESET": {
+      "pt-BR": "LENTE / PRESET",
+      "en": "LENS / PRESET",
+      "zh-CN": "镜头/预设"
+    },
+    "LENTES E PROFUNDIDADE": {
+      "pt-BR": "LENTES E PROFUNDIDADE",
+      "en": "LENSES AND DEPTH",
+      "zh-CN": "镜头与深度"
+    },
+    "Laminas": {
+      "pt-BR": "Laminas",
+      "en": "Blades",
+      "zh-CN": "叶片数"
+    },
+    "Largura do sensor · mm": {
+      "pt-BR": "Largura do sensor · mm",
+      "en": "Sensor width · mm",
+      "zh-CN": "传感器宽度 · 毫米"
+    },
+    "Layer A": {
+      "pt-BR": "Camada A",
+      "en": "Layer A",
+      "zh-CN": "图层 A"
+    },
+    "Layer A is Glitter": {
+      "pt-BR": "Camada A como glitter",
+      "en": "Layer A is Glitter",
+      "zh-CN": "图层 A 用作闪粉"
+    },
+    "Layer B": {
+      "pt-BR": "Camada B",
+      "en": "Layer B",
+      "zh-CN": "图层 B"
+    },
+    "Layer C": {
+      "pt-BR": "Camada C",
+      "en": "Layer C",
+      "zh-CN": "图层 C"
+    },
+    "Layer C is Distortion": {
+      "pt-BR": "Camada C como distorção",
+      "en": "Layer C is Distortion",
+      "zh-CN": "图层 C 用作畸变"
+    },
+    "Lendo as camadas…": {
+      "pt-BR": "Lendo as camadas…",
+      "en": "Reading layers…",
+      "zh-CN": "正在读取图层…"
+    },
+    "Lens Dirt / sujeira na lente": {
+      "pt-BR": "Lens Dirt / sujeira na lente",
+      "en": "Lens Dirt / lens imperfections",
+      "zh-CN": "镜头污渍"
+    },
+    "LensSim prescription · MIT": {
+      "pt-BR": "LensSim prescription · MIT",
+      "en": "LensSim prescription · MIT",
+      "zh-CN": "LensSim 处方 · MIT"
+    },
+    "Lente / Presets": {
+      "pt-BR": "Lente / Presets",
+      "en": "Lens / Presets",
+      "zh-CN": "镜头/预设"
+    },
+    "Lente, foco e profundidade": {
+      "pt-BR": "Lente, foco e profundidade",
+      "en": "Lens, focus and depth",
+      "zh-CN": "镜头、对焦与深度"
+    },
+    "Limiar das altas luzes · linear": {
+      "pt-BR": "Limiar das altas luzes · linear",
+      "en": "Highlight threshold · linear",
+      "zh-CN": "高光阈值 · 线性"
+    },
+    "Limite de 100 perfis atingido.": {
+      "pt-BR": "Limite de 100 perfis atingido.",
+      "en": "Limit of 100 profiles reached.",
+      "zh-CN": "已达到 100 个配置上限。"
+    },
+    "Limite de 100 perfis próprios.": {
+      "pt-BR": "Limite de 100 perfis próprios.",
+      "en": "Limit of 100 custom profiles.",
+      "zh-CN": "最多 100 个自定义配置。"
+    },
+    "Limite de 500 MB atingido; salvando o trecho gravado.": {
+      "pt-BR": "Limite de 500 MB atingido; salvando o trecho gravado.",
+      "en": "500 MB limit reached; saving recorded segment.",
+      "zh-CN": "已达到 500 MB 上限，正在保存录制片段。"
+    },
+    "Limite distante · m": {
+      "pt-BR": "Limite distante · m",
+      "en": "Far limit · m",
+      "zh-CN": "远端范围 · 米"
+    },
+    "Limite próximo · m": {
+      "pt-BR": "Limite próximo · m",
+      "en": "Near limit · m",
+      "zh-CN": "近端范围 · 米"
+    },
+    "Luminancia": {
+      "pt-BR": "Luminancia",
+      "en": "Luminance",
+      "zh-CN": "亮度"
+    },
+    "Luminância": {
+      "pt-BR": "Luminância",
+      "en": "Luminance",
+      "zh-CN": "亮度"
+    },
+    "Luzes em frente e atrás do foco, renderizadas pela lente selecionada": {
+      "pt-BR": "Luzes em frente e atrás do foco, renderizadas pela lente selecionada",
+      "en": "Lights in front of and behind focus, rendered through the selected lens",
+      "zh-CN": "焦点前后光源，通过所选镜头渲染"
+    },
+    "Luzes renderizadas na GPU; bokeh do atlas de raios, ampliado individualmente com os ajustes criativos. Spot: raios da prescrição no eixo, ampliados; escala indicada em µm.": {
+      "pt-BR": "Luzes renderizadas na GPU; bokeh do atlas de raios, ampliado individualmente com os ajustes criativos. Spot: raios da prescrição no eixo, ampliados; escala indicada em µm.",
+      "en": "Lights rendered on GPU; ray-atlas bokeh enlarged individually by creative adjustments. Spot: on-axis prescription rays, enlarged; scale in µm.",
+      "zh-CN": "GPU 渲染光源，光线图集散景按创意参数逐个放大。光斑显示放大的处方轴上光线，尺度以微米表示。"
+    },
+    "Lâminas · 0 = circular": {
+      "pt-BR": "Lâminas · 0 = circular",
+      "en": "Blades · 0 = circular",
+      "zh-CN": "叶片数 · 0 = 圆形"
+    },
+    "MP4 pronto: ${size.width} × ${size.height}, ${fps} fps. Sem áudio.": {
+      "pt-BR": "MP4 pronto: ${size.width} × ${size.height}, ${fps} fps. Sem áudio.",
+      "en": "MP4 ready: ${size.width} × ${size.height}, ${fps} fps. No audio.",
+      "zh-CN": "MP4 已完成：${size.width} × ${size.height}，${fps} 帧/秒。无音频。"
+    },
+    "Maior lado; mantém proporção. Fontes menores serão ampliadas.": {
+      "pt-BR": "Maior lado; mantém proporção. Fontes menores serão ampliadas.",
+      "en": "Longest side; aspect preserved. Smaller sources are enlarged.",
+      "zh-CN": "最长边，保持比例。较小源图像会放大。"
+    },
+    "Manchas fixas no espaço da câmera atenuam a luz e espalham altas luzes em halos. Modelo visual aproximado, independente da profundidade da cena. Intensidade zero desativa o efeito.": {
+      "pt-BR": "Manchas fixas no espaço da câmera atenuam a luz e espalham altas luzes em halos. Modelo visual aproximado, independente da profundidade da cena. Intensidade zero desativa o efeito.",
+      "en": "Fixed camera-space dirt attenuates light and scatters highlights into halos. Approximate visual model, independent of scene depth. Zero intensity disables the effect.",
+      "zh-CN": "固定在相机空间的污渍减弱光线，并将高光散射为光晕。为视觉近似模型，与场景深度无关。零强度关闭效果。"
+    },
+    "Manchas procedurais · distribuição fixa": {
+      "pt-BR": "Manchas procedurais · distribuição fixa",
+      "en": "Procedural dirt · fixed distribution",
+      "zh-CN": "程序化污渍 · 固定分布"
+    },
+    "Manchas procedurais.": {
+      "pt-BR": "Manchas procedurais.",
+      "en": "Procedural dirt.",
+      "zh-CN": "程序化污渍。"
+    },
+    "Mapa de profundidade": {
+      "pt-BR": "Mapa de profundidade",
+      "en": "Depth map",
+      "zh-CN": "深度图"
+    },
+    "Mapa estático: não acompanha movimento": {
+      "pt-BR": "Mapa estático: não acompanha movimento",
+      "en": "Static map: does not follow motion",
+      "zh-CN": "静态深度图：不跟随运动"
+    },
+    "Maximum frame: 8192px / 17 megapixels": {
+      "pt-BR": "Maximum frame: 8192px / 17 megapixels",
+      "en": "Maximum frame: 8192px / 17 megapixels",
+      "zh-CN": "最大帧：8192 像素/1700 万像素"
+    },
+    "Medium": {
+      "pt-BR": "Média",
+      "en": "Medium",
+      "zh-CN": "中等"
+    },
+    "Medium · 96 amostras": {
+      "pt-BR": "Medium · 96 amostras",
+      "en": "Medium · 96 samples",
+      "zh-CN": "中等 · 96 个采样"
+    },
+    "Meu perfil · ": {
+      "pt-BR": "Meu perfil · ",
+      "en": "My profile · ",
+      "zh-CN": "我的配置 · "
+    },
+    "Meus perfis": {
+      "pt-BR": "Meus perfis",
+      "en": "My profiles",
+      "zh-CN": "我的配置"
+    },
+    "Mistura": {
+      "pt-BR": "Mistura",
+      "en": "Blend",
+      "zh-CN": "混合"
+    },
+    "Mistura das gotas": {
+      "pt-BR": "Mistura das gotas",
+      "en": "Drop blend",
+      "zh-CN": "水滴混合"
+    },
+    "Mistura do efeito": {
+      "pt-BR": "Mistura do efeito",
+      "en": "Effect blend",
+      "zh-CN": "效果混合"
+    },
+    "Modelo de lente desconhecido.": {
+      "pt-BR": "Modelo de lente desconhecido.",
+      "en": "Unknown lens model.",
+      "zh-CN": "未知镜头型号。"
+    },
+    "Modo do astigmatismo": {
+      "pt-BR": "Modo do astigmatismo",
+      "en": "Astigmatism mode",
+      "zh-CN": "像散模式"
+    },
+    "Modo negativo": {
+      "pt-BR": "Modo negativo",
+      "en": "Negative mode",
+      "zh-CN": "负模式"
+    },
+    "Modo positivo": {
+      "pt-BR": "Modo positivo",
+      "en": "Positive mode",
+      "zh-CN": "正模式"
+    },
+    "Motor": {
+      "pt-BR": "Motor",
+      "en": "Engine",
+      "zh-CN": "引擎"
+    },
+    "Motor conectado.": {
+      "pt-BR": "Motor conectado.",
+      "en": "Engine connected.",
+      "zh-CN": "引擎已连接。"
+    },
+    "Motor encerrado.": {
+      "pt-BR": "Motor encerrado.",
+      "en": "Engine stopped.",
+      "zh-CN": "引擎已停止。"
+    },
+    "Movendo vidro · atualizando raios e prévia…": {
+      "pt-BR": "Movendo vidro · atualizando raios e prévia…",
+      "en": "Moving glass · updating rays and preview…",
+      "zh-CN": "正在移动镜片并更新光线和预览…"
+    },
+    "Mover conjunto da lente para focar": {
+      "pt-BR": "Mover conjunto da lente para focar",
+      "en": "Move lens assembly to focus",
+      "zh-CN": "移动镜片组对焦"
+    },
+    "Máscara importada": {
+      "pt-BR": "Máscara importada",
+      "en": "Imported mask",
+      "zh-CN": "已导入遮罩"
+    },
+    "Nenhum mapa importado.": {
+      "pt-BR": "Nenhum mapa importado.",
+      "en": "No map imported.",
+      "zh-CN": "未导入深度图。"
+    },
+    "Nenhum modelo encontrado.": {
+      "pt-BR": "Nenhum modelo encontrado.",
+      "en": "No model found.",
+      "zh-CN": "未找到型号。"
+    },
+    "Nenhuma lente corresponde à busca.": {
+      "pt-BR": "Nenhuma lente corresponde à busca.",
+      "en": "No lens matches this search.",
+      "zh-CN": "未找到匹配镜头。"
+    },
+    "Nenhuma máscara importada.": {
+      "pt-BR": "Nenhuma máscara importada.",
+      "en": "No mask imported.",
+      "zh-CN": "未导入遮罩。"
+    },
+    "Nome do meu perfil": {
+      "pt-BR": "Nome do meu perfil",
+      "en": "My profile name",
+      "zh-CN": "我的配置名称"
+    },
+    "Normalizar energia do glitter": {
+      "pt-BR": "Normalizar energia do glitter",
+      "en": "Normalize glitter energy",
+      "zh-CN": "归一化闪粉能量"
+    },
+    "Normalize Glitter": {
+      "pt-BR": "Normalizar glitter",
+      "en": "Normalize glitter",
+      "zh-CN": "归一化闪粉"
+    },
+    "Não foi possível atualizar a inspeção: ": {
+      "pt-BR": "Não foi possível atualizar a inspeção: ",
+      "en": "Could not update inspection: ",
+      "zh-CN": "无法更新检查："
+    },
+    "Não foi possível atualizar a lente": {
+      "pt-BR": "Não foi possível atualizar a lente",
+      "en": "Could not update lens",
+      "zh-CN": "无法更新镜头"
+    },
+    "Não foi possível confirmar o salvamento.": {
+      "pt-BR": "Não foi possível confirmar o salvamento.",
+      "en": "Could not confirm saving.",
+      "zh-CN": "无法确认保存。"
+    },
+    "Não foi possível decodificar o vídeo de depth. Use MP4 H.264 ou WebM.": {
+      "pt-BR": "Não foi possível decodificar o vídeo de depth. Use MP4 H.264 ou WebM.",
+      "en": "Could not decode depth video. Use MP4 H.264 or WebM.",
+      "zh-CN": "无法解码深度视频。请使用 MP4 H.264 或 WebM。"
+    },
+    "Não foi possível iniciar o motor. Abra engine/BruxosPhotoshopEngine.exe na pasta do plugin e tente novamente.": {
+      "pt-BR": "Não foi possível iniciar o motor. Abra engine/BruxosPhotoshopEngine.exe na pasta do plugin e tente novamente.",
+      "en": "Could not start engine. Open engine/BruxosPhotoshopEngine.exe in the plugin folder and retry.",
+      "zh-CN": "无法启动引擎。请打开插件文件夹中的 engine/BruxosPhotoshopEngine.exe 后重试。"
+    },
+    "Não foi possível ler seus perfis: ": {
+      "pt-BR": "Não foi possível ler seus perfis: ",
+      "en": "Could not read your profiles: ",
+      "zh-CN": "无法读取配置："
+    },
+    "Não foi possível renderizar a saída.": {
+      "pt-BR": "Não foi possível renderizar a saída.",
+      "en": "Could not render output.",
+      "zh-CN": "无法渲染输出。"
+    },
+    "Não foi possível renderizar o frame.": {
+      "pt-BR": "Não foi possível renderizar o frame.",
+      "en": "Could not render frame.",
+      "zh-CN": "无法渲染帧。"
+    },
+    "Não foi possível reproduzir: ": {
+      "pt-BR": "Não foi possível reproduzir: ",
+      "en": "Could not play: ",
+      "zh-CN": "无法播放："
+    },
+    "O alinhamento paraxial corresponde à distância indicada abaixo. Aberrações e ajustes criativos podem reduzir a nitidez mesmo nesse plano.": {
+      "pt-BR": "O alinhamento paraxial corresponde à distância indicada abaixo. Aberrações e ajustes criativos podem reduzir a nitidez mesmo nesse plano.",
+      "en": "Paraxial alignment corresponds to the distance below. Aberrations and creative adjustments may reduce sharpness even at that plane.",
+      "zh-CN": "近轴对齐对应下方显示的距离。像差与创意调整可能降低该平面的清晰度。"
+    },
+    "O caminho da luz": {
+      "pt-BR": "O caminho da luz",
+      "en": "The path of light",
+      "zh-CN": "光线的路径"
+    },
+    "O demo já tem depth próprio. Abra sua imagem ou vídeo primeiro.": {
+      "pt-BR": "O demo já tem depth próprio. Abra sua imagem ou vídeo primeiro.",
+      "en": "The demo already has depth. Open your image or video first.",
+      "zh-CN": "演示已有深度。请先打开您的图像或视频。"
+    },
+    "O documento mudou durante o cálculo. Aplique novamente.": {
+      "pt-BR": "O documento mudou durante o cálculo. Aplique novamente.",
+      "en": "Document changed during calculation. Apply again.",
+      "zh-CN": "计算过程中，文档已改变。请重新应用。"
+    },
+    "O mapa de profundidade ainda não está disponível neste frame.": {
+      "pt-BR": "O mapa de profundidade ainda não está disponível neste frame.",
+      "en": "The depth map is not yet available at this frame.",
+      "zh-CN": "此帧的深度图尚不可用。"
+    },
+    "O mapa deve ter as mesmas dimensões da imagem/vídeo.": {
+      "pt-BR": "O mapa deve ter as mesmas dimensões da imagem/vídeo.",
+      "en": "The map must match image/video dimensions.",
+      "zh-CN": "深度图尺寸必须与图像或视频一致。"
+    },
+    "O motor óptico não respondeu.": {
+      "pt-BR": "O motor óptico não respondeu.",
+      "en": "The optical engine did not respond.",
+      "zh-CN": "光学引擎未响应。"
+    },
+    "O objeto à frente recorta os discos atrás dele por amostra da pupila. Funciona com Depth Cut, mapas contínuos e Depth Slicing. A precisão segue os planos de profundidade; luzes ocultas não são reconstruídas.": {
+      "pt-BR": "O objeto à frente recorta os discos atrás dele por amostra da pupila. Funciona com Depth Cut, mapas contínuos e Depth Slicing. A precisão segue os planos de profundidade; luzes ocultas não são reconstruídas.",
+      "en": "Foreground objects cut discs behind them per pupil sample. Works with Depth Cut, continuous maps and Depth Slicing. Precision follows depth planes; hidden lights are not reconstructed.",
+      "zh-CN": "前景物体按瞳孔采样裁切后方光斑。适用于深度分割、连续深度图和深度切片。精度取决于深度平面，不重建隐藏光源。"
+    },
+    "O sentido e a escala do mapa são definidos nos controles de profundidade.": {
+      "pt-BR": "O sentido e a escala do mapa são definidos nos controles de profundidade.",
+      "en": "Map direction and scale are set in depth controls.",
+      "zh-CN": "深度图方向和尺度由深度控件设置。"
+    },
+    "O vídeo de depth deve ter as mesmas dimensões do vídeo principal.": {
+      "pt-BR": "O vídeo de depth deve ter as mesmas dimensões do vídeo principal.",
+      "en": "Depth video must match main video dimensions.",
+      "zh-CN": "深度视频尺寸必须与主视频一致。"
+    },
+    "O vídeo principal mudou durante a importação.": {
+      "pt-BR": "O vídeo principal mudou durante a importação.",
+      "en": "Main video changed during import.",
+      "zh-CN": "导入过程中主视频已改变。"
+    },
+    "Obstrução / bloqueio": {
+      "pt-BR": "Obstrução / bloqueio",
+      "en": "Obstruction / blocking",
+      "zh-CN": "遮挡/阻光"
+    },
+    "Outra aplicação está usando a porta do motor.": {
+      "pt-BR": "Outra aplicação está usando a porta do motor.",
+      "en": "Another application is using the engine port.",
+      "zh-CN": "其他应用正在占用引擎端口。"
+    },
+    "PNG exportado: ${result.width} × ${result.height}.": {
+      "pt-BR": "PNG exportado: ${result.width} × ${result.height}.",
+      "en": "PNG exported: ${result.width} × ${result.height}.",
+      "zh-CN": "PNG 已导出：${result.width} × ${result.height}。"
+    },
+    "PONTOS DE LUZ / HDR SINTÉTICO": {
+      "pt-BR": "PONTOS DE LUZ / HDR SINTÉTICO",
+      "en": "POINT LIGHTS / SYNTHETIC HDR",
+      "zh-CN": "点光源 / 合成 HDR"
+    },
+    "PSF de referência da prescrição, sem ampliação, esférica extra ou warp da prévia.": {
+      "pt-BR": "PSF de referência da prescrição, sem ampliação, esférica extra ou warp da prévia.",
+      "en": "Reference prescription PSF, without enlargement, extra spherical aberration or preview warp.",
+      "zh-CN": "处方参考 PSF，无放大、附加球差或预览扭曲。"
+    },
+    "PSF de referência.": {
+      "pt-BR": "PSF de referência.",
+      "en": "Reference PSF.",
+      "zh-CN": "参考 PSF。"
+    },
+    "Padrão e definição": {
+      "pt-BR": "Padrão e definição",
+      "en": "Standard and definition",
+      "zh-CN": "标准与清晰度"
+    },
+    "Padrão fixo por pixel; cresce com o desfoque. Valores acima de 1 suavizam mais a forma.": {
+      "pt-BR": "Padrão fixo por pixel; cresce com o desfoque. Valores acima de 1 suavizam mais a forma.",
+      "en": "Fixed pattern per pixel; grows with defocus. Values above 1 soften the shape more.",
+      "zh-CN": "每像素固定图案，随散焦增强。大于 1 时形状更柔和。"
+    },
+    "Painéis de ajustes": {
+      "pt-BR": "Painéis de ajustes",
+      "en": "Adjustment panels",
+      "zh-CN": "调整面板"
+    },
+    "Parâmetro inválido: ": {
+      "pt-BR": "Parâmetro inválido: ",
+      "en": "Invalid parameter: ",
+      "zh-CN": "无效参数："
+    },
+    "Parâmetros da lente restaurados. Foco e depth preservados.": {
+      "pt-BR": "Parâmetros da lente restaurados. Foco e depth preservados.",
+      "en": "Lens parameters restored. Focus and depth preserved.",
+      "zh-CN": "镜头参数已恢复。焦点和深度保持不变。"
+    },
+    "Pendente: faltam dados completos de superfícies, vidros ou abertura para oferecer este modelo com segurança. Nenhuma lente substituta é aplicada.": {
+      "pt-BR": "Pendente: faltam dados completos de superfícies, vidros ou abertura para oferecer este modelo com segurança. Nenhuma lente substituta é aplicada.",
+      "en": "Pending: complete surface, glass or aperture data are missing for this model. No substitute lens is applied.",
+      "zh-CN": "待完善：此型号缺少完整的表面、玻璃或光圈数据。不会使用其他镜头替代。"
+    },
+    "Perfil": {
+      "pt-BR": "Perfil",
+      "en": "Profile",
+      "zh-CN": "配置"
+    },
+    "Perfil criado e salvo.": {
+      "pt-BR": "Perfil criado e salvo.",
+      "en": "Profile created and saved.",
+      "zh-CN": "配置已创建并保存。"
+    },
+    "Perfil de lente": {
+      "pt-BR": "Perfil de lente",
+      "en": "Lens profile",
+      "zh-CN": "镜头配置"
+    },
+    "Perfil de lente inválido.": {
+      "pt-BR": "Perfil de lente inválido.",
+      "en": "Invalid lens profile.",
+      "zh-CN": "镜头配置无效。"
+    },
+    "Perfil importado e salvo na biblioteca.": {
+      "pt-BR": "Perfil importado e salvo na biblioteca.",
+      "en": "Profile imported and saved in library.",
+      "zh-CN": "配置已导入并保存到库中。"
+    },
+    "Perfil próprio carregado.": {
+      "pt-BR": "Perfil próprio carregado.",
+      "en": "Custom profile loaded.",
+      "zh-CN": "自定义配置已加载。"
+    },
+    "Perfil próprio excluído.": {
+      "pt-BR": "Perfil próprio excluído.",
+      "en": "Custom profile deleted.",
+      "zh-CN": "自定义配置已删除。"
+    },
+    "Perfil salvo atualizado.": {
+      "pt-BR": "Perfil salvo atualizado.",
+      "en": "Saved profile updated.",
+      "zh-CN": "已更新保存的配置。"
+    },
+    "Perfil salvo neste Photoshop.": {
+      "pt-BR": "Perfil salvo neste Photoshop.",
+      "en": "Profile saved in this Photoshop.",
+      "zh-CN": "配置已保存于此 Photoshop。"
+    },
+    "Perfis de aparência · aproximações": {
+      "pt-BR": "Perfis de aparência · aproximações",
+      "en": "Appearance profiles · approximations",
+      "zh-CN": "外观配置 · 近似"
+    },
+    "Personalizada": {
+      "pt-BR": "Personalizada",
+      "en": "Custom",
+      "zh-CN": "自定义"
+    },
+    "Perto ${near.toFixed(2)} m → fundo ${far.toFixed(2)} m · foco ${settings.focus_m.toFixed(2)} m": {
+      "pt-BR": "Perto ${near.toFixed(2)} m → fundo ${far.toFixed(2)} m · foco ${settings.focus_m.toFixed(2)} m",
+      "en": "Near ${near.toFixed(2)} m → background ${far.toFixed(2)} m · focus ${settings.focus_m.toFixed(2)} m",
+      "zh-CN": "近端 ${near.toFixed(2)} 米 → 背景 ${far.toFixed(2)} 米 · 焦点 ${settings.focus_m.toFixed(2)} 米"
+    },
+    "Photoshop devolveu pixels em resolução reduzida.": {
+      "pt-BR": "Photoshop devolveu pixels em resolução reduzida.",
+      "en": "Photoshop returned reduced-resolution pixels.",
+      "zh-CN": "Photoshop 返回了降低分辨率的像素。"
+    },
+    "Plano de referência: ${data.settings.source_m.toFixed(2)} m · janela ±${span.toFixed(2)} mm do sensor · ${rays.length} raios transmitidos · escala vertical fixa": {
+      "pt-BR": "Plano de referência: ${data.settings.source_m.toFixed(2)} m · janela ±${span.toFixed(2)} mm do sensor · ${rays.length} raios transmitidos · escala vertical fixa",
+      "en": "Reference plane: ${data.settings.source_m.toFixed(2)} m · sensor window ±${span.toFixed(2)} mm · ${rays.length} transmitted rays · fixed vertical scale",
+      "zh-CN": "参考平面：${data.settings.source_m.toFixed(2)} 米 · 传感器范围 ±${span.toFixed(2)} 毫米 · ${rays.length} 条透射光线 · 固定垂直尺度"
+    },
+    "Plano distante / fundo": {
+      "pt-BR": "Plano distante / fundo",
+      "en": "Far plane / background",
+      "zh-CN": "远平面/背景"
+    },
+    "Plano distante do depth": {
+      "pt-BR": "Plano distante do depth",
+      "en": "Far depth plane",
+      "zh-CN": "深度远平面"
+    },
+    "Plano do diafragma": {
+      "pt-BR": "Plano do diafragma",
+      "en": "Aperture plane",
+      "zh-CN": "光圈平面"
+    },
+    "Plano do sensor (mm)": {
+      "pt-BR": "Plano do sensor (mm)",
+      "en": "Sensor plane (mm)",
+      "zh-CN": "传感器平面（毫米）"
+    },
+    "Plano inspecionado no depth": {
+      "pt-BR": "Plano inspecionado no depth",
+      "en": "Inspected depth plane",
+      "zh-CN": "检查的深度平面"
+    },
+    "Plano próximo": {
+      "pt-BR": "Plano próximo",
+      "en": "Near plane",
+      "zh-CN": "近平面"
+    },
+    "Plano próximo do depth": {
+      "pt-BR": "Plano próximo do depth",
+      "en": "Near depth plane",
+      "zh-CN": "深度近平面"
+    },
+    "Plano sem depth": {
+      "pt-BR": "Plano sem depth",
+      "en": "Plane without depth",
+      "zh-CN": "无深度平面"
+    },
+    "Ponto selecionado": {
+      "pt-BR": "Ponto selecionado",
+      "en": "Selected point",
+      "zh-CN": "已选点"
+    },
+    "Ponto selecionado na imagem": {
+      "pt-BR": "Ponto selecionado na imagem",
+      "en": "Selected image point",
+      "zh-CN": "已选图像点"
+    },
+    "Posição do vídeo": {
+      "pt-BR": "Posição do vídeo",
+      "en": "Video position",
+      "zh-CN": "视频位置"
+    },
+    "Preencha todos os valores da superfície.": {
+      "pt-BR": "Preencha todos os valores da superfície.",
+      "en": "Fill in all surface values.",
+      "zh-CN": "请填写所有表面数值。"
+    },
+    "Preparando a imagem; ajustes seguintes são automáticos": {
+      "pt-BR": "Preparando a imagem; ajustes seguintes são automáticos",
+      "en": "Preparing image; subsequent adjustments are automatic",
+      "zh-CN": "正在准备图像，后续调整自动进行"
+    },
+    "Preparando bancada…": {
+      "pt-BR": "Preparando bancada…",
+      "en": "Preparing light bench…",
+      "zh-CN": "正在准备光源测试台…"
+    },
+    "Prescrição pendente": {
+      "pt-BR": "Prescrição pendente",
+      "en": "Prescription pending",
+      "zh-CN": "处方待完善"
+    },
+    "Preto: distante (m)": {
+      "pt-BR": "Preto: distante (m)",
+      "en": "Black: far (m)",
+      "zh-CN": "黑色：远端（米）"
+    },
+    "Processamento": {
+      "pt-BR": "Processamento",
+      "en": "Processing",
+      "zh-CN": "处理方式"
+    },
+    "Profundidade": {
+      "pt-BR": "Profundidade",
+      "en": "Depth",
+      "zh-CN": "深度"
+    },
+    "Profundidade (m)": {
+      "pt-BR": "Profundidade (m)",
+      "en": "Depth (m)",
+      "zh-CN": "深度（米）"
+    },
+    "Profundidade A": {
+      "pt-BR": "Profundidade A",
+      "en": "Depth A",
+      "zh-CN": "深度 A"
+    },
+    "Profundidade B": {
+      "pt-BR": "Profundidade B",
+      "en": "Depth B",
+      "zh-CN": "深度 B"
+    },
+    "Profundidade C": {
+      "pt-BR": "Profundidade C",
+      "en": "Depth C",
+      "zh-CN": "深度 C"
+    },
+    "Profundidade em metros": {
+      "pt-BR": "Profundidade em metros",
+      "en": "Depth in meters",
+      "zh-CN": "深度单位：米"
+    },
+    "Projeto": {
+      "pt-BR": "Projeto",
+      "en": "Project",
+      "zh-CN": "项目"
+    },
+    "Projeto incompatível.": {
+      "pt-BR": "Projeto incompatível.",
+      "en": "Incompatible project.",
+      "zh-CN": "项目不兼容。"
+    },
+    "Prévia GPU ativa · campo ${atlas.grid} × ${atlas.grid} · ${result.samples} amostras": {
+      "pt-BR": "Prévia GPU ativa · campo ${atlas.grid} × ${atlas.grid} · ${result.samples} amostras",
+      "en": "GPU preview active · field ${atlas.grid} × ${atlas.grid} · ${result.samples} samples",
+      "zh-CN": "GPU 预览已启用 · 视场 ${atlas.grid} × ${atlas.grid} · ${result.samples} 个采样"
+    },
+    "Prévia GPU esparsa: aproximação espacial da lente, em luz linear.": {
+      "pt-BR": "Prévia GPU esparsa: aproximação espacial da lente, em luz linear.",
+      "en": "Sparse GPU preview: spatial lens approximation in linear light.",
+      "zh-CN": "稀疏 GPU 预览：线性光空间中的镜头近似。"
+    },
+    "Prévia GPU indisponível": {
+      "pt-BR": "Prévia GPU indisponível",
+      "en": "GPU preview unavailable",
+      "zh-CN": "GPU 预览不可用"
+    },
+    "Prévia esparsa da lente · controles artísticos separados": {
+      "pt-BR": "Prévia esparsa da lente · controles artísticos separados",
+      "en": "Sparse lens preview · separate artistic controls",
+      "zh-CN": "稀疏镜头预览 · 独立艺术控件"
+    },
+    "Prévia progressiva": {
+      "pt-BR": "Prévia progressiva",
+      "en": "Progressive preview",
+      "zh-CN": "渐进预览"
+    },
+    "Prévia · 1080 px": {
+      "pt-BR": "Prévia · 1080 px",
+      "en": "Preview · 1080 px",
+      "zh-CN": "预览 · 1080 像素"
+    },
+    "Prévia · 360 px": {
+      "pt-BR": "Prévia · 360 px",
+      "en": "Preview · 360 px",
+      "zh-CN": "预览 · 360 像素"
+    },
+    "Prévia · 540 px": {
+      "pt-BR": "Prévia · 540 px",
+      "en": "Preview · 540 px",
+      "zh-CN": "预览 · 540 像素"
+    },
+    "Prévia · 720 px": {
+      "pt-BR": "Prévia · 720 px",
+      "en": "Preview · 720 px",
+      "zh-CN": "预览 · 720 像素"
+    },
+    "Prévia · conforme qualidade": {
+      "pt-BR": "Prévia · conforme qualidade",
+      "en": "Preview · by quality",
+      "zh-CN": "预览 · 根据质量"
+    },
+    "Pupila · centro suave": {
+      "pt-BR": "Pupila · centro suave",
+      "en": "Pupil · soft center",
+      "zh-CN": "瞳孔 · 柔化中心"
+    },
+    "Pupila · realce de borda": {
+      "pt-BR": "Pupila · realce de borda",
+      "en": "Pupil · rim emphasis",
+      "zh-CN": "瞳孔 · 边缘增强"
+    },
+    "Qualidade": {
+      "pt-BR": "Qualidade",
+      "en": "Quality",
+      "zh-CN": "质量"
+    },
+    "Qualidade / Render": {
+      "pt-BR": "Qualidade / Render",
+      "en": "Quality / Render",
+      "zh-CN": "质量/渲染"
+    },
+    "Qualidade da prévia": {
+      "pt-BR": "Qualidade da prévia",
+      "en": "Preview quality",
+      "zh-CN": "预览质量"
+    },
+    "Qualidade de exportação": {
+      "pt-BR": "Qualidade de exportação",
+      "en": "Export quality",
+      "zh-CN": "导出质量"
+    },
+    "Qualidade extra só quando supera a qualidade principal e o limite da GPU. Base + Highlights recompõem Final em luz linear. Coverage mostra a região conservadora de amostragem extra do bokeh.": {
+      "pt-BR": "Qualidade extra só quando supera a qualidade principal e o limite da GPU. Base + Highlights recompõem Final em luz linear. Coverage mostra a região conservadora de amostragem extra do bokeh.",
+      "en": "Extra quality applies only above main quality and within GPU limits. Base + Highlights reconstruct Final in linear light. Coverage shows the conservative extra-sampling bokeh region.",
+      "zh-CN": "仅在超过主质量且未超 GPU 限制时使用额外质量。基础图像与高光在线性光中重组最终图像。覆盖视图显示额外散景采样的保守区域。"
+    },
+    "RESPOSTA A UM PONTO": {
+      "pt-BR": "RESPOSTA A UM PONTO",
+      "en": "POINT RESPONSE",
+      "zh-CN": "点光响应"
+    },
+    "Radial k₁": {
+      "pt-BR": "Radial k₁",
+      "en": "Radial k₁",
+      "zh-CN": "径向 k₁"
+    },
+    "Radial k₂": {
+      "pt-BR": "Radial k₂",
+      "en": "Radial k₂",
+      "zh-CN": "径向 k₂"
+    },
+    "Raio da íris · mm": {
+      "pt-BR": "Raio da íris · mm",
+      "en": "Iris radius · mm",
+      "zh-CN": "光圈半径 · 毫米"
+    },
+    "Raio de curvatura": {
+      "pt-BR": "Raio de curvatura",
+      "en": "Curvature radius",
+      "zh-CN": "曲率半径"
+    },
+    "Raio do halo · px em largura 1080": {
+      "pt-BR": "Raio do halo · px em largura 1080",
+      "en": "Halo radius · px at 1080 width",
+      "zh-CN": "光晕半径 · 1080 宽度下的像素"
+    },
+    "Raio · px em largura 1080": {
+      "pt-BR": "Raio · px em largura 1080",
+      "en": "Radius · px at 1080 width",
+      "zh-CN": "半径 · 1080 宽度下的像素"
+    },
+    "Raios ampliados antes e depois do sensor": {
+      "pt-BR": "Raios ampliados antes e depois do sensor",
+      "en": "Magnified rays before and after sensor",
+      "zh-CN": "传感器前后的放大光线"
+    },
+    "Raios refratados": {
+      "pt-BR": "Raios refratados",
+      "en": "Refracted rays",
+      "zh-CN": "折射光线"
+    },
+    "Realce de altas luzes · criativo": {
+      "pt-BR": "Realce de altas luzes · criativo",
+      "en": "Highlight gain · creative",
+      "zh-CN": "高光增强 · 创意"
+    },
+    "Red": {
+      "pt-BR": "Vermelho",
+      "en": "Red",
+      "zh-CN": "红色"
+    },
+    "Red / mapa escalar": {
+      "pt-BR": "Red / mapa escalar",
+      "en": "Red / scalar map",
+      "zh-CN": "红色/标量深度图"
+    },
+    "Reduzir zoom": {
+      "pt-BR": "Reduzir zoom",
+      "en": "Zoom out",
+      "zh-CN": "缩小"
+    },
+    "Refração · intensidade": {
+      "pt-BR": "Refração · intensidade",
+      "en": "Refraction intensity",
+      "zh-CN": "折射强度"
+    },
+    "Remover": {
+      "pt-BR": "Remover",
+      "en": "Remove",
+      "zh-CN": "移除"
+    },
+    "Render": {
+      "pt-BR": "Render",
+      "en": "Render",
+      "zh-CN": "渲染"
+    },
+    "Reset do perfil": {
+      "pt-BR": "Reset do perfil",
+      "en": "Reset profile",
+      "zh-CN": "重置配置"
+    },
+    "Reset geral": {
+      "pt-BR": "Reset geral",
+      "en": "Reset all",
+      "zh-CN": "全部重置"
+    },
+    "Resolução da prévia": {
+      "pt-BR": "Resolução da prévia",
+      "en": "Preview resolution",
+      "zh-CN": "预览分辨率"
+    },
+    "Resolução de exportação": {
+      "pt-BR": "Resolução de exportação",
+      "en": "Export resolution",
+      "zh-CN": "导出分辨率"
+    },
+    "Resolução do campo óptico": {
+      "pt-BR": "Resolução do campo óptico",
+      "en": "Optical field resolution",
+      "zh-CN": "光学视场分辨率"
+    },
+    "Resolução do viewer; não altera a exportação": {
+      "pt-BR": "Resolução do viewer; não altera a exportação",
+      "en": "Viewer resolution; does not change export",
+      "zh-CN": "查看器分辨率，不影响导出"
+    },
+    "Responde com uma prévia rápida durante os ajustes e refina até a qualidade escolhida ao parar.": {
+      "pt-BR": "Responde com uma prévia rápida durante os ajustes e refina até a qualidade escolhida ao parar.",
+      "en": "Shows a fast preview during adjustments and refines to selected quality when you stop.",
+      "zh-CN": "调整时显示快速预览，停止后精化到所选质量。"
+    },
+    "Resposta incompleta do motor.": {
+      "pt-BR": "Resposta incompleta do motor.",
+      "en": "Incomplete engine response.",
+      "zh-CN": "引擎响应不完整。"
+    },
+    "Restaurando a prescrição da lente.": {
+      "pt-BR": "Restaurando a prescrição da lente.",
+      "en": "Restoring lens prescription.",
+      "zh-CN": "正在恢复镜头处方。"
+    },
+    "Restaurar lente": {
+      "pt-BR": "Restaurar lente",
+      "en": "Restore lens",
+      "zh-CN": "恢复镜头"
+    },
+    "Restaurar perfil": {
+      "pt-BR": "Restaurar perfil",
+      "en": "Restore profile",
+      "zh-CN": "恢复配置"
+    },
+    "Restaurar prescrição": {
+      "pt-BR": "Restaurar prescrição",
+      "en": "Restore prescription",
+      "zh-CN": "恢复处方"
+    },
+    "Resultado da lente na GPU": {
+      "pt-BR": "Resultado da lente na GPU",
+      "en": "GPU lens result",
+      "zh-CN": "GPU 镜头结果"
+    },
+    "Retrato e caráter": {
+      "pt-BR": "Retrato e caráter",
+      "en": "Portrait and character",
+      "zh-CN": "人像与风格"
+    },
+    "Roda do mouse para zoom; arraste para navegar; arraste o divisor ou Shift para comparar": {
+      "pt-BR": "Roda do mouse para zoom; arraste para navegar; arraste o divisor ou Shift para comparar",
+      "en": "Mouse wheel to zoom; drag to pan; drag the divider or use Shift to compare",
+      "zh-CN": "滚轮缩放，拖动平移，拖动分隔线或按 Shift 比较"
+    },
+    "Rotacao do iris": {
+      "pt-BR": "Rotacao do iris",
+      "en": "Iris rotation",
+      "zh-CN": "光圈旋转"
+    },
+    "Rotação da sujeira · °": {
+      "pt-BR": "Rotação da sujeira · °",
+      "en": "Dirt rotation · °",
+      "zh-CN": "污渍旋转 · °"
+    },
+    "Rotação da íris · °": {
+      "pt-BR": "Rotação da íris · °",
+      "en": "Iris rotation · °",
+      "zh-CN": "光圈旋转 · °"
+    },
+    "SENSOR ${s.sensor_mm.toFixed(0)} × ${(s.sensor_mm/1.5).toFixed(0)} MM · FRENTE ${near.toFixed(2)} M / FUNDO ${far.toFixed(2)} M": {
+      "pt-BR": "SENSOR ${s.sensor_mm.toFixed(0)} × ${(s.sensor_mm/1.5).toFixed(0)} MM · FRENTE ${near.toFixed(2)} M / FUNDO ${far.toFixed(2)} M",
+      "en": "SENSOR ${s.sensor_mm.toFixed(0)} × ${(s.sensor_mm/1.5).toFixed(0)} MM · FRONT ${near.toFixed(2)} M / BACK ${far.toFixed(2)} M",
+      "zh-CN": "传感器 ${s.sensor_mm.toFixed(0)} × ${(s.sensor_mm/1.5).toFixed(0)} 毫米 · 前方 ${near.toFixed(2)} 米/后方 ${far.toFixed(2)} 米"
+    },
+    "Salva os vidros, os controles ópticos, depth, qualidade e configuração de saída. Imagens, vídeos e mapas não são incluídos.": {
+      "pt-BR": "Salva os vidros, os controles ópticos, depth, qualidade e configuração de saída. Imagens, vídeos e mapas não são incluídos.",
+      "en": "Saves glass, optical controls, depth settings, quality and output settings. Images, videos and maps are not included.",
+      "zh-CN": "保存镜片、光学控件、深度设置、质量和输出设置。不包含图像、视频或深度图。"
+    },
+    "Salvar meu perfil": {
+      "pt-BR": "Salvar meu perfil",
+      "en": "Save my profile",
+      "zh-CN": "保存我的配置"
+    },
+    "Salvar novo": {
+      "pt-BR": "Salvar novo",
+      "en": "Save new",
+      "zh-CN": "保存新配置"
+    },
+    "Salvar parâmetros": {
+      "pt-BR": "Salvar parâmetros",
+      "en": "Save parameters",
+      "zh-CN": "保存参数"
+    },
+    "Saída": {
+      "pt-BR": "Saída",
+      "en": "Output",
+      "zh-CN": "输出"
+    },
+    "Seed": {
+      "pt-BR": "Semente",
+      "en": "Seed",
+      "zh-CN": "随机种子"
+    },
+    "Selecionar foco": {
+      "pt-BR": "Selecionar foco",
+      "en": "Select focus",
+      "zh-CN": "选择焦点"
+    },
+    "Selecionar superfície ": {
+      "pt-BR": "Selecionar superfície ",
+      "en": "Select surface ",
+      "zh-CN": "选择表面 "
+    },
+    "Selecione um dos seus perfis para atualizar.": {
+      "pt-BR": "Selecione um dos seus perfis para atualizar.",
+      "en": "Select one of your profiles to update.",
+      "zh-CN": "请选择一个自定义配置进行更新。"
+    },
+    "Selecione um perfil próprio para excluir.": {
+      "pt-BR": "Selecione um perfil próprio para excluir.",
+      "en": "Select a custom profile to delete.",
+      "zh-CN": "请选择要删除的自定义配置。"
+    },
+    "Selecione um vidro no desenho ou uma superfície na tabela.": {
+      "pt-BR": "Selecione um vidro no desenho ou uma superfície na tabela.",
+      "en": "Select glass in the drawing or a surface in the table.",
+      "zh-CN": "请在图示中选择镜片，或在表格中选择表面。"
+    },
+    "Sem depth": {
+      "pt-BR": "Sem depth",
+      "en": "No depth",
+      "zh-CN": "无深度"
+    },
+    "Sensor horizontal (mm)": {
+      "pt-BR": "Sensor horizontal (mm)",
+      "en": "Horizontal sensor (mm)",
+      "zh-CN": "传感器宽度（毫米）"
+    },
+    "Shimmer - camada optica": {
+      "pt-BR": "Shimmer - camada optica",
+      "en": "Shimmer · optical layer",
+      "zh-CN": "闪烁 · 光学图层"
+    },
+    "Shimmer / camada de brilho": {
+      "pt-BR": "Shimmer / camada de brilho",
+      "en": "Shimmer / glitter layer",
+      "zh-CN": "闪烁/闪粉图层"
+    },
+    "Simulador de Desfoque": {
+      "pt-BR": "Simulador de Desfoque",
+      "en": "Defocus Simulator",
+      "zh-CN": "散焦模拟器"
+    },
+    "Simulador de Desfoque da Bruxosdovfx": {
+      "pt-BR": "Simulador de Desfoque da Bruxosdovfx",
+      "en": "Bruxosdovfx Defocus Simulator",
+      "zh-CN": "Bruxosdovfx 散焦模拟器"
+    },
+    "Soften Internal Cutoff": {
+      "pt-BR": "Suavizar recortes internos",
+      "en": "Soften internal cutoff",
+      "zh-CN": "柔化内部裁切"
+    },
+    "Spot no foco": {
+      "pt-BR": "Spot no foco",
+      "en": "Spot at focus",
+      "zh-CN": "合焦光斑"
+    },
+    "Suavidade da íris · fração do raio": {
+      "pt-BR": "Suavidade da íris · fração do raio",
+      "en": "Iris softness · radius fraction",
+      "zh-CN": "光圈柔度 · 半径比例"
+    },
+    "Suavidade do iris": {
+      "pt-BR": "Suavidade do iris",
+      "en": "Iris softness",
+      "zh-CN": "光圈柔度"
+    },
+    "Suaviza as bordas cortadas pelos vidros e pelo cat’s-eye. Use Suavidade da íris para a borda desenhada pelo diafragma.": {
+      "pt-BR": "Suaviza as bordas cortadas pelos vidros e pelo cat’s-eye. Use Suavidade da íris para a borda desenhada pelo diafragma.",
+      "en": "Softens edges clipped by glass and cat's-eye. Use Iris softness for the edge drawn by the aperture.",
+      "zh-CN": "柔化镜片及猫眼效应裁切的边缘。光圈形成的边缘请使用光圈柔度。"
+    },
+    "Suavizar limites internos": {
+      "pt-BR": "Suavizar limites internos",
+      "en": "Soften internal cutoff",
+      "zh-CN": "柔化内部裁切"
+    },
+    "Suavizar recortes internos": {
+      "pt-BR": "Suavizar recortes internos",
+      "en": "Soften internal clipping",
+      "zh-CN": "柔化内部裁切"
+    },
+    "Superficie a editar (0 = original)": {
+      "pt-BR": "Superficie a editar (0 = original)",
+      "en": "Surface to edit (0 = original)",
+      "zh-CN": "编辑表面（0 = 原始）"
+    },
+    "Superfície ${surface.index+1}: ${label}": {
+      "pt-BR": "Superfície ${surface.index+1}: ${label}",
+      "en": "Surface ${surface.index+1}: ${label}",
+      "zh-CN": "表面 ${surface.index+1}：${label}"
+    },
+    "Superfície de vidro · selecione no desenho": {
+      "pt-BR": "Superfície de vidro · selecione no desenho",
+      "en": "Glass surface · select in drawing",
+      "zh-CN": "镜片表面 · 在图示中选择"
+    },
+    "Superfícies": {
+      "pt-BR": "Superfícies",
+      "en": "Surfaces",
+      "zh-CN": "表面"
+    },
+    "Superfícies da lente · mm": {
+      "pt-BR": "Superfícies da lente · mm",
+      "en": "Lens surfaces · mm",
+      "zh-CN": "镜头表面 · 毫米"
+    },
+    "Swirl": {
+      "pt-BR": "Swirl",
+      "en": "Swirl",
+      "zh-CN": "旋转散景"
+    },
+    "Swirl tangencial": {
+      "pt-BR": "Swirl tangencial",
+      "en": "Tangential swirl",
+      "zh-CN": "切向旋转"
+    },
+    "Tamanho": {
+      "pt-BR": "Tamanho",
+      "en": "Size",
+      "zh-CN": "大小"
+    },
+    "Tempo excedido ao abrir o vídeo de depth.": {
+      "pt-BR": "Tempo excedido ao abrir o vídeo de depth.",
+      "en": "Timed out opening depth video.",
+      "zh-CN": "打开深度视频超时。"
+    },
+    "Tempo excedido ao buscar frame do vídeo": {
+      "pt-BR": "Tempo excedido ao buscar frame do vídeo",
+      "en": "Timed out seeking video frame",
+      "zh-CN": "查找视频帧超时"
+    },
+    "Tempo excedido ao buscar frame do vídeo de depth.": {
+      "pt-BR": "Tempo excedido ao buscar frame do vídeo de depth.",
+      "en": "Timed out seeking depth video frame.",
+      "zh-CN": "查找深度视频帧超时。"
+    },
+    "Textura importada": {
+      "pt-BR": "Textura importada",
+      "en": "Imported texture",
+      "zh-CN": "已导入纹理"
+    },
+    "Textura muito grande.": {
+      "pt-BR": "Textura muito grande.",
+      "en": "Texture is too large.",
+      "zh-CN": "纹理过大。"
+    },
+    "Threshold": {
+      "pt-BR": "Limiar",
+      "en": "Threshold",
+      "zh-CN": "阈值"
+    },
+    "Totalmente aberta": {
+      "pt-BR": "Totalmente aberta",
+      "en": "Wide open",
+      "zh-CN": "全开光圈"
+    },
+    "Transicao do corte (mapa)": {
+      "pt-BR": "Transicao do corte (mapa)",
+      "en": "Cut transition (map)",
+      "zh-CN": "切割过渡（深度图）"
+    },
+    "Traçado dos vidros": {
+      "pt-BR": "Traçado dos vidros",
+      "en": "Glass ray tracing",
+      "zh-CN": "镜片光线追踪"
+    },
+    "Traçado geométrico + coating de camada simples.": {
+      "pt-BR": "Traçado geométrico + coating de camada simples.",
+      "en": "Geometric tracing + single-layer coating.",
+      "zh-CN": "几何光线追踪与单层镀膜。"
+    },
+    "Traçando a luz…": {
+      "pt-BR": "Traçando a luz…",
+      "en": "Tracing light…",
+      "zh-CN": "正在追踪光线…"
+    },
+    "Usar abertura personalizada": {
+      "pt-BR": "Usar abertura personalizada",
+      "en": "Use custom aperture",
+      "zh-CN": "使用自定义光圈"
+    },
+    "Usar depth": {
+      "pt-BR": "Usar depth",
+      "en": "Use depth",
+      "zh-CN": "使用深度"
+    },
+    "Usar mapa de profundidade": {
+      "pt-BR": "Usar mapa de profundidade",
+      "en": "Use depth map",
+      "zh-CN": "使用深度图"
+    },
+    "Usar procedural": {
+      "pt-BR": "Usar procedural",
+      "en": "Use procedural",
+      "zh-CN": "使用程序化纹理"
+    },
+    "Use uma imagem de máscara de até 8 MB.": {
+      "pt-BR": "Use uma imagem de máscara de até 8 MB.",
+      "en": "Use a mask image up to 8 MB.",
+      "zh-CN": "遮罩图像最大为 8 MB。"
+    },
+    "Use uma textura de até 8 MB.": {
+      "pt-BR": "Use uma textura de até 8 MB.",
+      "en": "Use a texture up to 8 MB.",
+      "zh-CN": "纹理最大为 8 MB。"
+    },
+    "Valor fora dos limites desta superfície. Corrija o campo destacado.": {
+      "pt-BR": "Valor fora dos limites desta superfície. Corrija o campo destacado.",
+      "en": "Value outside this surface's limits. Correct the highlighted field.",
+      "zh-CN": "数值超出此表面限制。请修正高亮字段。"
+    },
+    "Valores maiores = mais longe": {
+      "pt-BR": "Valores maiores = mais longe",
+      "en": "Higher values = farther",
+      "zh-CN": "数值越大越远"
+    },
+    "Very High": {
+      "pt-BR": "Muito alta",
+      "en": "Very high",
+      "zh-CN": "极高"
+    },
+    "Very High · 512 amostras": {
+      "pt-BR": "Very High · 512 amostras",
+      "en": "Very high · 512 samples",
+      "zh-CN": "极高 · 512 个采样"
+    },
+    "Vinheta criativa": {
+      "pt-BR": "Vinheta criativa",
+      "en": "Creative vignette",
+      "zh-CN": "创意暗角"
+    },
+    "Voltar ao enquadramento completo": {
+      "pt-BR": "Voltar ao enquadramento completo",
+      "en": "Fit full frame",
+      "zh-CN": "适配完整画面"
+    },
+    "Vulkan acelera o traçado dos raios. A imagem é composta em CUDA ou WebGL.": {
+      "pt-BR": "Vulkan acelera o traçado dos raios. A imagem é composta em CUDA ou WebGL.",
+      "en": "Vulkan accelerates ray tracing. Image compositing uses CUDA or WebGL.",
+      "zh-CN": "Vulkan 加速光线追踪。图像合成使用 CUDA 或 WebGL。"
+    },
+    "Vulkan automático · CPU se indisponível": {
+      "pt-BR": "Vulkan automático · CPU se indisponível",
+      "en": "Automatic Vulkan · CPU if unavailable",
+      "zh-CN": "自动 Vulkan · 不可用时使用 CPU"
+    },
+    "Vulkan · com fallback CPU": {
+      "pt-BR": "Vulkan · com fallback CPU",
+      "en": "Vulkan · CPU fallback",
+      "zh-CN": "Vulkan · 可回退 CPU"
+    },
+    "Vídeo sem mapa de profundidade.": {
+      "pt-BR": "Vídeo sem mapa de profundidade.",
+      "en": "Video without depth map.",
+      "zh-CN": "视频没有深度图。"
+    },
+    "Warp polinomial artístico, não calibrado. Independente da PSF de bokeh.": {
+      "pt-BR": "Warp polinomial artístico, não calibrado. Independente da PSF de bokeh.",
+      "en": "Artistic polynomial warp, uncalibrated. Independent of bokeh PSF.",
+      "zh-CN": "未校准的艺术多项式扭曲，与散景 PSF 独立。"
+    },
+    "Zoom do viewer": {
+      "pt-BR": "Zoom do viewer",
+      "en": "Viewer zoom",
+      "zh-CN": "查看器缩放"
+    },
+    "curvatura": {
+      "pt-BR": "curvatura",
+      "en": "curvature",
+      "zh-CN": "曲率"
+    },
+    "da Bruxosdovfx": {
+      "pt-BR": "da Bruxosdovfx",
+      "en": "by Bruxosdovfx",
+      "zh-CN": "由 Bruxosdovfx 制作"
+    },
+    "diâmetro": {
+      "pt-BR": "diâmetro",
+      "en": "diameter",
+      "zh-CN": "直径"
+    },
+    "encoder indisponível": {
+      "pt-BR": "encoder indisponível",
+      "en": "encoder unavailable",
+      "zh-CN": "编码器不可用"
+    },
+    "espaçamento": {
+      "pt-BR": "espaçamento",
+      "en": "spacing",
+      "zh-CN": "间距"
+    },
+    "espaçamento · arraste as alças": {
+      "pt-BR": "espaçamento · arraste as alças",
+      "en": "spacing · drag handles",
+      "zh-CN": "间距 · 拖动控制柄"
+    },
+    "f/${a.fNumber.toFixed(2)} · pupila de entrada Ø ${a.diameter.toFixed(2)} mm · máxima abertura f/${a.minF.toFixed(2)}. Estimativa paraxial; exposição preservada.": {
+      "pt-BR": "f/${a.fNumber.toFixed(2)} · pupila de entrada Ø ${a.diameter.toFixed(2)} mm · máxima abertura f/${a.minF.toFixed(2)}. Estimativa paraxial; exposição preservada.",
+      "en": "f/${a.fNumber.toFixed(2)} · entrance pupil Ø ${a.diameter.toFixed(2)} mm · widest aperture f/${a.minF.toFixed(2)}. Paraxial estimate; exposure preserved.",
+      "zh-CN": "f/${a.fNumber.toFixed(2)} · 入瞳直径 ${a.diameter.toFixed(2)} 毫米 · 最大光圈 f/${a.minF.toFixed(2)}。近轴估算，保留曝光。"
+    },
+    "tamanho": {
+      "pt-BR": "tamanho",
+      "en": "size",
+      "zh-CN": "大小"
+    },
+    "uma assinatura.": {
+      "pt-BR": "uma assinatura.",
+      "en": "a signature.",
+      "zh-CN": "独特的印记。"
+    },
+    "Índice de refração após a superfície": {
+      "pt-BR": "Índice de refração após a superfície",
+      "en": "Refractive index after surface",
+      "zh-CN": "表面后的折射率"
+    },
+    "Índice n": {
+      "pt-BR": "Índice n",
+      "en": "Index n",
+      "zh-CN": "折射率 n"
+    },
+    "Íris": {
+      "pt-BR": "Íris",
+      "en": "Iris",
+      "zh-CN": "光圈"
+    },
+    "Íris / sensor": {
+      "pt-BR": "Íris / sensor",
+      "en": "Iris / sensor",
+      "zh-CN": "光圈/传感器"
+    },
+    "Íris ou profundidade inválida.": {
+      "pt-BR": "Íris ou profundidade inválida.",
+      "en": "Invalid iris or depth.",
+      "zh-CN": "光圈或深度无效。"
+    },
+    "índice": {
+      "pt-BR": "índice",
+      "en": "index",
+      "zh-CN": "折射率"
+    },
+    "Ⅱ Pausar": {
+      "pt-BR": "Ⅱ Pausar",
+      "en": "Ⅱ Pause",
+      "zh-CN": "Ⅱ 暂停"
+    },
+    "↔ Arraste para focar": {
+      "pt-BR": "↔ Arraste para focar",
+      "en": "↔ Drag to focus",
+      "zh-CN": "↔ 拖动对焦"
+    },
+    "■ Parar e salvar trecho": {
+      "pt-BR": "■ Parar e salvar trecho",
+      "en": "■ Stop and save segment",
+      "zh-CN": "■ 停止并保存片段"
+    },
+    "▶ Reproduzir": {
+      "pt-BR": "▶ Reproduzir",
+      "en": "▶ Play",
+      "zh-CN": "▶ 播放"
+    },
+    "＋ Abrir imagem": {
+      "pt-BR": "＋ Abrir imagem",
+      "en": "＋ Open image",
+      "zh-CN": "＋ 打开图像"
+    },
+    "＋ Depth": {
+      "pt-BR": "＋ Depth",
+      "en": "＋ Depth",
+      "zh-CN": "＋ 深度"
+    },
+    "＋ Vídeo": {
+      "pt-BR": "＋ Vídeo",
+      "en": "＋ Video",
+      "zh-CN": "＋ 视频"
+    },
+    "Idioma": {
+      "pt-BR": "Idioma",
+      "en": "Language",
+      "zh-CN": "语言"
+    },
+    "Português": {
+      "pt-BR": "Português",
+      "en": "Português",
+      "zh-CN": "Português"
+    },
+    "English": {
+      "pt-BR": "English",
+      "en": "English",
+      "zh-CN": "English"
+    },
+    "简体中文": {
+      "pt-BR": "简体中文",
+      "en": "简体中文",
+      "zh-CN": "简体中文"
+    },
+    "Lente": {
+      "pt-BR": "Lente",
+      "en": "Lens",
+      "zh-CN": "镜头"
+    },
+    "Foco": {
+      "pt-BR": "Foco",
+      "en": "Focus",
+      "zh-CN": "对焦"
+    },
+    "Efeitos": {
+      "pt-BR": "Efeitos",
+      "en": "Effects",
+      "zh-CN": "效果"
+    },
+    "Fechar": {
+      "pt-BR": "Fechar",
+      "en": "Close",
+      "zh-CN": "关闭"
+    },
+    "Negativo": {
+      "pt-BR": "Negativo",
+      "en": "Negative",
+      "zh-CN": "负"
+    },
+    "Positivo": {
+      "pt-BR": "Positivo",
+      "en": "Positive",
+      "zh-CN": "正"
+    },
+    "Cut": {
+      "pt-BR": "Cut",
+      "en": "Cut",
+      "zh-CN": "分割"
+    },
+    "LayerA": {
+      "pt-BR": "LayerA",
+      "en": "Layer A",
+      "zh-CN": "图层 A"
+    },
+    "LayerB": {
+      "pt-BR": "LayerB",
+      "en": "Layer B",
+      "zh-CN": "图层 B"
+    },
+    "LayerC": {
+      "pt-BR": "LayerC",
+      "en": "Layer C",
+      "zh-CN": "图层 C"
+    },
+    "LayerADepth": {
+      "pt-BR": "LayerADepth",
+      "en": "Layer A depth",
+      "zh-CN": "图层 A 深度"
+    },
+    "LayerBDepth": {
+      "pt-BR": "LayerBDepth",
+      "en": "Layer B depth",
+      "zh-CN": "图层 B 深度"
+    },
+    "LayerCDepth": {
+      "pt-BR": "LayerCDepth",
+      "en": "Layer C depth",
+      "zh-CN": "图层 C 深度"
+    },
+    "GlitterMatte": {
+      "pt-BR": "GlitterMatte",
+      "en": "Glitter matte",
+      "zh-CN": "闪粉遮罩"
+    },
+    "Depth externo": {
+      "pt-BR": "Depth externo",
+      "en": "External depth",
+      "zh-CN": "外部深度"
+    },
+    "Source": {
+      "pt-BR": "Source",
+      "en": "Source",
+      "zh-CN": "源图像"
+    },
+    "Output": {
+      "pt-BR": "Output",
+      "en": "Output",
+      "zh-CN": "输出"
+    },
+    " e ": {
+      "pt-BR": " e ",
+      "en": " and ",
+      "zh-CN": " 和 "
+    },
+    "Bruxosdovfx Desfoque Nuke": {
+      "pt-BR": "Bruxosdovfx Desfoque Nuke",
+      "en": "Bruxosdovfx Defocus Nuke",
+      "zh-CN": "Bruxosdovfx 散焦 Nuke"
+    },
+    "Arquivo do complemento inválido.": {
+      "pt-BR": "Arquivo do complemento inválido.",
+      "en": "Invalid add-on file.",
+      "zh-CN": "扩展组件文件无效。"
+    },
+    "Origem de download inválida.": {
+      "pt-BR": "Origem de download inválida.",
+      "en": "Invalid download source.",
+      "zh-CN": "下载来源无效。"
+    },
+    "Servidor retornou um download parcial. Tente novamente.": {
+      "pt-BR": "Servidor retornou um download parcial. Tente novamente.",
+      "en": "Server returned a partial download. Retry.",
+      "zh-CN": "服务器返回部分下载。请重试。"
+    },
+    "Download incompleto ou inválido. Tente novamente; arquivos completos serão reaproveitados.": {
+      "pt-BR": "Download incompleto ou inválido. Tente novamente; arquivos completos serão reaproveitados.",
+      "en": "Incomplete or invalid download. Retry; completed files will be reused.",
+      "zh-CN": "下载不完整或无效。请重试，完整文件将复用。"
+    },
+    "Não foi possível instalar ou validar os complementos. Tente novamente. Detalhes: ": {
+      "pt-BR": "Não foi possível instalar ou validar os complementos. Tente novamente. Detalhes: ",
+      "en": "Could not install or validate add-ons. Retry. Details: ",
+      "zh-CN": "无法安装或验证扩展组件。请重试。详情："
+    },
+    "Libere pelo menos 12 GB para baixar e instalar os complementos.": {
+      "pt-BR": "Libere pelo menos 12 GB para baixar e instalar os complementos.",
+      "en": "Free at least 12 GB to download and install add-ons.",
+      "zh-CN": "请释放至少 12 GB 空间以下载并安装扩展组件。"
+    },
+    "Complemento de instalação inválido. Reinstale o app.": {
+      "pt-BR": "Complemento de instalação inválido. Reinstale o app.",
+      "en": "Invalid installation add-on. Reinstall the app.",
+      "zh-CN": "安装组件无效。请重新安装应用。"
+    },
+    "Preparando os complementos…": {
+      "pt-BR": "Preparando os complementos…",
+      "en": "Preparing add-ons…",
+      "zh-CN": "正在准备扩展组件…"
+    },
+    "Baixando complementos…": {
+      "pt-BR": "Baixando complementos…",
+      "en": "Downloading add-ons…",
+      "zh-CN": "正在下载扩展组件…"
+    },
+    "Baixando complementos: {0} / {1} GB": {
+      "pt-BR": "Baixando complementos: {0} / {1} GB",
+      "en": "Downloading add-ons: {0} / {1} GB",
+      "zh-CN": "正在下载扩展组件：{0} / {1} GB"
+    },
+    "Instalando bibliotecas de profundidade…": {
+      "pt-BR": "Instalando bibliotecas de profundidade…",
+      "en": "Installing depth libraries…",
+      "zh-CN": "正在安装深度库…"
+    },
+    "Verificando DA2, DA3, MoGe e DVD…": {
+      "pt-BR": "Verificando DA2, DA3, MoGe e DVD…",
+      "en": "Checking DA2, DA3, MoGe and DVD…",
+      "zh-CN": "正在检查 DA2、DA3、MoGe 和 DVD…"
+    },
+    "Complementos prontos. Você já pode gerar depth; os pesos do modelo serão baixados no primeiro uso.": {
+      "pt-BR": "Complementos prontos. Você já pode gerar depth; os pesos do modelo serão baixados no primeiro uso.",
+      "en": "Add-ons ready. You can now generate depth; model weights download on first use.",
+      "zh-CN": "扩展组件已就绪。可以生成深度，模型权重将在首次使用时下载。"
+    },
+    "Instalação cancelada. Downloads concluídos serão reaproveitados.": {
+      "pt-BR": "Instalação cancelada. Downloads concluídos serão reaproveitados.",
+      "en": "Installation cancelled. Completed downloads will be reused.",
+      "zh-CN": "安装已取消。完整下载将复用。"
+    },
+    "Complementos já instalados.": {
+      "pt-BR": "Complementos já instalados.",
+      "en": "Add-ons already installed.",
+      "zh-CN": "扩展组件已安装。"
+    },
+    "Instalador de complementos indisponível. Atualize o app.": {
+      "pt-BR": "Instalador de complementos indisponível. Atualize o app.",
+      "en": "Add-on installer unavailable. Update the app.",
+      "zh-CN": "扩展组件安装器不可用。请更新应用。"
+    },
+    "Preparando instalação…": {
+      "pt-BR": "Preparando instalação…",
+      "en": "Preparing installation…",
+      "zh-CN": "正在准备安装…"
+    },
+    "Carregando mídia e modelo; o primeiro uso pode baixar pesos.": {
+      "pt-BR": "Carregando mídia e modelo; o primeiro uso pode baixar pesos.",
+      "en": "Loading media and model; first use may download weights.",
+      "zh-CN": "正在加载媒体和模型，首次使用可能下载权重。"
+    },
+    "Não foi possível ler o FPS do vídeo": {
+      "pt-BR": "Não foi possível ler o FPS do vídeo",
+      "en": "Could not read video FPS",
+      "zh-CN": "无法读取视频帧率"
+    },
+    "Limite atual: 3000 frames por geração de depth. Recorte o vídeo.": {
+      "pt-BR": "Limite atual: 3000 frames por geração de depth. Recorte o vídeo.",
+      "en": "Current limit: 3000 frames per depth generation. Trim the video.",
+      "zh-CN": "当前每次深度生成最多 3000 帧。请裁剪视频。"
+    },
+    "Mídia sem frames decodificáveis": {
+      "pt-BR": "Mídia sem frames decodificáveis",
+      "en": "Media has no decodable frames",
+      "zh-CN": "媒体没有可解码帧"
+    },
+    "Modelo produziu depth inválido": {
+      "pt-BR": "Modelo produziu depth inválido",
+      "en": "Model produced invalid depth",
+      "zh-CN": "模型生成的深度无效"
+    },
+    "Mapa de profundidade constante; tente outra imagem/modelo": {
+      "pt-BR": "Mapa de profundidade constante; tente outra imagem/modelo",
+      "en": "Constant depth map; try another image or model",
+      "zh-CN": "深度图为常量，请尝试其他图像或模型"
+    },
+    "Depth relativo: branco próximo. Escala única por sequência.": {
+      "pt-BR": "Depth relativo: branco próximo. Escala única por sequência.",
+      "en": "Relative depth: white is near. One scale per sequence.",
+      "zh-CN": "相对深度：白色为近端。序列使用统一尺度。"
+    },
+    " Inferência monocular; pode haver variação temporal.": {
+      "pt-BR": " Inferência monocular; pode haver variação temporal.",
+      "en": " Monocular inference; temporal variation may occur.",
+      "zh-CN": " 单目推理可能存在时间变化。"
+    },
+    "Nao foi possivel salvar o resultado do depth: status.json permanece bloqueado. Feche o programa que esta usando o arquivo e tente novamente.": {
+      "pt-BR": "Nao foi possivel salvar o resultado do depth: status.json permanece bloqueado. Feche o programa que esta usando o arquivo e tente novamente.",
+      "en": "Could not save depth: status.json remains locked. Close the program using it and retry.",
+      "zh-CN": "无法保存深度：status.json 仍被锁定。请关闭占用文件的程序后重试。"
+    },
+    "Instancia OFX ausente": {
+      "pt-BR": "Instancia OFX ausente",
+      "en": "Missing OFX instance",
+      "zh-CN": "OFX 实例缺失"
+    },
+    "Formato de imagem OFX invalido": {
+      "pt-BR": "Formato de imagem OFX invalido",
+      "en": "Invalid OFX image format",
+      "zh-CN": "OFX 图像格式无效"
+    },
+    "OFX requer RGBA ou Alpha": {
+      "pt-BR": "OFX requer RGBA ou Alpha",
+      "en": "OFX requires RGBA or Alpha",
+      "zh-CN": "OFX 需要 RGBA 或透明度"
+    },
+    "Limite: 8192 pixels por eixo / 17 megapixels": {
+      "pt-BR": "Limite: 8192 pixels por eixo / 17 megapixels",
+      "en": "Limit: 8192 pixels per axis / 17 megapixels",
+      "zh-CN": "限制：每边 8192 像素/1700 万像素"
+    },
+    "Saida requer RGBA": {
+      "pt-BR": "Saida requer RGBA",
+      "en": "Output requires RGBA",
+      "zh-CN": "输出需要 RGBA"
+    },
+    "Bruxosdovfx: %s": {
+      "pt-BR": "Bruxosdovfx: %s",
+      "en": "Bruxosdovfx: %s",
+      "zh-CN": "Bruxosdovfx：%s"
+    },
+    "Simulador de Desfoque da Bruxosdovfx - AE 0.2.1\\rNative lens tracing, external depth, CUDA / CPU.": {
+      "pt-BR": "Simulador de Desfoque da Bruxosdovfx - AE 0.2.2\\rNative lens tracing, external depth, CUDA / CPU.",
+      "en": "Bruxosdovfx Defocus Simulator - AE 0.2.2\\rNative lens tracing, external depth, CUDA / CPU.",
+      "zh-CN": "Bruxosdovfx 散焦模拟器 - AE 0.2.2\\r原生镜头追踪、外部深度、CUDA / CPU。"
+    },
+    "Superfície": {
+      "pt-BR": "Superfície",
+      "en": "Surface",
+      "zh-CN": "表面"
+    },
+    "Próximo": {
+      "pt-BR": "Próximo",
+      "en": "Near",
+      "zh-CN": "近端"
+    },
+    "Distante": {
+      "pt-BR": "Distante",
+      "en": "Far",
+      "zh-CN": "远端"
+    },
+    "Profundidade: ": {
+      "pt-BR": "Profundidade: ",
+      "en": "Depth: ",
+      "zh-CN": "深度："
+    },
+    "Erro: ": {
+      "pt-BR": "Erro: ",
+      "en": "Error: ",
+      "zh-CN": "错误："
+    },
+    "Arquivo": {
+      "pt-BR": "Arquivo",
+      "en": "File",
+      "zh-CN": "文件"
+    },
+    "Exportar": {
+      "pt-BR": "Exportar",
+      "en": "Export",
+      "zh-CN": "导出"
+    },
+    "amostras": {
+      "pt-BR": "amostras",
+      "en": "samples",
+      "zh-CN": "采样"
+    },
+    "mapa(s)": {
+      "pt-BR": "mapa(s)",
+      "en": "map(s)",
+      "zh-CN": "张深度图"
+    },
+    "metros": {
+      "pt-BR": "metros",
+      "en": "meters",
+      "zh-CN": "米"
+    },
+    "Profundidade em metros (mapa / Cut)": {
+      "pt-BR": "Profundidade em metros (mapa / Cut)",
+      "en": "Depth in meters (map / Cut)",
+      "zh-CN": "米制深度（图/分割）"
+    },
+    "Valor inválido: {0}. Use {1} a {2}.": {
+      "pt-BR": "Valor inválido: {0}. Use {1} a {2}.",
+      "en": "Invalid value: {0}. Use {1} to {2}.",
+      "zh-CN": "数值无效：{0}。请使用 {1} 至 {2}。"
+    },
+    "Esta versão aceita até 8 megapixels, com até 8192 pixels por lado.": {
+      "pt-BR": "Esta versão aceita até 8 megapixels, com até 8192 pixels por lado.",
+      "en": "This version supports up to 8 megapixels, with up to 8192 pixels per side.",
+      "zh-CN": "此版本最大支持 800 万像素，每边最多 8192 像素。"
+    },
+    "Dimensões de imagem/depth incompatíveis.": {
+      "pt-BR": "Dimensões de imagem/depth incompatíveis.",
+      "en": "Image/depth dimensions do not match.",
+      "zh-CN": "图像与深度尺寸不匹配。"
+    },
+    "Parâmetro inválido.": {
+      "pt-BR": "Parâmetro inválido.",
+      "en": "Invalid parameter.",
+      "zh-CN": "参数无效。"
+    },
+    "Formato de pixels inesperado.": {
+      "pt-BR": "Formato de pixels inesperado.",
+      "en": "Unexpected pixel format.",
+      "zh-CN": "像素格式异常。"
+    },
+    "Buffer de pixels incompleto.": {
+      "pt-BR": "Buffer de pixels incompleto.",
+      "en": "Incomplete pixel buffer.",
+      "zh-CN": "像素缓冲不完整。"
+    },
+    "Protocolo incompativel.": {
+      "pt-BR": "Protocolo incompativel.",
+      "en": "Incompatible protocol.",
+      "zh-CN": "协议不兼容。"
+    },
+    "Dimensoes ou parametros invalidos. Limite: 8 megapixels / 8192 por lado.": {
+      "pt-BR": "Dimensoes ou parametros invalidos. Limite: 8 megapixels / 8192 por lado.",
+      "en": "Invalid dimensions or parameters. Limit: 8 megapixels / 8192 per side.",
+      "zh-CN": "尺寸或参数无效。限制：800 万像素/每边 8192 像素。"
+    },
+    "Buffer incompleto.": {
+      "pt-BR": "Buffer incompleto.",
+      "en": "Incomplete buffer.",
+      "zh-CN": "缓冲不完整。"
+    },
+    "Parametro nao finito.": {
+      "pt-BR": "Parametro nao finito.",
+      "en": "Non-finite parameter.",
+      "zh-CN": "参数不是有限数值。"
+    },
+    "Parametro fora do intervalo.": {
+      "pt-BR": "Parametro fora do intervalo.",
+      "en": "Parameter out of range.",
+      "zh-CN": "参数超出范围。"
+    },
+    "Pixels nao finitos.": {
+      "pt-BR": "Pixels nao finitos.",
+      "en": "Non-finite pixels.",
+      "zh-CN": "像素不是有限数值。"
+    },
+    "Depth nao finito.": {
+      "pt-BR": "Depth nao finito.",
+      "en": "Non-finite depth.",
+      "zh-CN": "深度不是有限数值。"
+    },
+    "ms quadro": {
+      "pt-BR": "ms quadro",
+      "en": "ms/frame",
+      "zh-CN": "毫秒/帧"
+    },
+    "Acesso negado": {
+      "pt-BR": "Acesso negado",
+      "en": "Access denied",
+      "zh-CN": "拒绝访问"
+    },
+    "Não encontrado": {
+      "pt-BR": "Não encontrado",
+      "en": "Not found",
+      "zh-CN": "未找到"
+    },
+    "Configuração inválida.": {
+      "pt-BR": "Configuração inválida.",
+      "en": "Invalid settings.",
+      "zh-CN": "设置无效。"
+    },
+    "Host inválido": {
+      "pt-BR": "Host inválido",
+      "en": "Invalid host",
+      "zh-CN": "主机无效"
+    },
+    "Origem inválida": {
+      "pt-BR": "Origem inválida",
+      "en": "Invalid origin",
+      "zh-CN": "来源无效"
+    },
+    "Arquivo inválido": {
+      "pt-BR": "Arquivo inválido",
+      "en": "Invalid file",
+      "zh-CN": "文件无效"
+    },
+    "Ainda não disponível": {
+      "pt-BR": "Ainda não disponível",
+      "en": "Not available yet",
+      "zh-CN": "尚不可用"
+    },
+    "Job já iniciado": {
+      "pt-BR": "Job já iniciado",
+      "en": "Job already started",
+      "zh-CN": "任务已启动"
+    },
+    "Job inválido": {
+      "pt-BR": "Job inválido",
+      "en": "Invalid job",
+      "zh-CN": "任务无效"
+    },
+    "Entrada tratada como sRGB; alfa composto sobre preto. EXR/Log ainda não suportados.": {
+      "pt-BR": "Entrada tratada como sRGB; alfa composto sobre preto. EXR/Log ainda não suportados.",
+      "en": "Input treated as sRGB; alpha composited over black. EXR/Log not supported yet.",
+      "zh-CN": "输入按 sRGB 处理，透明度合成于黑底。尚不支持 EXR/Log。"
+    },
+    "Prévia": {
+      "pt-BR": "Prévia",
+      "en": "Preview",
+      "zh-CN": "预览"
+    },
+    "Desenho da lente": {
+      "pt-BR": "Desenho da lente",
+      "en": "Lens diagram",
+      "zh-CN": "镜头剖面"
+    },
+    "Clique no vidro; ajuste a superficie abaixo.": {
+      "pt-BR": "Clique no vidro; ajuste a superfície abaixo.",
+      "en": "Click a surface; edit it with the controls below.",
+      "zh-CN": "点击镜片表面，然后使用下方控件调整。"
+    },
+    "Luz > vidros > diafragma > sensor": {
+      "pt-BR": "Luz > vidros > diafragma > sensor",
+      "en": "Light > glass > aperture > sensor",
+      "zh-CN": "光线 > 镜片 > 光圈 > 传感器"
+    },
+    "Filtros / Lens Flare": {
+      "pt-BR": "Filtros / Lens Flare",
+      "en": "Filters / Lens Flare",
+      "zh-CN": "滤镜 / 镜头光晕"
+    },
+    "Filtro": {
+      "pt-BR": "Filtro",
+      "en": "Filter",
+      "zh-CN": "滤镜"
+    },
+    "Intensidade do filtro": {
+      "pt-BR": "Intensidade do filtro",
+      "en": "Filter strength",
+      "zh-CN": "滤镜强度"
+    },
+    "Posicao X (%)": {
+      "pt-BR": "Posicao X (%)",
+      "en": "Position X (%)",
+      "zh-CN": "位置 X (%)"
+    },
+    "Posicao Y (%)": {
+      "pt-BR": "Posicao Y (%)",
+      "en": "Position Y (%)",
+      "zh-CN": "位置 Y (%)"
+    },
+    "Escala (%)": {
+      "pt-BR": "Escala (%)",
+      "en": "Scale (%)",
+      "zh-CN": "缩放 (%)"
+    },
+    "Rotacao do filtro": {
+      "pt-BR": "Rotacao do filtro",
+      "en": "Filter rotation",
+      "zh-CN": "滤镜旋转"
+    },
+    "Alcance do kernel": {
+      "pt-BR": "Alcance do kernel",
+      "en": "Kernel radius",
+      "zh-CN": "核半径"
+    },
+    "Limiar dos highlights": {
+      "pt-BR": "Limiar dos highlights",
+      "en": "Highlight threshold",
+      "zh-CN": "高光阈值"
+    },
+    "Suavidade do limiar": {
+      "pt-BR": "Suavidade do limiar",
+      "en": "Threshold softness",
+      "zh-CN": "阈值柔化"
+    },
+    "Centro preservado": {
+      "pt-BR": "Centro preservado",
+      "en": "Preserved center",
+      "zh-CN": "保留中心"
+    },
+    "Transicao da regiao": {
+      "pt-BR": "Transicao da regiao",
+      "en": "Region transition",
+      "zh-CN": "区域过渡"
+    },
+    "Deslocamento de refracao": {
+      "pt-BR": "Deslocamento de refracao",
+      "en": "Refraction shift",
+      "zh-CN": "折射位移"
+    },
+    "Facetas / replicas": {
+      "pt-BR": "Facetas / replicas",
+      "en": "Facets / replicas",
+      "zh-CN": "切面 / 副本"
+    },
+    "Aplicar em regiao": {
+      "pt-BR": "Aplicar em regiao",
+      "en": "Regional application",
+      "zh-CN": "区域应用"
+    },
+    "Clarear laterais (%)": {
+      "pt-BR": "Clarear laterais (%)",
+      "en": "Brighten edges (%)",
+      "zh-CN": "提亮边缘 (%)"
+    },
+    "Lens Flare - reflexoes": {
+      "pt-BR": "Lens Flare - reflexoes",
+      "en": "Lens Flare - reflections",
+      "zh-CN": "镜头光晕 - 反射"
+    },
+    "Ganho de Lens Flare": {
+      "pt-BR": "Ganho de Lens Flare",
+      "en": "Lens Flare gain",
+      "zh-CN": "镜头光晕增益"
+    },
+    "Limiar das fontes": {
+      "pt-BR": "Limiar das fontes",
+      "en": "Source threshold",
+      "zh-CN": "光源阈值"
+    },
+    "Maximo de fontes": {
+      "pt-BR": "Maximo de fontes",
+      "en": "Maximum sources",
+      "zh-CN": "最大光源数"
+    },
+    "Coating - intensidade": {
+      "pt-BR": "Coating - intensidade",
+      "en": "Coating strength",
+      "zh-CN": "镀膜强度"
+    },
+    "Coating - projeto (nm)": {
+      "pt-BR": "Coating - projeto (nm)",
+      "en": "Coating design (nm)",
+      "zh-CN": "镀膜设计 (nm)"
+    },
+    "Foco / Textura do bokeh": {
+      "pt-BR": "Foco / Textura do bokeh",
+      "en": "Focus / Bokeh texture",
+      "zh-CN": "焦点 / 散景纹理"
+    },
+    "Preservar foco": {
+      "pt-BR": "Preservar foco",
+      "en": "Focus preservation",
+      "zh-CN": "保留焦点"
+    },
+    "Transicao do foco (dioptrias)": {
+      "pt-BR": "Transicao do foco (dioptrias)",
+      "en": "Focus transition (diopters)",
+      "zh-CN": "焦点过渡（屈光度）"
+    },
+    "Desfoque proximo (%)": {
+      "pt-BR": "Desfoque proximo (%)",
+      "en": "Foreground blur (%)",
+      "zh-CN": "前景模糊 (%)"
+    },
+    "Desfoque distante (%)": {
+      "pt-BR": "Desfoque distante (%)",
+      "en": "Background blur (%)",
+      "zh-CN": "背景模糊 (%)"
+    },
+    "Textura - aneis": {
+      "pt-BR": "Textura - aneis",
+      "en": "Texture - rings",
+      "zh-CN": "纹理 - 环纹"
+    },
+    "Textura - granulado": {
+      "pt-BR": "Textura - granulado",
+      "en": "Texture - grain",
+      "zh-CN": "纹理 - 颗粒"
+    },
+    "Textura - frequencia": {
+      "pt-BR": "Textura - frequencia",
+      "en": "Texture - frequency",
+      "zh-CN": "纹理 - 频率"
+    },
+    "Textura - rotacao": {
+      "pt-BR": "Textura - rotacao",
+      "en": "Texture - rotation",
+      "zh-CN": "纹理 - 旋转"
+    },
+    "Limite de clareamento (EV)": {
+      "pt-BR": "Limite de clareamento (EV)",
+      "en": "Brightness compensation limit (EV)",
+      "zh-CN": "亮度补偿上限 (EV)"
+    },
+    "Prisma espectral": {
+      "pt-BR": "Prisma espectral",
+      "en": "Spectral prism",
+      "zh-CN": "光谱棱镜"
+    },
+    "Blur direcional": {
+      "pt-BR": "Blur direcional",
+      "en": "Directional blur",
+      "zh-CN": "方向模糊"
+    }
+  }
+}

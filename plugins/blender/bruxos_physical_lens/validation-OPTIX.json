@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "device": "OPTIX",
+  "blender": "4.5.14 LTS",
+  "means": {
+    "base": 0.49964893960471574,
+    "zero": 0.49964893840175745,
+    "flare": 2.0450516292670122,
+    "coated-base": 0.7077989960089326,
+    "coated-flare": 1.3846785844458889
+  },
+  "zeroExact": true,
+  "globalMaterialOSL": false,
+  "limits": "plane plate scene; 256 samples; two reflections only; hash-based path sampling"
+}

@@ -1,109 +1,113 @@
-# Simulador de Desfoque
-# Optical Defocus Simulator
-# 镜头虚化模拟器
+# Simulador de Desfoque · Lens Blur Simulator · 镜头虚化模拟器
 
-**Português · English · 中文**
+**Português · [English](#english) · [中文](#中文)**
 
-<img width="939" height="537" alt="image" src="https://github.com/user-attachments/assets/645d708d-5396-4017-bfad-f818dd2926d3" />
----
+<img width="939" height="537" alt="Simulador de Desfoque" src="https://github.com/user-attachments/assets/645d708d-5396-4017-bfad-f818dd2926d3" />
 
-## 🇧🇷 Português
+Um simulador óptico que calcula o desfoque por **ray tracing pelas superfícies reais da lente**: refração em cada vidro, diafragma, aberrações, dispersão, coatings e reflexos internos. O mesmo motor roda no aplicativo desktop e nos plugins.
 
-### Desfoque que atravessa a lente.
+- **Site:** https://nyckm.github.io/Simulador-de-Lente/ (as páginas `index.html`, `en.html` e `zh.html` deste repositório)
+- **Downloads:** [Releases](https://github.com/NyckM/Simulador-de-Lente/releases/latest)
 
-O **Simulador de Desfoque da Bruxosdovfx** é um simulador óptico que calcula o desfoque através de **ray tracing pelas superfícies reais da lente**.
+## Novidades da 1.2.17
 
-Em vez de simplesmente borrar pixels, o motor simula o caminho da luz: refração nos elementos ópticos, diafragma, aberrações, dispersão, formato do bokeh e comportamento fora do eixo.
+| | |
+|---|---|
+| **Lens Flare das luzes da imagem** | Reflexos entre os vidros calculados a partir das fontes de luz da foto. Dependem da lente, do coating e do diafragma, e são somados à imagem. |
+| **Starburst físico** | Difração da íris atual (FFT da abertura, 16 comprimentos de onda). Lâminas pares dão N raios, ímpares 2N. Some fora de foco. |
+| **Lens Dirt real** | Marcas de dedo, poeira, riscos e fungos no elemento frontal, iluminados pelas altas luzes e desfocados pela abertura. |
+| **Filtros na frente da lente, em 3D** | Visor 3D do vidro, 8 tipos de prisma com borda desfocada, Black Mist contínuo e Kaleidoscope sem emenda. |
+| **Interface modular** | Painéis que encaixam em cima, dos lados ou embaixo, janelas flutuantes e menu Arquivo / Editar / Efeitos / Exibir / Janela / Ajuda. |
+| **Depth e luzes** | Mapa de profundidade fiel ao desfoque e recuperação de luzes recortadas em fotos 8-bit. |
 
-### Principais recursos
+Plugins **0.4.0** com o mesmo visual: After Effects, DaVinci Resolve, Nuke, Blender e ComfyUI. O Photoshop continua na 0.2.1.
 
-- **200+ lentes**: Double-Gauss, Sonnar, Tessar, Petzval, Triplets, anamórficas, retrofocus e outras.
-- Ray tracing óptico em **Vulkan / CUDA**.
-- Imagens, vídeos e **RGB + Depth**.
-- Bokeh baseado na construção real da lente.
-- Cat-eye, aberração esférica e dispersão cromática.
-- Coatings, ghosts e difração.
-- Prescrição óptica editável: curvatura, espessura, diâmetro e índice de refração.
-- Qualidade ajustável de preview até **1024 samples por pixel**.
-- Exportação de PNG e vídeo.
+## Downloads (Release V1.2.17)
 
-### Plataformas
+| Pacote | Arquivo |
+|---|---|
+| App Windows x64 | `Simulador-de-Desfoque-Bruxosdovfx-1.2.17-Setup-Windows-x64.exe` |
+| After Effects 0.4.0 | `Bruxosdovfx-Desfoque-AE-0.4.0-{PT-BR,EN,ZH-CN}-Windows.zip` |
+| DaVinci Resolve 0.4.0 | `Bruxosdovfx-Desfoque-Resolve-0.4.0-{PT-BR,EN,ZH-CN}-Windows.zip` |
+| Nuke 0.4.0 | `Bruxosdovfx-Desfoque-Nuke-0.4.0-{PT-BR,EN,ZH-CN}-Windows.zip` |
+| Photoshop 0.2.1 | `Bruxosdovfx-Desfoque-Photoshop-0.2.1-{PT-BR,EN,ZH-CN}-Windows.zip` |
+| Blender 0.4.0 | `Bruxos-Physical-Lens-0.4.0-Blender-Addon.zip` |
+| ComfyUI 0.4.0 | `ComfyUI-Bruxos-WebGL-0.4.0.zip` |
 
-- Windows x64
-- After Effects
-- DaVinci Resolve / OpenFX
-- Nuke
-- Photoshop
+## Estrutura do repositório
 
-O mesmo motor óptico e a mesma biblioteca de lentes são compartilhados entre o aplicativo e os plugins.
+```
+index.html, en.html, zh.html, css/, js/, assets/   site (GitHub Pages)
+app/                aplicativo desktop: servidor Python + interface WebGL2 (pywebview / WebView2)
+  optics/           motor óptico em Python (ray tracing, atlas, depth, ghosts, filtros de referência)
+  web/              interface e renderizador WebGL2 (gpu.js, filter-stack.js, reflected-ghosts.js…)
+  data/             prescrições ópticas (295 perfis) e catálogos
+  localization/     catálogo PT / EN / ZH
+  tests/, tools/    testes e ferramentas de build
+plugins/
+  native/ae         After Effects (C++ / CUDA)
+  native/ofx        DaVinci Resolve (OpenFX)
+  native/nuke       Nuke (OpenFX)
+  native/cuda       motor CUDA
+  native/photoshop  Photoshop (UXP + serviço nativo)
+  native/vulkan     protótipo Vulkan compute
+  native/build      scripts de compilação e empacotamento dos plugins nativos
+  blender/          add-on Bruxos Physical Lens (OSL + compositor)
+  comfyui/          nós Bruxos WebGL para ComfyUI
+docs/historico/     notas de cada etapa e versão
+tools/              ferramentas do site (i18n, demos, build-filters3d.py)
+```
 
----
+## Rodar a partir do código
 
-## 🇺🇸 English
+**App (Windows, Python 3.12):**
+```
+cd app
+python -m pip install -r requirements-desktop.txt
+python desktop.py          # ou: python server.py e abra http://localhost:8000
+```
+CUDA é opcional: sem GPU NVIDIA o app usa WebGL2. Para gerar o executável: `pyinstaller OpticaLab.spec`. O instalador sai de `installer-1.2.17.nsi` (NSIS).
 
-### Blur that travels through the lens.
+**Plugins nativos:** veja `plugins/native/build/build-plugins-1.2.17.ps1`. É preciso ter o Visual Studio 2019 Build Tools, o CUDA 12.8, o [Adobe After Effects SDK](https://developer.adobe.com/after-effects/) e os [headers OpenFX](https://github.com/AcademySoftwareFoundation/openfx). Os SDKs não fazem parte deste repositório.
 
-**Lens Blur Simulator by Bruxosdovfx** is an optical simulator that computes defocus using **ray tracing through the actual surfaces of a lens**.
+**Blender:** compacte `plugins/blender/bruxos_physical_lens` e instale como extensão (Blender 4.5+).
+**ComfyUI:** use o zip da release (ele inclui o motor `_engine`, copiado de `app/optics` e `app/data`).
 
-Instead of simply blurring recorded pixels, the engine simulates the path of light through the optical system: refraction, aperture clipping, aberrations, dispersion, bokeh shape and off-axis behavior.
+## Site: demonstração dos filtros 3D
 
-### Main features
+`js/filters3d.js` é gerado a partir do código do app (`app/web/filter-stack.js`), então o site mostra exatamente os filtros do aplicativo. Depois de mudar os filtros, rode:
+```
+python tools/build-filters3d.py
+```
 
-- **200+ lenses** including Double-Gauss, Sonnar, Tessar, Petzval, triplets, anamorphics and retrofocus designs.
-- Optical ray tracing with **Vulkan / CUDA**.
-- Image, video and **RGB + Depth** support.
-- Bokeh generated from the actual lens design.
-- Cat-eye, spherical aberration and chromatic dispersion.
-- Coatings, ghosts and diffraction.
-- Editable optical prescription: curvature, thickness, diameter and refractive index.
-- Preview and render quality up to **1024 samples per pixel**.
-- PNG and video output.
+## Licenças
 
-### Platforms
-
-- Windows x64
-- After Effects
-- DaVinci Resolve / OpenFX
-- Nuke
-- Photoshop
-
-The desktop application and plugins share the same optical engine and lens library.
-
----
-
-## 🇨🇳 中文
-
-### 真正穿过镜头的虚化。
-
-**Bruxosdovfx 镜头虚化模拟器**是一款光学模拟工具，通过对**真实镜头表面进行光线追踪**来计算焦外虚化。
-
-它不是简单地模糊已有像素，而是模拟光线穿过整个光学系统的过程，包括折射、光圈裁切、像差、色散、焦外形状以及离轴区域的光学变化。
-
-### 主要功能
-
-- **200+ 款镜头**：双高斯、松纳、天塞、佩兹伐、三片式、变形宽银幕、反远摄等。
-- 基于 **Vulkan / CUDA** 的光学光线追踪。
-- 支持图片、视频和 **RGB + 深度图**。
-- 根据真实镜头结构生成焦外效果。
-- 猫眼虚化、球面像差和色散。
-- 镀膜、鬼影和衍射效果。
-- 可编辑光学处方：曲率、厚度、直径和折射率。
-- 预览与渲染质量最高可达 **每像素 1024 次采样**。
-- 支持 PNG 和视频输出。
-
-### 支持平台
-
-- Windows x64
-- After Effects
-- DaVinci Resolve / OpenFX
-- Nuke
-- Photoshop
-
-桌面应用与所有插件共享同一个光学引擎和镜头库.
+Código sob **GPL-3.0** (`LICENSE`). A prescrição Double-Gauss de referência vem do LensSim (MIT, `LICENSE-LensSim.txt`); as prescrições numéricas importadas estão descritas em `SOURCE-LensVisualizer.md`; os componentes de terceiros, em `THIRD-PARTY.md`. Nomes de fabricantes pertencem aos seus titulares, e os perfis de lentes são modelos ópticos aproximados.
 
 ---
 
-**Bruxosdovfx**  
-*Optical defocus, not just blur.*
+## English
 
-<img width="944" height="409" alt="image" src="https://github.com/user-attachments/assets/10602a2b-e511-4724-b5db-8721c9d13f6f" />
+An optical simulator that computes defocus by **ray tracing through the real lens surfaces**: refraction at every glass, aperture, aberrations, dispersion, coatings and internal reflections. The same engine runs in the desktop app and in the plugins.
+
+**New in 1.2.17:** lens flare from the image highlights (RealFlare style), a physical iris starburst, real lens dirt (fingerprints, dust, scratches, fungus), filters in front of the lens with a 3D glass viewer and 8 prism types, a modular dockable interface with a top menu, accurate depth and recovery of clipped highlights. The **0.4.0** plugins have the same look: After Effects, DaVinci Resolve, Nuke, Blender and ComfyUI.
+
+- Website: `index.html` (PT), `en.html`, `zh.html`. Downloads: [Releases](https://github.com/NyckM/Simulador-de-Lente/releases/latest).
+- Run from source: `cd app && pip install -r requirements-desktop.txt && python desktop.py`.
+- Native plugins: `plugins/native/build/build-plugins-1.2.17.ps1` (needs VS 2019 Build Tools, CUDA 12.8, the Adobe AE SDK and OpenFX headers, which are not included).
+- License: GPL-3.0. See `THIRD-PARTY.md`.
+
+## 中文
+
+一款通过对**真实镜头表面进行光线追踪**来计算焦外虚化的光学模拟器：每片玻璃的折射、光圈、像差、色散、镀膜和内部反射。桌面应用和各插件使用同一个引擎。
+
+**1.2.17 新功能：**来自画面高光的镜头光晕（RealFlare 风格）、物理光圈星芒、真实镜头污渍（指纹、灰尘、划痕、霉菌）、带 3D 玻璃视图和 8 种棱镜的镜前滤镜、可停靠的模块化界面与顶部菜单、准确的深度以及截断高光恢复。**0.4.0** 插件效果相同：After Effects、DaVinci Resolve、Nuke、Blender 和 ComfyUI。
+
+- 网站：`index.html`（葡萄牙语）、`en.html`、`zh.html`。下载：[Releases](https://github.com/NyckM/Simulador-de-Lente/releases/latest)。
+- 从源码运行：`cd app && pip install -r requirements-desktop.txt && python desktop.py`。
+- 原生插件：`plugins/native/build/build-plugins-1.2.17.ps1`（需要 VS 2019 Build Tools、CUDA 12.8、Adobe AE SDK 和 OpenFX 头文件，本仓库不包含这些 SDK）。
+- 许可证：GPL-3.0，详见 `THIRD-PARTY.md`。
+
+---
+
+**Bruxosdovfx** · *Optical defocus, not just blur.*

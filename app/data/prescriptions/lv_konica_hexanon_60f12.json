@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 82.212,
+    "thickness": 3.5,
+    "nd": 1.7725,
+    "aperture_diameter": 54.0
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 155.652,
+    "thickness": 0.2,
+    "nd": 1.0,
+    "aperture_diameter": 50.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 46.616,
+    "thickness": 5.5,
+    "nd": 1.7725,
+    "aperture_diameter": 50.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 116.453,
+    "thickness": 0.2,
+    "nd": 1.0,
+    "aperture_diameter": 48.0
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 24.282,
+    "thickness": 6.67,
+    "nd": 1.7725,
+    "aperture_diameter": 43.3
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 37.324,
+    "thickness": 2.0,
+    "nd": 1.0,
+    "aperture_diameter": 37.2
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 43.35,
+    "thickness": 2.34,
+    "nd": 1.84666,
+    "aperture_diameter": 33.1
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": 16.599,
+    "thickness": 8.6,
+    "nd": 1.0,
+    "aperture_diameter": 30.08
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": 0.0,
+    "thickness": 6.7,
+    "nd": 1.0,
+    "aperture_diameter": 26.320502222,
+    "is_stop": true
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -23.022,
+    "thickness": 1.83,
+    "nd": 1.69895,
+    "aperture_diameter": 29.0
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": 64.89,
+    "thickness": 7.13,
+    "nd": 1.8044,
+    "aperture_diameter": 30.2
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": -28.656,
+    "thickness": 0.2,
+    "nd": 1.0,
+    "aperture_diameter": 30.8
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": 80.976,
+    "thickness": 3.4,
+    "nd": 1.8061,
+    "aperture_diameter": 32.0
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": -170.243,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 32.0
+  }
+}

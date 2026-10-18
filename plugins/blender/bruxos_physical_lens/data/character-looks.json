@@ -1,0 +1,128 @@
+[
+  {
+    "id": "clean",
+    "name": "Neutro",
+    "app": {
+      "swirl": 0,
+      "squeeze": 1,
+      "coma": 0,
+      "astigmatism_mm": 0,
+      "rim_gain": 0,
+      "apodization": 0,
+      "vignette_amount": 0,
+      "edge_compensation": 0
+    },
+    "blender": {
+      "bokeh_type": "PHYSICAL",
+      "swirl": 0,
+      "squeeze": 1,
+      "coma": 0,
+      "astigmatism": 0,
+      "cat_eye": 0,
+      "crop_bokeh": 0,
+      "edge_brightness": 0,
+      "vignette": 0
+    }
+  },
+  {
+    "id": "portrait_swirl",
+    "name": "Retrato · swirl",
+    "app": {
+      "swirl": 0.8,
+      "squeeze": 1,
+      "coma": 0.1,
+      "astigmatism_mm": 0.15,
+      "rim_gain": 0,
+      "apodization": 0,
+      "vignette_amount": 0,
+      "edge_compensation": 50
+    },
+    "blender": {
+      "bokeh_type": "SWIRL",
+      "swirl": 0.8,
+      "squeeze": 1,
+      "coma": 0.1,
+      "astigmatism": 0.15,
+      "cat_eye": 0,
+      "crop_bokeh": 0,
+      "edge_brightness": 0.35,
+      "vignette": 0
+    }
+  },
+  {
+    "id": "cinema_oval",
+    "name": "Cinema · oval",
+    "app": {
+      "swirl": 0,
+      "squeeze": 1.8,
+      "coma": 0,
+      "astigmatism_mm": 0,
+      "rim_gain": 0,
+      "apodization": 0.15,
+      "vignette_amount": 0,
+      "edge_compensation": 50
+    },
+    "blender": {
+      "bokeh_type": "ANAMORPHIC",
+      "swirl": 0,
+      "squeeze": 1.8,
+      "coma": 0,
+      "astigmatism": 0,
+      "cat_eye": 0,
+      "crop_bokeh": 0,
+      "edge_brightness": 0.35,
+      "vignette": 0
+    }
+  },
+  {
+    "id": "character_edges",
+    "name": "Caráter nas bordas",
+    "app": {
+      "swirl": 0.35,
+      "squeeze": 1.15,
+      "coma": 0,
+      "astigmatism_mm": 0.5,
+      "rim_gain": 0,
+      "apodization": 0,
+      "vignette_amount": 0,
+      "edge_compensation": 40
+    },
+    "blender": {
+      "bokeh_type": "PHYSICAL",
+      "swirl": 0.35,
+      "squeeze": 1.15,
+      "coma": 0,
+      "astigmatism": 0.5,
+      "cat_eye": 0.3,
+      "crop_bokeh": 0,
+      "edge_brightness": 0.25,
+      "vignette": 0
+    }
+  },
+  {
+    "id": "bubble",
+    "name": "Bokeh · borda marcada",
+    "app": {
+      "swirl": 0,
+      "squeeze": 1,
+      "coma": 0,
+      "astigmatism_mm": 0,
+      "rim_gain": 1,
+      "apodization": 0,
+      "vignette_amount": 0,
+      "edge_compensation": 30
+    },
+    "blender": {
+      "bokeh_type": "CROPPED",
+      "swirl": 0,
+      "squeeze": 1,
+      "coma": 0,
+      "astigmatism": 0,
+      "cat_eye": 0,
+      "crop_bokeh": 0.4,
+      "edge_brightness": 0.25,
+      "vignette": 0
+    },
+    "blender_name": "Bokeh · recorte lateral"
+  }
+]

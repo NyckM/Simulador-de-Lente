@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 27.807,
+    "thickness": 1.3,
+    "nd": 1.87387,
+    "aperture_diameter": 30.4
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 16.174,
+    "thickness": 5.49,
+    "nd": 1.7139,
+    "aperture_diameter": 28.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 60.506,
+    "thickness": 0.1,
+    "nd": 1.0,
+    "aperture_diameter": 26.4
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 33.39,
+    "thickness": 2.87,
+    "nd": 1.79824,
+    "aperture_diameter": 26.0
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 94.571,
+    "thickness": 2.99,
+    "nd": 1.0,
+    "aperture_diameter": 25.2
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": -156.34,
+    "thickness": 1.2,
+    "nd": 1.61799,
+    "aperture_diameter": 21.4
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 22.456,
+    "thickness": 6.81,
+    "nd": 1.0,
+    "aperture_diameter": 21.0
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": 0.0,
+    "thickness": 12.88,
+    "nd": 1.0,
+    "aperture_diameter": 18.936119396668566,
+    "is_stop": true
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": 34.75,
+    "thickness": 4.41,
+    "nd": 1.83481,
+    "aperture_diameter": 22.4
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -44.687,
+    "thickness": 0.5,
+    "nd": 1.0,
+    "aperture_diameter": 22.4
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": 33.66,
+    "thickness": 2.94,
+    "nd": 1.83481,
+    "aperture_diameter": 22.2
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": 287.183,
+    "thickness": 1.34,
+    "nd": 1.0,
+    "aperture_diameter": 20.4
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": -43.649,
+    "thickness": 1.2,
+    "nd": 1.76495,
+    "aperture_diameter": 18.9
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": 24.24,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 18.6
+  }
+}

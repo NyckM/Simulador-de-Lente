@@ -1,0 +1,3921 @@
+{
+  "groups": [
+    {
+      "id": "LENS_GROUP",
+      "label": "Lente / Presets"
+    },
+    {
+      "id": "FOCUS_GROUP",
+      "label": "Foco / Diafragma"
+    },
+    {
+      "id": "DEPTH_GROUP",
+      "label": "Mapa de profundidade"
+    },
+    {
+      "id": "CREATIVE_GROUP",
+      "label": "Efeitos criativos"
+    },
+    {
+      "id": "SHIMMER_GROUP",
+      "label": "Shimmer - camada optica"
+    },
+    {
+      "id": "QUALITY_GROUP",
+      "label": "Qualidade / Render"
+    },
+    {
+      "id": "POST_GROUP",
+      "label": "Filtros / Lens Flare"
+    },
+    {
+      "id": "OPTICS_GROUP",
+      "label": "Foco / Textura do bokeh"
+    }
+  ],
+  "controls": [
+    {
+      "id": "PRESET",
+      "label": "Perfil de lente",
+      "type": "choice",
+      "min": 0,
+      "max": 294,
+      "default": 0,
+      "options": [
+        "Double-Gauss  prescricao publica",
+        "ZEISS Planar T* 2/50 ZM",
+        "Helios-44-2 58 mm f/2",
+        "Tessar  50 mm",
+        "Biotar  50 mm",
+        "Sonnar  50 mm",
+        "Canon 1956  50 mm",
+        "Kino-Plasmat  100 mm",
+        "Orestor  135 mm",
+        "Heliar  100 mm",
+        "Nakamura  22 mm",
+        "Sigler  250 mm",
+        "AGFA COLOR-MAGNOLAR II 100mm f/4.5",
+        "AGFA COLOR-TELINEAR 90mm f/4",
+        "AGFA SOLAGON 50mm f/2",
+        "CANON 50mm f/2.8",
+        "CANON EF 100mm f/2.8 Macro",
+        "CANON EF 135mm f/2 L USM",
+        "CANON EF 15mm f/2.8 Fisheye",
+        "CANON EF 180mm f/3.5 L Macro USM",
+        "CANON EF 20mm f/2.8 USM",
+        "CANON EF 300mm f/2.8 L IS USM",
+        "CANON EF 400mm f/2.8 L IS III USM",
+        "CANON EF 400mm f/2.8 L IS II USM",
+        "CANON EF 400mm f/2.8 L IS USM",
+        "CANON EF 500mm f/4 L IS USM",
+        "Canon FD 24mm f/2.8 S.S.C.",
+        "Canon FD 28mm f/2.8 S.C.",
+        "Canon FD 300mm f/4 S.S.C.",
+        "CANON FD 35mm f/2 S.S.C. (I)",
+        "CANON New FD 50mm f/1.2",
+        "CANON NEW FD 100mm f/2",
+        "CANON RF 100mm f/2.8 L MACRO IS USM",
+        "CANON RF 135mm f/1.8 L IS USM",
+        "CANON RF 85mm f/2 Macro IS STM",
+        "CANON SERENAR 100mm f/3.5 I",
+        "CANON SERENAR 28mm f/3.5",
+        "CANON SERENAR 35mm f/3.2",
+        "CANON SERENAR 50mm f/1.8",
+        "CANON SERENAR 85mm f/1.5",
+        "CARL ZEISS JENA PANCOLAR 50mm f/2",
+        "CARL ZEISS JENA BIOGON 35mm f/2.8 (pre-war)",
+        "CARL ZEISS JENA BIOMETAR 120mm f/2.8",
+        "CARL ZEISS JENA BIOMETAR 80mm f/2.8",
+        "CARL ZEISS JENA FLEKTOGON 50mm f/4",
+        "CARL ZEISS JENA SONNAR 50mm f/2",
+        "CARL ZEISS JENA PRAKTICAR 50mm f/1.4",
+        "CARL ZEISS CONTAREX PLANAR 55mm f/1.4",
+        "CARL ZEISS OLYMPIA-SONNAR 180mm f/2.8",
+        "CARL ZEISS PLANAR T* 50mm f/1.4",
+        "CARL ZEISS PRO-TESSAR 35mm f/3.2",
+        "CARL ZEISS TESSAR 50mm f/3.5",
+        "ZEISS BATIS 85mm f/1.8",
+        "CARL ZEISS BIOGON 21mm f/4.5",
+        "CARL ZEISS B-DISTAGON 35mm f/4 (Contarex)",
+        "CARL ZEISS DISTAGON T* 25mm f/2.8 (C/Y)",
+        "CARL ZEISS PLANAR 80mm f/2.8 (66)",
+        "CARL ZEISS PLANAR 80mm f/2.8 (Graflex XL)",
+        "CARL ZEISS ULTRA PRIME SONNAR T* 135mm T1.9",
+        "ENNA MUNCHEN LITHAGON 24mm f/4",
+        "ENNA MUNCHEN LITHAGON 35mm f/3.5",
+        "ENNA MUNCHEN ULTRA-LITHAGON 28mm f/3.5",
+        "FUJIFILM EBC FUJINON 85mm f/4 SOFT-FOCUS",
+        "FUJIFILM FUJINON GF 500mm f/5.6 R LM OIS WR",
+        "FUJIFILM FUJINON GF 63mm f/2.8 R WR",
+        "FUJIFILM EBC FUJINON SW 65mm f/5.6 (Fujica GSW690 Professional)",
+        "FUJIFILM EBC FUJINON-W 35mm f/1.9",
+        "FUJIFILM SUPER EBC FUJINON 60mm f/4 (Fujifilm GA645 Professional)",
+        "FUJIFILM FUJINON GF 110mm f/2 R LM WR",
+        "FUJIFILM FUJINON GF 250mm f/4 R LM OIS WR",
+        "FUJIFILM FUJINON XF 200mm f/2 R LM OIS WR",
+        "FUJIFILM FUJINON XF 90mm f/2 R LM WR",
+        "FUJIFILM EBC X-FUJINON W 24mm f/2.8 DM",
+        "HASSELBLAD HC 150mm f/3.2",
+        "HASSELBLAD HC 210mm f/4",
+        "HASSELBLAD HC 50mm f/3.5 II",
+        "HASSELBLAD HC 80mm f/2.8",
+        "HASSELBLAD XCD 120mm f/3.5 Macro",
+        "HASSELBLAD XCD 45mm f/3.5",
+        "HASSELBLAD XCD 65mm f/2.8",
+        "KODAK AERO EKTAR 6 in f/3.5",
+        "KODAK EKTAR 50mm f/3.5",
+        "KODAK ENLARGING EKTAR 100mm f/4.5",
+        "KODAK WIDE-FIELD EKTAR 100mm f/6.3",
+        "KONICA FL-HEXANON AR 300mm f/6.3",
+        "KONICA HEXANON 135mm f/3.5",
+        "KONICA HEXANON 38mm f/2.8 (Konica C35)",
+        "KONICA HEXANON 60mm f/1.2 L",
+        "KONICA HEXANON AR 135mm f/3.5",
+        "KONICA HEXANON AR 21mm f/2.8",
+        "KONICA HEXANON AR 24mm f/2.8",
+        "KONICA HEXANON AR 35mm f/2.8",
+        "KONICA HEXANON AR 40mm f/1.8",
+        "KONICA HEXANON AR 50mm f/1.8",
+        "KONICA HEXAR 35mm f/2 (Konica Hexar AF)",
+        "KONICA UC HEXANON AR 28mm f/1.8",
+        "LAOWA 24mm f/14 2 Macro Probe",
+        "LAOWA 58mm f/2.8 2 Ultra-Macro APO",
+        "LAOWA 65mm f/2.8 2 Ultra Macro APO",
+        "LEICA ELCAN 50mm f/2",
+        "LEICA ELMARIT-R 28mm f/2.8",
+        "LEICA ELMARIT 90mm f/2.8",
+        "LEICA ELMARIT-M 135mm f/2.8",
+        "LEICA ELMARIT-R 35mm f/2.8",
+        "LEICA ELMAR-M 135mm f/4",
+        "LEICA MACRO-ELMARIT-R 60mm f/2.8",
+        "LEICA MACRO-ELMAR-M 90mm f/4",
+        "LEICA SUMMICRON 35mm f/2 I",
+        "LEICA SUMMICRON-C 40mm f/2",
+        "LEICA SUMMICRON-R 50mm f/2",
+        "LEICA SUMMICRON-M 50mm f/2",
+        "LEICA SUMMILUX-M 35mm f/1.4",
+        "LEICA SUMMILUX-M 50mm f/1.4 I",
+        "LEICA SUMMILUX-M 50mm f/1.4 II",
+        "MAMIYA N 210mm f/8 L",
+        "MAMIYA AF APO 300mm f/4.5 IF",
+        "MAMIYA SEKOR AF 55mm f/2.8",
+        "MAMIYA-SEKOR C 55mm f/2.8 N",
+        "MAMIYA-SEKOR CS 35mm f/2.8",
+        "MAMIYA SEKOR AF 150mm f/2.8 IF D",
+        "MAMIYA-SEKOR MACRO C 80mm f/4",
+        "MAMIYA-SEKOR SFC 150mm f/4 SOFT FOCUS",
+        "MEYER-OPTIK GORLITZ LYDITH 30mm f/3.5",
+        "MEYER-OPTIK GORLITZ PRIMAGON 35mm f/4.5",
+        "MEYER-OPTIK GORLITZ ORESTEGOR 500mm f/5.6",
+        "Minolta Auto Tele Rokkor-PF 100mm f/2",
+        "Minolta MD 135mm f/2.8",
+        "MINOLTA MD 28mm f/2.8 (7 elements / 7 groups)",
+        "MINOLTA MD 28mm f/2.8 (5 elements / 5 groups)",
+        "MINOLTA MC W.ROKKOR-SG 28mm f/3.5",
+        "Minolta MD 50mm f/2",
+        "MINOLTA AF 100mm f/2",
+        "MINOLTA AF APO Tele 200mm f/2.8",
+        "MINOLTA AF 20mm f/2.8",
+        "MINOLTA AF 28mm f/2",
+        "MINOLTA AF APO TELE 300mm f/2.8",
+        "MINOLTA AF 35mm f/2",
+        "MINOLTA AF 400mm f/4.5 APO G",
+        "MINOLTA MD ROKKOR 45mm f/2",
+        "MINOLTA MD ROKKOR 50mm f/1.4",
+        "MINOLTA AF 135mm f/2.8 [T4.5] STF",
+        "MINOLTA VARISOFT ROKKOR 85mm f/2.8",
+        "MIRANDA AUTO EC 135mm f/2.8",
+        "MIRANDA AUTO EC 200mm f/3.5",
+        "MIRANDA AUTO EC 35mm f/2.8",
+        "NIKON 28mm f/3.5 (Nikon AF600 / AF600 QD)",
+        "NIKON NIKKOR 28mm f/2.8 (Nikon 28Ti)",
+        "NIKON AI NIKKOR 85mm f/1.4 S",
+        "NIKON AF NIKKOR 85mm f/1.4 D IF",
+        "NIKON AF DC-NIKKOR 135mm f/2D",
+        "NIKON AF-I NIKKOR 300mm f/2.8D IF-ED",
+        "NIKON AF-I NIKKOR 400mm f/2.8D IF-ED",
+        "NIKON AF MICRO-NIKKOR 200mm f/4D IF-ED",
+        "NIKON AF MICRO-NIKKOR 60mm f/2.8 D",
+        "Nikon AF Nikkor 20mm f/2.8D",
+        "NIKON AF NIKKOR 35mm f/2 D",
+        "NIKON AF-S VR MICRO-NIKKOR 105mm f/2.8 G IF-ED",
+        "NIKON AF-S DX MICRO-NIKKOR 85mm f/3.5G ED VR",
+        "NIKON AI AF-S NIKKOR ED 300mm f/2.8D IF",
+        "NIKON AI AF-S NIKKOR ED 400mm f/2.8D II IF",
+        "NIKON AF-S NIKKOR 400mm f/2.8E FL ED VR",
+        "NIKON AI AF-S NIKKOR ED 500mm f/4D IF",
+        "NIKON AF-S NIKKOR 500mm f/4E FL ED VR",
+        "NIKON AF-S NIKKOR 500mm f/4G ED VR",
+        "NIKON AI NIKKOR 135mm f/2",
+        "NIKON AI NIKKOR 135mm f/2.8",
+        "NIKON AI NIKKOR 28mm f/3.5",
+        "NIKON AI AF DC-NIKKOR 105mm f/2 D",
+        "NIKON AI AF MICRO-NIKKOR 105mm f/2.8 S",
+        "NIKON AI AF NIKKOR 85mm f/1.8 S",
+        "Nikon AI Micro-Nikkor 105mm f/2.8S",
+        "NIKON AI MICRO-NIKKOR 55mm f/2.8",
+        "NIKON AI NIKKOR 180mm f/2.8 ED",
+        "NIKON AI NIKKOR ED 200mm f/2S IF",
+        "NIKON AI NIKKOR 24mm f/2",
+        "NIKON AI NIKKOR 35mm f/1.4S",
+        "NIKON AI NIKKOR 35mm f/2",
+        "NIKON AI NIKKOR 50mm f/1.8 S",
+        "NIKON NIKKOR 300mm f/2S IF-ED",
+        "NIKON AI-S NIKKOR 50mm f/1.2",
+        "NIKON DODOTTO 400mm f/8",
+        "NIKON Fuwatto Soft 90mm f/4.8",
+        "NIKON Gugutto Macro 120mm f/4.5",
+        "NIKON 35mm f/2.8 (Nikon L35AF)",
+        "NIKON MEDICAL-NIKKOR 120mm f/4 IF",
+        "NIKON PC-E MICRO-NIKKOR 45mm f/2.8 D ED",
+        "NIKON NIKKOR-N 5cm f/1.1",
+        "NIKON NIKKOR AUTO 28mm f/2.8",
+        "NIKON AF-S NIKKOR 105mm f/1.4E ED",
+        "NIKON NIKKOR 300mm f/4.5 ED",
+        "NIKON AF-S NIKKOR 85mm f/1.4 G",
+        "NIKON NIKKOR-N Auto 24mm f/2.8",
+        "NIKON NIKKOR-H Auto 2.8cm f/3.5",
+        "NIKON NIKKOR-N AUTO 28mm f/2",
+        "NIKON NIKKOR-O 2.1cm f/4",
+        "NIKON NIKKOR-S AUTO 50mm f/1.4",
+        "NIKON NIKKOR-S AUTO 5cm f/2",
+        "NIKON NIKKOR-S AUTO 5.8cm f/1.4",
+        "NIKON NIKKOR-SW 75mm f/4.5",
+        "NIKON PC-NIKKOR 35mm f/2.8",
+        "NIKON R-UW AF MICRO-NIKKOR 50mm f/2.8",
+        "NIKON SERIES E 100mm f/2.8",
+        "NIKON SERIES E 135mm f/2.8",
+        "NIKON ULTRA-MICRO-NIKKOR 29.5mm f/1.2",
+        "NIKON UV-NIKKOR 105mm f/4.5",
+        "NIKON UV-NIKKOR AUTO 55mm f/4",
+        "NIKON W-NIKKOR 35mm f/1.8",
+        "NIKON NIKKOR Z 85mm f/1.8 S",
+        "OLYMPUS G.ZUIKO AUTO-W 21mm f/3.5",
+        "OLYMPUS ZUIKO DIGITAL ED 150mm f/2.0",
+        "OLYMPUS F.ZUIKO 35mm f/2.8 (Olympus XA)",
+        "OLYMPUS E.ZUIKO AUTO-T 135mm f/3.5",
+        "OLYMPUS H.ZUIKO AUTO-W 24mm f/2.8",
+        "OLYMPUS OM J. ZUIKO AUTO-W 24mm f/2",
+        "OLYMPUS G.ZUIKO AUTO-W 28mm f/3.5",
+        "OLYMPUS ZUIKO AUTO-T 85mm f/2",
+        "OLYMPUS ZUIKO AUTO-MACRO 50mm f/2",
+        "OLYMPUS ZUIKO AUTO-MACRO 90mm f/2",
+        "OLYMPUS ZUIKO AUTO-S 50mm f/1.2",
+        "OLYMPUS G.ZUIKO AUTO-S 55mm f/1.2",
+        "OLYMPUS F.ZUIKO AUTO-T 200mm f/5",
+        "OLYMPUS ZUIKO AUTO-W 18mm f/3.5",
+        "OLYMPUS H.ZUIKO AUTO-W 24mm f/2.8 (US 3,994,574 Design)",
+        "OLYMPUS ZUIKO AUTO-W 28mm f/2",
+        "P. ANGENIEUX DEM 180mm f/2.3 APO",
+        "P. ANGENIEUX RETROFOCUS TYPE R11 28mm f/3.5",
+        "P. ANGENIEUX RETROFOCUS TYPE R1 35mm f/2.5",
+        "PENTAX 110 24mm f/2.8",
+        "PENTAX 110 50mm f/2.8",
+        "PENTAX SMC A 645 45mm f/2.8",
+        "PENTAX SMC FA 645 120mm f/4 Macro",
+        "PENTAX SMC PENTAX-A 135mm f/1.8",
+        "PENTAX SMC PENTAX-A 200mm f/4 MACRO ED",
+        "PENTAX DA 70mm f/2.4 Limited",
+        "PENTAX F 85mm f/2.8 Soft",
+        "PENTAX SMC PENTAX-FA 28mm f/2.8 Soft",
+        "PENTAX SMC 67 Macro 100mm f/4",
+        "PENTAX SUPER-TAKUMAR 135mm f/2.5",
+        "PENTAX SUPER-TAKUMAR 28mm f/3.5",
+        "PENTAX SUPER-TAKUMAR 35mm f/2",
+        "PENTAX ULTRA-ACHROMATIC-TAKUMAR 85mm f/4.5",
+        "RODENSTOCK APO-SIRONAR-W 150mm f/5.6",
+        "RODENSTOCK GERONAR 210mm f/6.8",
+        "RODENSTOCK GRANDAGON-N 65mm f/4.5",
+        "RODENSTOCK GRANDAGON-N 75mm f/4.5",
+        "RODENSTOCK GRANDAGON-N 75mm f/6.8",
+        "RODENSTOCK GRANDAGON-N 90mm f/4.5",
+        "RODENSTOCK RODAGON-WA 80mm f/4",
+        "RODENSTOCK ROGONAR-S 50mm f/2.8",
+        "SAMSUNG 45mm f/1.8",
+        "SCHACHT S-TRAVENAR 135mm f/2.8",
+        "SCHACHT TRAVENAR 135mm f/3.5",
+        "SCHACHT TRAVENAR 90mm f/2.8",
+        "SCHNEIDER-KREUZNACH ANGULON 210mm f/6.8",
+        "SCHNEIDER-KREUZNACH APO-SYMMAR 100mm f/5.6",
+        "SCHNEIDER-KREUZNACH CINEGON 10mm f/1.8",
+        "SCHNEIDER-KREUZNACH CINEGON 6.5mm f/1.9",
+        "SCHNEIDER-KREUZNACH CINE-XENON 25mm f/1.4",
+        "SCHNEIDER-KREUZNACH CURTAGON 35mm f/2.8",
+        "SCHNEIDER-KREUZNACH RETINA-CURTAGON 28mm f/4",
+        "SCHNEIDER-KREUZNACH SUPER-ANGULON 75mm f/5.6",
+        "SCHNEIDER-KREUZNACH SUPER-ANGULON 90mm f/8",
+        "SCHNEIDER-KREUZNACH SUPER-SYMMAR HM 120mm f/5.6",
+        "SCHNEIDER-KREUZNACH TECHNIKA SUPER-ANGULON 75mm f/8",
+        "SCHNEIDER-KREUZNACH XENAR 50mm f/2.8",
+        "SCHNEIDER-KREUZNACH XENON 50mm f/1.9",
+        "SCHNEIDER-KREUZNACH RETINA-XENON C 50mm f/2 (Kodak Retina IIIc)",
+        "SONY E 50mm f/1.8 OSS",
+        "SONY FE 400mm f/2.8 GM OSS",
+        "VILTROX AF 33mm f/1.4 E",
+        "VILTROX AF 56mm f/1.4 E",
+        "VILTROX AF 75mm f/1.2 PRO",
+        "VIVITAR SERIES 1 135mm f/2.3 AUTO TELEPHOTO",
+        "VIVITAR SERIES 1 200mm f/3.0 VMC",
+        "VOIGTLANDER APO-LANTHAR 180mm f/4 SL Close Focus",
+        "VOIGTLANDER APO-LANTHAR 210mm f/4.5",
+        "VOIGTLANDER APO-LANTHAR 50mm f/3.5 (Type II) VM",
+        "VOIGTLANDER APO-SKOPAR 90mm f/2.8 VM / SL IIs",
+        "VOIGTLANDER APO-ULTRON 90mm f/2 VM",
+        "VOIGTLANDER COLOR-HELIAR 105mm f/3.5 (Voigtlander Bessa II)",
+        "VOIGTLANDER COLOR-SKOPAR 105mm f/3.5 (Voigtlander Bessa II)",
+        "VOIGTLANDER HELIAR 100mm f/4.5 (Second Asymmetric Form)",
+        "VOIGTLANDER MACRO APO-LANTHAR 125mm f/2.5 SL",
+        "VOIGTLANDER NOKTON 50mm f/1.5",
+        "VOIGTLANDER NOKTON 60mm f/0.95",
+        "VOIGTLANDER NOKTON 50mm f/1.2 X-Mount",
+        "VOIGTLANDER PORTRAIT HELIAR 75mm f/1.8",
+        "VOIGTLANDER SKOPAREX 35mm f/3.4 (Bessamatic)",
+        "VOIGTLANDER TELOMAR 100mm f/5.5",
+        "VOIGTLANDER TELOMAR 180mm f/5.5",
+        "VOIGTLANDER ULTRON 27mm f/2",
+        "VOIGTLANDER ULTRON 50mm f/2",
+        "YASHICA ML 24mm f/2.8",
+        "YASHICA ML 300mm f/5.6 C",
+        "YASHICA YASHINON-DX 21mm f/3.3"
+      ],
+      "group": "LENS_GROUP",
+      "index": 2
+    },
+    {
+      "id": "EDIT",
+      "label": "Superficie a editar (0 = original)",
+      "type": "number",
+      "min": 0.0,
+      "max": 80.0,
+      "default": 0.0,
+      "group": "LENS_GROUP",
+      "index": 4
+    },
+    {
+      "id": "CURVATURE",
+      "label": "Curvatura - multiplicador",
+      "type": "number",
+      "min": 0.6,
+      "max": 1.6,
+      "default": 1.0,
+      "group": "LENS_GROUP",
+      "index": 5
+    },
+    {
+      "id": "SPACING",
+      "label": "Espacamento - multiplicador",
+      "type": "number",
+      "min": 0.25,
+      "max": 2.0,
+      "default": 1.0,
+      "group": "LENS_GROUP",
+      "index": 6
+    },
+    {
+      "id": "DIAMETER",
+      "label": "Diametro - multiplicador",
+      "type": "number",
+      "min": 0.5,
+      "max": 1.5,
+      "default": 1.0,
+      "group": "LENS_GROUP",
+      "index": 7
+    },
+    {
+      "id": "INDEX_OFFSET",
+      "label": "Indice - ajuste",
+      "type": "number",
+      "min": -0.25,
+      "max": 0.25,
+      "default": 0.0,
+      "group": "LENS_GROUP",
+      "index": 8
+    },
+    {
+      "id": "FOCUS",
+      "label": "Foco (m)",
+      "type": "number",
+      "min": 0.3,
+      "max": 1000.0,
+      "default": 2.0,
+      "group": "FOCUS_GROUP",
+      "index": 11
+    },
+    {
+      "id": "SOURCE_DISTANCE",
+      "label": "Distancia sem depth (m)",
+      "type": "number",
+      "min": 0.3,
+      "max": 1000.0,
+      "default": 5.0,
+      "group": "FOCUS_GROUP",
+      "index": 12
+    },
+    {
+      "id": "FSTOP",
+      "label": "Diafragma (f/)",
+      "type": "number",
+      "min": 0.7,
+      "max": 64.0,
+      "default": 2.8,
+      "group": "FOCUS_GROUP",
+      "index": 13
+    },
+    {
+      "id": "SENSOR",
+      "label": "Sensor horizontal (mm)",
+      "type": "number",
+      "min": 12.0,
+      "max": 44.0,
+      "default": 36.0,
+      "group": "FOCUS_GROUP",
+      "index": 14
+    },
+    {
+      "id": "FILMBACK",
+      "label": "Plano do sensor (mm)",
+      "type": "number",
+      "min": -2.0,
+      "max": 2.0,
+      "default": 0.0,
+      "group": "FOCUS_GROUP",
+      "index": 15
+    },
+    {
+      "id": "BLADES",
+      "label": "Laminas",
+      "type": "choice",
+      "min": 0,
+      "max": 13,
+      "default": 5,
+      "options": [
+        "Circular",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "14",
+        "16",
+        "32"
+      ],
+      "group": "FOCUS_GROUP",
+      "index": 16
+    },
+    {
+      "id": "IRIS_ROTATION",
+      "label": "Rotacao do iris",
+      "type": "number",
+      "min": 0.0,
+      "max": 360.0,
+      "default": 0.0,
+      "group": "FOCUS_GROUP",
+      "index": 17
+    },
+    {
+      "id": "IRIS_SOFTNESS",
+      "label": "Suavidade do iris",
+      "type": "number",
+      "min": 0.0,
+      "max": 0.3,
+      "default": 0.0,
+      "group": "FOCUS_GROUP",
+      "index": 18
+    },
+    {
+      "id": "USE_DEPTH",
+      "label": "Usar depth",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "options": [],
+      "group": "DEPTH_GROUP",
+      "index": 22
+    },
+    {
+      "id": "CHANNEL",
+      "label": "Canal",
+      "type": "choice",
+      "min": 0,
+      "max": 4,
+      "default": 0,
+      "options": [
+        "Red",
+        "Green",
+        "Blue",
+        "Alpha",
+        "Luminancia"
+      ],
+      "group": "DEPTH_GROUP",
+      "index": 23
+    },
+    {
+      "id": "DEPTH_GAIN",
+      "label": "Gain",
+      "type": "number",
+      "min": -20.0,
+      "max": 20.0,
+      "default": 1.0,
+      "group": "DEPTH_GROUP",
+      "index": 24
+    },
+    {
+      "id": "DEPTH_BIAS",
+      "label": "Bias",
+      "type": "number",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "group": "DEPTH_GROUP",
+      "index": 25
+    },
+    {
+      "id": "INVERT_DEPTH",
+      "label": "Inverter mapa",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "options": [],
+      "group": "DEPTH_GROUP",
+      "index": 26
+    },
+    {
+      "id": "NEAR_DISTANCE",
+      "label": "Branco: proximo (m)",
+      "type": "number",
+      "min": 0.3,
+      "max": 100.0,
+      "default": 0.8,
+      "group": "DEPTH_GROUP",
+      "index": 27
+    },
+    {
+      "id": "FAR_DISTANCE",
+      "label": "Preto: distante (m)",
+      "type": "number",
+      "min": 0.4,
+      "max": 1000.0,
+      "default": 10.0,
+      "group": "DEPTH_GROUP",
+      "index": 28
+    },
+    {
+      "id": "DEPTH_MODE",
+      "label": "Composicao de profundidade",
+      "type": "choice",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "options": [
+        "Depth Slicing",
+        "Depth Cut",
+        "Depth Cut + Eclipsed bokeh"
+      ],
+      "group": "DEPTH_GROUP",
+      "index": 29
+    },
+    {
+      "id": "SLICES",
+      "label": "Fatias",
+      "type": "number",
+      "min": 4.0,
+      "max": 32.0,
+      "default": 12.0,
+      "group": "DEPTH_GROUP",
+      "index": 30
+    },
+    {
+      "id": "DEPTH_CUT",
+      "label": "Depth Cut",
+      "type": "number",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "group": "DEPTH_GROUP",
+      "index": 31
+    },
+    {
+      "id": "DEPTH_FEATHER",
+      "label": "Feather do corte",
+      "type": "number",
+      "min": 0.0,
+      "max": 0.2,
+      "default": 0.02,
+      "group": "DEPTH_GROUP",
+      "index": 32
+    },
+    {
+      "id": "ECLIPSE",
+      "label": "Eclipsed bokeh",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "options": [],
+      "group": "DEPTH_GROUP",
+      "index": 33
+    },
+    {
+      "id": "SWIRL_PARAM",
+      "label": "Swirl",
+      "type": "number",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 36
+    },
+    {
+      "id": "COMA_PARAM",
+      "label": "Coma",
+      "type": "number",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 37
+    },
+    {
+      "id": "SQUEEZE_PARAM",
+      "label": "Anamorfico",
+      "type": "number",
+      "min": 1.0,
+      "max": 2.0,
+      "default": 1.0,
+      "group": "CREATIVE_GROUP",
+      "index": 38
+    },
+    {
+      "id": "DISPERSION",
+      "label": "Dispersao cromatica",
+      "type": "number",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 39
+    },
+    {
+      "id": "SPHERICAL3",
+      "label": "Aberracao esferica 3",
+      "type": "number",
+      "min": -8.0,
+      "max": 8.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 40
+    },
+    {
+      "id": "SPHERICAL5",
+      "label": "Aberracao esferica 5",
+      "type": "number",
+      "min": -8.0,
+      "max": 8.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 41
+    },
+    {
+      "id": "IMPRESSION_PARAM",
+      "label": "Impression (+ / -)",
+      "type": "number",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 42
+    },
+    {
+      "id": "APOD_PARAM",
+      "label": "Apodizacao",
+      "type": "number",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 43
+    },
+    {
+      "id": "RIM_PARAM",
+      "label": "Anel do bokeh",
+      "type": "number",
+      "min": 0.0,
+      "max": 8.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 44
+    },
+    {
+      "id": "CA_RED",
+      "label": "CA lateral vermelha",
+      "type": "number",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 45
+    },
+    {
+      "id": "CA_BLUE",
+      "label": "CA lateral azul",
+      "type": "number",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 46
+    },
+    {
+      "id": "CA_AXIAL",
+      "label": "CA axial (mm)",
+      "type": "number",
+      "min": -2.0,
+      "max": 2.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 47
+    },
+    {
+      "id": "DISTORTION1",
+      "label": "Distorcao K1",
+      "type": "number",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 48
+    },
+    {
+      "id": "DISTORTION2",
+      "label": "Distorcao K2",
+      "type": "number",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 49
+    },
+    {
+      "id": "BOKEH_GAIN",
+      "label": "Escala do bokeh",
+      "type": "number",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 1.0,
+      "group": "CREATIVE_GROUP",
+      "index": 50
+    },
+    {
+      "id": "HIGHLIGHT_GAIN",
+      "label": "Ganho dos highlights",
+      "type": "number",
+      "min": 0.0,
+      "max": 10.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 51
+    },
+    {
+      "id": "EXPOSURE_PARAM",
+      "label": "Exposicao (stops)",
+      "type": "number",
+      "min": -5.0,
+      "max": 5.0,
+      "default": 0.0,
+      "group": "CREATIVE_GROUP",
+      "index": 52
+    },
+    {
+      "id": "BLEND_PARAM",
+      "label": "Mistura",
+      "type": "number",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "group": "CREATIVE_GROUP",
+      "index": 53
+    },
+    {
+      "id": "SHIMMER_PARAM",
+      "label": "Intensidade",
+      "type": "number",
+      "min": 0.0,
+      "max": 8.0,
+      "default": 0.0,
+      "group": "SHIMMER_GROUP",
+      "index": 56
+    },
+    {
+      "id": "SHIMMER_DEPTH",
+      "label": "Profundidade (m)",
+      "type": "number",
+      "min": 0.3,
+      "max": 30.0,
+      "default": 1.0,
+      "group": "SHIMMER_GROUP",
+      "index": 57
+    },
+    {
+      "id": "SHIMMER_SIZE",
+      "label": "Tamanho",
+      "type": "number",
+      "min": 2.0,
+      "max": 80.0,
+      "default": 8.0,
+      "group": "SHIMMER_GROUP",
+      "index": 58
+    },
+    {
+      "id": "SHIMMER_DENSITY",
+      "label": "Densidade",
+      "type": "number",
+      "min": 0.05,
+      "max": 1.0,
+      "default": 0.3,
+      "group": "SHIMMER_GROUP",
+      "index": 59
+    },
+    {
+      "id": "SHIMMER_SEED",
+      "label": "Seed",
+      "type": "number",
+      "min": 1.0,
+      "max": 1000.0,
+      "default": 1.0,
+      "group": "SHIMMER_GROUP",
+      "index": 60
+    },
+    {
+      "id": "SHIMMER_THRESHOLD",
+      "label": "Threshold",
+      "type": "number",
+      "min": 0.0,
+      "max": 20.0,
+      "default": 0.15,
+      "group": "SHIMMER_GROUP",
+      "index": 61
+    },
+    {
+      "id": "QUALITY",
+      "label": "Qualidade",
+      "type": "choice",
+      "min": 0,
+      "max": 5,
+      "default": 1,
+      "options": [
+        "Draft",
+        "Fast",
+        "Medium",
+        "High",
+        "Very High",
+        "Extreme"
+      ],
+      "group": "QUALITY_GROUP",
+      "index": 64
+    },
+    {
+      "id": "FIELD_GRID",
+      "label": "Campo optico",
+      "type": "choice",
+      "min": 0,
+      "max": 2,
+      "default": 1,
+      "options": [
+        "3 x 3",
+        "5 x 5",
+        "9 x 9"
+      ],
+      "group": "QUALITY_GROUP",
+      "index": 65
+    },
+    {
+      "id": "DITHER",
+      "label": "Dither fixo",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "options": [],
+      "group": "QUALITY_GROUP",
+      "index": 66
+    },
+    {
+      "id": "DITHER_AMOUNT",
+      "label": "Dither Amount",
+      "type": "number",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 1.0,
+      "group": "QUALITY_GROUP",
+      "index": 67
+    },
+    {
+      "id": "SOFTEN",
+      "label": "Suavizar limites internos",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 1,
+      "options": [],
+      "group": "QUALITY_GROUP",
+      "index": 68
+    },
+    {
+      "id": "ENGINE",
+      "label": "Motor",
+      "type": "choice",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "options": [
+        "Automatico (CUDA / CPU)",
+        "CPU"
+      ],
+      "group": "QUALITY_GROUP",
+      "index": 69
+    },
+    {
+      "id": "POST_KIND",
+      "label": "Filtro",
+      "type": "choice",
+      "min": 0,
+      "max": 15,
+      "default": 0,
+      "index": 72,
+      "group": "POST_GROUP",
+      "options": [
+        "Desligado",
+        "Black Mist",
+        "White Mist",
+        "Skin Diffusion",
+        "Streak",
+        "Star",
+        "Veil",
+        "Window",
+        "Linear Replication",
+        "Halo",
+        "Kaleidoscope",
+        "Split Diopter FX",
+        "Fringing",
+        "Halation",
+        "Prisma espectral",
+        "Blur direcional"
+      ]
+    },
+    {
+      "id": "POST_AMOUNT",
+      "label": "Intensidade do filtro",
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "default": 0.35,
+      "index": 73,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_X",
+      "label": "Posicao X (%)",
+      "type": "number",
+      "min": -100,
+      "max": 200,
+      "default": 50,
+      "index": 74,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_Y",
+      "label": "Posicao Y (%)",
+      "type": "number",
+      "min": -100,
+      "max": 200,
+      "default": 50,
+      "index": 75,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_SCALE",
+      "label": "Escala (%)",
+      "type": "number",
+      "min": 5,
+      "max": 400,
+      "default": 100,
+      "index": 76,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_ROTATION",
+      "label": "Rotacao do filtro",
+      "type": "number",
+      "min": -360,
+      "max": 360,
+      "default": 0,
+      "index": 77,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_RADIUS",
+      "label": "Alcance do kernel",
+      "type": "number",
+      "min": 0.001,
+      "max": 0.3,
+      "default": 0.04,
+      "index": 78,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_THRESHOLD",
+      "label": "Limiar dos highlights",
+      "type": "number",
+      "min": 0,
+      "max": 20,
+      "default": 0.7,
+      "index": 79,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_SOFTNESS",
+      "label": "Suavidade do limiar",
+      "type": "number",
+      "min": 0.001,
+      "max": 5,
+      "default": 0.2,
+      "index": 80,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_INNER",
+      "label": "Centro preservado",
+      "type": "number",
+      "min": 0,
+      "max": 2,
+      "default": 0.65,
+      "index": 81,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_FEATHER",
+      "label": "Transicao da regiao",
+      "type": "number",
+      "min": 0.01,
+      "max": 1,
+      "default": 0.25,
+      "index": 82,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_SHIFT",
+      "label": "Deslocamento de refracao",
+      "type": "number",
+      "min": -0.5,
+      "max": 0.5,
+      "default": 0.04,
+      "index": 83,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_COUNT",
+      "label": "Facetas / replicas",
+      "type": "number",
+      "min": 2,
+      "max": 8,
+      "default": 4,
+      "index": 84,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_REGION",
+      "label": "Aplicar em regiao",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "index": 85,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "POST_EDGE",
+      "label": "Clarear laterais (%)",
+      "type": "number",
+      "min": 0,
+      "max": 100,
+      "default": 0,
+      "index": 86,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "FLARE_ENABLED",
+      "label": "Lens Flare - reflexoes",
+      "type": "boolean",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "index": 87,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "FLARE_GAIN",
+      "label": "Ganho de Lens Flare",
+      "type": "number",
+      "min": 0,
+      "max": 40,
+      "default": 1,
+      "index": 88,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "FLARE_THRESHOLD",
+      "label": "Limiar das fontes",
+      "type": "number",
+      "min": 0,
+      "max": 20,
+      "default": 0.8,
+      "index": 89,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "FLARE_SOURCES",
+      "label": "Maximo de fontes",
+      "type": "number",
+      "min": 1,
+      "max": 8,
+      "default": 4,
+      "index": 90,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "COATING_STRENGTH",
+      "label": "Coating - intensidade",
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "index": 91,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "COATING_NM",
+      "label": "Coating - projeto (nm)",
+      "type": "number",
+      "min": 350,
+      "max": 750,
+      "default": 550,
+      "index": 92,
+      "group": "POST_GROUP"
+    },
+    {
+      "id": "FOCUS_KEEP",
+      "label": "Preservar foco",
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "index": 95,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "FOCUS_WIDTH",
+      "label": "Transicao do foco (dioptrias)",
+      "type": "number",
+      "min": 0.001,
+      "max": 2,
+      "default": 0.1,
+      "index": 96,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "FG_AMOUNT",
+      "label": "Desfoque proximo (%)",
+      "type": "number",
+      "min": 0,
+      "max": 200,
+      "default": 100,
+      "index": 97,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "BG_AMOUNT",
+      "label": "Desfoque distante (%)",
+      "type": "number",
+      "min": 0,
+      "max": 200,
+      "default": 100,
+      "index": 98,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "TEXTURE_RINGS",
+      "label": "Textura - aneis",
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "index": 99,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "TEXTURE_GRAIN",
+      "label": "Textura - granulado",
+      "type": "number",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "index": 100,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "TEXTURE_SCALE",
+      "label": "Textura - frequencia",
+      "type": "number",
+      "min": 0.5,
+      "max": 12,
+      "default": 6,
+      "index": 101,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "TEXTURE_ROT",
+      "label": "Textura - rotacao",
+      "type": "number",
+      "min": 0,
+      "max": 360,
+      "default": 0,
+      "index": 102,
+      "group": "OPTICS_GROUP"
+    },
+    {
+      "id": "POST_EDGE_LIMIT",
+      "label": "Limite de clareamento (EV)",
+      "type": "number",
+      "min": 0,
+      "max": 6,
+      "default": 3,
+      "index": 103,
+      "group": "OPTICS_GROUP"
+    }
+  ],
+  "count": 105,
+  "profiles": [
+    {
+      "name": "Double-Gauss  prescricao publica",
+      "fstop": 2.030153400193889,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 7
+    },
+    {
+      "name": "ZEISS Planar T* 2/50 ZM",
+      "fstop": 1.999999999988414,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 10
+    },
+    {
+      "name": "Helios-44-2 58 mm f/2",
+      "fstop": 2.0000000001181077,
+      "swirl": 0.85,
+      "coma": 0.08,
+      "spherical": 0.35,
+      "dispersion": 0.2,
+      "blades": 8
+    },
+    {
+      "name": "Tessar  50 mm",
+      "fstop": 2.7999999999999385,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Biotar  50 mm",
+      "fstop": 1.4000000000068367,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Sonnar  50 mm",
+      "fstop": 1.4999999999993767,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Canon 1956  50 mm",
+      "fstop": 1.2000000000016968,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Kino-Plasmat  100 mm",
+      "fstop": 2.0000000000040457,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Orestor  135 mm",
+      "fstop": 2.799999999997173,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 15
+    },
+    {
+      "name": "Heliar  100 mm",
+      "fstop": 4.4999999999987255,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Nakamura  22 mm",
+      "fstop": 2.7999999999791516,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Sigler  250 mm",
+      "fstop": 5.60000000001258,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "AGFA COLOR-MAGNOLAR II 100mm f/4.5",
+      "fstop": 4.50006687705447,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "AGFA COLOR-TELINEAR 90mm f/4",
+      "fstop": 3.999999999998546,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "AGFA SOLAGON 50mm f/2",
+      "fstop": 1.9999999999998948,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON 50mm f/2.8",
+      "fstop": 2.7999999999988767,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 100mm f/2.8 Macro",
+      "fstop": 2.890000000011227,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 135mm f/2 L USM",
+      "fstop": 2.0597881659994686,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 15mm f/2.8 Fisheye",
+      "fstop": 2.7999999996969698,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 180mm f/3.5 L Macro USM",
+      "fstop": 3.5999999999973094,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 20mm f/2.8 USM",
+      "fstop": 2.7999999997386693,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 300mm f/2.8 L IS USM",
+      "fstop": 2.900000000060645,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 400mm f/2.8 L IS III USM",
+      "fstop": 2.900000000017446,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 400mm f/2.8 L IS II USM",
+      "fstop": 2.900000000012253,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 400mm f/2.8 L IS USM",
+      "fstop": 2.900000000064918,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON EF 500mm f/4 L IS USM",
+      "fstop": 4.099999999964521,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Canon FD 24mm f/2.8 S.S.C.",
+      "fstop": 2.800852356145581,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Canon FD 28mm f/2.8 S.C.",
+      "fstop": 2.800000000003101,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Canon FD 300mm f/4 S.S.C.",
+      "fstop": 3.9999999999960476,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON FD 35mm f/2 S.S.C. (I)",
+      "fstop": 2.0018254864070992,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON New FD 50mm f/1.2",
+      "fstop": 1.204683944902619,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON NEW FD 100mm f/2",
+      "fstop": 2.0000595403595653,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON RF 100mm f/2.8 L MACRO IS USM",
+      "fstop": 2.919999999993406,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON RF 135mm f/1.8 L IS USM",
+      "fstop": 1.860000000000589,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON RF 85mm f/2 Macro IS STM",
+      "fstop": 2.0600000000064727,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON SERENAR 100mm f/3.5 I",
+      "fstop": 3.500000106800328,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON SERENAR 28mm f/3.5",
+      "fstop": 3.499999999999824,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON SERENAR 35mm f/3.2",
+      "fstop": 2.9999999999991442,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON SERENAR 50mm f/1.8",
+      "fstop": 1.8000000000001388,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CANON SERENAR 85mm f/1.5",
+      "fstop": 1.5000000000057139,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA PANCOLAR 50mm f/2",
+      "fstop": 1.9999999999895488,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA BIOGON 35mm f/2.8 (pre-war)",
+      "fstop": 2.800000063706322,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA BIOMETAR 120mm f/2.8",
+      "fstop": 2.799999999990747,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA BIOMETAR 80mm f/2.8",
+      "fstop": 2.799999999982632,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA FLEKTOGON 50mm f/4",
+      "fstop": 4.000000000002174,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA SONNAR 50mm f/2",
+      "fstop": 2.0014008099012024,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS JENA PRAKTICAR 50mm f/1.4",
+      "fstop": 1.4000000043188403,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS CONTAREX PLANAR 55mm f/1.4",
+      "fstop": 1.4000000000000319,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS OLYMPIA-SONNAR 180mm f/2.8",
+      "fstop": 2.8049814098137134,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS PLANAR T* 50mm f/1.4",
+      "fstop": 1.399999999998354,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS PRO-TESSAR 35mm f/3.2",
+      "fstop": 3.1999999999974844,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS TESSAR 50mm f/3.5",
+      "fstop": 3.499999999992841,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "ZEISS BATIS 85mm f/1.8",
+      "fstop": 1.8499999999928889,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS BIOGON 21mm f/4.5",
+      "fstop": 4.499999999984211,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS B-DISTAGON 35mm f/4 (Contarex)",
+      "fstop": 3.9999999999944893,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS DISTAGON T* 25mm f/2.8 (C/Y)",
+      "fstop": 2.7999999997762184,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS PLANAR 80mm f/2.8 (66)",
+      "fstop": 2.7999999999987546,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS PLANAR 80mm f/2.8 (Graflex XL)",
+      "fstop": 2.8000000000030747,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "CARL ZEISS ULTRA PRIME SONNAR T* 135mm T1.9",
+      "fstop": 1.8002872086520836,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "ENNA MUNCHEN LITHAGON 24mm f/4",
+      "fstop": 4.00000010929883,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "ENNA MUNCHEN LITHAGON 35mm f/3.5",
+      "fstop": 3.500003041641137,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "ENNA MUNCHEN ULTRA-LITHAGON 28mm f/3.5",
+      "fstop": 3.500004650073522,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM EBC FUJINON 85mm f/4 SOFT-FOCUS",
+      "fstop": 2.7999999998909852,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM FUJINON GF 500mm f/5.6 R LM OIS WR",
+      "fstop": 5.700000000000642,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM FUJINON GF 63mm f/2.8 R WR",
+      "fstop": 2.870000000007314,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM EBC FUJINON SW 65mm f/5.6 (Fujica GSW690 Professional)",
+      "fstop": 5.600022288521467,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM EBC FUJINON-W 35mm f/1.9",
+      "fstop": 1.9000009483324214,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM SUPER EBC FUJINON 60mm f/4 (Fujifilm GA645 Professional)",
+      "fstop": 4.000000000003625,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM FUJINON GF 110mm f/2 R LM WR",
+      "fstop": 1.999999999996786,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM FUJINON GF 250mm f/4 R LM OIS WR",
+      "fstop": 4.119999999995233,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM FUJINON XF 200mm f/2 R LM OIS WR",
+      "fstop": 2.0600000000044507,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM FUJINON XF 90mm f/2 R LM WR",
+      "fstop": 2.0600000000008527,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "FUJIFILM EBC X-FUJINON W 24mm f/2.8 DM",
+      "fstop": 2.800000054007258,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD HC 150mm f/3.2",
+      "fstop": 3.206095447883205,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD HC 210mm f/4",
+      "fstop": 4.007040221385198,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD HC 50mm f/3.5 II",
+      "fstop": 3.599999999962149,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD HC 80mm f/2.8",
+      "fstop": 2.8000000000065235,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD XCD 120mm f/3.5 Macro",
+      "fstop": 3.500000000011451,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD XCD 45mm f/3.5",
+      "fstop": 3.416065998977187,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "HASSELBLAD XCD 65mm f/2.8",
+      "fstop": 2.8106498206713884,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KODAK AERO EKTAR 6 in f/3.5",
+      "fstop": 3.500000000008,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KODAK EKTAR 50mm f/3.5",
+      "fstop": 3.4999999999231237,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KODAK ENLARGING EKTAR 100mm f/4.5",
+      "fstop": 4.499999999995776,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KODAK WIDE-FIELD EKTAR 100mm f/6.3",
+      "fstop": 6.3000000000014795,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA FL-HEXANON AR 300mm f/6.3",
+      "fstop": 6.3000000000063,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON 135mm f/3.5",
+      "fstop": 3.499999999990198,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON 38mm f/2.8 (Konica C35)",
+      "fstop": 2.8237742932468137,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON 60mm f/1.2 L",
+      "fstop": 1.2400000000184572,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON AR 135mm f/3.5",
+      "fstop": 3.4999999999932525,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON AR 21mm f/2.8",
+      "fstop": 2.7999999999960035,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON AR 24mm f/2.8",
+      "fstop": 2.7999999999943945,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON AR 35mm f/2.8",
+      "fstop": 2.799999999999349,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON AR 40mm f/1.8",
+      "fstop": 1.7999999999951553,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXANON AR 50mm f/1.8",
+      "fstop": 1.8046725655538274,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA HEXAR 35mm f/2 (Konica Hexar AF)",
+      "fstop": 1.9999999999995153,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "KONICA UC HEXANON AR 28mm f/1.8",
+      "fstop": 2.0000000466658023,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LAOWA 24mm f/14 2 Macro Probe",
+      "fstop": 14.000000007414059,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LAOWA 58mm f/2.8 2 Ultra-Macro APO",
+      "fstop": 2.8999999999791752,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LAOWA 65mm f/2.8 2 Ultra Macro APO",
+      "fstop": 2.7999999999794256,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA ELCAN 50mm f/2",
+      "fstop": 2.0000000000045968,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA ELMARIT-R 28mm f/2.8",
+      "fstop": 2.800000000007049,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA ELMARIT 90mm f/2.8",
+      "fstop": 2.800000000007947,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA ELMARIT-M 135mm f/2.8",
+      "fstop": 2.800000000008251,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA ELMARIT-R 35mm f/2.8",
+      "fstop": 2.80002759712269,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA ELMAR-M 135mm f/4",
+      "fstop": 3.999999999997566,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA MACRO-ELMARIT-R 60mm f/2.8",
+      "fstop": 2.8013576526391892,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA MACRO-ELMAR-M 90mm f/4",
+      "fstop": 3.999999999997924,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMICRON 35mm f/2 I",
+      "fstop": 2.0000000259874504,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMICRON-C 40mm f/2",
+      "fstop": 2.0000000000012705,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMICRON-R 50mm f/2",
+      "fstop": 1.9999999999496056,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMICRON-M 50mm f/2",
+      "fstop": 2.004831204158934,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMILUX-M 35mm f/1.4",
+      "fstop": 1.3999999999960318,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMILUX-M 50mm f/1.4 I",
+      "fstop": 1.4000000000062949,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "LEICA SUMMILUX-M 50mm f/1.4 II",
+      "fstop": 1.4000000000028145,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA N 210mm f/8 L",
+      "fstop": 8.149999999991394,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA AF APO 300mm f/4.5 IF",
+      "fstop": 4.630000097478025,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA SEKOR AF 55mm f/2.8",
+      "fstop": 2.800000000008305,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA-SEKOR C 55mm f/2.8 N",
+      "fstop": 2.7999999999877687,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA-SEKOR CS 35mm f/2.8",
+      "fstop": 2.799999999993782,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA SEKOR AF 150mm f/2.8 IF D",
+      "fstop": 2.880000000003477,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA-SEKOR MACRO C 80mm f/4",
+      "fstop": 4.000000000002938,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MAMIYA-SEKOR SFC 150mm f/4 SOFT FOCUS",
+      "fstop": 4.000000000002796,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MEYER-OPTIK GORLITZ LYDITH 30mm f/3.5",
+      "fstop": 3.4999999999129083,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MEYER-OPTIK GORLITZ PRIMAGON 35mm f/4.5",
+      "fstop": 4.50000000014522,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MEYER-OPTIK GORLITZ ORESTEGOR 500mm f/5.6",
+      "fstop": 5.600000000002948,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Minolta Auto Tele Rokkor-PF 100mm f/2",
+      "fstop": 1.9999999999965519,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Minolta MD 135mm f/2.8",
+      "fstop": 2.8000000000149985,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA MD 28mm f/2.8 (7 elements / 7 groups)",
+      "fstop": 2.8000000000028127,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA MD 28mm f/2.8 (5 elements / 5 groups)",
+      "fstop": 2.8000000000013436,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA MC W.ROKKOR-SG 28mm f/3.5",
+      "fstop": 3.499999895001565,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Minolta MD 50mm f/2",
+      "fstop": 1.999999999998109,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF 100mm f/2",
+      "fstop": 1.999999999999623,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF APO Tele 200mm f/2.8",
+      "fstop": 2.800000000008016,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF 20mm f/2.8",
+      "fstop": 2.8000000000084864,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF 28mm f/2",
+      "fstop": 2.000105443960974,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF APO TELE 300mm f/2.8",
+      "fstop": 2.799999999995996,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF 35mm f/2",
+      "fstop": 2.0000000000007643,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF 400mm f/4.5 APO G",
+      "fstop": 4.5900000000148715,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA MD ROKKOR 45mm f/2",
+      "fstop": 1.9999999999957698,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA MD ROKKOR 50mm f/1.4",
+      "fstop": 1.4001378107345823,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA AF 135mm f/2.8 [T4.5] STF",
+      "fstop": 2.829999999998898,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MINOLTA VARISOFT ROKKOR 85mm f/2.8",
+      "fstop": 2.799999999989578,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MIRANDA AUTO EC 135mm f/2.8",
+      "fstop": 2.7999999999917087,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MIRANDA AUTO EC 200mm f/3.5",
+      "fstop": 3.500000000004544,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "MIRANDA AUTO EC 35mm f/2.8",
+      "fstop": 2.7999999999978047,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON 28mm f/3.5 (Nikon AF600 / AF600 QD)",
+      "fstop": 3.5400004703229127,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR 28mm f/2.8 (Nikon 28Ti)",
+      "fstop": 2.869999999746248,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 85mm f/1.4 S",
+      "fstop": 1.401793647298401,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF NIKKOR 85mm f/1.4 D IF",
+      "fstop": 1.4300000000087159,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF DC-NIKKOR 135mm f/2D",
+      "fstop": 2.000000030007703,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-I NIKKOR 300mm f/2.8D IF-ED",
+      "fstop": 2.899999999997352,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-I NIKKOR 400mm f/2.8D IF-ED",
+      "fstop": 2.88000000000237,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF MICRO-NIKKOR 200mm f/4D IF-ED",
+      "fstop": 3.9999999999989138,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF MICRO-NIKKOR 60mm f/2.8 D",
+      "fstop": 2.819999999997756,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Nikon AF Nikkor 20mm f/2.8D",
+      "fstop": 2.799999999992966,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF NIKKOR 35mm f/2 D",
+      "fstop": 2.0059999999394393,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S VR MICRO-NIKKOR 105mm f/2.8 G IF-ED",
+      "fstop": 2.879999999988248,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S DX MICRO-NIKKOR 85mm f/3.5G ED VR",
+      "fstop": 3.599999999995043,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI AF-S NIKKOR ED 300mm f/2.8D IF",
+      "fstop": 2.880000000008438,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI AF-S NIKKOR ED 400mm f/2.8D II IF",
+      "fstop": 2.87999999999341,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S NIKKOR 400mm f/2.8E FL ED VR",
+      "fstop": 2.881515520206821,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI AF-S NIKKOR ED 500mm f/4D IF",
+      "fstop": 4.07999999998199,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S NIKKOR 500mm f/4E FL ED VR",
+      "fstop": 4.122000014242271,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S NIKKOR 500mm f/4G ED VR",
+      "fstop": 4.0800000000542305,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 135mm f/2",
+      "fstop": 2.000000000005376,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 135mm f/2.8",
+      "fstop": 2.7999999999945255,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 28mm f/3.5",
+      "fstop": 3.5000018839922213,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI AF DC-NIKKOR 105mm f/2 D",
+      "fstop": 1.999999999993075,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI AF MICRO-NIKKOR 105mm f/2.8 S",
+      "fstop": 2.8600000000075108,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI AF NIKKOR 85mm f/1.8 S",
+      "fstop": 1.800000000000511,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "Nikon AI Micro-Nikkor 105mm f/2.8S",
+      "fstop": 2.8000063320879423,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI MICRO-NIKKOR 55mm f/2.8",
+      "fstop": 2.7999999999974925,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 180mm f/2.8 ED",
+      "fstop": 2.800062366934927,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR ED 200mm f/2S IF",
+      "fstop": 2.000005314865478,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 24mm f/2",
+      "fstop": 2.0004588825178935,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 35mm f/1.4S",
+      "fstop": 1.4000000000054933,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 35mm f/2",
+      "fstop": 1.9999999999999558,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI NIKKOR 50mm f/1.8 S",
+      "fstop": 1.800000000005545,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR 300mm f/2S IF-ED",
+      "fstop": 1.9999999999962943,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AI-S NIKKOR 50mm f/1.2",
+      "fstop": 1.2030772051183058,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON DODOTTO 400mm f/8",
+      "fstop": 8.00007958440431,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON Fuwatto Soft 90mm f/4.8",
+      "fstop": 4.800141114730046,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON Gugutto Macro 120mm f/4.5",
+      "fstop": 4.501034465644291,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON 35mm f/2.8 (Nikon L35AF)",
+      "fstop": 2.7999999999961402,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON MEDICAL-NIKKOR 120mm f/4 IF",
+      "fstop": 3.999999999989782,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON PC-E MICRO-NIKKOR 45mm f/2.8 D ED",
+      "fstop": 2.800000000193732,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-N 5cm f/1.1",
+      "fstop": 1.0999999999978975,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR AUTO 28mm f/2.8",
+      "fstop": 2.7999999999929677,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S NIKKOR 105mm f/1.4E ED",
+      "fstop": 1.452569287581776,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR 300mm f/4.5 ED",
+      "fstop": 4.499999999999081,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON AF-S NIKKOR 85mm f/1.4 G",
+      "fstop": 1.449999999997461,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-N Auto 24mm f/2.8",
+      "fstop": 2.801177761410319,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-H Auto 2.8cm f/3.5",
+      "fstop": 3.4999999999928257,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-N AUTO 28mm f/2",
+      "fstop": 2.0000000000321654,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-O 2.1cm f/4",
+      "fstop": 3.9999999999917386,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-S AUTO 50mm f/1.4",
+      "fstop": 1.4000000000015576,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-S AUTO 5cm f/2",
+      "fstop": 2.0000000000000555,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-S AUTO 5.8cm f/1.4",
+      "fstop": 1.4000000000040824,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR-SW 75mm f/4.5",
+      "fstop": 4.500000000000538,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON PC-NIKKOR 35mm f/2.8",
+      "fstop": 2.8000000000120475,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON R-UW AF MICRO-NIKKOR 50mm f/2.8",
+      "fstop": 2.8000037059697003,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON SERIES E 100mm f/2.8",
+      "fstop": 2.7999999999988043,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON SERIES E 135mm f/2.8",
+      "fstop": 2.800000000007464,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON ULTRA-MICRO-NIKKOR 29.5mm f/1.2",
+      "fstop": 1.200000000024696,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON UV-NIKKOR 105mm f/4.5",
+      "fstop": 4.500000000010907,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON UV-NIKKOR AUTO 55mm f/4",
+      "fstop": 4.000000093330925,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON W-NIKKOR 35mm f/1.8",
+      "fstop": 1.8000000000010286,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "NIKON NIKKOR Z 85mm f/1.8 S",
+      "fstop": 1.8500000000144474,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS G.ZUIKO AUTO-W 21mm f/3.5",
+      "fstop": 3.5000468711088124,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO DIGITAL ED 150mm f/2.0",
+      "fstop": 1.9999999999945126,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS F.ZUIKO 35mm f/2.8 (Olympus XA)",
+      "fstop": 2.8051331246198314,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS E.ZUIKO AUTO-T 135mm f/3.5",
+      "fstop": 3.5040358659443656,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS H.ZUIKO AUTO-W 24mm f/2.8",
+      "fstop": 2.7999999999981373,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS OM J. ZUIKO AUTO-W 24mm f/2",
+      "fstop": 2.0067862647913945,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS G.ZUIKO AUTO-W 28mm f/3.5",
+      "fstop": 3.5000000955478896,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO AUTO-T 85mm f/2",
+      "fstop": 2.000493443373231,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO AUTO-MACRO 50mm f/2",
+      "fstop": 2.0097472283207614,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO AUTO-MACRO 90mm f/2",
+      "fstop": 2.0001892298473742,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO AUTO-S 50mm f/1.2",
+      "fstop": 1.1999999999978221,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS G.ZUIKO AUTO-S 55mm f/1.2",
+      "fstop": 1.1999999999985056,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS F.ZUIKO AUTO-T 200mm f/5",
+      "fstop": 5.0000033936880115,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO AUTO-W 18mm f/3.5",
+      "fstop": 3.4999999999417866,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS H.ZUIKO AUTO-W 24mm f/2.8 (US 3,994,574 Design)",
+      "fstop": 2.799999999999308,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "OLYMPUS ZUIKO AUTO-W 28mm f/2",
+      "fstop": 1.9999999999987357,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "P. ANGENIEUX DEM 180mm f/2.3 APO",
+      "fstop": 2.3000000000026013,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "P. ANGENIEUX RETROFOCUS TYPE R11 28mm f/3.5",
+      "fstop": 3.4999999999936886,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "P. ANGENIEUX RETROFOCUS TYPE R1 35mm f/2.5",
+      "fstop": 2.499999999965928,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX 110 24mm f/2.8",
+      "fstop": 2.8000000000052983,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX 110 50mm f/2.8",
+      "fstop": 2.821901325246986,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SMC A 645 45mm f/2.8",
+      "fstop": 2.7999999999978575,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SMC FA 645 120mm f/4 Macro",
+      "fstop": 4.000000000000108,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SMC PENTAX-A 135mm f/1.8",
+      "fstop": 1.8000000000009484,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SMC PENTAX-A 200mm f/4 MACRO ED",
+      "fstop": 4.000266828036263,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX DA 70mm f/2.4 Limited",
+      "fstop": 2.400029904701918,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX F 85mm f/2.8 Soft",
+      "fstop": 2.8000000000000203,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SMC PENTAX-FA 28mm f/2.8 Soft",
+      "fstop": 2.799999999995567,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SMC 67 Macro 100mm f/4",
+      "fstop": 3.99999999999793,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SUPER-TAKUMAR 135mm f/2.5",
+      "fstop": 2.4907098243738277,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SUPER-TAKUMAR 28mm f/3.5",
+      "fstop": 3.5000000101070343,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX SUPER-TAKUMAR 35mm f/2",
+      "fstop": 1.9999999999984737,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "PENTAX ULTRA-ACHROMATIC-TAKUMAR 85mm f/4.5",
+      "fstop": 4.500000060710661,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK APO-SIRONAR-W 150mm f/5.6",
+      "fstop": 5.600000000016083,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK GERONAR 210mm f/6.8",
+      "fstop": 6.800035418571546,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK GRANDAGON-N 65mm f/4.5",
+      "fstop": 4.5000073827684774,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK GRANDAGON-N 75mm f/4.5",
+      "fstop": 4.501213377299185,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK GRANDAGON-N 75mm f/6.8",
+      "fstop": 6.7999999999973895,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK GRANDAGON-N 90mm f/4.5",
+      "fstop": 4.499999999982837,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK RODAGON-WA 80mm f/4",
+      "fstop": 3.99999999999642,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "RODENSTOCK ROGONAR-S 50mm f/2.8",
+      "fstop": 2.8000014717276795,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SAMSUNG 45mm f/1.8",
+      "fstop": 1.8399999999681098,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHACHT S-TRAVENAR 135mm f/2.8",
+      "fstop": 2.7999999999909604,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHACHT TRAVENAR 135mm f/3.5",
+      "fstop": 3.500000000008608,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHACHT TRAVENAR 90mm f/2.8",
+      "fstop": 2.800000000005949,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH ANGULON 210mm f/6.8",
+      "fstop": 6.800000000012847,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH APO-SYMMAR 100mm f/5.6",
+      "fstop": 5.599999999940848,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH CINEGON 10mm f/1.8",
+      "fstop": 1.7999999999649234,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH CINEGON 6.5mm f/1.9",
+      "fstop": 1.9000000000327883,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH CINE-XENON 25mm f/1.4",
+      "fstop": 1.4000000809987523,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH CURTAGON 35mm f/2.8",
+      "fstop": 2.799999999728445,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH RETINA-CURTAGON 28mm f/4",
+      "fstop": 4.000000000001169,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH SUPER-ANGULON 75mm f/5.6",
+      "fstop": 5.605518029289163,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH SUPER-ANGULON 90mm f/8",
+      "fstop": 7.999999999966251,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH SUPER-SYMMAR HM 120mm f/5.6",
+      "fstop": 5.599999999985113,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH TECHNIKA SUPER-ANGULON 75mm f/8",
+      "fstop": 8.000000023825258,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH XENAR 50mm f/2.8",
+      "fstop": 2.9000000000023793,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH XENON 50mm f/1.9",
+      "fstop": 1.9999999999997788,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SCHNEIDER-KREUZNACH RETINA-XENON C 50mm f/2 (Kodak Retina IIIc)",
+      "fstop": 1.9999999999997788,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SONY E 50mm f/1.8 OSS",
+      "fstop": 1.8499999999833765,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "SONY FE 400mm f/2.8 GM OSS",
+      "fstop": 2.909999999985625,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VILTROX AF 33mm f/1.4 E",
+      "fstop": 1.3999999999707562,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VILTROX AF 56mm f/1.4 E",
+      "fstop": 1.4120949446107707,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VILTROX AF 75mm f/1.2 PRO",
+      "fstop": 1.2699999999950322,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VIVITAR SERIES 1 135mm f/2.3 AUTO TELEPHOTO",
+      "fstop": 2.3000000448346767,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VIVITAR SERIES 1 200mm f/3.0 VMC",
+      "fstop": 2.9999999999946954,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER APO-LANTHAR 180mm f/4 SL Close Focus",
+      "fstop": 3.9999999999728573,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER APO-LANTHAR 210mm f/4.5",
+      "fstop": 4.500000000000288,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER APO-LANTHAR 50mm f/3.5 (Type II) VM",
+      "fstop": 3.5600001096505878,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER APO-SKOPAR 90mm f/2.8 VM / SL IIs",
+      "fstop": 2.880007370010078,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER APO-ULTRON 90mm f/2 VM",
+      "fstop": 2.0500000724873173,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER COLOR-HELIAR 105mm f/3.5 (Voigtlander Bessa II)",
+      "fstop": 3.4999999999910774,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER COLOR-SKOPAR 105mm f/3.5 (Voigtlander Bessa II)",
+      "fstop": 3.499999999988123,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER HELIAR 100mm f/4.5 (Second Asymmetric Form)",
+      "fstop": 4.341659590514816,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER MACRO APO-LANTHAR 125mm f/2.5 SL",
+      "fstop": 2.499999999996901,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER NOKTON 50mm f/1.5",
+      "fstop": 1.4999965746577142,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER NOKTON 60mm f/0.95",
+      "fstop": 0.9300000000056993,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER NOKTON 50mm f/1.2 X-Mount",
+      "fstop": 1.230000000024894,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER PORTRAIT HELIAR 75mm f/1.8",
+      "fstop": 1.858000000011653,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER SKOPAREX 35mm f/3.4 (Bessamatic)",
+      "fstop": 3.400000000005583,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER TELOMAR 100mm f/5.5",
+      "fstop": 5.473462636260181,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER TELOMAR 180mm f/5.5",
+      "fstop": 5.473462636237614,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER ULTRON 27mm f/2",
+      "fstop": 2.0440999999092457,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "VOIGTLANDER ULTRON 50mm f/2",
+      "fstop": 1.9999999999980882,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "YASHICA ML 24mm f/2.8",
+      "fstop": 2.800000000004714,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "YASHICA ML 300mm f/5.6 C",
+      "fstop": 5.600000000002987,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    },
+    {
+      "name": "YASHICA YASHINON-DX 21mm f/3.3",
+      "fstop": 3.2999999999927776,
+      "swirl": 0.0,
+      "coma": 0.0,
+      "spherical": 0.0,
+      "dispersion": 0.0,
+      "blades": 0
+    }
+  ]
+}

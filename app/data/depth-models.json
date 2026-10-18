@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "name": "moge",
+      "repo": "microsoft/MoGe",
+      "revision": "74fbce054ebed49800de42d0ad0e83495065719a",
+      "url": "https://codeload.github.com/microsoft/MoGe/zip/74fbce054ebed49800de42d0ad0e83495065719a",
+      "sha256": "c256a67674c7779ef5e873199353ecff507b9430e4cea5fedfbfce23ceb68035",
+      "size": 11600986
+    },
+    {
+      "name": "utils3d_moge",
+      "repo": "EasternJournalist/utils3d-moge",
+      "revision": "62f09d58509485564e24d5d9f6aac9ee9ebc0c37",
+      "url": "https://codeload.github.com/EasternJournalist/utils3d-moge/zip/62f09d58509485564e24d5d9f6aac9ee9ebc0c37",
+      "sha256": "be8aa3a645fb5014d98004ac371efd8bca80ea40d0580545bfcf2d0a6779f07d",
+      "size": 395250
+    },
+    {
+      "name": "pipeline",
+      "repo": "EasternJournalist/pipeline",
+      "revision": "1c511390d90226c00c101f34b84df26a0f8789b4",
+      "url": "https://codeload.github.com/EasternJournalist/pipeline/zip/1c511390d90226c00c101f34b84df26a0f8789b4",
+      "sha256": "bb54c5cc6ea6648d1a01dc9741985a51c0a81fa329e9a0889efcd72181af317a",
+      "size": 17735
+    },
+    {
+      "name": "flex_gemm",
+      "repo": "JeffreyXiang/FlexGEMM",
+      "revision": "b2fadb29d41846c7981ade6801ffc689fae119cf",
+      "url": "https://codeload.github.com/JeffreyXiang/FlexGEMM/zip/b2fadb29d41846c7981ade6801ffc689fae119cf",
+      "sha256": "2c51087d2e4329c275f580f071087f9d41d46552e33459c5b1aaea4b11460e06",
+      "size": 607878
+    },
+    {
+      "name": "marigold",
+      "repo": "huawei-bayerlab/marigold-v2",
+      "revision": "bf21e4ad9fb0ae1376bbfb2ec79e999802f19a85",
+      "url": "https://codeload.github.com/huawei-bayerlab/marigold-v2/zip/bf21e4ad9fb0ae1376bbfb2ec79e999802f19a85",
+      "sha256": "43cc0b56a81238a0a3a3efc55d334c6eb23cc71a7315e4fcf6412be759359291",
+      "size": 13183844
+    }
+  ],
+  "marigold_assets": [
+    {
+      "repo": "Qwen/Qwen-Image-Edit-2509",
+      "revision": "d3968ef930e841f4c73640fb8afa3b306a78167e",
+      "folder": "checkpoints/Qwen-Image-Edit-2509",
+      "files": [
+        {
+          "name": "transformer/config.json",
+          "size": 339,
+          "sha256": "247c94f9b923a7d6b6035ca76d27b556bd0efd1a8c7672f31f037644fcce340e"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00001-of-00005.safetensors",
+          "size": 9973578592,
+          "sha256": "784a8efc4dcea09ba20b534bbe9e5fae3367d929525031a4bd26c5ddb7eb18e5"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00002-of-00005.safetensors",
+          "size": 9987326072,
+          "sha256": "86ce21e5e3bdecfbeaa31aa587c03d0d1af6ab05d79c127149e8217f81e0247f"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00003-of-00005.safetensors",
+          "size": 9987307440,
+          "sha256": "c6a046daa991f3b32c3ae39ff95e6e7220455265fcbbb643e9f556bea8641d02"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00004-of-00005.safetensors",
+          "size": 9930685712,
+          "sha256": "c28bf871d5db0a6397843eca3987e58ba2c3013d287d5d4a1271d68e158ce7e8"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model-00005-of-00005.safetensors",
+          "size": 982130472,
+          "sha256": "dd2844e5cafb03b16bed9556aa29c15396a787e17c38a0eda7f5a1281497c76a"
+        },
+        {
+          "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+          "size": 198887,
+          "sha256": "034f003b74493730e1c595b2e23232e99d9e28bcef3b4c10c56d1b53eee4b435"
+        },
+        {
+          "name": "vae/config.json",
+          "size": 730,
+          "sha256": "c448160dba5ce79c965cb075ee02e18d1c42eb6424f787e5869790d577b56a65"
+        },
+        {
+          "name": "vae/diffusion_pytorch_model.safetensors",
+          "size": 253806966,
+          "sha256": "0c8bc8b758c649abef9ea407b95408389a3b2f610d0d10fcb054fe171d0a8344"
+        }
+      ]
+    },
+    {
+      "repo": "huawei-bayerlab/marigold-v2-0",
+      "revision": "cdf9810fb690886391a63aec012b5f501064fb0d",
+      "folder": "checkpoints/Marigold-V2",
+      "files": [
+        {
+          "name": "depth/Log-stage2/trainables.safetensors",
+          "size": 1853909694,
+          "sha256": "3edec69490ba8e8fdc8d63e130f93cb93f514360d415a22701250b2535056892"
+        },
+        {
+          "name": "qwen_text_embeddings/qwen_edit_2509_qwen_depth_realimg512_prompt_embeds.pt",
+          "size": 19384278,
+          "sha256": "ba752b582571d990c75ad6aac2a2eeb0cf04c2fe01b233b1675028eabf342a6d"
+        },
+        {
+          "name": "qwen_text_embeddings/qwen_edit_2509_qwen_depth_realimg512_prompt_mask.pt",
+          "size": 23624,
+          "sha256": "80973a6521f21a5a6faf6402cae185dafef840d91e654efbeb1097914e634798"
+        }
+      ]
+    }
+  ],
+  "models": {
+    "moge3": {
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "packages": [
+        "triton-windows==3.6.0.post26",
+        "numpy==2.5.2",
+        "opencv-python-headless==5.0.0.93",
+        "scipy==1.18.1",
+        "pillow==12.3.0",
+        "huggingface-hub==0.36.2",
+        "tqdm==4.70.1",
+        "matplotlib==3.11.2",
+        "trimesh==5.1.0",
+        "requests",
+        "click"
+      ],
+      "sources": [
+        "utils3d_moge",
+        "pipeline",
+        "flex_gemm",
+        "moge"
+      ]
+    },
+    "marigold2": {
+      "torch": "2.10.0+cu128",
+      "torchvision": "0.25.0+cu128",
+      "packages": [],
+      "sources": [
+        "marigold"
+      ]
+    }
+  },
+  "python_sdk": {
+    "url": "https://www.nuget.org/api/v2/package/python/3.12.9",
+    "sha256": "b7240e3117d94dc2446c4b1250e31306adc817934706937d0992c78f937487ba",
+    "size": 14469008
+  }
+}

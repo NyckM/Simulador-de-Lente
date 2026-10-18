@@ -1,0 +1,84 @@
+{
+  "mode": "baseline",
+  "device": "NVIDIA GeForce RTX 4090",
+  "cases": [
+    {
+      "name": "atlas-3-32",
+      "median_ms": 14.505999992252328,
+      "exact": true
+    },
+    {
+      "name": "atlas-5-256",
+      "median_ms": 52.96980000275653,
+      "exact": true
+    },
+    {
+      "name": "atlas-9-1024",
+      "median_ms": 289.1259000025457,
+      "exact": true
+    },
+    {
+      "name": "focus",
+      "median_ms": 0.16060799360275269,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    },
+    {
+      "name": "blur",
+      "median_ms": 0.1616639941930771,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    },
+    {
+      "name": "slicing",
+      "median_ms": 0.5534399747848511,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    },
+    {
+      "name": "eclipse",
+      "median_ms": 0.3081600069999695,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    },
+    {
+      "name": "shimmer",
+      "median_ms": 4.019423961639404,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    },
+    {
+      "name": "aberrations",
+      "median_ms": 1.8625279664993286,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    },
+    {
+      "name": "ghost-diffraction",
+      "median_ms": 0.4142400026321411,
+      "exact": true,
+      "precision": [
+        "float32",
+        "float16"
+      ]
+    }
+  ]
+}

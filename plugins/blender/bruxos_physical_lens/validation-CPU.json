@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "device": "CPU",
+  "blender": "4.5.14 LTS",
+  "means": {
+    "base": 0.49964737709766877,
+    "zero": 0.49964737709766877,
+    "flare": 2.0445272081997246,
+    "coated-base": 0.7077945823160311,
+    "coated-flare": 1.3849529863800853
+  },
+  "zeroExact": true,
+  "globalMaterialOSL": false,
+  "limits": "plane plate scene; 256 samples; two reflections only; hash-based path sampling"
+}

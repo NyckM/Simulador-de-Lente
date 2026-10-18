@@ -1,0 +1,96 @@
+Idioma	Language	语言
+Português	Português	Português
+English	English	English
+简体中文	简体中文	简体中文
+Lente	Lens	镜头
+Foco	Focus	对焦
+Efeitos	Effects	效果
+Fechar	Close	关闭
+Negativo	Negative	负
+Positivo	Positive	正
+Cut	Cut	分割
+LayerA	Layer A	图层 A
+LayerB	Layer B	图层 B
+LayerC	Layer C	图层 C
+LayerADepth	Layer A depth	图层 A 深度
+LayerBDepth	Layer B depth	图层 B 深度
+LayerCDepth	Layer C depth	图层 C 深度
+GlitterMatte	Glitter matte	闪粉遮罩
+Depth externo	External depth	外部深度
+Source	Source	源图像
+Output	Output	输出
+ e 	 and 	 和 
+Bruxosdovfx Desfoque Nuke	Bruxosdovfx Defocus Nuke	Bruxosdovfx 散焦 Nuke
+Arquivo do complemento inválido.	Invalid add-on file.	扩展组件文件无效。
+Origem de download inválida.	Invalid download source.	下载来源无效。
+Servidor retornou um download parcial. Tente novamente.	Server returned a partial download. Retry.	服务器返回部分下载。请重试。
+Download incompleto ou inválido. Tente novamente; arquivos completos serão reaproveitados.	Incomplete or invalid download. Retry; completed files will be reused.	下载不完整或无效。请重试，完整文件将复用。
+Não foi possível instalar ou validar os complementos. Tente novamente. Detalhes: 	Could not install or validate add-ons. Retry. Details: 	无法安装或验证扩展组件。请重试。详情：
+Libere pelo menos 12 GB para baixar e instalar os complementos.	Free at least 12 GB to download and install add-ons.	请释放至少 12 GB 空间以下载并安装扩展组件。
+Complemento de instalação inválido. Reinstale o app.	Invalid installation add-on. Reinstall the app.	安装组件无效。请重新安装应用。
+Preparando os complementos…	Preparing add-ons…	正在准备扩展组件…
+Baixando complementos…	Downloading add-ons…	正在下载扩展组件…
+Baixando complementos: {0} / {1} GB	Downloading add-ons: {0} / {1} GB	正在下载扩展组件：{0} / {1} GB
+Instalando bibliotecas de profundidade…	Installing depth libraries…	正在安装深度库…
+Verificando DA2, DA3, MoGe e DVD…	Checking DA2, DA3, MoGe and DVD…	正在检查 DA2、DA3、MoGe 和 DVD…
+Complementos prontos. Você já pode gerar depth; os pesos do modelo serão baixados no primeiro uso.	Add-ons ready. You can now generate depth; model weights download on first use.	扩展组件已就绪。可以生成深度，模型权重将在首次使用时下载。
+Instalação cancelada. Downloads concluídos serão reaproveitados.	Installation cancelled. Completed downloads will be reused.	安装已取消。完整下载将复用。
+Complementos já instalados.	Add-ons already installed.	扩展组件已安装。
+Instalador de complementos indisponível. Atualize o app.	Add-on installer unavailable. Update the app.	扩展组件安装器不可用。请更新应用。
+Preparando instalação…	Preparing installation…	正在准备安装…
+Carregando mídia e modelo; o primeiro uso pode baixar pesos.	Loading media and model; first use may download weights.	正在加载媒体和模型，首次使用可能下载权重。
+Não foi possível ler o FPS do vídeo	Could not read video FPS	无法读取视频帧率
+Limite atual: 3000 frames por geração de depth. Recorte o vídeo.	Current limit: 3000 frames per depth generation. Trim the video.	当前每次深度生成最多 3000 帧。请裁剪视频。
+Mídia sem frames decodificáveis	Media has no decodable frames	媒体没有可解码帧
+Modelo produziu depth inválido	Model produced invalid depth	模型生成的深度无效
+Mapa de profundidade constante; tente outra imagem/modelo	Constant depth map; try another image or model	深度图为常量，请尝试其他图像或模型
+Depth relativo: branco próximo. Escala única por sequência.	Relative depth: white is near. One scale per sequence.	相对深度：白色为近端。序列使用统一尺度。
+ Inferência monocular; pode haver variação temporal.	 Monocular inference; temporal variation may occur.	 单目推理可能存在时间变化。
+Nao foi possivel salvar o resultado do depth: status.json permanece bloqueado. Feche o programa que esta usando o arquivo e tente novamente.	Could not save depth: status.json remains locked. Close the program using it and retry.	无法保存深度：status.json 仍被锁定。请关闭占用文件的程序后重试。
+Instancia OFX ausente	Missing OFX instance	OFX 实例缺失
+Formato de imagem OFX invalido	Invalid OFX image format	OFX 图像格式无效
+OFX requer RGBA ou Alpha	OFX requires RGBA or Alpha	OFX 需要 RGBA 或透明度
+Limite: 8192 pixels por eixo / 17 megapixels	Limit: 8192 pixels per axis / 17 megapixels	限制：每边 8192 像素/1700 万像素
+Saida requer RGBA	Output requires RGBA	输出需要 RGBA
+Bruxosdovfx: %s	Bruxosdovfx: %s	Bruxosdovfx：%s
+Simulador de Desfoque da Bruxosdovfx - AE 0.2.1\rNative lens tracing, external depth, CUDA / CPU.	Bruxosdovfx Defocus Simulator - AE 0.2.2\rNative lens tracing, external depth, CUDA / CPU.	Bruxosdovfx 散焦模拟器 - AE 0.2.2\r原生镜头追踪、外部深度、CUDA / CPU。
+Superfície	Surface	表面
+Próximo	Near	近端
+Distante	Far	远端
+Profundidade: 	Depth: 	深度：
+Erro: 	Error: 	错误：
+Arquivo	File	文件
+Exportar	Export	导出
+amostras	samples	采样
+mapa(s)	map(s)	张深度图
+metros	meters	米
+Profundidade em metros (mapa / Cut)	Depth in meters (map / Cut)	米制深度（图/分割）
+Valor inválido: {0}. Use {1} a {2}.	Invalid value: {0}. Use {1} to {2}.	数值无效：{0}。请使用 {1} 至 {2}。
+Esta versão aceita até 8 megapixels, com até 8192 pixels por lado.	This version supports up to 8 megapixels, with up to 8192 pixels per side.	此版本最大支持 800 万像素，每边最多 8192 像素。
+Dimensões de imagem/depth incompatíveis.	Image/depth dimensions do not match.	图像与深度尺寸不匹配。
+Parâmetro inválido.	Invalid parameter.	参数无效。
+Formato de pixels inesperado.	Unexpected pixel format.	像素格式异常。
+Buffer de pixels incompleto.	Incomplete pixel buffer.	像素缓冲不完整。
+Protocolo incompativel.	Incompatible protocol.	协议不兼容。
+Dimensoes ou parametros invalidos. Limite: 8 megapixels / 8192 por lado.	Invalid dimensions or parameters. Limit: 8 megapixels / 8192 per side.	尺寸或参数无效。限制：800 万像素/每边 8192 像素。
+Buffer incompleto.	Incomplete buffer.	缓冲不完整。
+Parametro nao finito.	Non-finite parameter.	参数不是有限数值。
+Parametro fora do intervalo.	Parameter out of range.	参数超出范围。
+Pixels nao finitos.	Non-finite pixels.	像素不是有限数值。
+Depth nao finito.	Non-finite depth.	深度不是有限数值。
+ms quadro	ms/frame	毫秒/帧
+Acesso negado	Access denied	拒绝访问
+Não encontrado	Not found	未找到
+Configuração inválida.	Invalid settings.	设置无效。
+Host inválido	Invalid host	主机无效
+Origem inválida	Invalid origin	来源无效
+Arquivo inválido	Invalid file	文件无效
+Ainda não disponível	Not available yet	尚不可用
+Job já iniciado	Job already started	任务已启动
+Job inválido	Invalid job	任务无效
+Entrada tratada como sRGB; alfa composto sobre preto. EXR/Log ainda não suportados.	Input treated as sRGB; alpha composited over black. EXR/Log not supported yet.	输入按 sRGB 处理，透明度合成于黑底。尚不支持 EXR/Log。
+Prévia	Preview	预览
+
+Desenho da lente	Lens diagram	镜头剖面
+Clique no vidro; ajuste a superficie abaixo.	Click a surface; edit it with the controls below.	点击镜片表面，然后使用下方控件调整。
+Luz > vidros > diafragma > sensor	Light > glass > aperture > sensor	光线 > 镜片 > 光圈 > 传感器

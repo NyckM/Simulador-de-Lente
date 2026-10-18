@@ -1,0 +1,123 @@
+{
+  "ui": {
+    "passed": true,
+    "version": "0.2.1",
+    "blender": "4.5.14 LTS",
+    "presets": [
+      {
+        "key": "dgauss50",
+        "surfaces": 11,
+        "setup_ms": 86.80760000061127
+      },
+      {
+        "key": "zeiss_planar_50",
+        "surfaces": 11,
+        "setup_ms": 53.19500000041444
+      },
+      {
+        "key": "helios_44_2",
+        "surfaces": 11,
+        "setup_ms": 50.05249999885564
+      },
+      {
+        "key": "tessar_50",
+        "surfaces": 8,
+        "setup_ms": 43.92569999981788
+      },
+      {
+        "key": "biotar_50",
+        "surfaces": 11,
+        "setup_ms": 46.51379999995697
+      },
+      {
+        "key": "sonnar_50",
+        "surfaces": 11,
+        "setup_ms": 49.080400000093505
+      },
+      {
+        "key": "canon_1956_50",
+        "surfaces": 13,
+        "setup_ms": 55.86970000149449
+      },
+      {
+        "key": "kino_100",
+        "surfaces": 11,
+        "setup_ms": 47.05470000044443
+      },
+      {
+        "key": "orestor_135",
+        "surfaces": 10,
+        "setup_ms": 44.877399999677436
+      },
+      {
+        "key": "heliar_100",
+        "surfaces": 9,
+        "setup_ms": 50.043100000038976
+      },
+      {
+        "key": "wide_22",
+        "surfaces": 13,
+        "setup_ms": 46.94590000144672
+      },
+      {
+        "key": "tele_250",
+        "surfaces": 7,
+        "setup_ms": 45.74199999842676
+      }
+    ],
+    "runtime_update_ms": [
+      0.10569999722065404,
+      0.22819999867351726,
+      0.20459999723243527,
+      0.19579999934649095,
+      0.19420000171521679,
+      0.21070000002509914,
+      0.20470000163186342,
+      0.1933999992616009,
+      0.19289999909233302,
+      0.19980000070063397,
+      0.1950999976543244,
+      0.19389999943086877,
+      0.1917000008688774,
+      0.1947999990079552,
+      0.19519999841577373,
+      0.2021000000240747,
+      0.192599996807985,
+      0.19210000027669594,
+      0.2523000002838671,
+      0.5693000020983163
+    ],
+    "focus_fit_calls": 3,
+    "runtime_parameters_reuse_fit": true,
+    "shader_unchanged": true,
+    "meshes_opt_in": true,
+    "focus_reuses_meshes": true,
+    "fast_preview_preserves_final_flare": true,
+    "collapsed_panels": true,
+    "restore": true
+  },
+  "render_cpu": {
+    "passed": true,
+    "device": "CPU",
+    "blender": "4.5.14 LTS",
+    "final_render_flare_enabled": [
+      1,
+      1
+    ],
+    "fast_full_max_error": 0.0,
+    "preview_restored_after_render": true,
+    "material_osl_preserved": true
+  },
+  "render_optix": {
+    "passed": true,
+    "device": "OPTIX",
+    "blender": "4.5.14 LTS",
+    "final_render_flare_enabled": [
+      1,
+      1
+    ],
+    "fast_full_max_error": 1.4901161193847656e-08,
+    "preview_restored_after_render": true,
+    "material_osl_preserved": true
+  }
+}

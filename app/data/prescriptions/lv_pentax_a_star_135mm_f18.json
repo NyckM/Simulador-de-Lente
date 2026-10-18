@@ -1,0 +1,101 @@
+{
+  "lens0": {
+    "index": 0,
+    "curvature_radius": 71.398,
+    "thickness": 12.9,
+    "nd": 1.62041,
+    "aperture_diameter": 76.0
+  },
+  "lens1": {
+    "index": 1,
+    "curvature_radius": 4020.868,
+    "thickness": 0.1,
+    "nd": 1.0,
+    "aperture_diameter": 71.0
+  },
+  "lens2": {
+    "index": 2,
+    "curvature_radius": 52.33,
+    "thickness": 4.82,
+    "nd": 1.72342,
+    "aperture_diameter": 61.0
+  },
+  "lens3": {
+    "index": 3,
+    "curvature_radius": 31.309,
+    "thickness": 15.0,
+    "nd": 1.6968,
+    "aperture_diameter": 56.0
+  },
+  "lens4": {
+    "index": 4,
+    "curvature_radius": 94.161,
+    "thickness": 4.05,
+    "nd": 1.0,
+    "aperture_diameter": 53.0
+  },
+  "lens5": {
+    "index": 5,
+    "curvature_radius": 461.054,
+    "thickness": 8.17,
+    "nd": 1.6727,
+    "aperture_diameter": 49.0
+  },
+  "lens6": {
+    "index": 6,
+    "curvature_radius": 30.267,
+    "thickness": 8.5,
+    "nd": 1.0,
+    "aperture_diameter": 43.0
+  },
+  "lens7": {
+    "index": 7,
+    "curvature_radius": 0.0,
+    "thickness": 25.88,
+    "nd": 1.0,
+    "aperture_diameter": 37.98171966,
+    "is_stop": true
+  },
+  "lens8": {
+    "index": 8,
+    "curvature_radius": -41.362,
+    "thickness": 4.37,
+    "nd": 1.70154,
+    "aperture_diameter": 50.0
+  },
+  "lens9": {
+    "index": 9,
+    "curvature_radius": -40.027,
+    "thickness": 6.87,
+    "nd": 1.0,
+    "aperture_diameter": 53.0
+  },
+  "lens10": {
+    "index": 10,
+    "curvature_radius": 71.985,
+    "thickness": 4.05,
+    "nd": 1.72,
+    "aperture_diameter": 54.0
+  },
+  "lens11": {
+    "index": 11,
+    "curvature_radius": 143.722,
+    "thickness": 4.0,
+    "nd": 1.0,
+    "aperture_diameter": 53.0
+  },
+  "lens12": {
+    "index": 12,
+    "curvature_radius": 248.646,
+    "thickness": 4.0,
+    "nd": 1.7,
+    "aperture_diameter": 53.0
+  },
+  "lens13": {
+    "index": 13,
+    "curvature_radius": 1506.638,
+    "thickness": 0.0,
+    "nd": 1.0,
+    "aperture_diameter": 52.0
+  }
+}

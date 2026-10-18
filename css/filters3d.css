@@ -1,0 +1,42 @@
+/* Demonstração dos filtros 3D (1.2.17) — mesmo motor de filtros do app, WebGL2 no navegador */
+.f3d{border:1px solid var(--line2);border-radius:16px;background:var(--bg2);overflow:hidden}
+.f3d-stage{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.6fr);border-bottom:1px solid var(--line2)}
+.f3d-glass{border-right:1px solid var(--line2);display:flex;flex-direction:column;min-height:100%}
+.f3d-glass .glass-viewer{margin:0;border:0;border-radius:0;background:transparent;display:flex;flex-direction:column;flex:1}
+.f3d-glass .glass-viewer-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--line)}
+.f3d-glass .glass-viewer-stage{position:relative;flex:1;min-height:300px;max-height:460px}
+.f3d-glass .glass-viewer-canvas{display:block;width:100%;height:100%;cursor:grab;touch-action:none}
+.f3d-glass .glass-viewer-canvas:active{cursor:grabbing}
+.f3d-glass .glass-viewer-gizmo{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.f3d-glass .glass-viewer-bar{display:flex;flex-wrap:wrap;gap:6px;padding:12px 14px;border-top:1px solid var(--line)}
+.f3d-glass .glass-viewer-bar button{font:500 12px var(--sans);padding:6px 12px;border-radius:999px;border:1px solid var(--line2);background:transparent;color:var(--muted);cursor:pointer}
+.f3d-glass .glass-viewer-bar button.active,.f3d-glass .glass-viewer-bar button:hover{border-color:var(--mint);color:var(--mint)}
+.f3d-glass .glass-viewer-bar small{flex:1 1 100%;font-size:12px;color:var(--dim);margin-top:2px}
+.f3d-photo{position:relative;background:#050706;display:flex;align-items:center;justify-content:center;min-height:320px}
+.f3d-photo canvas{display:block;max-width:100%;max-height:640px;width:auto;height:auto;cursor:ew-resize;touch-action:none}
+.f3d-tag{position:absolute;top:12px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:rgba(10,12,11,.7);border:1px solid var(--line2);color:var(--text);pointer-events:none}
+.f3d-tag.l{left:12px}.f3d-tag.r{right:12px;color:var(--mint)}
+.f3d-nogl{position:absolute;inset:auto 16px 16px;margin:0;padding:12px 14px;border-radius:10px;background:rgba(255,138,61,.12);border:1px solid rgba(255,138,61,.35);color:var(--amber);font-size:14px}
+.f3d-controls{display:grid;grid-template-columns:minmax(220px,.85fr) minmax(0,1.6fr);gap:20px 32px;padding:22px 24px 24px}
+.f3d-left{display:flex;flex-direction:column;gap:14px}
+.f3d-field{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted)}
+.f3d-field select{font:500 15px var(--sans);color:var(--text);background:var(--bg3);border:1px solid var(--line2);border-radius:10px;padding:10px 12px}
+.f3d-sliders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;align-content:start}
+.f3d-sliders label{display:grid;grid-template-columns:1fr auto;gap:4px 10px;font-size:13px;color:var(--muted)}
+.f3d-sliders label[hidden]{display:none}
+.f3d-sliders input{grid-column:1/-1;width:100%;accent-color:var(--mint)}
+.f3d-sliders output{font:500 12px var(--mono);color:var(--text)}
+.f3d-actions{display:flex;flex-wrap:wrap;gap:8px}
+.f3d-actions .btn{padding:9px 16px;font-size:14px}
+.f3d-upload{cursor:pointer}
+.f3d .fineprint{margin:0;font-size:12px;color:var(--dim)}
+@media(max-width:900px){.f3d-stage,.f3d-controls{grid-template-columns:1fr}.f3d-glass{border-right:0;border-bottom:1px solid var(--line2)}.f3d-glass .glass-viewer-stage{min-height:260px}.f3d-sliders{grid-template-columns:1fr}}
+/* novidades 1.2.17: seis recursos */
+.update-features.six{grid-template-columns:repeat(3,minmax(0,1fr))}
+.update-features.six .update-feature{border-bottom:1px solid var(--line2)}
+.update-features.six .update-feature:nth-child(n+4){border-bottom:0}
+.update-feature .feature-chip{display:inline-block;margin-top:12px;font:500 11px var(--mono);letter-spacing:.06em;color:var(--mint);border:1px solid rgba(159,240,200,.3);border-radius:999px;padding:3px 9px}
+.plugins-line{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:-20px 0 44px;padding:16px 20px;border:1px dashed var(--line2);border-radius:12px;color:var(--muted);font-size:15px}
+.plugins-line b{color:var(--text)}
+@media(max-width:900px){.update-features.six{grid-template-columns:1fr}.update-features.six .update-feature:nth-child(n+4){border-bottom:1px solid var(--line2)}.update-features.six .update-feature:last-child{border-bottom:0}}
+.update-features.six .update-feature:nth-child(3n){border-right:0}@media(max-width:900px){.update-features.six .update-feature{border-right:0}}

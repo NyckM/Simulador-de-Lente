@@ -1,0 +1,2 @@
+# Shared tested versions; pip selects native platform wheels.
+-r requirements-desktop.txt
