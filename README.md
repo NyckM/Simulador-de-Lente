@@ -22,17 +22,16 @@ Um simulador óptico que calcula o desfoque por **ray tracing pelas superfícies
 
 Plugins **0.4.0** com o mesmo visual: After Effects, DaVinci Resolve, Nuke, Blender e ComfyUI. O Photoshop continua na 0.2.1.
 
-## Downloads (Release V1.2.17)
+## Downloads ([Release V1.2.17](https://github.com/NyckM/Simulador-de-Lente/releases/tag/V1.2.17))
 
 | Pacote | Arquivo |
 |---|---|
 | App Windows x64 | `Simulador-de-Desfoque-Bruxosdovfx-1.2.17-Setup-Windows-x64.exe` |
-| After Effects 0.4.0 | `Bruxosdovfx-Desfoque-AE-0.4.0-{PT-BR,EN,ZH-CN}-Windows.zip` |
-| DaVinci Resolve 0.4.0 | `Bruxosdovfx-Desfoque-Resolve-0.4.0-{PT-BR,EN,ZH-CN}-Windows.zip` |
-| Nuke 0.4.0 | `Bruxosdovfx-Desfoque-Nuke-0.4.0-{PT-BR,EN,ZH-CN}-Windows.zip` |
-| Photoshop 0.2.1 | `Bruxosdovfx-Desfoque-Photoshop-0.2.1-{PT-BR,EN,ZH-CN}-Windows.zip` |
-| Blender 0.4.0 | `Bruxos-Physical-Lens-0.4.0-Blender-Addon.zip` |
-| ComfyUI 0.4.0 | `ComfyUI-Bruxos-WebGL-0.4.0.zip` |
+| After Effects, Resolve, Nuke · prévia 1.2.17 (PT-BR) | `Bruxos-AE-1.2.17-PREVIA-PT-BR-Windows.zip`, `Bruxos-Resolve-…`, `Bruxos-Nuke-…` |
+| Blender · prévia 0.4.1 | `Bruxos-Blender-0.4.1-PREVIA.zip` |
+| Código-fonte | `codigo-aberto.tar.gz` |
+
+Versões estáveis em inglês e chinês dos plugins (0.3.1), Photoshop 0.2.1 e ComfyUI 0.3.0: [Release V1.2.8](https://github.com/NyckM/Simulador-de-Lente/releases/tag/V1.2.8).
 
 ## Estrutura do repositório
 
