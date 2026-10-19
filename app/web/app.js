@@ -195,6 +195,10 @@ async function draw(mode=outputMode){
  const task=renderFrame(mode);drawTask=task;
  try{return await task;}finally{drawTask=null;if(drawAgain){drawAgain=false;requestDraw(true);}}
 }
+// 1.2.17b: na prévia de vídeos acima de 2K, envia um proxy de até 2048 px para a GPU (o prefiltro e a pirâmide rodam
+// por quadro na resolução da fonte; em 4K isso derrubava o contexto WebGL). Exportação e gravação continuam na resolução original.
+let videoProxy=null;
+function uploadVideoFrame(mode){const big=Math.max(sourceW,sourceH);if(!mode&&!recorder&&big>2048&&!$('use-depth').checked&&!layers?.active){const k=2048/big,pw=Math.max(16,Math.round(sourceW*k)),ph=Math.max(16,Math.round(sourceH*k));videoProxy??=document.createElement('canvas');if(videoProxy.width!==pw||videoProxy.height!==ph){videoProxy.width=pw;videoProxy.height=ph;}videoProxy.getContext('2d',{alpha:false}).drawImage(video,0,0,pw,ph);gpu.uploadSource(videoProxy,pw,ph);}else gpu.uploadSource(video,sourceW,sourceH);}
 async function renderFrame(mode){if(!gpu?.ready||!source)return;
  const started=performance.now(),epoch=previewEpoch,step=previewStep;const frameSettings=LensAnimation.clone(settings),frameLayers=LensAnimation.clone(layers.configs);
  const current=()=>offlineBusy||epoch===previewEpoch;
@@ -209,7 +213,7 @@ async function renderFrame(mode){if(!gpu?.ready||!source)return;
   try{await importedDepthSync;}finally{importedDepthSync=null;}
   if(binding!==importedDepthVideo)return;
   gpu.uploadSource(binding.source,sourceW,sourceH);
- }else if(sourceKind==='video'&&video.readyState>=2)gpu.uploadSource(video,sourceW,sourceH);
+ }else if(sourceKind==='video'&&video.readyState>=2)uploadVideoFrame(mode);
  depthInspector?.refresh();
  if(window.ghostInspector?.current&&!ghostInspector.isCurrent())ghostInspector.invalidate();
  if(frameSettings.physical_ghosts&&frameSettings.ghost_gain>0)await ghostInspector.ensure();
