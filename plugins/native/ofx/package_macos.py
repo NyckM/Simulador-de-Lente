@@ -12,7 +12,8 @@ shutil.copytree(build/'BruxosdovfxDesfoque.ofx.bundle',out/'BruxosdovfxDesfoque.
 (out/'README.txt').write_text((here/'macos/README.txt').read_text(encoding='utf-8').replace('{version}',version).replace('{language}',language),encoding='utf-8')
 shutil.copy2(here/'macos/install.command',out/'install.command')
 (out/'validation').mkdir();shutil.copy2(here/'macos/run-validation.command',out/'validation/run-validation.command');shutil.copy2(build/'HostTest',out/'validation/HostTest')
-if (build/'host-test-CPU.txt').exists():shutil.copy2(build/'host-test-CPU.txt',out/'validation/host-CPU.txt')
+for mode in ['CPU','GPU']:
+ if (build/f'host-test-{mode}.txt').exists():shutil.copy2(build/f'host-test-{mode}.txt',out/f'validation/host-{mode}.txt')
 (out/'Licenses').mkdir()
 for source,target in [(root/'LICENSE','LICENSE-GPL-3.0.txt'),(here/'LICENSE-OpenFX.txt','LICENSE-OpenFX.txt'),(root/'LICENSE-LensSim.txt','LICENSE-LensSim.txt'),(root/'SOURCE-LensVisualizer.md','SOURCE-LensVisualizer.md'),(here/'macos/LICENSES.md','LICENSES.md')]:shutil.copy2(source,out/'Licenses'/target)
 def git(*a):

@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
-# Resolve OFX for macOS: one universal bundle (Apple Silicon + Intel), CPU engine.
-# macOS has no CUDA, so the CPU path renders every frame. OpenMP comes from
-# ../ae/OmpRuntime.cpp, not libomp (see the comment there).
+# Resolve OFX for macOS: one universal bundle (Apple Silicon + Intel).
+# GPU: Metal (../ae/MetalEngine.mm, kernels in ../ae/*.metal) in place of CUDA, CPU engine as fallback.
+# OpenMP for the CPU engine comes from ../ae/OmpRuntime.cpp, not libomp (see the comment there).
 #
-#   On a Mac (Xcode command line tools):   ./build-macos.sh
-#   On Linux (cross build):                ZIG=/path/to/zig ./build-macos.sh
+#   On a Mac (Xcode, with its Metal compiler):  ./build-macos.sh
+#   On Linux (cross build, CPU engine only):    ZIG=/path/to/zig ./build-macos.sh
 #     needs zig 0.13 (compiler + libc++), ld64.lld and llvm-lipo (LD64 / LIPO to override).
 #
 # OFX_INCLUDE  OpenFX headers (default ../../../../work/openfx/include, as build.cmd)
 # BRUXOS_LANGUAGE  0 PT-BR, 1 EN, 2 ZH-CN (default 1)
 # VERSION      bundle version (default 0.4.0)
 # OUT          output folder (default bin/macos); package it with package_macos.py
+# SKIP_TESTS=1 skips the host checks, SKIP_GPU_TESTS=1 only the Metal ones (machines without a GPU)
 set -euo pipefail
 cd "$(dirname "$0")"
 OFX_INCLUDE=${OFX_INCLUDE:-../../../../work/openfx/include}
@@ -26,10 +27,12 @@ OBJ="$OUT/obj"
 mkdir -p "$OBJ/arm64" "$OBJ/x86_64"
 printf '_OfxGetPlugin\n_OfxGetNumberOfPlugins\n_bruxos_layer_backend\n_bruxos_lens_diagram\n' >"$OBJ/exports.txt"
 
+METAL=0
 if [ "$(uname)" = Darwin ]; then
+ METAL=1;FLAGS+=(-DBRUXOS_METAL);echo _bruxos_gpu_device >>"$OBJ/exports.txt"
  compile(){ local arch=$1;shift;clang++ -arch "$arch" -mmacosx-version-min=$MIN_MACOS "$@";}
  OMP=(-Xclang -fopenmp)
- link(){ local arch=$1 out=$2;shift 2;clang++ -arch "$arch" -mmacosx-version-min=$MIN_MACOS -bundle -dead_strip -Wl,-exported_symbols_list,"$OBJ/exports.txt" "$@" -o "$out";}
+ link(){ local arch=$1 out=$2;shift 2;clang++ -arch "$arch" -mmacosx-version-min=$MIN_MACOS -bundle -dead_strip -Wl,-exported_symbols_list,"$OBJ/exports.txt" "$@" -framework Metal -framework Foundation -o "$out";}
  LIPO=${LIPO:-lipo}
 else
  ZIG=${ZIG:-zig};LD64=${LD64:-ld64.lld};LIPO=${LIPO:-llvm-lipo}
@@ -56,8 +59,10 @@ for arch in arm64 x86_64;do
  pids=()
  for src in "${SOURCES[@]}";do compile "$arch" "${FLAGS[@]}" "${OMP[@]}" -c "$src" -o "$OBJ/$arch/$(basename "$src" .cpp).o" & pids+=($!);done
  compile "$arch" -O2 -std=c++17 -fvisibility=hidden -c ../ae/OmpRuntime.cpp -o "$OBJ/$arch/OmpRuntime.o" & pids+=($!)
+ if [ $METAL = 1 ];then compile "$arch" "${FLAGS[@]}" -fobjc-arc -c ../ae/MetalEngine.mm -o "$OBJ/$arch/MetalEngine.o" & pids+=($!);fi
  for pid in "${pids[@]}";do wait "$pid";done
  objs=();for src in "${SOURCES[@]}" OmpRuntime.cpp;do objs+=("$OBJ/$arch/$(basename "$src" .cpp).o");done
+ if [ $METAL = 1 ];then objs+=("$OBJ/$arch/MetalEngine.o");fi
  link "$arch" "$OBJ/$arch/$NAME.ofx" "${objs[@]}"
 done
 
@@ -65,6 +70,12 @@ BUNDLE="$OUT/$NAME.ofx.bundle"
 rm -rf "$BUNDLE";mkdir -p "$BUNDLE/Contents/MacOS" "$BUNDLE/Contents/Resources"
 "$LIPO" -create "$OBJ/arm64/$NAME.ofx" "$OBJ/x86_64/$NAME.ofx" -output "$BUNDLE/Contents/MacOS/$NAME.ofx"
 cp ../ae/bruxos_dirt.rgba "$BUNDLE/Contents/Resources/"
+# Kernels compiled now, so a shader error fails the build instead of a render. No fast math: the
+# GPU result has to match the CPU engine within the host checks' tolerance.
+if [ $METAL = 1 ];then
+ for kernel in MetalEngine MetalStack;do xcrun -sdk macosx metal -std=macos-metal2.3 -mmacosx-version-min=$MIN_MACOS -fno-fast-math -I../ae -c "../ae/$kernel.metal" -o "$OBJ/$kernel.air";done
+ xcrun -sdk macosx metallib "$OBJ/MetalEngine.air" "$OBJ/MetalStack.air" -o "$BUNDLE/Contents/Resources/$NAME.metallib"
+fi
 cat >"$BUNDLE/Contents/Info.plist" <<PLIST
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -88,6 +99,9 @@ for arch in arm64 x86_64;do compile "$arch" -O2 -std=c++17 -I"$OFX_INCLUDE" Host
 "$LIPO" -create "$OBJ/arm64/HostTest" "$OBJ/x86_64/HostTest" -output "$OUT/HostTest"
 if [ "$(uname)" = Darwin ];then
  codesign --force --sign - "$BUNDLE"
- if [ "${SKIP_TESTS:-0}" != 1 ];then "$OUT/HostTest" "$BUNDLE/Contents/MacOS/$NAME.ofx" --cpu-fallback | tee "$OUT/host-test-CPU.txt";fi
+ if [ "${SKIP_TESTS:-0}" != 1 ];then
+  BRUXOS_DISABLE_METAL=1 "$OUT/HostTest" "$BUNDLE/Contents/MacOS/$NAME.ofx" --cpu-fallback | tee "$OUT/host-test-CPU.txt"
+  if [ "${SKIP_GPU_TESTS:-0}" != 1 ];then "$OUT/HostTest" "$BUNDLE/Contents/MacOS/$NAME.ofx" | tee "$OUT/host-test-GPU.txt";fi
+ fi
 fi
 echo "Built $BUNDLE"

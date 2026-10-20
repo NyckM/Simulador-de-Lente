@@ -16,11 +16,12 @@ Manual install: copy BruxosdovfxDesfoque.ofx.bundle to /Library/OFX/Plugins, the
 Uninstall: delete /Library/OFX/Plugins/BruxosdovfxDesfoque.ofx.bundle.
 
 DIFFERENCES FROM WINDOWS
-- CPU engine. There is no CUDA on macOS, so every frame renders on the CPU engine that the Windows
-  plugin uses without an NVIDIA GPU. Use Draft/Fast quality and Proxy while editing, High or above for
-  the final render.
+- GPU: Metal in place of CUDA. Engine "Automatic (Metal / CPU)" renders on the Mac's GPU and falls back
+  to the CPU engine if Metal is not available; "CPU" forces the CPU engine. As on Windows, the post
+  filters run on the CPU. Builds without the Metal kernels (Contents/Resources/*.metallib) are CPU only.
 - The lens dirt texture is in Contents/Resources.
-- validation/host-CPU.txt is the host check output from the Mac that built this package, if it ran there.
+- validation/host-CPU.txt and host-GPU.txt are the host check output from the Mac that built this
+  package, when they ran there (build machines without a GPU skip the Metal checks).
 
 ------------------------------------------------------------------------------------------------------
 
@@ -32,5 +33,6 @@ Ele pede a senha do Mac, copia o plugin para /Library/OFX/Plugins, remove a quar
 os testes do host OFX no seu Mac (deve terminar com "PASS"). Depois abra o Resolve:
 Effects > OpenFX > Bruxosdovfx.
 
-Diferenças: o macOS não tem CUDA, então o render usa o motor de CPU. Use qualidade Draft/Fast e Proxy
-durante a edição.
+Diferenças: no lugar do CUDA, a GPU do Mac via Metal. O motor "Automatic (Metal / CPU)" usa a GPU e
+volta para a CPU se o Metal não estiver disponível; "CPU" força a CPU. Os filtros de pós continuam na
+CPU, como no Windows.

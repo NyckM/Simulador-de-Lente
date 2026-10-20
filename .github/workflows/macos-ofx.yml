@@ -30,8 +30,11 @@ jobs:
           repository: AcademySoftwareFoundation/openfx
           ref: OFX_Release_1.5.1
           path: openfx
+      # GitHub's macOS machines have no GPU: the Metal kernels are compiled, the Metal checks run on a real Mac.
       - name: Build and test
         shell: bash
+        env:
+          SKIP_GPU_TESTS: 1
         run: |
           export BRUXOS_LANGUAGE=$([ "${{ matrix.language }}" = EN ] && echo 1 || echo 0)
           {
@@ -49,7 +52,7 @@ jobs:
           echo 'import Metal;print(MTLCreateSystemDefaultDevice()?.name ?? "no Metal device")' > "$RUNNER_TEMP/metal.swift"
           info="$(sw_vers -productVersion) / $(xcodebuild -version | head -1) / $(sysctl -n machdep.cpu.brand_string) / Metal: $(swift "$RUNNER_TEMP/metal.swift" 2>&1 | tail -1)"
           echo "::notice title=Runner ${{ matrix.language }}::$info"
-          if [ -f "$RUNNER_TEMP/build/host-test-CPU.txt" ]; then echo "::notice title=HostTest ${{ matrix.language }}::$(tail -n 5 "$RUNNER_TEMP/build/host-test-CPU.txt" | esc)"; fi
+          for mode in CPU GPU; do f="$RUNNER_TEMP/build/host-test-$mode.txt"; if [ -f "$f" ]; then echo "::notice title=HostTest $mode ${{ matrix.language }}::$(tail -n 5 "$f" | esc)"; fi; done
           if [ "${{ job.status }}" != success ]; then echo "::error title=Build log ${{ matrix.language }}::$(tail -n 200 "$RUNNER_TEMP/build.log" | esc)"; fi
       # The artifact download is the package folder itself; the scripts restore the exec bits it loses.
       - uses: actions/upload-artifact@v4

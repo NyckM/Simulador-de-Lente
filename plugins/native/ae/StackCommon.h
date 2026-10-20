@@ -4,18 +4,25 @@
 #ifndef STACK_DEVICE
 #define STACK_DEVICE inline
 #endif
+// Address spaces for Metal (MetalStack.metal): device buffers and thread-local out parameters.
+#ifndef STACK_GLOBAL
+#define STACK_GLOBAL
+#endif
+#ifndef STACK_LOCAL
+#define STACK_LOCAL
+#endif
 STACK_DEVICE float stSat(float x){return fminf(1,fmaxf(0,x));}
 STACK_DEVICE float4 stAdd(float4 a,float4 b){return make_float4(a.x+b.x,a.y+b.y,a.z+b.z,a.w+b.w);}
 STACK_DEVICE float4 stMul(float4 a,float k){return make_float4(a.x*k,a.y*k,a.z*k,a.w*k);}
 STACK_DEVICE float4 stLerp(float4 a,float4 b,float k){return stAdd(stMul(a,1-k),stMul(b,k));}
 STACK_DEVICE float stChannel(float4 a,int c){return c==0?a.x:c==1?a.y:a.z;}
 STACK_DEVICE float stLum(float4 a){return .2126f*a.x+.7152f*a.y+.0722f*a.z;}
-STACK_DEVICE float4 stBilinear(const float4* data,int w,int h,float u,float v,bool transparent=true){
+STACK_DEVICE float4 stBilinear(STACK_GLOBAL const float4* data,int w,int h,float u,float v,bool transparent=true){
  if(transparent&&(u<0||u>1||v<0||v>1))return make_float4(0,0,0,0);
  float x=fminf(w-1.f,fmaxf(0,u*w-.5f)),y=fminf(h-1.f,fmaxf(0,v*h-.5f));int ix=int(x),iy=int(y),jx=ix+1<w?ix+1:ix,jy=iy+1<h?iy+1:iy;
  return stLerp(stLerp(data[iy*w+ix],data[iy*w+jx],x-ix),stLerp(data[jy*w+ix],data[jy*w+jx],x-ix),y-iy);
 }
-STACK_DEVICE float4 stSample(const float4* data,StackPyramid p,float u,float v,float lod){
+STACK_DEVICE float4 stSample(STACK_GLOBAL const float4* data,StackPyramid p,float u,float v,float lod){
  if(!p.n)return make_float4(0,0,0,0);if(p.edgeClamp){u=stSat(u);v=stSat(v);}else if(u<0||u>1||v<0||v>1)return make_float4(0,0,0,0);lod=fminf(p.n-1.f,fmaxf(0,lod));int l=int(lod),j=l+1<p.n?l+1:l;
  return stLerp(stBilinear(data+p.off[l],p.w[l],p.h[l],u,v),stBilinear(data+p.off[j],p.w[j],p.h[j],u,v),lod-l);
 }
@@ -24,7 +31,7 @@ STACK_DEVICE float stPlane(Config s,float m){float inv=1/(fmaxf(.3f,m)*1000);ret
 STACK_DEVICE unsigned stHash(unsigned x){x^=x>>16;x*=0x7feb352d;x^=x>>15;x*=0x846ca68b;return x^(x>>16);}
 STACK_DEVICE float stNoise(float x,float y,Config s){float v=sinf(x*127.1f+y*311.7f+s.f[SHIMMERSEED]*17.31f)*43758.5453f;return v-floorf(v);}
 STACK_DEVICE float stProcedural(float u,float v,Config s){float x=u*1080/s.f[SHIMMERSIZE],y=v*1080*s.h/s.w/fmaxf(.01f,s.f[PIXELASPECT])/s.f[SHIMMERSIZE],ix=floorf(x),iy=floorf(y),tx=x-ix,ty=y-iy;tx=tx*tx*(3-2*tx);ty=ty*ty*(3-2*ty);float a=stNoise(ix,iy,s)*(1-tx)+stNoise(ix+1,iy,s)*tx,b=stNoise(ix,iy+1,s)*(1-tx)+stNoise(ix+1,iy+1,s)*tx,n=a*(1-ty)+b*ty,t=stSat((n-(1-s.f[SHIMMERDENSITY]-.02f))/.04f);return t*t*(3-2*t)*n*n;}
-STACK_DEVICE void stUV(Config s,float4 ray,float4 pupil,float distance,float qx,float qy,int c,float& u,float& v,float& lod,int index=0){
+STACK_DEVICE void stUV(Config s,float4 ray,float4 pupil,float distance,float qx,float qy,int c,STACK_LOCAL float& u,STACK_LOCAL float& v,STACK_LOCAL float& lod,int index=0){
  float aspect=s.h/float(s.w)/fmaxf(.01f,s.f[PIXELASPECT]),fx=(qx-.5f)*2,fy=(.5f-qy)*2*aspect,fr=hypotf(fx,fy),rx=fx/fmaxf(fr,.0001f),ry=fy/fmaxf(fr,.0001f);
  float spread=opticsSpread(s,distance);
  float plane=stPlane(s,distance),fd=s.f[SENSORZ]-plane,dz=s.f[SENSORZ]-s.f[REFERENCE]+s.f[SOURCEFOCUS]-plane;
@@ -45,10 +52,10 @@ STACK_DEVICE void stUV(Config s,float4 ray,float4 pupil,float distance,float qx,
  float ca=(c==0?s.f[CARED]:c==2?s.f[CABLUE]:0)*.01f*spread;u+=(qx-.5f)*ca;v+=(qy-.5f)*ca;
 }
 STACK_DEVICE float4 stOver(float4 front,float4 back){return stAdd(front,stMul(back,1-stSat(front.w)));}
-STACK_DEVICE float4 stLayer(const float4* data,const StackPlane* planes,StackScene scene,int layer,float4 ray,float4 pupil,float qx,float qy,int c,int index=0){
+STACK_DEVICE float4 stLayer(STACK_GLOBAL const float4* data,STACK_GLOBAL const StackPlane* planes,StackScene scene,int layer,float4 ray,float4 pupil,float qx,float qy,int c,int index=0){
  float4 result=make_float4(0,0,0,0);for(int j=0;j<scene.count[layer];j++){auto p=planes[scene.start[layer]+j];float u,v,lod;stUV(scene.config,ray,pupil,p.distance,qx,qy,c,u,v,lod,index);result=stOver(stSample(data,p.color,u,v,lod),result);}return result;
 }
-STACK_DEVICE float4 stPixel(const float4* data,const StackPlane* planes,const float4* rays,const float4* pupils,StackScene scene,int id){
+STACK_DEVICE float4 stPixel(STACK_GLOBAL const float4* data,STACK_GLOBAL const StackPlane* planes,STACK_GLOBAL const float4* rays,STACK_GLOBAL const float4* pupils,StackScene scene,int id){
  Config s=scene.config;float ux=(id%s.rw+.5f)/s.rw,uy=(id/s.rw+.5f)/s.rh,aspect=s.h/float(s.w)/fmaxf(.01f,s.f[PIXELASPECT]);
  float px=(ux-.5f)*2,py=(uy-.5f)*2*aspect,r=px*px+py*py;
  float qx=(px*(1+s.f[K1]*r+s.f[K2]*r*r)+2*s.f[P1]*px*py+s.f[P2]*(r+2*px*px))/2+.5f;
