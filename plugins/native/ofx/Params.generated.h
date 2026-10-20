@@ -125,7 +125,7 @@ doubleParam(set,"DITHER_AMOUNT","Dither Amount",0,4,1,"QUALITY_GROUP");
 paramNames[DITHER_AMOUNT]="DITHER_AMOUNT";
 intParam(set,kOfxParamTypeBoolean,"SOFTEN","Suavizar limites internos",true,nullptr,"QUALITY_GROUP",true);
 paramNames[SOFTEN]="SOFTEN";
-intParam(set,kOfxParamTypeChoice,"ENGINE","Motor",(1)-1,"Automatico (CUDA / CPU)|CPU","QUALITY_GROUP",false);
+intParam(set,kOfxParamTypeChoice,"ENGINE","Motor",(1)-1,BRUXOS_ENGINE_OPTIONS,"QUALITY_GROUP",false);
 paramNames[ENGINE]="ENGINE";
 buttonParam(set,"RESET_PROFILE","Restaurar perfil","LENS_GROUP");paramNames[RESET_PROFILE]="RESET_PROFILE";
 #if BRUXOS_EXTRA_LAYERS

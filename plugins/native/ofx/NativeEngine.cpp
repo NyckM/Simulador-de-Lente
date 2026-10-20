@@ -3,16 +3,30 @@
 #define BRUXOS_CUDA_DLL L"bruxos_ofx_cuda.dll"
 #endif
 #include "Engine.h"
+#ifdef _WIN32
 #include <windows.h>
+#elif defined(BRUXOS_METAL)
+#include "MetalEngine.h"
+#endif
 #include <algorithm>
 #include <mutex>
 #include <cmath>
+#ifdef _WIN32
 HMODULE pluginModule=nullptr;
 BOOL WINAPI DllMain(HINSTANCE instance,DWORD reason,LPVOID){if(reason==DLL_PROCESS_ATTACH){pluginModule=instance;DisableThreadLibraryCalls(instance);}return TRUE;}
+#endif
 namespace{
 std::mutex gpuMutex;
 using Init=int(*)();using Source=int(*)(const float*,const float*,int,int);using Upload=int(*)(const float*,const float*,int);using Render=int(*)(Config*,float*,float*);
+#ifdef _WIN32
 struct GPU{HMODULE module=nullptr;Source source=nullptr;Upload atlas=nullptr;Render render=nullptr;GPU(){wchar_t path[32768];DWORD size=GetModuleFileNameW(pluginModule,path,32768);if(!size||size>=32768)return;std::wstring p(path);p=p.substr(0,p.find_last_of(L"\\/")+1)+BRUXOS_CUDA_DLL;module=LoadLibraryExW(p.c_str(),nullptr,LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR|LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);if(!module)return;auto init=reinterpret_cast<Init>(GetProcAddress(module,"optica_cuda_init"));source=reinterpret_cast<Source>(GetProcAddress(module,"optica_cuda_source"));atlas=reinterpret_cast<Upload>(GetProcAddress(module,"optica_cuda_atlas"));render=reinterpret_cast<Render>(GetProcAddress(module,"optica_cuda_render_v2"));auto bytes=reinterpret_cast<Init>(GetProcAddress(module,"bruxos_cuda_config_bytes"));if(!bytes||bytes()!=sizeof(Config)||!init||!source||!atlas||!render||init()){source=nullptr;}}};
+#elif defined(BRUXOS_METAL)
+// macOS: the Metal engine is part of the plugin (MetalEngine.mm); without a device, cpuRender.
+struct GPU{Source source=nullptr;Upload atlas=nullptr;Render render=nullptr;GPU(){if(!bruxos_metal_init()){source=bruxos_metal_source;atlas=bruxos_metal_atlas;render=bruxos_metal_render;}}};
+#else
+// No GPU library: every frame goes to cpuRender.
+struct GPU{Source source=nullptr;Upload atlas=nullptr;Render render=nullptr;};
+#endif
 }
 void nativeRender(Config s,const std::vector<float4>& input,const std::vector<float>& depth,const Atlas& atlas,std::vector<float4>& out,bool cpuOnly){
  std::lock_guard<std::mutex> guard(gpuMutex);static GPU gpu;

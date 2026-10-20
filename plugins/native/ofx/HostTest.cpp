@@ -1,5 +1,17 @@
 #define NOMINMAX
+#ifdef _WIN32
 #include <windows.h>
+#else
+// POSIX stand-ins for the Win32 loader calls below. Outside Windows the GPU engine (Metal) is inside the
+// plugin: it stands in for the CUDA library when it reports a device, and optica_cuda_device maps to it.
+#include <dlfcn.h>
+#include <cstring>
+using HMODULE=void*;
+static HMODULE loadedPlugin=nullptr;
+static HMODULE LoadLibraryA(const char* path){return loadedPlugin=dlopen(path,RTLD_NOW|RTLD_LOCAL);}
+static void* GetProcAddress(HMODULE module,const char* name){return dlsym(module,strcmp(name,"optica_cuda_device")?name:"bruxos_gpu_device");}
+static HMODULE GetModuleHandleA(const char*){auto device=loadedPlugin?reinterpret_cast<const char*(*)()>(dlsym(loadedPlugin,"bruxos_gpu_device")):nullptr;return device&&device()?loadedPlugin:nullptr;}
+#endif
 #include "ofxImageEffect.h"
 #include "ofxParam.h"
 #include "ofxMessage.h"

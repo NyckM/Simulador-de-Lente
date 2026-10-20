@@ -1,0 +1,64 @@
+# Builds the Resolve OFX plugin for macOS (universal: Apple Silicon + Intel), runs the OFX host
+# checks on an Apple Silicon runner and uploads the installable package as an artifact.
+name: macOS Resolve OFX
+
+on:
+  push:
+    paths:
+      - 'plugins/native/**'
+      - '.github/workflows/macos-ofx.yml'
+  pull_request:
+    paths:
+      - 'plugins/native/**'
+      - '.github/workflows/macos-ofx.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  resolve-ofx:
+    runs-on: macos-14
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [EN, PT-BR]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: AcademySoftwareFoundation/openfx
+          ref: OFX_Release_1.5.1
+          path: openfx
+      # GitHub's macOS machines have no GPU: the Metal kernels are compiled, the Metal checks run on a real Mac.
+      - name: Build and test
+        shell: bash
+        env:
+          SKIP_GPU_TESTS: 1
+        run: |
+          export BRUXOS_LANGUAGE=$([ "${{ matrix.language }}" = EN ] && echo 1 || echo 0)
+          {
+            OFX_INCLUDE="$GITHUB_WORKSPACE/openfx/include" OUT="$RUNNER_TEMP/build" plugins/native/ofx/build-macos.sh
+            python3 plugins/native/ofx/package_macos.py "$RUNNER_TEMP/build" "$RUNNER_TEMP/dist"
+            mv "$RUNNER_TEMP"/dist/Bruxosdovfx-Desfoque-Resolve-*-macOS "$RUNNER_TEMP/package"
+          } 2>&1 | tee "$RUNNER_TEMP/build.log"
+      # Logs and artifacts are served from blob storage; annotations come through the plain REST API,
+      # so the results are also reported here.
+      - name: Report
+        if: always()
+        shell: bash
+        run: |
+          esc(){ python3 -c 'import sys;sys.stdout.write(sys.stdin.read().replace("%","%25").replace("\r","%0D").replace("\n","%0A"))'; }
+          echo 'import Metal;print(MTLCreateSystemDefaultDevice()?.name ?? "no Metal device")' > "$RUNNER_TEMP/metal.swift"
+          info="$(sw_vers -productVersion) / $(xcodebuild -version | head -1) / $(sysctl -n machdep.cpu.brand_string) / Metal: $(swift "$RUNNER_TEMP/metal.swift" 2>&1 | tail -1)"
+          echo "::notice title=Runner ${{ matrix.language }}::$info"
+          b="$RUNNER_TEMP/build/BruxosdovfxDesfoque.ofx.bundle"
+          if [ -d "$b" ]; then echo "::notice title=Bundle ${{ matrix.language }}::$( (cd "$b" && find . -type f | sort; lipo -archs Contents/MacOS/*.ofx; otool -L Contents/MacOS/*.ofx | grep -E 'Metal|Foundation|libobjc' | sort -u) | esc)"; fi
+          for mode in CPU GPU; do f="$RUNNER_TEMP/build/host-test-$mode.txt"; if [ -f "$f" ]; then echo "::notice title=HostTest $mode ${{ matrix.language }}::$(tail -n 5 "$f" | esc)"; fi; done
+          if [ "${{ job.status }}" != success ]; then echo "::error title=Build log ${{ matrix.language }}::$(tail -n 200 "$RUNNER_TEMP/build.log" | esc)"; fi
+      # The artifact download is the package folder itself; the scripts restore the exec bits it loses.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Bruxosdovfx-Desfoque-Resolve-macOS-${{ matrix.language }}
+          path: ${{ runner.temp }}/package
+          if-no-files-found: error

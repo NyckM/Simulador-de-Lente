@@ -45,6 +45,11 @@ static void groupParam(OfxParamSetHandle set,const char* name,const char* label,
 static void doubleParam(OfxParamSetHandle set,const char* name,const char* label,double lo,double hi,double d,const char* parent){auto p=newParam(set,kOfxParamTypeDouble,name,label,parent);real(p,kOfxParamPropDefault,d);real(p,kOfxParamPropMin,lo);real(p,kOfxParamPropMax,hi);real(p,kOfxParamPropDisplayMin,lo);real(p,kOfxParamPropDisplayMax,hi);if(strcmp(name,"FOCUS")==0)real(p,kOfxParamPropDisplayMax,20);if(strcmp(name,"SOURCE_DISTANCE")==0)real(p,kOfxParamPropDisplayMax,30);}
 static void intParam(OfxParamSetHandle set,const char* type,const char* name,const char* label,int d,const char* labels,const char* parent,bool animate){auto p=newParam(set,type,name,label,parent);integer(p,kOfxParamPropDefault,d);integer(p,kOfxParamPropAnimates,animate);if(labels){std::string options=bruxos_i18n::options(labels);size_t start=0;int n=0;for(;;){auto end=options.find('|',start);str(p,kOfxParamPropChoiceOption,options.substr(start,end-start).c_str(),n++);if(end==std::string::npos)break;start=end+1;}}}
 static void buttonParam(OfxParamSetHandle set,const char* name,const char* label,const char* parent){newParam(set,kOfxParamTypePushButton,name,label,parent);}
+#ifdef BRUXOS_METAL
+#define BRUXOS_ENGINE_OPTIONS "Automatico (Metal / CPU)|CPU"
+#else
+#define BRUXOS_ENGINE_OPTIONS "Automatico (CUDA / CPU)|CPU"
+#endif
 #include "Params.generated.h"
 struct Instance{OfxImageClipHandle source=nullptr,depth=nullptr,output=nullptr;OfxImageClipHandle extraClips[7]{};OfxParamHandle params[NUM_PARAMS]{};bool integral[NUM_PARAMS]{};};
 static Instance* instance(OfxImageEffectHandle h){OfxPropertySetHandle p;check(effect->getPropertySet(h,&p));void* v=nullptr;check(prop->propGetPointer(p,kOfxPropInstanceData,0,&v));if(!v)throw std::runtime_error("Instancia OFX ausente");return static_cast<Instance*>(v);}
@@ -104,5 +109,10 @@ for(auto pair:{std::make_pair(i->source,"Source"),std::make_pair(i->depth,"Depth
  }catch(OfxStatus s){return s;}catch(const std::bad_alloc&){return kOfxStatErrMemory;}catch(const std::exception& e){if(messages)messages->message((void*)handle,kOfxMessageError,"Bruxosdovfx","%s",bruxos_i18n::tr(e.what()));return kOfxStatFailed;}catch(...){return kOfxStatFailed;}}
 static void setHost(OfxHost* h){host=h;}
 static OfxPlugin plugin={kOfxImageEffectPluginApi,1,BRUXOS_PLUGIN_ID,0,10,setHost,mainEntry};
-extern "C" __declspec(dllexport) int OfxGetNumberOfPlugins(){return 1;}
-extern "C" __declspec(dllexport) OfxPlugin* OfxGetPlugin(int i){return i==0?&plugin:nullptr;}
+#ifdef _WIN32
+#define PLUGIN_EXPORT extern "C" __declspec(dllexport)
+#else
+#define PLUGIN_EXPORT extern "C" __attribute__((visibility("default")))
+#endif
+PLUGIN_EXPORT int OfxGetNumberOfPlugins(){return 1;}
+PLUGIN_EXPORT OfxPlugin* OfxGetPlugin(int i){return i==0?&plugin:nullptr;}
