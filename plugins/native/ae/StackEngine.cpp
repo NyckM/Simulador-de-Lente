@@ -5,11 +5,18 @@
 #include <stdexcept>
 #include <mutex>
 #include <queue>
+#ifdef _WIN32
 #include <windows.h>
 #undef FAR
 #undef NEAR
+#define STACK_EXPORT extern "C" __declspec(dllexport)
+#else
+#define STACK_EXPORT extern "C" __attribute__((visibility("default")))
+#endif
 #include "StackCommon.h"
+#ifdef _WIN32
 extern HMODULE pluginModule;
+#endif
 namespace {
 constexpr size_t maxBytes=size_t(3)*1024*1024*1024;
 struct Packed {
@@ -114,11 +121,16 @@ void addLayer(Packed& packed,std::vector<StackPlane>& planes,const std::vector<f
  }
 }
 using StackGPU=int(*)(const StackScene*,const StackPlane*,int,const float4*,int,const float4*,const float4*,int,float4*);
+#ifdef _WIN32
 struct GPU {HMODULE module=nullptr;StackGPU render=nullptr;GPU(){wchar_t path[32768];auto size=GetModuleFileNameW(pluginModule,path,32768);if(!size||size>=32768)return;std::wstring file(path);file=file.substr(0,file.find_last_of(L"\\/")+1)+L"bruxos_layers_cuda.dll";module=LoadLibraryExW(file.c_str(),nullptr,LOAD_LIBRARY_SEARCH_DLL_LOAD_DIR|LOAD_LIBRARY_SEARCH_DEFAULT_DIRS);auto abi=module?reinterpret_cast<int(*)()>(GetProcAddress(module,"bruxos_stack_abi")):nullptr;if(abi&&abi()==3)render=reinterpret_cast<StackGPU>(GetProcAddress(module,"bruxos_stack_render"));}};
+#else
+// macOS/Linux: no CUDA layer library, the CPU stack renders.
+struct GPU {StackGPU render=nullptr;};
+#endif
 std::mutex stackMutex;
 thread_local bool usedGPU=false;
 }
-extern "C" __declspec(dllexport) int bruxos_layer_backend(){return usedGPU?1:0;}
+STACK_EXPORT int bruxos_layer_backend(){return usedGPU?1:0;}
 bool extraActive(Config s,const ExtraInputs& extra){for(auto& layer:extra.layers)if(!layer.image.empty())return true;return s.depth&&(extra.depthEdgeSafe||(s.cut&&(extra.cutActualDepth||extra.cutGrow>0||extra.cutFeather>0)));}
 void stackRender(Config s,const std::vector<float4>& input,const std::vector<float>& depth,const Atlas& atlas,const ExtraInputs& extra,std::vector<float4>& out,bool cpuOnly){
  usedGPU=false;

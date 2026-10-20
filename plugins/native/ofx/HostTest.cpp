@@ -1,5 +1,15 @@
 #define NOMINMAX
+#ifdef _WIN32
 #include <windows.h>
+#else
+// POSIX stand-ins for the Win32 loader calls below. There is no CUDA library outside Windows.
+#include <dlfcn.h>
+#include <cstring>
+using HMODULE=void*;
+static HMODULE LoadLibraryA(const char* path){return dlopen(path,RTLD_NOW|RTLD_LOCAL);}
+static void* GetProcAddress(HMODULE module,const char* name){return dlsym(module,name);}
+static HMODULE GetModuleHandleA(const char*){return nullptr;}
+#endif
 #include "ofxImageEffect.h"
 #include "ofxParam.h"
 #include "ofxMessage.h"

@@ -104,5 +104,10 @@ for(auto pair:{std::make_pair(i->source,"Source"),std::make_pair(i->depth,"Depth
  }catch(OfxStatus s){return s;}catch(const std::bad_alloc&){return kOfxStatErrMemory;}catch(const std::exception& e){if(messages)messages->message((void*)handle,kOfxMessageError,"Bruxosdovfx","%s",bruxos_i18n::tr(e.what()));return kOfxStatFailed;}catch(...){return kOfxStatFailed;}}
 static void setHost(OfxHost* h){host=h;}
 static OfxPlugin plugin={kOfxImageEffectPluginApi,1,BRUXOS_PLUGIN_ID,0,10,setHost,mainEntry};
-extern "C" __declspec(dllexport) int OfxGetNumberOfPlugins(){return 1;}
-extern "C" __declspec(dllexport) OfxPlugin* OfxGetPlugin(int i){return i==0?&plugin:nullptr;}
+#ifdef _WIN32
+#define PLUGIN_EXPORT extern "C" __declspec(dllexport)
+#else
+#define PLUGIN_EXPORT extern "C" __attribute__((visibility("default")))
+#endif
+PLUGIN_EXPORT int OfxGetNumberOfPlugins(){return 1;}
+PLUGIN_EXPORT OfxPlugin* OfxGetPlugin(int i){return i==0?&plugin:nullptr;}

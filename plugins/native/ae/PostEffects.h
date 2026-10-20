@@ -155,6 +155,10 @@ inline const DirtTexture& dirtTexture(){static std::once_flag once;static DirtTe
  FILE* file=nullptr;{int n=MultiByteToWideChar(CP_UTF8,0,path.c_str(),-1,nullptr,0);std::wstring w(size_t(std::max(1,n)),L'\0');MultiByteToWideChar(CP_UTF8,0,path.c_str(),-1,&w[0],n);file=_wfopen(w.c_str(),L"rb");}
 #else
  FILE* file=std::fopen(path.c_str(),"rb");
+#ifdef __APPLE__
+ // macOS bundles keep data in Contents/Resources so the binary in Contents/MacOS can be signed.
+ if(!file&&!(env&&*env))file=std::fopen((moduleFolder()+"/../Resources/bruxos_dirt.rgba").c_str(),"rb");
+#endif
 #endif
  if(!file)return;std::vector<uint8_t> data(512*512*4);size_t got=std::fread(data.data(),1,data.size(),file);std::fclose(file);if(got==data.size()){t.n=512;t.rgba=std::move(data);}});return t;}
 }
