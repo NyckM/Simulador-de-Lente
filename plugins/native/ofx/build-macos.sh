@@ -8,19 +8,19 @@
 #     needs zig 0.13 (compiler + libc++), ld64.lld and llvm-lipo (LD64 / LIPO to override).
 #
 # OFX_INCLUDE  OpenFX headers (default ../../../../work/openfx/include, as build.cmd)
-# LANGUAGE     0 PT-BR, 1 EN, 2 ZH-CN (default 1)
+# BRUXOS_LANGUAGE  0 PT-BR, 1 EN, 2 ZH-CN (default 1)
 # VERSION      bundle version (default 0.4.0)
-# OUT          output folder (default bin/macos)
+# OUT          output folder (default bin/macos); package it with package_macos.py
 set -euo pipefail
 cd "$(dirname "$0")"
 OFX_INCLUDE=${OFX_INCLUDE:-../../../../work/openfx/include}
-LANGUAGE=${LANGUAGE:-1}
+BRUXOS_LANGUAGE=${BRUXOS_LANGUAGE:-1}
 VERSION=${VERSION:-0.4.0}
 OUT=${OUT:-bin/macos}
 MIN_MACOS=11.0
 NAME=BruxosdovfxDesfoque
 SOURCES=(Plugin.cpp NativeEngine.cpp ../ae/StackEngine.cpp ../ae/LensCore.cpp ../ae/CpuEngine.generated.cpp)
-FLAGS=(-O2 -std=c++17 -fvisibility=hidden -ffp-contract=off -DBRUXOS_LANGUAGE="$LANGUAGE" -I../ae -I"$OFX_INCLUDE")
+FLAGS=(-O2 -std=c++17 -fvisibility=hidden -ffp-contract=off -DBRUXOS_LANGUAGE="$BRUXOS_LANGUAGE" -I../ae -I"$OFX_INCLUDE")
 [ -f "$OFX_INCLUDE/ofxImageEffect.h" ] || { echo "OpenFX headers not found in $OFX_INCLUDE (set OFX_INCLUDE)" >&2; exit 1; }
 OBJ="$OUT/obj"
 mkdir -p "$OBJ/arm64" "$OBJ/x86_64"
@@ -48,7 +48,7 @@ fi
 # OmpRuntime.cpp forwards at most 64 captures to a parallel region: refuse to build past that.
 for src in "${SOURCES[@]}";do
  compile arm64 "${FLAGS[@]}" "${OMP[@]}" -S -emit-llvm "$src" -o "$OBJ/regions.ll"
- most=$(grep -oE '__kmpc_fork_call\(ptr [^,]+, i32 [0-9]+' "$OBJ/regions.ll" | grep -oE '[0-9]+$' | sort -n | tail -1 || true)
+ most=$(grep -oE '__kmpc_fork_call\([^,]+, i32 [0-9]+' "$OBJ/regions.ll" | grep -oE '[0-9]+$' | sort -n | tail -1 || true)
  if [ "${most:-0}" -gt 64 ];then echo "$src: parallel region with $most captures, OmpRuntime.cpp supports 64" >&2;exit 1;fi
 done
 
@@ -83,11 +83,11 @@ cat >"$BUNDLE/Contents/Info.plist" <<PLIST
 </plist>
 PLIST
 
+# Universal test host, shipped in the package so the checks can run on any Mac (package_macos.py).
+for arch in arm64 x86_64;do compile "$arch" -O2 -std=c++17 -I"$OFX_INCLUDE" HostTest.cpp -o "$OBJ/$arch/HostTest";done
+"$LIPO" -create "$OBJ/arm64/HostTest" "$OBJ/x86_64/HostTest" -output "$OUT/HostTest"
 if [ "$(uname)" = Darwin ];then
  codesign --force --sign - "$BUNDLE"
- if [ "${SKIP_TESTS:-0}" != 1 ];then
-  clang++ -O2 -std=c++17 -I"$OFX_INCLUDE" HostTest.cpp -o "$OBJ/HostTest"
-  OMP_NUM_THREADS=${OMP_NUM_THREADS:-8} "$OBJ/HostTest" "$BUNDLE/Contents/MacOS/$NAME.ofx" --cpu-fallback
- fi
+ if [ "${SKIP_TESTS:-0}" != 1 ];then "$OUT/HostTest" "$BUNDLE/Contents/MacOS/$NAME.ofx" --cpu-fallback | tee "$OUT/host-test-CPU.txt";fi
 fi
 echo "Built $BUNDLE"

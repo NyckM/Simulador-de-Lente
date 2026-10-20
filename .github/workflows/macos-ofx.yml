@@ -1,0 +1,44 @@
+# Builds the Resolve OFX plugin for macOS (universal: Apple Silicon + Intel), runs the OFX host
+# checks on an Apple Silicon runner and uploads the installable package as an artifact.
+name: macOS Resolve OFX
+
+on:
+  push:
+    paths:
+      - 'plugins/native/**'
+      - '.github/workflows/macos-ofx.yml'
+  pull_request:
+    paths:
+      - 'plugins/native/**'
+      - '.github/workflows/macos-ofx.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  resolve-ofx:
+    runs-on: macos-14
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [EN, PT-BR]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: AcademySoftwareFoundation/openfx
+          ref: OFX_Release_1.5.1
+          path: openfx
+      - name: Build and test
+        run: |
+          export BRUXOS_LANGUAGE=$([ "${{ matrix.language }}" = EN ] && echo 1 || echo 0)
+          OFX_INCLUDE="$GITHUB_WORKSPACE/openfx/include" OUT="$RUNNER_TEMP/build" plugins/native/ofx/build-macos.sh
+          python3 plugins/native/ofx/package_macos.py "$RUNNER_TEMP/build" "$RUNNER_TEMP/dist"
+          mv "$RUNNER_TEMP"/dist/Bruxosdovfx-Desfoque-Resolve-*-macOS "$RUNNER_TEMP/package"
+      # The artifact download is the package folder itself; the scripts restore the exec bits it loses.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Bruxosdovfx-Desfoque-Resolve-macOS-${{ matrix.language }}
+          path: ${{ runner.temp }}/package
+          if-no-files-found: error
